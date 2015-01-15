@@ -1,4 +1,5 @@
 ---
+published: false
 layout: post
 title: 割と古めの特殊事情なDebianサーバで「再起動したらネットワーク繋がらなくなった」話
 category: tech
