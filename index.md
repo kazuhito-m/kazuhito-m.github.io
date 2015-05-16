@@ -1,6 +1,6 @@
 ---
 layout: page
-title: NBM2
+title: Welcome!
 tagline: natural born minority
 ---
 {% include JB/setup %}
