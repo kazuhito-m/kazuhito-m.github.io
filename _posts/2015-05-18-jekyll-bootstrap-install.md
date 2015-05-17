@@ -48,6 +48,29 @@ git push -u origin master
 
 ここに「プレビュー出来る一覧」があり、ページ下の"Theme Explorer"からテーマを選び、"Install Theme"をクリックすると「rakeの構文出してくれる」ので、それのコピペを叩けばテーマが適用されます。
 
+## シンタックスハイライト関連
+
+jekyll-bootstrapの本家ダウンロード直後では、github式の「コードのシンタックスハイライト指定」が書けるハイライターがonになっていません。
+
+[http://tech.nitoyon.com/ja/blog/2012/12/25/jekyll-0-12-0/](http://tech.nitoyon.com/ja/blog/2012/12/25/jekyll-0-12-0/)
+
+
+上記ページの中盤あたりに、 `_config.yml` にコレを足せ！というのが重要です。
+
+```
+markdown:    redcarpet
+```
+
+## Github Pages関連
+
+
+[http://blog.eiel.info/blog/2013/02/17/github-pages/](http://blog.eiel.info/blog/2013/02/17/github-pages/)
+[http://blog.eiel.info/blog/2013/02/18/jekyll-on-github/](http://blog.eiel.info/blog/2013/02/18/jekyll-on-github/)
+
+
+GithubPagesは「jekyllに限ってはRuby動いてっけど限定的な環境」なので、「どこまでできるか」は押さえて置きたく思います。
+
+
 ## jekyllの基本的な使い方
 
 + 基本的なページの作り方
