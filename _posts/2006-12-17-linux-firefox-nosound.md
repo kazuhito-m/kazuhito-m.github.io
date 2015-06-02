@@ -6,21 +6,21 @@ category: tech
 tags: [linux,firefox,flush,sound]
 ---
 
-表題の問題にぶちあたって、長くたった。
+表題の問題にぶちあたって、長く放置してしまいました。
 
-解消してみようとおもう。
+解消してみようと思います。
 
-## 材料
+## レシピ
 
 なんとなく、これかなと思う。
 
 [http://blanc.zive.net/?page_id=228](http://blanc.zive.net/?page_id=228)
 
-このリンクの手順をすべてやれば、問題無く音がでた。
+このリンクの手順をすべてやれば、問題無く音がでました。
 
 ということは、ほぼ全員fedora,firefox,flushplugin,youtubeの組み合わせなら、
 
-音が出ていないのだろうか？
+音が出ていないのかなぁ？
 
 ---
 

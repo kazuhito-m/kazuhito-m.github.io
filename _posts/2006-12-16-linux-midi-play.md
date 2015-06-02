@@ -8,7 +8,7 @@ tags: [linux,midi]
 
 ながく、書くトピックがなかったが、今回MIDIの再生がしてみたくて、挑戦してみます。
 
-## まずは材料
+## まずはレシピ
 
 http://bbs.fedora.jp/read.php?FID=9&TID=3073
 
