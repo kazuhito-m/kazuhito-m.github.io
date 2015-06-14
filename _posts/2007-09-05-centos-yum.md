@@ -6,10 +6,12 @@ category: tech
 tags: [linux,centos,yum]
 ---
 
-今回は、サーバ運用。ディストリもCentOs4でのお話し。
+今回は、サーバ運用。ディストリもCentOs4でのお話しです。
 
 yumのデフォルトがしょぼいので、Extraとか拡張。
 
-http://centos.karan.org/
+# やること
+
+[http://centos.karan.org/](http://centos.karan.org/)
 
 で。
