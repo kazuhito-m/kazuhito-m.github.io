@@ -3,15 +3,15 @@ published: false
 layout: post
 title: ややこしいことになった
 category: tech
-tags: [linux,cdr]
+tags: [linux,dd,backup,recovery]
 ---
 
-ややこしいことになった。現在も進行中。
+ややこしいことになりまして…。現在も進行中。
 
-・HD異音がするので恐くなって別のHDへコピーしようとする。
-・knoppixをつかって、ddコマンドでイメージごとやろうとしたが、from-toを間違えて途中までやってしまう。
-・気づいてストップ。
-・元のHD起動ができなくなった。
++ HD異音がするので恐くなって別のHDへコピーしようとする。
++ knoppixをつかって、ddコマンドでイメージごとやろうとしたが、from-toを間違えて途中までやってしまう。
++ 気づいてストップ。
++ 元のHD起動ができなくなった。
 
 すぐ気づいて止めたためどこかが無事なら…と、「HD壊れた」系の情報を中心に模索中。
 領域情報が書き換えられているとあたりをつけ、インデックスが変になった場合対応を探す。
@@ -20,16 +20,19 @@ LVNも絡んでるんだよな…
 
 以下、スクラップ
 
-http://bbs.fedora.jp/read.php?FID=9&TID=4279
-http://nstage.ddo.jp/pukiwiki/index.php?KNOPPIX%A4%C7%A5%EC%A5%B9%A5%AD%A5%E5%A1%BC#content_1_0
-http://memo.blogdns.net/lvm.html
-http://pantora.net/pages/linux/lvm/3/
+[http://bbs.fedora.jp/read.php?FID=9&TID=4279](http://bbs.fedora.jp/read.php?FID=9&TID=4279)
+[http://nstage.ddo.jp/pukiwiki/index.php?KNOPPIX%A4%C7%A5%EC%A5%B9%A5%AD%A5%E5%A1%BC#content_1_0](http://nstage.ddo.jp/pukiwiki/index.php?KNOPPIX%A4%C7%A5%EC%A5%B9%A5%AD%A5%E5%A1%BC#content_1_0)
+[http://memo.blogdns.net/lvm.html](http://memo.blogdns.net/lvm.html)
+[http://pantora.net/pages/linux/lvm/3/](http://pantora.net/pages/linux/lvm/3/)
 
 すこし救いがあったのは、1年まえにHDDを移行する際に元のHDDを消さずの越していたこと。
+
 台所事情から、これをいかしつつ、このデータを逃がしつつがんばってみよう。
 
 
 ※メモ、後で解説
+
+```bash
 fsck.ext -f /dev/VolGroup00/LogVol00
 resize2fs -p /dev/VolGroup00/LogVol00 14336M (場合によってはすごい時間がかかる)
 # lvreduce -L -50G /dev/VolGroup00/LogVol00
@@ -41,16 +44,17 @@ Logical volume LogVol00 successfully resized
 # lvscan
 ACTIVE '/dev/VolGroup00/LogVol00' [18.94 GB] inherit
 ACTIVE '/dev/VolGroup00/LogVol01' [1.94 GB] inherit
+```
 
+## HDDそのまま交換系
 
+[http://d.hatena.ne.jp/shpolsky/20070306])http://d.hatena.ne.jp/shpolsky/20070306)
+[(http://wiki.mmj.jp/index.php?Fedora5%2F%CF%C0%CD%FD%A5%DC%A5%EA%A5%E5%A1%BC%A5%E0](http://wiki.mmj.jp/index.php?Fedora5%2F%CF%C0%CD%FD%A5%DC%A5%EA%A5%E5%A1%BC%A5%E0)
+[http://wiki.mmj.jp/index.php?EtCetera%2FHDD%B4%B9%C1%F5](http://wiki.mmj.jp/index.php?EtCetera%2FHDD%B4%B9%C1%F5)
 
-■HDDそのまま交換系
+こぴー元の構成を真似てパーティションをわる
 
-http://d.hatena.ne.jp/shpolsky/20070306
-http://wiki.mmj.jp/index.php?Fedora5%2F%CF%C0%CD%FD%A5%DC%A5%EA%A5%E5%A1%BC%A5%E0
-http://wiki.mmj.jp/index.php?EtCetera%2FHDD%B4%B9%C1%F5
-
-・こぴー元の構成を真似てパーティションをわる
+```bash
 # fdisk /dev/hdd
 
 このディスクのシリンダ数は 39560 に設定されています。
@@ -99,9 +103,11 @@ Units = シリンダ数 of 1008 * 512 = 516096 bytes
 
 コマンド (m でヘルプ): w
 領域テーブルは交換されました！
+```
 
-□PV作成
+## PV作成
 
+```bash
 # pvcreate /dev/hdd2
 Physical volume "/dev/hdd2" successfully created
 # vgcreate -s 32m NewVG /dev/hdd2
@@ -118,8 +124,9 @@ Rounding up size to full physical extent 17.03 GB
 Insufficient free extents (542) in volume group NewVG: 545 required
 # lvcreate -l 542 -n LogVol00 NewVG
 Logical volume "LogVol00" created
+```
 
-□ファイルシステム作成
+## ファイルシステム作成
 
 root@Knoppix:~# mkfs -t ext3 /dev/hdd1
 mke2fs 1.40-WIP (14-Nov-2006)
@@ -169,4 +176,4 @@ This filesystem will be automatically checked every 32 mounts or
 root@Knoppix:~# mkswap /dev/NewVG/LogVol01
 Setting up swapspace version 1, size = 2113925 kB
 no label, UUID=37ea65ae-1996-41c0-b061-fc409f9e9527
-
+```
