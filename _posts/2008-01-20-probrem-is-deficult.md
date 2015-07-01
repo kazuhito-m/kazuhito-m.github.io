@@ -177,3 +177,5 @@ root@Knoppix:~# mkswap /dev/NewVG/LogVol01
 Setting up swapspace version 1, size = 2113925 kB
 no label, UUID=37ea65ae-1996-41c0-b061-fc409f9e9527
 ```
+
+ちょっと解説が要りそうですが…自分のためにもまたの機会に♪
