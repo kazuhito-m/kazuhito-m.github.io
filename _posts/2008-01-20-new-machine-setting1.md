@@ -8,14 +8,16 @@ tags: [linux,dd,partision,bootloader]
 
 新マシンのLinuxセットアップの様子を割とリアル目にお届け。
 
-□データのコピー
+## データのコピー
 
 hdd1とhdb1はマウントポイントが最初からあるので、それを使って、マウント&コピー。
 
+```bash
 # cd /media
 # mount hdb1
 # mount hdd1
 # cp -a ./hdb1/* ./hdd1
+```
 
 本体データコピー前に元VGをアクティブに
 
