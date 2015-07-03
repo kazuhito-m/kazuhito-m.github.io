@@ -3,7 +3,7 @@ published: false
 layout: post
 title: 新システム準備作業(つづき1)
 category: tech
-tags: [linux,dd,partision,bootloader]
+tags: [linux,dd,partision,bootloader,setup]
 ---
 
 新マシンのLinuxセットアップの様子を割とリアル目にお届け。
