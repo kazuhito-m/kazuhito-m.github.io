@@ -1,5 +1,4 @@
 ---
-layout: post
 title: TestTest
 category: tech
 tags: [raspberrypi,usb,linux]
