@@ -62,18 +62,15 @@
 
 --
 
-## 気付かせる...
-
-については別資料参照
-
-<iframe src="http://www.slideshare.net/slideshow/embed_code/key/6k7HKHpmENTZCw" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="http://www.slideshare.net/miurakazuhito/yukamu02-jenkins" title="しゃべれて回れる「小人の執事さん」ったら地獄耳でもあるみたいですよ？(前編)" target="_blank">しゃべれて回れる「小人の執事さん」ったら地獄耳でもあるみたいですよ？(前編)</a> </strong></div>
-
----
-
 # だから...
 
 少し戻って…
-「超えられない壁」の特効薬が
+「超えられない壁」のふたつ目、
+
++ コケてても気付かない
++ 無視する
+
+の特効薬が
 
 「XFD」
 ======
@@ -82,10 +79,22 @@
 
 --
 
+## ちなみに...
+
+「気付かせる」については別資料参照
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/key/6k7HKHpmENTZCw" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="http://www.slideshare.net/miurakazuhito/yukamu02-jenkins" title="しゃべれて回れる「小人の執事さん」ったら地獄耳でもあるみたいですよ？(前編)" target="_blank">しゃべれて回れる「小人の執事さん」ったら地獄耳でもあるみたいですよ？(前編)</a> </strong></div>
+
+---
+
 # でも「世の(現場)大半がそう」じゃない
 
-+ 「世の当たり前」にせなあかん。
-+ 「当然の如く普及」「標準装備になって」とあかん。
+XFDが
+
++ 「世の当たり前」
++ 「当然の如く普及」「標準装備」
+
+になってないとあかん。
 
 だが普及してない…なぜだ！
 
