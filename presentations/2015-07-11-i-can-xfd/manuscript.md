@@ -60,7 +60,13 @@
 + 無視させない
   + -> 「やらなしゃーない」「やらないと俺が困る」を作る
 
-気づかせる、については別資料参照
+--
+
+## 気付かせる...
+
+については別資料参照
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/key/6k7HKHpmENTZCw" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="http://www.slideshare.net/miurakazuhito/yukamu02-jenkins" title="しゃべれて回れる「小人の執事さん」ったら地獄耳でもあるみたいですよ？(前編)" target="_blank">しゃべれて回れる「小人の執事さん」ったら地獄耳でもあるみたいですよ？(前編)</a> </strong></div>
 
 ---
 
