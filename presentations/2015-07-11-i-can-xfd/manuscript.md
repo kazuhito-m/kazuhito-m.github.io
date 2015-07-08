@@ -267,18 +267,16 @@ sudo aplay 音源.wav
 
 ## 音声合成で人で知らせる
 
-+ 音声合成を「日本語で」できるようにする
-
+0. 音声合成を「日本語で」できるようにする
   ```bash
-git clone https://github.com/kazuhito-m/dockers.git
-cd ./dockers/scripts/openjtalk_install
-./setup.sh
-```
-+ コマンドに文字送り込んで「日本語を話させる」
-
+  git clone https://github.com/kazuhito-m/dockers.git
+  cd ./dockers/scripts/openjtalk_install
+  ./setup.sh
+  ```
+0. コマンドに文字送り込んで「日本語を話させる」
   ```bash
-talktext "日本語で話せます"
-```
+  talktext "日本語で話せます"
+  ```
 
 ---
 
