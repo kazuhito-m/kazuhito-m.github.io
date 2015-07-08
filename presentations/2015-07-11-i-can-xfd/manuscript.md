@@ -322,3 +322,16 @@ talktext "日本語で話せます"
   + [密林](http://www.amazon.co.jp/dp/B001Q6N4FA/ref=pd_lpo_sbs_dp_ss_2?pf_rd_p=187205609&pf_rd_s=lpo-top-stripe&pf_rd_t=201&pf_rd_i=B001Q6N4EQ&pf_rd_m=AN1VRQENFRJN5&pf_rd_r=1Z0D8W3S4HJ3CNXRVBVZ)
 + パトライト
   + [海外](http://usb.brando.com/usb-traffic-prompter_p00825c0035d015.html)
+
+---
+
+## 総じて問題だったり課題だったり
+
++ 機器の相性や電圧
+  + 場合によっては不安定に
++ RaspberryPI等「遠隔機器」にした場合
+  + 実行手段をどうするか
+    + Jenkinsを積んで「Jenkins to Jenkins」でJobキック？
+    + RESTや「簡易なwebアプリ」を作ってコマンドキック？
++ プロビジョニングっつーか構成管理ってーか
+  + 物理を扱っている以上「自動構築」が限定的になりそう
