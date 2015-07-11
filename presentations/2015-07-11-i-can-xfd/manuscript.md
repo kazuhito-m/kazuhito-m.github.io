@@ -33,7 +33,7 @@ div.picleft {
 
 # そもそも論
 
-----
+---
 
 ## CIは何のため？
 
@@ -206,7 +206,9 @@ ggrと...
 
 ## からの〜
 
-その「具現化した一例」として、「CI/CDサーバ自体をXFDにする」というのをご紹介します。
+一例として「CI/CDサーバ自体をXFDにする」をご紹介します。
+
+![歌って回れる執事](image/xfd-on-server.png)
 
 ここからは、特に指定がなければ
 
@@ -363,11 +365,23 @@ sudo aplay 音源.wav
 
 ## PC一つをまるごとXFD
 
+![ミニPCによるXFD](image/xfd-on-minipc.png)
+
++ 小さなPCに、先ほどまでの要領で「XFDの一式」を載せる
++ CI/CDサーバから叩かせる
+  + あるいはミニPC側からポーリング?
+
+というようなアプローチ。
+
+---
+
+## 具体的には…
+
 ![RaspberyPIによるXFD](image/xfd-pc.png)
 
 ---
 
-## RaspberyPIによる「ポータブルXFD」
+## RaspberyPIによる <br/>  「ポータブルXFD」
 
 + RaspberryPIを使って「部屋内のスキなところにXFD」
   + USB無線LAN積み「どこにおいてもいい」サーバ
