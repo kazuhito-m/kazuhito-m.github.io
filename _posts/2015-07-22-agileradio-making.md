@@ -33,9 +33,10 @@ tags: [linux,soundedit,webradio]
   + 提供読み上げ
 + 時折使う臨時音源
   + (依頼があれば)CM・告知
-## 道具
-+ 音源ファイル編集(矩形波編集)ソフト
 
+## 道具
+
++ 音源ファイル編集(矩形波編集)ソフト
 + [DAW](http://info.shimamura.co.jp/digital/guide/2013/03/982)
 + MP3エンコーダ
 
