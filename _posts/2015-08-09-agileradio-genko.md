@@ -1,4 +1,5 @@
 ---
+published: false
 layout: post
 title: 「Webラジオの原稿」を書いてみた
 category: hobby
