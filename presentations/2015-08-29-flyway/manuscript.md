@@ -9,8 +9,10 @@
 + 基本CLIツール
 + Javaプログラムから呼び出すなど操作することも可能
 + 「任意のフォルダ」と「ファイル命名則」と「Mig対象DBに１つ特殊テーブル」を必要とする
++ 基本SQLがデフォだが「Javaプログラムでの操作」も書ける
 + 思想的に(つまりおそらく永久に)「ダウングレード」には未対応
-+ 
+  + 戻す操作があるのならフォワードで対応
+
 
 ## スクラップ
 
@@ -18,8 +20,10 @@
 + https://siguniang.wordpress.com/2013/11/10/db-schema-migration-made-easy-with-flyway/
 + http://qiita.com/opengl-8080/items/6368c19a06521b65a655
   + プログラムからの呼び方
-
-
++ http://tototoshi.hatenablog.com/entry/2015/01/27/234314
+  + 複数人開発に向いてないんじゃないか問題
++ http://erudoru.hatenablog.com/entry/2013/11/26/002659
+  + SQLじゃなくてJavaで書く方法
 
 # 前提(今運用しているシステム)
 
