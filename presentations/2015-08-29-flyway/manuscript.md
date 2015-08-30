@@ -21,12 +21,14 @@
 
 ## スクラップ
 
++ http://flywaydb.org/
+  + 本家サイト
 + https://github.com/flyway/flyway
   + ソース
 + http://dev.classmethod.jp/tool/flyway-db-migration/
 + https://siguniang.wordpress.com/2013/11/10/db-schema-migration-made-easy-with-flyway/
+  + 運用まで視野に入れた詳しめのTIPS
 + http://qiita.com/opengl-8080/items/6368c19a06521b65a655
-  + プログラムからの呼び方
 + http://tototoshi.hatenablog.com/entry/2015/01/27/234314
   + 複数人開発に向いてないんじゃないか問題
 
@@ -36,9 +38,39 @@
 
 + http://erudoru.hatenablog.com/entry/2013/11/26/002659
   + SQLじゃなくてJavaで書く方法
+  + http://erudoru.hatenablog.com/entry/2013/11/26/002659
+    + こちらはSpring編
++ http://blog.livedoor.jp/ryu22e/archives/65722084.html
+  + maven-flyway-plugin の詳しめの設定
 + http://stackoverflow.com/questions/12619446/can-i-use-property-file-in-maven-pom-xml-for-flyway-configuration
   + maven-flyway-plugin の接続設定を外部ファイルから読み込ませる方法。
 
+---
+
+## マイグレーション一つに対する「結果ステータス」
+
+「一つのマイグレーション結果」で代表的なものは４種類(本当は[もっとある](http://flywaydb.org/documentation/api/javadoc/org/flywaydb/core/api/MigrationState.html)のだが目につくものだけ)
+
+0. Success - 成功。順番どおり実行され成功に終わった。
+0. Failed - 失敗。何らかの理由でマイグレーション実行中に失敗。
+0. Ignored - 未実行。順序的に不正なので実行しなかった。
+0. OutOfOrder - 成功。順序はおかしかったが無視して実行し成功した。
+
+実行中のログ or 管理テーブル中の"success"カラムにて確認することが出来る。
+
+---
+
+## 「outOfOrderルール」について
+
++ 設定に「outOfOrder」というフラグがある
+  + CLI実行なら flyway.conf に "flyway.outOfOrder=true"
+  + maven-plugin ならconfigのoutOfOrderタグでtrue
+  + プログラムなら flyway.setOutOfOrder(true);
++ true にすると「後から若い番号のが来ても順序無視して実行」するようになる
+  + outOfOrder=false(デフォルト)時
+    + 取りうる結果ステータスは Success,Failed,Ignored
+  + outOfOrder=ture時
+    + 取りうる結果ステータスは Success,Failed,OutOfOrder
 
 ----
 
@@ -87,6 +119,7 @@
 
 + 外部仕様とDBは極力似せて
 + ソースは「極力旧から持ってこない」
+  + …が、時間の問題で多々持ってきてるダメさ
 
 ----
 
@@ -115,7 +148,7 @@
 + 導入は「途中から」
   + スクラムマスターの提案による(仕込みも本人がやったが…)
   + 「PJ途中からの導入」にも適していると言えそう
-    + 「他に依存しないこと」に気を使ってるように見える(optional=true,scope=test,proided)
+    + Flywayは「他に依存しないこと」に気を使ってるように見える(optional=true,scope=test,proided)
 ---
 
 ## 決めごと
@@ -124,7 +157,7 @@
   + V[000]__[アクション]_[対象テーブルor抽象的集合名].sql
 + ルール
   + 連番は最近000の三桁
-    + 「ファイルが名前順に並んでくれない」は以外とストレスなんで…ご破算にする時に
+    + 「ファイルが名前順に並んでくれない」は意外とストレスなんで…ご破算にする時に
   + アクションは単一ならCUDそうでなければ目的ベースのなまえみ
 + Webアプリ立ち上がり時に動くよう仕込んである
   + ローカル、ステージ、本番も皆同様
@@ -157,12 +190,13 @@
 
 ## 利用のエピソード
 
-+ イメージディレクトリの移動/大文字小文字リネームに「Java側機能」使う
++ 画像ファイルのディレクトリの移動/大文字小文字リネームに「Java側機能」使う
   + Webシステムだし「アップロード画像」も「利用者のデータ＝DB相当」と捉えて
 + 画面の無い(お客様が本番で変更しようのない)マスタテーブルのメンテナンス
 + 俗に言う「データパッチ」も一部マイグレーションで
   + バリバリの利用者入力直結のトランザクションはしないが…
   + 「関連テーブル」などの「ユーザが見えない部分」かつ「法則性が一律に適用できる」場合
+
 
 ----
 
