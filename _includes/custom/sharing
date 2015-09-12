@@ -3,12 +3,10 @@
 .snsb {
 	overflow: hidden;
 }
-.snsb ul {
-        list-style:none;
-}
 .snsb li {
 	float: left;
 	margin-right: 4px;
+        list-style:none;
 }
 .snsb iframe {
 	margin: 0 !important;
@@ -19,7 +17,7 @@
 }
   </style>
 
-  <ul class="snsb" style="list-style:none;">
+  <ul class="snsb">
   <li>
   <a href="https://twitter.com/share" class="twitter-share-button" data-via="kazuhito_m" data-count="none">Tweet</a>
   </li>
