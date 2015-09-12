@@ -1,10 +1,13 @@
 <div class="social-buttons">
   <style>
     table.socialbuttons{
+        width: 0%;
     }
     .socialbuttons td{
         text-align: center;
         vertical-align: middle;
+        padding: 0px;
+        background: #FFF none repeat scroll 0% 0%;
     }
   </style>
   <table class="socialbuttons">
