@@ -5,7 +5,7 @@
     <img src="https://b.st-hatena.com/images/entry-button/button-only.gif" alt="この記事をはてなブックマークに追加" width="20" height="20" style="border: none;" />
   </a>
 
-  <div class="fb-share-button" data-href="http://exsample.com" data-layout="icon"></div>
+  <div class="fb-share-button" data-href="http://exsample.com" data-layout="button"></div>
 
   <div class="g-plusone" data-size="tall" data-href="{{ page.url }}"></div>
 
