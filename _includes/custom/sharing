@@ -8,6 +8,7 @@
         vertical-align: middle;
         padding: 0px;
         background: #FFF none repeat scroll 0% 0%;
+        opacity: 1;
     }
   </style>
   <table class="socialbuttons">
