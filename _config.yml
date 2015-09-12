@@ -55,5 +55,5 @@ JB :
         idsite : '1'                   # the id of the site on Piwik
 
   sharing :
-    provider : false
+    provider : custom
     
