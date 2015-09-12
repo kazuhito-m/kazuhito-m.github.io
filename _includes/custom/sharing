@@ -10,6 +10,10 @@
 .snsb iframe {
 	margin: 0 !important;
 }
+.snsb img {
+        margin: 0px 0px 0px;
+        padding: 0px;
+}
   </style>
 
   <ul class="snsb">
