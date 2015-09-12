@@ -1,52 +1,46 @@
 <div class="social-buttons">
   <style>
-    table.socialbuttons{
-        width: 0%;
-    }
-    .socialbuttons td{
-        text-align: center;
-        vertical-align: middle;
-        padding: 0px;
-        background: #FFF none repeat scroll 0% 0%;
-        opacity: 1;
-    }
-    img.socialbuttons {
-        margin: 0px 0px 0px;
-        padding: 0px;
-    }
+.snsb {
+	overflow: hidden;
+}
+.snsb li {
+	float: left;
+	margin-right: 4px;
+}
+.snsb iframe {
+	margin: 0 !important;
+}
   </style>
-  <table class="socialbuttons">
-  <tr>
 
-  <td>
+  <ul class="snsb">
+  <li>
   <a href="https://twitter.com/share" class="twitter-share-button" data-via="kazuhito_m" data-count="none">Tweet</a>
-  </td>
+  </li>
 
-  <td>
+  <li>
   <a href="http://b.hatena.ne.jp/entry/http://kazuhito-m.github.io{{ page.url }}" class="hatena-bookmark-button" data-hatena-bookmark-title="{{ page.title }}" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="この記事をはてなブックマークに追加">
     <img class="socialbuttons" src="https://b.st-hatena.com/images/entry-button/button-only.gif" alt="この記事をはてなブックマークに追加" width="20" height="20" style="border: none;" />
   </a>
-  </td>
+  </li>
 
-  <td>
+  <li>
   <div class="fb-share-button" data-href="{{ page.url }}" data-layout="button"></div>
-  </td>
+  </li>
 
-  <td>
+  <li>
   <div class="g-plusone" data-annotation="none"></div>
-  </td>
+  </li>
 
-  <td>
+  <li>
   <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: ja_JP</script>
   <script type="IN/Share"></script>
-  </td>
+  </li>
 
-  <td>
+  <li>
   <a class="tumblr-share-button" data-color="blue" data-notes="right" href="https://embed.tumblr.com/share"></a>
-  </td>
+  </li>
 
-  </tr>
-  </table>
+  </ul>
 
   <span>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
