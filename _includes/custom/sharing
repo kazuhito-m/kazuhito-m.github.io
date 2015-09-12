@@ -19,7 +19,7 @@
 }
   </style>
 
-  <ul class="snsb">
+  <ul class="snsb" style="list-style:none;">
   <li>
   <a href="https://twitter.com/share" class="twitter-share-button" data-via="kazuhito_m" data-count="none">Tweet</a>
   </li>
