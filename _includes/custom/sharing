@@ -10,6 +10,10 @@
         background: #FFF none repeat scroll 0% 0%;
         opacity: 1;
     }
+    .socialbuttons img {
+        margin: 0px 0px 0px;
+        padding: 0px;
+    }
   </style>
   <table class="socialbuttons">
   <tr>
