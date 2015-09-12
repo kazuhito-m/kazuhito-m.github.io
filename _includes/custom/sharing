@@ -10,7 +10,7 @@
         background: #FFF none repeat scroll 0% 0%;
         opacity: 1;
     }
-    .socialbuttons img {
+    img.socialbuttons {
         margin: 0px 0px 0px;
         padding: 0px;
     }
@@ -24,7 +24,7 @@
 
   <td>
   <a href="http://b.hatena.ne.jp/entry/http://kazuhito-m.github.io{{ page.url }}" class="hatena-bookmark-button" data-hatena-bookmark-title="{{ page.title }}" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="この記事をはてなブックマークに追加">
-    <img src="https://b.st-hatena.com/images/entry-button/button-only.gif" alt="この記事をはてなブックマークに追加" width="20" height="20" style="border: none;" />
+    <img class="socialbuttons" src="https://b.st-hatena.com/images/entry-button/button-only.gif" alt="この記事をはてなブックマークに追加" width="20" height="20" style="border: none;" />
   </a>
   </td>
 
