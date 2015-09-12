@@ -37,10 +37,6 @@
   <a class="tumblr-share-button" data-color="blue" data-notes="right" href="https://embed.tumblr.com/share"></a>
   </td>
 
-  <td>
-  <a data-pocket-label="pocket" data-pocket-count="none" class="pocket-btn" data-lang="ja"></a>
-  </td>
-
   </tr>
   </table>
 
@@ -57,7 +53,6 @@
       js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.4&appId=541777915960071";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
-    <script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
     <script>!function(d,s,id){var js,ajs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://secure.assets.tumblr.com/share-button.js";ajs.parentNode.insertBefore(js,ajs);}}(document, "script", "tumblr-js");</script>
   </span>
 </div>
