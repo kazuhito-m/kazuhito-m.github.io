@@ -42,11 +42,11 @@
   <a class="tumblr-share-button" data-color="blue" data-notes="right" href="https://embed.tumblr.com/share"></a>
   </li>
 
-  </ul>
-
   <li>
   <div class="fb-share-button" data-href="{{ page.url }}" data-layout="button"></div>
   </li>
+
+  </ul>
 
   <span>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
