@@ -9,7 +9,7 @@
 
   <div class="g-plusone" data-size="tall" data-href="{{ page.url }}"></div>
 
-  <a data-pocket-label="pocket" data-save-url="{{ page.url }}" data-pocket-count="vertical" class="pocket-btn" data-lang="en"></a>
+  <a data-pocket-label="pocket" data-pocket-count="none" class="pocket-btn" data-lang="ja"></a>
 
   <span>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
@@ -23,5 +23,6 @@
       js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.4&appId=541777915960071";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
+    <script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
   </span>
 </div>
