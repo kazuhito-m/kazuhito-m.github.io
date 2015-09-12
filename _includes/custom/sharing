@@ -7,6 +7,7 @@
 	float: left;
 	margin-right: 4px;
         list-style:none;
+        line-height: 0;
 }
 .snsb iframe {
 	margin: 0 !important;
@@ -29,7 +30,7 @@
   </li>
 
   <li>
-  test<div class="fb-share-button" data-href="{{ page.url }}" data-layout="button"></div>
+  <div class="fb-share-button" data-href="{{ page.url }}" data-layout="button"></div>
   </li>
 
   <li>
