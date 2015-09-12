@@ -5,13 +5,23 @@
     <img src="https://b.st-hatena.com/images/entry-button/button-only.gif" alt="この記事をはてなブックマークに追加" width="20" height="20" style="border: none;" />
   </a>
 
-  <div class="fb-share-button" data-layout="box_count" data-href="{{ page.url }}"></div>
-  <div class="fb-like" data-href="http://b.hatena.ne.jp/entry/{Permalink}" data-layout="box_count" data-action="like" data-show-faces="true"></div>
+  <div class="fb-share-button" data-href="http://exsample.com" data-layout="icon"></div>
+
   <div class="g-plusone" data-size="tall" data-href="{{ page.url }}"></div>
+
+  <a data-pocket-label="pocket" data-save-url="{{ page.url }}" data-pocket-count="vertical" class="pocket-btn" data-lang="en"></a>
+
   <span>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
     <script type="text/javascript" src="//media.line.me/js/line-button.js?v=20140411" ></script>
     <script type="text/javascript">new media_line_me.LineButton({"pc":false,"lang":"ja","type":"e"});</script>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.4&appId=541777915960071";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
   </span>
-  <a data-pocket-label="pocket" data-save-url="{Permalink}" data-pocket-count="vertical" class="pocket-btn" data-lang="en"></a>
 </div>
