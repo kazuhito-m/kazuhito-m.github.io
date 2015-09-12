@@ -57,4 +57,11 @@ JB :
   sharing :
     provider : false
     
-  
+  githubButton : true
+  twitter.enabled : true
+  twitter.via : true
+  twitter.hash : NBM2
+  twitter.account  : kazuhito_m
+  facebook.enabled : true
+  facebook.profileUrl : https://www.facebook.com/miura.kazuhito
+    
