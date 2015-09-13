@@ -1,7 +1,7 @@
 ---
 publish: false
 layout: post
-title: 勉強会行ってみた「第一回 関西ITインフラ勉強会」
+title: 勉強会行ってみた「第一回 関西ITインフラ勉強会」#kistudy
 category: tech
 tags: [infrastracture,study_meeting_repo]
 ---
@@ -18,7 +18,7 @@ tags: [infrastracture,study_meeting_repo]
 
 + 当日まとめ(Togetter)
 
-  http://togetter.com/li/786072
+  [http://togetter.com/li/873319](http://togetter.com/li/873319)
 
 + ハッシュタグ
 
@@ -30,17 +30,17 @@ tags: [infrastracture,study_meeting_repo]
 
 ## なんで来たん？
 
-
+_「大阪には」_
 
 ## 内容
 
 ### オープニング 「関西ITインフラ系勉強会( [#kistudy](https://twitter.com/search?q=%23kistudy) )発足について」 Yuki Okuno ( [@snowoy0113](https://twitter.com/snowoy0113) ) さん
 
-資料:
+資料: <iframe src="//www.slideshare.net/slideshow/embed_code/key/9wm0nJnFh0BaKq" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/yukiokuno0113/it-kistudy" title="関西ITインフラ系勉強会 (ハッシュタグ #kistudy) 発足について" target="_blank">関西ITインフラ系勉強会 (ハッシュタグ #kistudy) 発足について</a> </strong> from <strong><a href="//www.slideshare.net/yukiokuno0113" target="_blank">Yuki Okuno</a></strong> </div>
 
 アカン…そのパロディでは、インフラエンジニアはみんなゾンビになってまう…ｗ
 
-### 1コマ目「」
+### 1コマ目「Ansible使ってさくらのクラウド上にサーバを作る話」
 
 資料:
 
@@ -54,7 +54,14 @@ tags: [infrastracture,study_meeting_repo]
 
 ### ２コマ目「LinuxコンテナとLXC入門」加藤泰文さん( @ten_forward )
 
-資料:
+資料: <script async class="speakerdeck-embed" data-id="71f0fe44770b4a1e8755469e6aaa5104" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 
+### 3コマ目「
+
+なるほど「インフラエンジニア」の意味、つまり「人間系のロールの話し」とかするのか。このセッション。
+
+### 4コマ目「」  
+
+「"cat myself.ldif" するとこうなります」という自己紹介すげぇｗ
 
 ## 小並感
