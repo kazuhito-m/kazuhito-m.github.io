@@ -14,13 +14,9 @@ tags: [infrastracture,study_meeting_repo]
 ## 情報
 
 + [申し込みサイト](http://kansai-itinfra.connpass.com/event/18858/)
-
 + [当日まとめ(Togetter)](http://togetter.com/li/873319)
-
 + ハッシュタグ : [#kistudy](https://twitter.com/search?q=%23kistudy)
-
 + 何するのか
-
     インフラ知識を「ジャンル限定せず」勉強する？勉強会…かと。
 
 ## なんで来たん？
