@@ -100,9 +100,13 @@ _「大阪にはインフラの勉強会、無いですからね…」_
 
 これまでも大阪・東京で「コンテナの勉強会」をされており、俺は「知りつつ行けない」状況ばかりだったので、今度は行きたいですね。
 
-### 3コマ目「
+### 3コマ目「インフラエンジニア」
 
-なるほど「インフラエンジニア」の意味、つまり「人間系のロールの話し」がこのセッション。
++ ※スライド自身は無題のため「主題」を上記
++ 登壇者 : [@Anubis_369](https://twitter.com/Anubis_369) さん
++ 資料 : <iframe src="//www.slideshare.net/slideshow/embed_code/key/KEhLS4Ut3ywYjD" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/anubis_369/ss-52717237" title="関西インフラ勉強会 スライド" target="_blank">関西インフラ勉強会 スライド</a> </strong> from <strong><a href="//www.slideshare.net/anubis_369" target="_blank">anubis_369</a></strong> </div>
+
+「インフラエンジニア」の意味、つまり「人間系のロールの話し」なセッションでした。
 
 ### 4コマ目「」  
 
