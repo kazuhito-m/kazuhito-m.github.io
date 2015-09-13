@@ -1,10 +1,11 @@
 ---
-publish: false
 layout: post
 title: 勉強会行ってみた「第一回 関西ITインフラ勉強会」#kistudy
 category: tech
 tags: [infrastracture,study_meeting_repo]
 ---
+
+![会場の様子](/images/2015-09-13-kistudy.jpg)
 
 噂によると…仕事で「インフラ出来る人」みたいに思われてるらしくって…。
 
@@ -30,7 +31,11 @@ tags: [infrastracture,study_meeting_repo]
 
 ## なんで来たん？
 
-_「大阪には」_
+_「大阪にはインフラの勉強会、無いですからね…」_
+
+勉強会に顔を出すようになってから3年くらいでしょうか、事あることにこのセリフを聞きました。
+
+
 
 ## 内容
 
