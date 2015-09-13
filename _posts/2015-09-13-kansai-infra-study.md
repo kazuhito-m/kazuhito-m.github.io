@@ -32,9 +32,8 @@ _「大阪にはインフラの勉強会、無いですからね…」_
 
 ### オープニング 「関西ITインフラ系勉強会( [#kistudy](https://twitter.com/search?q=%23kistudy) )発足について」
 
-登壇者 : Yuki Okuno ( [@snowoy0113](https://twitter.com/snowoy0113) ) さん
-
-資料: <iframe src="//www.slideshare.net/slideshow/embed_code/key/9wm0nJnFh0BaKq" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/yukiokuno0113/it-kistudy" title="関西ITインフラ系勉強会 (ハッシュタグ #kistudy) 発足について" target="_blank">関西ITインフラ系勉強会 (ハッシュタグ #kistudy) 発足について</a> </strong> from <strong><a href="//www.slideshare.net/yukiokuno0113" target="_blank">Yuki Okuno</a></strong> </div>
++ 登壇者 : Yuki Okuno ( [@snowoy0113](https://twitter.com/snowoy0113) ) さん
++ 資料: <iframe src="//www.slideshare.net/slideshow/embed_code/key/9wm0nJnFh0BaKq" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/yukiokuno0113/it-kistudy" title="関西ITインフラ系勉強会 (ハッシュタグ #kistudy) 発足について" target="_blank">関西ITインフラ系勉強会 (ハッシュタグ #kistudy) 発足について</a> </strong> from <strong><a href="//www.slideshare.net/yukiokuno0113" target="_blank">Yuki Okuno</a></strong> </div>
 
 アカン…そのパロディでは、インフラエンジニアはみんなゾンビになってまう…ｗ
 
@@ -46,9 +45,8 @@ _「大阪にはインフラの勉強会、無いですからね…」_
 
 ### 1コマ目「Ansible使ってさくらのクラウド上にサーバ作れるようにした~~い~~件」
 
-登壇者: [Koji Nakayama](https://github.com/knakayama) さん
-
-資料: [※おそらくこれが原稿](https://github.com/knakayama/LT-2015-09-13/blob/master/slide.md)
++ 登壇者: [Koji Nakayama](https://github.com/knakayama) さん
++ 資料: [※おそらくこれが原稿](https://github.com/knakayama/LT-2015-09-13/blob/master/slide.md)
 
 登壇者は「SAKURAの中の人」なのですね。
 
@@ -72,9 +70,8 @@ _「大阪にはインフラの勉強会、無いですからね…」_
 
 ### ２コマ目「LinuxコンテナとLXC入門」
 
-登壇者 : 加藤泰文さん( [@ten_forward](https://twitter.com/ten_forward) )
-
-資料 : <div style="width: 65%"><script async class="speakerdeck-embed" data-id="71f0fe44770b4a1e8755469e6aaa5104" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script></div>
++ 登壇者 : 加藤泰文さん( [@ten_forward](https://twitter.com/ten_forward) )
++ 資料 : <div style="width: 65%"><script async class="speakerdeck-embed" data-id="71f0fe44770b4a1e8755469e6aaa5104" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script></div>
 
 ### 3コマ目「
 
