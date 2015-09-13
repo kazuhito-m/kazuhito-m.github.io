@@ -13,21 +13,15 @@ tags: [infrastracture,study_meeting_repo]
 
 ## 情報
 
-+ 申し込みサイト
++ [申し込みサイト](http://kansai-itinfra.connpass.com/event/18858/)
 
-  [http://kansai-itinfra.connpass.com/event/18858/](http://kansai-itinfra.connpass.com/event/18858/)
++ [当日まとめ(Togetter)](http://togetter.com/li/873319)
 
-+ 当日まとめ(Togetter)
-
-  [http://togetter.com/li/873319](http://togetter.com/li/873319)
-
-+ ハッシュタグ
-
-  [#kistudy](https://twitter.com/search?q=%23kistudy)
++ ハッシュタグ : [#kistudy](https://twitter.com/search?q=%23kistudy)
 
 + 何するのか
 
-  インフラ知識を「ジャンル限定せず」勉強する？勉強会…かと。
+    インフラ知識を「ジャンル限定せず」勉強する？勉強会…かと。
 
 ## なんで来たん？
 
@@ -59,7 +53,7 @@ _「大阪にはインフラの勉強会、無いですからね…」_
 
 ### ２コマ目「LinuxコンテナとLXC入門」加藤泰文さん( @ten_forward )
 
-資料: <script async class="speakerdeck-embed" data-id="71f0fe44770b4a1e8755469e6aaa5104" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+資料: <div style="width: 65%"><script async class="speakerdeck-embed" data-id="71f0fe44770b4a1e8755469e6aaa5104" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script></div>
 
 ### 3コマ目「
 
