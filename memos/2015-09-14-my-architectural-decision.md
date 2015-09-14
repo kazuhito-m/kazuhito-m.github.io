@@ -27,9 +27,9 @@ tags: [architecture,study_meeting_repo]
 + 平均点が高ければいい、わけでもない
   + どの観点に軸足を置くのか、どの観点を立てて上げるのか
 
-### 4つのDescision
+### 4つのDecision
 
-+ 俺のDescision
++ 俺のDecision
   + Viewpoint
     + 個人的経験
     + 興味
@@ -59,12 +59,12 @@ tags: [architecture,study_meeting_repo]
 + 客観的な例
   + ISO/IEC 25010における利用品質と製品品質
   + ATAMによるアーキテクチャ評価
-+ Architecuture meets Process
-  + Rational Unified Process → Desciplined Agile Delivery
-  + これに惚れ込んだ、このために会社辞めてラショナルに行った
 
 ## アーキテクチャは…
 
++ Architecuture meets Process
+  + Rational Unified Process → Desciplined Agile Delivery
+  + これに惚れ込んだ、このために会社辞めてラショナルに行った
 + アーキテクチャは、プロセスを補完する。
 + プロセスアーキテクチャに依存する。
 + 「人は、制約の中でこそ想像力を発揮できる」
