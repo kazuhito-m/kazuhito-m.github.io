@@ -11,6 +11,8 @@ tags: [architecture,study_meeting_repo]
 
 ## 私のアーキテクチャルディシジョン
 
+### アーキテクチャルディシジョン
+
 + HFT System architecture を手がけたことがある。
 + 「Architecutural Decisions」アーキテクチャルディシジョン
 + アーキテクチャは"選択"の集合体
@@ -23,40 +25,45 @@ tags: [architecture,study_meeting_repo]
   + 4 + 1 View 「現在のソフトウェアアーキテクチャのデファクトスタンダード」
 + 平均点が高ければいい、わけでもない
   + どの観点に軸足を置くのか、どの観点を立てて上げるのか
-+ 4つのDescision
-  + 俺のDescision
-    + Viewpoint
-      + 個人的経験
-      + 興味
-      + 好み
-  + 所与のDecision
-    + Viewpoint
-      + 制約
-      + 組織の経験
-      + 顧客要求
-      + 自社都合
-      + 政治
-  + 客観的Decision
-    + Viewpoint
-      + 品質モデル
-      + 妥当性評価
-      + リファレンス
-      + 実績
-  + 共感のDecision
-    + Viewpoint
-      + ライフサイクル
-        + ビジネス
-        + システム
-        + テクノロジー
-      + チーム
-        + 今のチーム
-        + 将来のチーム
+
+### 4つのDescision
+
++ 俺のDescision
+  + Viewpoint
+    + 個人的経験
+    + 興味
+    + 好み
++ 所与のDecision
+  + Viewpoint
+    + 制約
+    + 組織の経験
+    + 顧客要求
+    + 自社都合
+    + 政治
++ 客観的Decision
+  + Viewpoint
+    + 品質モデル
+    + 妥当性評価
+    + リファレンス
+    + 実績
++ 共感のDecision
+  + Viewpoint
+    + ライフサイクル
+      + ビジネス
+      + システム
+      + テクノロジー
+    + チーム
+      + 今のチーム
+      + 将来のチーム
 + 客観的な例
   + ISO/IEC 25010における利用品質と製品品質
   + ATAMによるアーキテクチャ評価
 + Architecuture meets Process
   + Rational Unified Process → Desciplined Agile Delivery
   + これに惚れ込んだ、このために会社辞めてラショナルに行った
+
+## アーキテクチャは…
+
 + アーキテクチャは、プロセスを補完する。
 + プロセスアーキテクチャに依存する。
 + 「人は、制約の中でこそ想像力を発揮できる」

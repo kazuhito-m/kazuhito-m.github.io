@@ -47,7 +47,7 @@ tags: [architecture,study_meeting_repo]
 ### 3コマ目「私のアーキテクチャルディシジョン」
 
 + 登壇者 : 岡 大勝 さん [@OkaHiromasa](https://twitter.com/OkaHiromasa) さん
-+ 資料 : (見つからず…なので資料公開までは[自作のメモ](/memos/2015-09-14-my-architectural-decision/)を置いときます)
++ 資料 : (見つからず…なので資料公開までは[自作のメモ](/memos/2015-09-14-my-architectural-decision.html)を置いときます)
 
 
 ## 小並感
