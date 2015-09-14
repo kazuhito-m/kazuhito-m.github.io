@@ -128,7 +128,7 @@ _「大阪にはインフラの勉強会、無いですからね…」_
 ### 4コマ目「イベント会場ネットワーク」
 
 + 登壇者 : Fumihisa Shigekane さん ( [@shige2313](https://twitter.com/shige2313) )
-+ 資料 :  
++ 資料 :  <iframe src="//www.slideshare.net/slideshow/embed_code/key/GEriB7i6A2ktic" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/fumihisashigekane/ss-52733738" title="イベント会場ネットワーク" target="_blank">イベント会場ネットワーク</a> </strong> from <strong><a href="//www.slideshare.net/fumihisashigekane" target="_blank">Fumihisa Shigekane</a></strong> </div>
 
 「"cat myself.ldif" するとこうなります」という自己紹介すげぇｗ
 
