@@ -33,25 +33,25 @@ tags: [architecture,study_meeting_repo]
 
 ### 4つのDecision
 
-+ 俺のDecision
+0. 俺のDecision
   + Viewpoint
     + 個人的経験
     + 興味
     + 好み
-+ 所与のDecision
+0. 所与のDecision
   + Viewpoint
     + 制約
     + 組織の経験
     + 顧客要求
     + 自社都合
     + 政治
-+ 客観的Decision
+0. 客観的Decision
   + Viewpoint
     + 品質モデル
     + 妥当性評価
     + リファレンス
     + 実績
-+ 共感のDecision
+0. 共感のDecision
   + Viewpoint
     + ライフサイクル
       + ビジネス
@@ -70,7 +70,7 @@ tags: [architecture,study_meeting_repo]
   0. (から戻って) 俺の
   0. (から脱してやっと) 共感の
 
-## アーキテクチャは…
+### アーキテクチャは…
 
 + Architecuture meets Process
   + Rational Unified Process → Desciplined Agile Delivery
