@@ -6,8 +6,6 @@ category: tech
 tags: [architecture,study_meeting_repo]
 ---
 
-![会場の様子](/images/2015-09-13-kistudy.jpg)
-
 「思い知らしてやるわ〜」の人が登壇すると聞いて。
 
 ## 情報
@@ -40,13 +38,11 @@ tags: [architecture,study_meeting_repo]
 ### ２コマ目「とあるアーキのシステムアーキテクチャー」
 
 + 登壇者 : こざけさん( [s_kozake](https://twitter.com/s_kozake) )
-+ 資料 :
++ 資料 : <iframe src="//www.slideshare.net/slideshow/embed_code/key/DiBeTquq6FN5rp" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/s_kozake/ss-52758068" title="とある現場のシステムアーキテクチャ" target="_blank">とある現場のシステムアーキテクチャ</a> </strong> from <strong><a href="//www.slideshare.net/s_kozake" target="_blank">Shinichi Kozake</a></strong> </div>
 
 割と詰め込まれていて「多くの重要なことを言っていた」のですが…駆け抜けたので資料を見なおしてキーワード拾っています。
 
 + ボックス＆ライン図 ... 俺はこれをいつも描いていたのか…。
-
-
 
 ### 3コマ目「私のアーキテクチャルディシジョン」
 
