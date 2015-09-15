@@ -26,7 +26,6 @@ tags: [architecture,study_meeting_repo]
 
 そこで、この勉強会に行き当たりました。
 
-
 ## 内容
 
 ### 1コマ目「レイヤードアーキテクチャを意識したPHPアプリケーションの構築 Updateバージョン」
@@ -40,16 +39,53 @@ tags: [architecture,study_meeting_repo]
 + 登壇者 : こざけさん( [s_kozake](https://twitter.com/s_kozake) )
 + 資料 : <iframe src="//www.slideshare.net/slideshow/embed_code/key/DiBeTquq6FN5rp" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/s_kozake/ss-52758068" title="とある現場のシステムアーキテクチャ" target="_blank">とある現場のシステムアーキテクチャ</a> </strong> from <strong><a href="//www.slideshare.net/s_kozake" target="_blank">Shinichi Kozake</a></strong> </div>
 
-割と詰め込まれていて「多くの重要なことを言っていた」のですが…駆け抜けたので資料を見なおしてキーワード拾っています。
+割と詰め込まれていて「多くの重要なことを言っていた」のですが…駆け抜けたので資料を見なおして拾っています。
 
-  ボックス＆ライン図 - 俺はこれをいつも描いていたのか…。
++ ボックス＆ライン図 - 俺は「これ」をいつも描いていたのか…。
++ "Artifactory"は良いのかな？ "nexus"しかやったこと無いから試したい
++ こんなにUMLをしっかり活用してるのは良いな
++
 
 
-### 3コマ目「私のアーキテクチャルディシジョン」k
+
+
+### 3コマ目「私のアーキテクチャルディシジョン」
 
 + 登壇者 : 岡 大勝 さん [@OkaHiromasa](https://twitter.com/OkaHiromasa) さん
 + 資料 : (見つからず…なので資料公開までは[自作のメモ](/memos/2015-09-14-my-architectural-decision.html)を置いときます)
 
+なんとなく…「人生は一秒も無駄にしちゃいけない！」と思わされるような衝撃のあるセッションでした。
+
+「アーキテクチャは選択の集合体である、
+そこで"アーキテクトとしての判断"=アーキテクチャルデシジョンが生きてくる」
+
+と、主題と持論を明らかにした上で、
+
++ "それアカンやろ！"はアーキテクト魂の発芽
++ "俺の"Decision
++ チームがこの先10年、笑顔で居られるアーキテクチャを…
+
+など、俺好みの「エモい話し」な人！…からの
+
++ 実現可能かを問いかけろ
++ 常に論理的であれ
++ 合議制は不要、自分で決めろ
+
+という「妥協を許すな」という厳しさ、そして最後に
+
++ 結論：アーキテクチャは「未来のチームへのバトン」
++ まだ見ぬ後輩達に伝えるために、今、何をすべきか
++ それが私のアーキテクチャルデシジョン
+
+という未来志向な使命を帯びて進むという締め、しびれました。
+
+と、これだけだと読んでる方は「抽象論だけ？」と思われたかもしれません。
+
+が、「TOGAF」「Zachman Framework」「4 + 1 View」「ISO/IEC 25010」「ATAM」など
+「アーキテクトとして知っておくべきキーパーツ」も散りばめられていました。
+
+ちょっと「超越者の話し」を聞いた感じですが、
+明日に生かしていくなら、ここらへんから調べていこうかな？というヒントをもらいました。
 
 ## 小並感
 
@@ -58,3 +94,5 @@ tags: [architecture,study_meeting_repo]
 ただ、岡さんの言葉をいただいて「それ、あかんやろ！」を感じた時には、
 「俺ならこうする」を考える訓練をしていきたいと考えています。
 (実際、「あかんやろ」事案に遭遇することは多い)
+
+ちょっと興奮と知恵熱でまとまらない話しが益々まとまりません。失礼♪
