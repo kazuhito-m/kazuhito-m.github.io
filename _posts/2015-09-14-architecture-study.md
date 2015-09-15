@@ -42,7 +42,7 @@ tags: [architecture,study_meeting_repo]
 
 なので、そのあたり「どう調理しているのか」を達人から学びたいですね。
 
-### ２コマ目「とあるアーキのシステムアーキテクチャー」
+### ２コマ目「とある現場のシステムアーキテクチャー」
 
 + 登壇者 : 小酒 信一さん( [s_kozake](https://twitter.com/s_kozake) )
 + 資料 : <iframe src="//www.slideshare.net/slideshow/embed_code/key/DiBeTquq6FN5rp" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/s_kozake/ss-52758068" title="とある現場のシステムアーキテクチャ" target="_blank">とある現場のシステムアーキテクチャ</a> </strong> from <strong><a href="//www.slideshare.net/s_kozake" target="_blank">Shinichi Kozake</a></strong> </div>
