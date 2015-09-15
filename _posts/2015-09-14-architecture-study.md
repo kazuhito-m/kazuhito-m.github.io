@@ -1,5 +1,5 @@
 ---
-publish: false
+published: false
 layout: post
 title: 勉強会行ってみた「現場のアーキテクチャの話をしてみませんか？」#Devkan
 category: tech
