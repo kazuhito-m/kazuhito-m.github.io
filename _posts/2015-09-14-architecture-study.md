@@ -5,7 +5,7 @@ category: tech
 tags: [architecture,study_meeting_repo]
 ---
 
-![会場の様子](/images/2015-09-15-kozakesan.jpg)!
+![会場の様子](/images/2015-09-15-kozakesan.jpg)
 
 「思い知らしてやるわ〜」の人が登壇すると聞いて。(その勇姿は撮り手のせいでピンぼけにぼけてますが…w)
 
