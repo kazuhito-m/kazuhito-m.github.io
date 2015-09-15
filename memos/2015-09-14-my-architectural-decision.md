@@ -33,25 +33,25 @@ tags: [architecture,study_meeting_repo]
 
 ### 4つのDecision
 
-0. 俺のDecision
++ 俺のDecision
   + Viewpoint
     + 個人的経験
     + 興味
     + 好み
-0. 所与のDecision
++ 所与のDecision
   + Viewpoint
     + 制約
     + 組織の経験
     + 顧客要求
     + 自社都合
     + 政治
-0. 客観的Decision
++ 客観的Decision
   + Viewpoint
     + 品質モデル
     + 妥当性評価
     + リファレンス
     + 実績
-0. 共感のDecision
++ 共感のDecision
   + Viewpoint
     + ライフサイクル
       + ビジネス
@@ -97,6 +97,12 @@ tags: [architecture,study_meeting_repo]
 + 自分ひとりじゃだめだ。このチームで実現可能なのか。
 + ロードマップは見えたか。
   + 見えたなら、絶対に、勝てる。
+
+### ※拾いそこねた話し
+
++ (FW論あたりで) 技術が進歩してコードが書かなくてよくなった
+    + コードの記述量が減った
+    + (資料やコメントを弄さずとも)コードで仕様が表せるようになった
 
 ### 結論：アーキテクチャは「未来のチームへのバトン」
 + まだ見ぬ後輩達に伝えるために、今、何をすべきか
