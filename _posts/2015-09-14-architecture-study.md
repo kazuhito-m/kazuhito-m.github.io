@@ -10,7 +10,6 @@ tags: [architecture,study_meeting_repo]
 ## 情報
 
 + [申し込みサイト](https://devlove-kansai.doorkeeper.jp/events/29702)
-+ [当日まとめ(Togetter)](http://togetter.com/li/873319)
 + ハッシュタグ : [#devkan](https://twitter.com/hashtag/devkan)
 + 何するのか : インフラ知識を「ジャンル限定せず」勉強する？勉強会…かと。
 
