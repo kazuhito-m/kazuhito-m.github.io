@@ -22,7 +22,7 @@ tags: [architecture,study_meeting_repo]
 最近、「なぜこんなに作りにくいのだろう？」「なぜこんなにメンテしにくいのだろう？」の考えることが多く
 「仕組みにメスを入れられたら…」というシチュエーションが目の前に横たわります。
 
-ただし「司るのには知識足りない」と。
+ただし「ソレを司るのには知識足りない」と。
 
 そこで、この勉強会に行き当たりました。
 
@@ -30,13 +30,21 @@ tags: [architecture,study_meeting_repo]
 
 ### 1コマ目「レイヤードアーキテクチャを意識したPHPアプリケーションの構築 Updateバージョン」
 
-+ 登壇者: 新原 雅司 ([@shin1x1](https://github.com/shin1x1) さん
++ 登壇者: 新原 雅司さん ([@shin1x1](https://github.com/shin1x1)
 + 資料: ※未投稿
 
+残念かつ失礼ながら…遅れてきて終盤あたりしか聞けてませんので、資料が出たらじっくり読みたいです。
+
+ただ…
+
++ 最近DDDをかじった
++ 最近のいくつかの現場にて(他者による)「何でもかんでもServiceやで！症候群」にコテンパンにされてる
+
+なので、そのあたり「どう調理しているのか」を達人から学びたいですね。
 
 ### ２コマ目「とあるアーキのシステムアーキテクチャー」
 
-+ 登壇者 : こざけさん( [s_kozake](https://twitter.com/s_kozake) )
++ 登壇者 : 小酒 信一さん( [s_kozake](https://twitter.com/s_kozake) )
 + 資料 : <iframe src="//www.slideshare.net/slideshow/embed_code/key/DiBeTquq6FN5rp" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/s_kozake/ss-52758068" title="とある現場のシステムアーキテクチャ" target="_blank">とある現場のシステムアーキテクチャ</a> </strong> from <strong><a href="//www.slideshare.net/s_kozake" target="_blank">Shinichi Kozake</a></strong> </div>
 
 割と詰め込まれていて「多くの重要なことを言っていた」のですが…駆け抜けたので資料を見なおして拾っています。
