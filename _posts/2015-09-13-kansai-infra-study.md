@@ -2,7 +2,7 @@
 layout: post
 title: 勉強会行ってみた「第一回 関西ITインフラ勉強会」#kistudy
 category: tech
-tags: [infrastracture,study_meeting_repo]
+tags: [infrastracture,study-meeting-repo]
 ---
 
 ![会場の様子](/images/2015-09-13-kistudy.jpg)
