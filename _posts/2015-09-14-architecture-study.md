@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 勉強会行ってみた「現場のアーキテクチャの話をしてみませんか？」#Devkan
-category: tech
-tags: [architecture,study-meeting-repo]
+category: study-meeting-repo
+tags: [architecture,architect,kozake]
 ---
 
 ![会場の様子](/images/2015-09-15-kozakesan.jpg)
