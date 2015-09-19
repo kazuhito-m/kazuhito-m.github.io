@@ -19,6 +19,14 @@ tags: [blog, jekyll-bootstrap,tips,share-button]
 
 TODO
 
++ []()
++ []()
++ []()
++ []()
++ []()
++ []()
++ []()
+
 ## 「Jekyll Bootstrap」の「機能」に「設定程度」で出せないか？
 
 基本「枠が決められて」てだから大体「自動」、でも「ある程度の自由」がほしい…。
