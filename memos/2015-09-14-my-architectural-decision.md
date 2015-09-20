@@ -1,5 +1,6 @@
 ---
 title: 岡 大勝さん「私のアーキテクチャルディシジョン」セッションのメモ
+layout: post
 category: tech
 tags: [architecture,study_meeting_repo]
 ---
