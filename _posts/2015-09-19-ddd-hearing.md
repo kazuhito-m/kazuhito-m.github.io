@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 勉強会行ってみた「DDD（ドメイン駆動設計）実践者の話を聞いてみよう」 #Devkan
+title: 勉強会行ってみた「DDD（ドメイン駆動設計）実践者の話を聞いてみよう」#Devkan
 category: study-meeting-repo
 tags: [ddd]
 ---
