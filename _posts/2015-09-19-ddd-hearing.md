@@ -27,33 +27,38 @@ tags: [ddd]
 
 ## 内容
 
-### 1コマ目「一歩一歩、「そこ」を目指して」
+### 1コマ目「ドメイン駆動設計 思えば遠くにきたもんだ」
 
 + 登壇者: 増田 亨さん ( [@masuda220](https://github.com/masuda220) )
-+ 資料:
++ 資料: <iframe src="//www.slideshare.net/slideshow/embed_code/key/BevtPE8jbuRTyY" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/masuda220/ss-52960414" title="ドメイン駆動設計 思えば遠くにきたもんだ" target="_blank">ドメイン駆動設計 思えば遠くにきたもんだ</a> </strong> from <strong><a href="//www.slideshare.net/masuda220" target="_blank">増田 亨</a></strong> </div>
 
 
 
-#### ２コマ目「」
+### ２コマ目「」
 
 + 登壇者 : 尾篭 盛さん( [@ogomr](https://twitter.com/ogomr) )
 + 資料 : (未投稿)
 
 この人かぁーーー！！
 
-#### ２−２コマ目「」
+## ３コマ目「ドメイン『駆動』『開発』」
 
 + 登壇者 : 前川 博志さん( [@posaune](https://twitter.com/posaune) )
-+ 資料 : (未投稿)
++ 資料 : (未投稿)<iframe src="//www.slideshare.net/slideshow/embed_code/key/9PIP6SmhYt4Ys" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/Posaune/ss-52982034" title="ドメイン『駆動』『開発』" target="_blank">ドメイン『駆動』『開発』</a> </strong> from <strong><a href="//www.slideshare.net/Posaune" target="_blank">Hiroshi Maekawa</a></strong> </div>
 
 TODO
 
-#### ２−３コマ目「」
-
+## ４コマ目「保守とDDDと私」
+　
 + 登壇者 : 川辺 卓矢さん( [@kawakawa](https://twitter.com/kawakawa) )
-+ 資料 : (未投稿)
++ 資料 : <iframe src="//www.slideshare.net/slideshow/embed_code/key/jUFc2mKFuzhayy" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/kawakawa__/ddd-52952272" title="保守とDddと私" target="_blank">保守とDddと私</a> </strong> from <strong><a href="//www.slideshare.net/kawakawa__" target="_blank">Takuya Kawabe</a></strong> </div>
 
 TODO
 
+感想：「OOの根幹を成す「」」
+
+## ダイアログ
+
+## 増田さんに聞いてみようディスカッション
 
 ## 小並感
