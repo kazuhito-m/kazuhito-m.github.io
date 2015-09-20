@@ -165,7 +165,7 @@ ERでも画面図でもなく「お客業務の縮図」を見て「どうしょ
 めっさ気になる！ので、参加したいなーと。
 
 ## ４コマ目「保守とDDDと私」
-　
+
 + 登壇者 : 川辺 卓矢さん( [@kawakawa](https://twitter.com/kawakawa) )
 + 資料 : <iframe src="//www.slideshare.net/slideshow/embed_code/key/jUFc2mKFuzhayy" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/kawakawa__/ddd-52952272" title="保守とDddと私" target="_blank">保守とDddと私</a> </strong> from <strong><a href="//www.slideshare.net/kawakawa__" target="_blank">Takuya Kawabe</a></strong> </div>
 
