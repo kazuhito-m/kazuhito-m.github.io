@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 勉強会行ってみた「DDD（ドメイン駆動設計）実践者の話を聞いてみよう」#Devkan
+title: 勉強会行ってみた「DDD（ドメイン駆動設計）実践者の話を聞いてみよう」 #Devkan
 category: study-meeting-repo
 tags: [ddd]
 ---
@@ -130,16 +130,16 @@ Graphbiz系から自力でたどりついて、現場でつかってた「[Plant
 + 登壇者 : 前川 博志さん( [@posaune](https://twitter.com/posaune) )
 + 資料 : <iframe src="//www.slideshare.net/slideshow/embed_code/key/9PIP6SmhYt4Ys" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/Posaune/ss-52982034" title="ドメイン『駆動』『開発』" target="_blank">ドメイン『駆動』『開発』</a> </strong> from <strong><a href="http://www.slideshare.net/Posaune" target="_blank">Hiroshi Maekawa</a></strong> </div>
 
-+ DDDを広めるための取り組み
+#### DDDを広めるための取り組み
 
-「生きた今のDDDだなー」と感心しました。
+「生きた現在進行形で自分たちのDDDだなー」と感心しました。
 
 結局「超越者orエスパー/ウィザード級」が四次元ポケットから出てこない世界…なのであれば、
 これを経るしか「DDDを(実践であんじょうよう)やる」ってのは無いのかなぁと。
 
 そう、俺もこういう環境を整えて入門すべしかなーと。
 
-+ ドメインに駆動される話
+#### ドメインに駆動される話
 
 「あれ？基本そうじゃないっけ？」って思いました。
 
@@ -171,7 +171,7 @@ ERでも画面図でもなく「お客業務の縮図」を見て「どうしょ
 
 なんとなく…立ち場は違えど「なんとなく解かる」事が多かったり…。
 
-+ 「チェックボックスから、ラジオボタンに変えるだけでも…」話
+#### 「チェックボックスから、ラジオボタンに変えるだけでも…」話
 
 こんな細かい話しをしたいわけでは無いと思いますが…
 チェック→ラジオに変えるってことは「On/Offの問題」から「"択"という量を扱うもの」に変化するわけです。
@@ -183,7 +183,7 @@ ERでも画面図でもなく「お客業務の縮図」を見て「どうしょ
 
 こういうとこを妥協しない姿勢も、DDDマインド何じゃないかと共感しました。
 
-+ 「DDDから見れば、永遠の開発期間であって欲しいのですが、現実問題そうも言ってられません(涙」
+#### 「DDDから見れば、永遠の開発期間であって欲しいのですが、現実問題そうも言ってられません(涙」
 
 そうなんすよ…そうなんす。
 
