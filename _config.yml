@@ -2,7 +2,18 @@ permalink: /:categories/:year/:month/:day/:title
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: pygments
-markdown: redcarpet
+# markdown: redcarpet
+markdown: kramdown
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  #  input: GFM
+  coderay_line_numbers: table
+  use_coderay: false
 
 title : NBM2
 tagline: natural born minority
