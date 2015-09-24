@@ -1,4 +1,5 @@
 ---
+publishd: false
 layout: post
 title: 勉強会行ってみた？「つねまげさんとDTMを始めよう」#tsunemage_dtm
 category: study-meeting-repo
