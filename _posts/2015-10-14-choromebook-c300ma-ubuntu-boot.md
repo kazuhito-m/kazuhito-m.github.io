@@ -204,7 +204,7 @@ cd lewis-fw-c300
 続いて、「BIOS書き換えスクリプト」を実行します。
 
 ```bash
-bash flash_chromebook_rom.sh
+bash ./flash_chromebook_rom.sh
 ```
 
 途中の選択肢は"2"を選びました。
@@ -237,7 +237,7 @@ Chromebookとは別のマシン(Linux想定)で、以下のコマンドを叩き
 
 ```bash
 wget http://cdimage.ubuntulinux.jp/releases/15.04/ubuntu-ja-15.04-desktop-amd64.iso
-sudo dd if=ubuntu-ja-15.04-desktop-amd64.iso of=/dev/[USBメモリのデバイス]
+sudo dd if=./ubuntu-ja-15.04-desktop-amd64.iso of=/dev/[USBメモリのデバイス]
 ```
 
 ※一度目は「unetbootinを使ってメモリ書き込み」しましたが、
