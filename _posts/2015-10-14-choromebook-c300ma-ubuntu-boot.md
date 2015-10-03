@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chromebock "Asus C300MA" に「生のOS(UbuntuLinux)」を入れる方法
-category: study-meeting-repo
+category: tech
 tags: [ubuntu,linux,chromebook,chromeos,install]
 ---
 
