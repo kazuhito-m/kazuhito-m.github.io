@@ -5,7 +5,7 @@ category: tech
 tags: [ubuntu,linux,chromebook,chromeos,install]
 ---
 
-![どこからみてもUbuntuですね](images/2015-10-04-top.jpg)
+![どこからみてもUbuntuですね](/images/2015-10-04-top.jpg)
 
 # Chromebookを買ったんですよ
 
@@ -118,7 +118,7 @@ tags: [ubuntu,linux,chromebook,chromeos,install]
 
 底面の11個のネジを外します。(なんだかゆるくしめてありました)
 
-![ネジ外してる写真](images/2015-10-04-ura.jpg)
+![ネジ外してる写真](/images/2015-10-04-ura.jpg)
 
 次に画面を開き、キーボードが載ってる天板を開きます。
 
@@ -126,11 +126,11 @@ tags: [ubuntu,linux,chromebook,chromeos,install]
 「天板と本体は絶妙な硬さの爪であ閉じてある」
 ため、タッチパッド側の隙間にマイナスドライバーを恐る恐る入れて、パキパキ剥がします。
 
-![こわいこわい](images/2015-10-04-kowai.jpg)
+![こわいこわい](/images/2015-10-04-kowai.jpg)
 
 外すととこんな感じ。
 
-![天板がはずれた状態](images/2015-10-04-hazushi.jpg)
+![天板がはずれた状態](/images/2015-10-04-hazushi.jpg)
 
 ### ハードウェア書き込み保護ネジ(Write-Protect Screw)はずし
 
@@ -138,15 +138,15 @@ tags: [ubuntu,linux,chromebook,chromeos,install]
 
 それが「ハードウェア書き込み保護ネジ(Write-Protect Screw)」です。
 
-![書き込み保護ネジの場所](images/2015-10-04-negi-pos.jpg)
+![書き込み保護ネジの場所](/images/2015-10-04-negi-pos.jpg)
 
 プラスドライバーで外します。
 
-![書き込み保護ネジの外し方](images/2015-10-04-negi-hazusi.jpg)
+![書き込み保護ネジの外し方](/images/2015-10-04-negi-hazusi.jpg)
 
 単体じゃこんな感じ。
 
-![書き込み保護ネジ](images/2015-10-04-neji.jpg)
+![書き込み保護ネジ](/images/2015-10-04-neji.jpg)
 
 (とりあえず万が一の時のために保管しておきましょう。)
 
