@@ -78,7 +78,8 @@ tags: [ubuntu,linux,chromebook,chromeos,install]
 上記のことを知り
 「出来ないなぁ…croutonで"なんちゃって"Ubuntuライフかぁ」と意気消沈していたところ…
 
-<blockquote class="twitter-tweet" lang="ja"><p lang="ja" dir="ltr"><a href="https://twitter.com/kazuhito_m">@kazuhito_m</a> ライトプロテクトスクリューの情報はこれね。 <a href="http://t.co/Kfn4YUyBr7">http://t.co/Kfn4YUyBr7</a></p>&mdash; 78tch (@78tch) <a href="https://twitter.com/78tch/status/650233708989972480">2015, 10月 3</a></blockquote>
+<blockquote class="twitter-tweet" lang="ja" 
+  data-conversation="none"><p lang="ja" dir="ltr"><a href="https://twitter.com/kazuhito_m">@kazuhito_m</a> ライトプロテクトスクリューの情報はこれね。 <a href="http://t.co/Kfn4YUyBr7">http://t.co/Kfn4YUyBr7</a></p>&mdash; 78tch (@78tch) <a href="https://twitter.com/78tch/status/650233708989972480">2015, 10月 3</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <blockquote class="twitter-tweet" lang="ja"><p lang="ja" dir="ltr"><a href="https://twitter.com/kazuhito_m">@kazuhito_m</a> あ、ライトプロテクトスクリューのしたに、Seabiosについても書いてありますな。これでいけるんじゃない？</p>&mdash; 78tch (@78tch) <a href="https://twitter.com/78tch/status/650234350835859456">2015, 10月 3</a></blockquote>
