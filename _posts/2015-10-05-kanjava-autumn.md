@@ -1,5 +1,4 @@
 ---
-published: false
 layout: post
 title: 勉強会行ってみた「秋の関ジャバ祭り」#kanjava
 category: study-meeting-repo
@@ -156,65 +155,70 @@ AndroidでORMってのは「あるだろうけれど重そう」って思って�
 
 ```java
 public int calcValue(String type , int value) {
-
+    if ("a".equals(type)) {
+        return value + 1;
+    } else if ("b".equals(type)) {
+        return value - 1;
+    } else {
+        return 0;
+    }
 }
 ```
 
+こんな感じですかね。これが大嫌い。
 
-他言語から来た者としてはString Switch個人的には待望だったので。
+他言語から来た者としてはString Switch個人的には待望だったので
 
+```java
+public int calcValue7(String type , int value) {
+    if (type == null) {
+        return 0;
+    }
+    switch (type) {
+        case "a" :
+            return value + 1;
+        case "b" :
+            return value - 1;
+        default:
+            return 0;
+    }
+}
+```
 
+は、なかなか満足でした。(要らん判定増えてるやろ！は自分の納得の前では見えない)
 
-が、「ラムダ書けたらMapに突っ込めるよなぁ」みたいな感慨になりました。
+しかし「関数を値的に扱えたらペアとして扱えるよな」みたいな感慨になり、
+
+```java
+public int calcValue8(String type , int value) {
+    final Map<String , IntUnaryOperator> fs = new HashMap<>();
+    fs.put("a", v -> v + 1);
+    fs.put("b", v -> v - 1);
+    IntUnaryOperator f = fs.get(type);
+    if (f == null) {
+        return 0;
+    } else {
+        return f.applyAsInt(value);
+    }
+}
+```
+と、この書き方が出来るようになったのを満足し、
+「好きだった割りにはStringSwitchの寿命は短かった」という結果にｗ
 
 ---
 
-「あれのことをラムダって言うのか！」
-「あれをMethod Referenceって言うのか」と
-「道具使ってるのに解ってない」ダメ人間さを露呈しました。
++ 「あれのことをラムダって言うのか！」
++ 「あれをMethod Referenceって言うのか」
+
+という「道具使ってるのに解ってない」ダメ人間さを露呈しました。
+
+---
 
 バージョンアップの問題は「ほんと追随していきたい」と思いました。
 
 「距離が短いウチはまだ助かる」というのをいろんな現場で経験しているので。
 
 ただし「自身はその決定を出来る立場に居たことがない」ので、思いは届かないのですが…。
-
-### 内容
-
-+ Java20周年
-+ これまでのJavaを振り返って
-  + Generics,enum,for,Anotation,Concalent
-  + イメージ
-    + Java言語
-      + 遅い、冗長、保守的、
-    + Java環境
-      + JVM言語
-+ 今時のJava
-  + JSR 336
-    + Project Coin
-      + Try with resources
-      + Diamond Operator
-      + その他
-        + バイナリリテラル
-        + string Switch
-        + maruti catch
-    + NIO.2
-  + Java 8
-    + Rambda
-    + Method Refarence
-    + Optional
-    + JSR 310 Date and Time API
-    + from old java to modan java
-  + ビルドツール : Gradle
-  + (何か)
-    + 運が悪いと事故る
-  + Jar Hell
-  + ライブラリと互換性
-    + 強みが互換性でネックに
-+ これからのJava
-  + 一番の違いは「Java自身が成長する」ということ
-+ 言語のとっかかり
-  + Lambdaのについてこれるか
 
 # 小並感
 
@@ -225,11 +229,12 @@ public int calcValue(String type , int value) {
 努力が足りない。だけどどうしたら良いのか…。
 
 仕事で「Autoで身につくわけではない」でも「明日出来るようになったりしない」…
-小学生みたいに脳みそぐるぐる悩んだ結果、「ちょいずつちょいずつ、現代人に近づかないとな
+小学生並にぐるぐる悩んだ結果、
+
+「ちょいずつちょいずつ、現代人に近づかないとな」
+
 という月並みな結論となりました。
 
 何かで触る。無理にでも触る。怒られても触る…という強引なドリブルをしていくべきで。
 
 客観的であるべきで悲観することも禁物ですが、楽観なんかしてるとたちまちオマンマ食い上げになりそうです。
-
-このままじゃいけない、このままじゃいけない。
