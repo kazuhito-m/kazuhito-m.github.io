@@ -27,6 +27,7 @@ Javaは「落ちこぼれの俺」の新人時代に「寄してもらえな」�
 
 + 登壇者 : 阪田 浩一 さん( [jyukutyo](https://twitter.com/jyukutyo) )
 + 資料: ※これじゃないかも
+
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/MfZjSJ69snKO1b" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/jyukutyo/jjug-ccc-2015ab4" title="クリスマスを支える俺たちとJava(JJUG CCC 2015 Spring AB4)" target="_blank">クリスマスを支える俺たちとJava(JJUG CCC 2015 Spring AB4)</a> </strong> from <strong><a href="//www.slideshare.net/jyukutyo" target="_blank">jyukutyo</a></strong> </div>
 
 ※見れてないので、あとで資料を拾った結果から書きます。
@@ -53,8 +54,6 @@ DBチューニングの件は、
 割と「Javaを取り巻くインフラ周りの話し」が多かったので「特性をわかりつつインフラを設計する」
 というのが勘所なのかなーと推測しました。
 
-# 内容
-
 ## 2コマ目「あなたとAndroid!? 今すぐダウンロード！～Android開発で変わるSIerのJava技術事情について～」
 
 + 登壇者 : 小酒 信一さん( [s_kozake](https://twitter.com/s_kozake) )
@@ -77,16 +76,55 @@ _「俺がこのプロジェクトに入った時に戦力になるか？」_
 
 「知ってるは知ってる」が「使える」くらい違うので、照らして当てはめてみると…
 
-| カテゴリ     | 要素                     | 出来るか判定 |
-| ------------ | ------------------------ | -------------- |
-| 言語         | Android Java(っぽい言語) | ×            |
-| IDE          | Android Studio           | ×            |
-| ビルドツール | Gradle                   | ×            |
-| ライブラリ   | AndroidAnotations        | ×            |
-| ライブラリ  | SQLight Open Helper      | ×            |
-| ORM          | ActiveAndroid            | ×            |
-| HTTP         | OKHTTP                   | ×            |
-| …            |                          |              |
+<table>
+	<tr>
+		<th>カテゴリ</th>
+		<th>要素</th>
+		<th>出来るか判定</th>
+	</tr>
+	<tr>
+		<td>言語</td>
+		<td>AndroidJava(っぽい言語)</td>
+		<td>×</td>
+	</tr>
+	<tr>
+		<td>IDE</td>
+		<td>AndroidStudio</td>
+		<td>×</td>
+	</tr>
+	<tr>
+		<td>ビルドツール</td>
+		<td>Gradle</td>
+		<td>×</td>
+	</tr>
+	<tr>
+		<td>ライブラリ</td>
+		<td>AndroidAnotations</td>
+		<td>×</td>
+	</tr>
+	<tr>
+		<td>ライブラリ</td>
+		<td>SQLightOpenHelper</td>
+		<td>×</td>
+	</tr>
+	<tr>
+		<td>ORM</td>
+		<td>ActiveAndroid</td>
+		<td>×</td>
+	</tr>
+	<tr>
+		<td>HTTP</td>
+		<td>OKHTTP</td>
+		<td>×</td>
+	</tr>
+	<tr>
+		<td>…</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+	</tr>
+</table>
 
 なんと見事な役立たずｗ
 
@@ -125,8 +163,8 @@ irof さんの
 
 + 「こざけさんが場を冷やしたおかげで…」
 + 「こざけさんのおかげで順番がかわったいろふです。」
-
 の声から始まったセッション。
+
 
 「Javaの過去、現在、未来」を自身が思われる「(他の多くの)技術者として視点」で考え方のヒントを撒く、
 そんな感じのセッションでした。。
