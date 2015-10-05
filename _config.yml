@@ -16,7 +16,7 @@ author :
 production_url : http://kazuhito-m.github.io
 
 JB :
-  version : 0.3.0
+  extensions: [tables,autolink,strikethrough,highlight]
 
   BASE_PATH : false
 

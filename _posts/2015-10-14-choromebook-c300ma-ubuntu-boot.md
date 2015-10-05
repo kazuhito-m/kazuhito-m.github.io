@@ -78,10 +78,10 @@ tags: [ubuntu,linux,chromebook,chromeos,install]
 上記のことを知り
 「出来ないなぁ…croutonで"なんちゃって"Ubuntuライフかぁ」と意気消沈していたところ…
 
-<blockquote class="twitter-tweet" lang="ja"><p lang="ja" dir="ltr"><a href="https://twitter.com/kazuhito_m">@kazuhito_m</a> ライトプロテクトスクリューの情報はこれね。 <a href="http://t.co/Kfn4YUyBr7">http://t.co/Kfn4YUyBr7</a></p>&mdash; 78tch (@78tch) <a href="https://twitter.com/78tch/status/650233708989972480">2015, 10月 3</a></blockquote>
+<blockquote class="twitter-tweet" lang="ja" data-conversation="none"><p lang="ja" dir="ltr"><a href="https://twitter.com/kazuhito_m">@kazuhito_m</a> ライトプロテクトスクリューの情報はこれね。 <a href="http://t.co/Kfn4YUyBr7">http://t.co/Kfn4YUyBr7</a></p>&mdash; 78tch (@78tch) <a href="https://twitter.com/78tch/status/650233708989972480">2015, 10月 3</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<blockquote class="twitter-tweet" lang="ja"><p lang="ja" dir="ltr"><a href="https://twitter.com/kazuhito_m">@kazuhito_m</a> あ、ライトプロテクトスクリューのしたに、Seabiosについても書いてありますな。これでいけるんじゃない？</p>&mdash; 78tch (@78tch) <a href="https://twitter.com/78tch/status/650234350835859456">2015, 10月 3</a></blockquote>
+<blockquote class="twitter-tweet" lang="ja" data-conversation="none"><p lang="ja" dir="ltr"><a href="https://twitter.com/kazuhito_m">@kazuhito_m</a> あ、ライトプロテクトスクリューのしたに、Seabiosについても書いてありますな。これでいけるんじゃない？</p>&mdash; 78tch (@78tch) <a href="https://twitter.com/78tch/status/650234350835859456">2015, 10月 3</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 という情報を、 [@78tch](https://twitter.com/78tch/)さんにいただき、
@@ -237,7 +237,7 @@ Chromebookとは別のマシン(Linux想定)で、以下のコマンドを叩き
 
 ```bash
 wget http://cdimage.ubuntulinux.jp/releases/15.04/ubuntu-ja-15.04-desktop-amd64.iso
-sudo dd if=./ubuntu-ja-15.04-desktop-amd64.iso of=/dev/[USBメモリのデバイス]
+sudo dd if=./ubuntu-ja-15.04-desktop-amd64.iso of=/dev/「USBメモリのデバイス」
 ```
 
 ※一度目は「unetbootinを使ってメモリ書き込み」しましたが、
@@ -264,6 +264,7 @@ Esc連打して「ブートデバイス選ぶ」状態にし、
 # 現行の課題
 
 + 音が出ません
++ サスペンド復帰でキーボードが打てなくなります
 
 ---
 
@@ -282,10 +283,10 @@ Esc連打して「ブートデバイス選ぶ」状態にし、
 
 以下の記事を参考にさせていただきました。
 
-+ http://78tch.blog49.fc2.com/blog-entry-79.html
-+ https://wiki.archlinuxjp.org/index.php/Chromebook
-+ http://www.matws.org/c300/
-+ https://github.com/iantrich/ChrUbuntu-Guides/blob/master/README.md#supported-models
-+ https://johnlewis.ie/custom-chromebook-firmware/rom-download/
++ [http://78tch.blog49.fc2.com/blog-entry-79.html](http://78tch.blog49.fc2.com/blog-entry-79.html)
++ [https://wiki.archlinuxjp.org/index.php/Chromebook](https://wiki.archlinuxjp.org/index.php/Chromebook)
++ [http://www.matws.org/c300/](http://www.matws.org/c300/)
++ [https://github.com/iantrich/ChrUbuntu-Guides/blob/master/README.md#supported-models](https://github.com/iantrich/ChrUbuntu-Guides/blob/master/README.md#supported-models)
++ [https://johnlewis.ie/custom-chromebook-firmware/rom-download/](https://github.com/iantrich/ChrUbuntu-Guides/blob/master/README.md#supported-models)
 
 ※分解すると保証が切れるます。この記事に書いている作業を試される場合、自己責任でお願いします
