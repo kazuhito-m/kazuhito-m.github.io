@@ -11,7 +11,7 @@ CI/CDと名がつく勉強会って「みんな大好物」ですよねっ！ (�
 
 + [申し込みサイト](https://tfsug.doorkeeper.jp/events/31243)
 + ハッシュタグ : [#TFSUG](https://twitter.com/search?q=%TFSUG)
-+ 何するのか : 紹介文より「DevOps Hackathon Day」をうけてDevOps周りに重点を置いて、ALM MVPによるTFS/VSOの使い倒しを紹介します。
++ 何するのか : 紹介文より「DevOps Hackathon Day」をうけてDevOps周りに重点を置いて、ALM MVPによるTFS/VSOの使い倒しを紹介します。」
 
 # なんで来たん？
 
@@ -30,18 +30,18 @@ CI/CDと名がつく勉強会って「みんな大好物」ですよねっ！ (�
 + 資料:
 <div style="width: 608px; max-width: 100%; margin-bottom:5px;"><a href="https://docs.com/kkamegawa/3092/visual-studio-onlinedevops" title="Visual Studio Onlineで学ぶDevOps" target="_blank" style="font-family: 'Segoe UI'">Visual Studio Onlineで学ぶDevOps</a><span style="font-family: 'Segoe UI Light'">—</span><a href="https://docs.com/kkamegawa" target="_blank" style="font-family: 'Segoe UI'">kkamegawa</a></div><iframe src="https://docs.com/d/embed/D25195808-1389-4335-3350-000100863436%7eMb9b006b3-e243-28ff-a71f-76fe40f71380" frameborder="0" scrolling="no" width="608px" height="378px" style="max-width:100%"></iframe>
 
-※いつもなら「見なおしてから書きます」なのですが…
-「遅れてきて一秒もセッション聞いていない話」には流石に感想も失礼かと思うので…。
+※いつもなら「見なおしてから感想書きます」なのですが…
+「遅れてきて一秒もセッション聞いていない話」
+は流石に感想も失礼かと思うので…ちょっと吟味します。
 
-
-## 2コマ目「あなたとAndroid!? 今すぐダウンロード！～Android開発で変わるSIerのJava技術事情について～」
+## 2コマ目「ポストJenkinsとなれるのか？CIサーバとしてのVSオンライン」
 
 + 登壇者 : 前川 博志 さん( [Posaune](https://twitter.com/Posaune) )
 + 資料: ※捜索中
 
 事前に、
 
-<blockquote class="twitter-tweet" lang="ja"><p lang="ja" dir="ltr"><a href="https://twitter.com/irof">@irof</a> <a href="https://twitter.com/kazuhito_m">@kazuhito_m</a> Visual Studio スライドのラスト5枚にしか入ってない</p>&mdash; Libreぽざうね (@Posaune) <a href="https://twitter.com/Posaune/status/651713186698129408">2015, 10月 7</a></blockquote>
+<blockquote class="twitter-tweet" lang="ja" data-conversation="none"><p lang="ja" dir="ltr"><a href="https://twitter.com/irof">@irof</a> <a href="https://twitter.com/kazuhito_m">@kazuhito_m</a> Visual Studio スライドのラスト5枚にしか入ってない</p>&mdash; Libreぽざうね (@Posaune) <a href="https://twitter.com/Posaune/status/651713186698129408">2015, 10月 7</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 とは言ってらしたのですが…まさか本当にそうだとは(笑)
@@ -93,19 +93,17 @@ _「CIは、リモートサービス系:近所のマシン系 に 6:4 くらい�
 するのではないか？と考えて居ます。
 
 0. リモートサービス系
-
 		+ 言語体型やエコシステムにより「比較的に定形に」扱えるもの
 		+ シンプリシティやポータビリティを狙って作られたアプリ
 
 0. 近所のサーバ系(Jenkins含むが限定しない)
-
-		※これが上記の「聞いた答えの理由」です
-
 		+ ビルド手段に順序を持つ複雑系
 		+ ビルドの過程に他/多言語など異なったものを含むもの
 		+ 著しく環境を選ぶものor物理が必要なもの
 		+ 「ネットすら見ちゃいかん！」などという隔離環境
 		+ 通知(XFDなど)
+
+		※これが上記の「聞いた答えの理由」です
 
 と「用途別に用いられていく」二極になるかなぁと。
 
