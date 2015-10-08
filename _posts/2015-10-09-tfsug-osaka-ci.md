@@ -10,7 +10,7 @@ CI/CDと名がつく勉強会って「みんな大好物」ですよねっ！ (�
 # 情報
 
 + [申し込みサイト](https://tfsug.doorkeeper.jp/events/31243)
-+ ハッシュタグ : [#TFSUG](https://twitter.com/search?q=%TFSUG)
++ ハッシュタグ : [#TFSUG](https://twitter.com/search?q=%23TFSUG)
 + 何するのか : 紹介文より「DevOps Hackathon Day」をうけてDevOps周りに重点を置いて、ALM MVPによるTFS/VSOの使い倒しを紹介します。」
 
 # なんで来たん？
