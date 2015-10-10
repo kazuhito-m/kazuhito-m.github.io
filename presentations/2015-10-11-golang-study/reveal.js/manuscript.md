@@ -280,12 +280,12 @@ IDEAに「go-lang-idea-plugin」を入れていきます…。
 「Add New SDK」押す
 0. golangの場所を指定
 
-
 ---
 
 ## (俗に言う)プロジェクト作成
 
-TODO
+
+
 
 ---
 
