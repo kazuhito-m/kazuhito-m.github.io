@@ -138,7 +138,7 @@ div.picleft {
 
 ## 目標
 
-### とある「落ちこぼれ技術者」がgoで「曲がりなりも一つプログラムを作るまで」
+### とある「落ちこぼれ技術者」が<br/>「goで曲がりなりも一つプログラムを作る」まで
 
 ---
 
@@ -187,9 +187,15 @@ div.picleft {
 
 # 実践
 
+※ツッコミはあとでまとめてお受けします。
+
 ---
 
-## goilangインストール
+# goインストール
+
+---
+
+## goインストール
 
 ### Ubuntuの場合は主な手段は３つ
 
@@ -197,24 +203,27 @@ div.picleft {
 0. Ubuntu向けGO側リポジトリを追加してインストール
 0. gvmインストールしてgo自体を取得＆自前ビルド
 
-今回は「比較的簡単で比較的新しい」2.で入れた
+今回は「比較的簡単で比較的新しい」2.で入れました
 
 ---
 
-## goilangインストール
+## goインストール
 
 ```bash
 sudo add-apt-repository ppa:evarlast/golang1.5
 sudo apt-get update
 sudo apt-get install golang
 ```
-### 楽勝！
 
 + 2015/10現在
 + Ubuntu公式のパッケージは古くておすすめできません
   + なので外リポジトリから取ってます
 + 最新で行くなら当然ながらgvmになります
   + groovyの環境マネージャと名前被ってるねんけど…
+
+---
+
+# GOPATH設定
 
 ---
 
@@ -227,18 +236,22 @@ $GOPATHのには２つの役割が在ります。
 
 とりあえず
 「go関係はLibも自ソースもHomeディレクトリの /go に入れる」
-と決めて…。
+と決めて…以下の方法で片付けました。
 
 ```bash
-mkdir ~/go
-echo 'export CUR_GO_PROJ=go-first-project' >> ~/.bashrc
-echo 'export GOPATH=~/go/third:~/go/${CUR_GO_PROJ}' >> ~/.bashrc
-echo 'export PATH=${PATH}:~/go/third/bin:~/go/${CUR_GO_PROJ}/bin' >> ~/.bashrc
+echo 'export GO_WORKSPACE=current' >> ~/.bashrc
+echo 'export GOPATH=~/go/third:~/go/${GO_WORKSPACE}' >> ~/.bashrc
+echo 'export PATH=${PATH}:~/go/third/bin:~/go/${GO_WORKSPACE}/bin' >> ~/.bashrc
+mkdir -p ~/go/{third,${GO_WORKSPACE}}
+mkdir -p ~/go/${GO_WORKSPACE}/{src,bin,pkg}
 ```
+※$GO_WORKSPACE は「プロジェクト始めるごとに切替」前提
 
-で片付けました。
+※最後の一行は、golang的に規定されている $GOPATH (ひとつ目) に必要な3つです。
 
-※$CUR_GO_PROJ は「プロジェクト始めるごとに切替」前提
+---
+
+# IDEインストール
 
 ---
 
@@ -282,40 +295,386 @@ IDEAに「go-lang-idea-plugin」を入れていきます…。
 
 ---
 
-## (俗に言う)プロジェクト作成
-
-
-
+# プロジェクト作成
 
 ---
 
-## テスト準備
+## (俗に言う)プロジェクト作成
 
-TODO
+「プロジェクト」というのは「Java/MS的な考え方」なんですが「プログラムの塊の単位」です。
+
+今回、プロジェクトは…
+
++ 名前は"go-first-project"
++ githubに載せる前提
+
+で、とりあえずディレクトリを作成しました。
+
+```bash
+mkdir -p ~/go/${GO_WORKSPACE}/src/github.com/kazuhito-m/go-first-project
+cd ~/go/${GO_WORKSPACE}/src/github.com/kazuhito-m/go-first-project
+# ついでにgit初期化＆登録
+# (すでにgithub側に"go-first-project"というリポジトリを作成してある事)
+git init
+echo "/*.i??" > .gitignore # IDEA無視用
+git add ./
+git commit ./ -m '最初のコミット'
+git remote add origin https://github.com/kazuhito-m/go-first-project.git
+git push -u origin master
+```
+
+---
+
+# プログラム<br/>書き初め
+
+---
+
+## まずは「一行プログラム」
+
+```bash
+cd ~/go/${GO_WORKSPACE}/src/github.com/kazuhito-m/go-first-project
+vi main.go
+```
+
+で
+
+```go:main.go
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("Hello World!")
+}
+```
+でもって
+
+```bash
+go install
+# ＄PATH で $GOPATH/bin にパス通ってるので…
+go-first-project
+Hello World!
+```
+
+---
+
+## まずは「一行プログラム」
+
+月並みながら…なんだかうれしいっすね！
+
+後々のこと考えて
+
+```bash
+touch build.sh
+chmod 755 build.sh
+vi build.sh
+```
+```bash
+#!/bin/bash
+
+# ビルド・インストール
+go install
+```
+なスクリプトを用意しました。
+
+※ここからの作業は [こちらのリポジトリ](https://github.com/kazuhito-m/go-first-project) から参照いただけます。
+
+---
+
+## 初めてのインポート
+
+これまた月並みですが…main.goを以下のように改造。
+
+```go
+package main
+
+import (
+	"fmt"
+	"github.com/bitly/go-simplejson"
+)
+
+func main() {
+	fmt.Println("Hello World!")
+	// 文字列json化の例
+	json := simplejson.New()
+	json.Set("message", "Hello, World!")
+	b, _ := json.EncodePretty()
+	fmt.Printf("%s\n", b)
+}
+```
+
+初めての"go get"
+
+```bash
+go get github.com/bitly/go-simplejson
+# $GOPATH の設定により ~/go/third 側に入って行くはず
+```
+
+---
+
+## 初めてのインポート
+
+実行してみる。
+
+```bash
+go install
+go-first-project
+Hello World!
+{
+  "message": "Hello, World!"
+}
+```
+
+ビルドスクリプト"build.sh"を改造。
+
+```bash
+#!/bin/bash
+# 依存性解決のgo get(ソースから自動解決)
+go get
+# ビルド・インストール
+go install
+```
+---
+
+## テスト準備とパッケージ分け
+
+唐突ですが、[こんなふう](https://github.com/kazuhito-m/go-first-project)に「足し算・引き算するパッケージ」を作り、
+テストも追加してみました。
+
+```bash
+.
+├── build.sh
+├── calc
+│   ├── add.go
+│   ├── add_test.go
+│   ├── sub.go
+│   └── sub_test.go
+└── main.go
+```
+
+そりゃ実行でしょう！
+
+```bash
+go test ./calc
+
+ok  	github.com/kazuhito-m/go-first-project/calc	0.004s
+```
+
+やったぜ！
+
+---
+
+## テスト準備とパッケージ分け
+
+ビルドスクリプト"build.sh"を改造。
+
+```bash
+#!/bin/bash
+# 依存性解決のgo get(ソースから自動解決)
+go get
+# テスト
+go test ./...
+if [[ $? -ne 0 ]] ; then
+  echo 'Test failed and Build failed!'
+  exit 1
+fi
+# ビルド・インストール
+go install
+```
+
+```bash
+./build.sh
+?   	github.com/kazuhito-m/go-first-project	[no test files]
+ok  	github.com/kazuhito-m/go-first-project/calc	0.003s
+```
+
+再帰的テストする指定だけど…「テスト無い」証左だし出しとこ。
+
+---
+
+# CI<br/>(継続的インテグレーション)
 
 ---
 
 ## CI準備
 
-TODO
+最近は「DockerとGOで出来た」という<br/> __[drone.io](https://drone.io/)__ を気に入ってるので、それでやります。
+
+もうすでに
+
++ アカウント作成済
++ ログイン済
+
+を前提として進めます。
+
+---
+
+## CI準備
+
+まず、画面上部の「New Project」をクリックして下さい。
+
+![NewProject!](images/drone_new.png)
+
+---
+
+## CI準備
+
+次に、今回のプログラムは「github.comに上げてる前提」ですので、
+「Repository Setup」から「Github」をクリックして下さい。
+
+![Github!](images/drone_reposelect.png)
+
+---
+
+## CI準備
+
+「github上自分のリポジトリの一覧」が表示されますので、
+「今回のプロジェクト」を選び「Select」をクリックして下さい。
+
+![Select!](images/drone_projselect.png)
+
+---
+
+## CI準備
+
+プログラミング言語を聞かれますので「Go」をクリックして下さい。
+
+![Lang!](images/drone_langselect.png)
+
+---
+
+## CI準備
+
+ここまできたら「実行するコマンド」を聞いてくるので
+「今回作ったビルドスクリプト」を指定して下さい。
+
+![Script!](images/drone_script.png)
+
+これで「設定」は終了です。<br/>
+「Build Now」をクリックして「[一回目のビルド](https://drone.io/github.com/kazuhito-m/go-first-project/1)」を走らせましょう。
+
+![BuildNow!](images/drone_buildnow.png)
+
+---
+
+## CI準備
+
+drone.io ですが、
+
++ 思ったより設定簡単
++ (実行開始反応＆終わりが)超早い！
++ OSSなので融通効かなければローカルにインストール可
+
+てなところ、気に入りました。
+
+例により「READMEにバッジ貼っとく」とかっこいいかも？
+
+![SuccessBadge!](images/drone_badge.png)
+
+
 
 ---
 
 ## CI通知系準備
 
-TODO
+続いて「CI結果を何か通知してくれるもの」を設定していきます。
+
+---
+
+## CI通知系準備
+
+まずはメール。 先ほど設定した drone.io の Settings -> notifications とクリックして下さい。
+
+![Notify!](images/drone_notify.png)
+
+おそらく自身メールアドレスがすでに設定されていると思います。
+
+複数人やチームならここにメールアドレスを足しましょう。
+
+---
+
+## CI通知系準備
+
+次はチャットです。好みの問題で[Slack](https://slack.com/)を使います。
+
++ アカウント、チームはすでに在るもの
++ ログインしている
+
+を前提にします。
+
+---
+
+## CI通知系準備
+
+ログインしているチャットのURLを削り、
+
+https://[なんちゃら].slack.com/services/new/incoming-webhook
+
+というURLを指定してください。
+
+![ChannelSelect](images/slack_posttochannel.png)
+
+「Post to Channel」という項目が現れるので「Choose a channel...」から
+「通知を投げ込みたいチャンネル」を選んで下さい。
+
+---
+
+## CI通知系準備
+
+Channelを選ぶと「Add Incoming WebHooks Integration」
+というボタンがあらわれますのでクリックして下さい。
+
+「Webhook URL」という項目が現れるので、そのURLをコピーして置いて下さい。
+
+---
+
+## CI通知系準備
+
+今度はgithubのプロジェクトに戻り、直下に "drone.yml" というファイルを作成。
+
+以下の内容を書き込んで下さい。
+
+```yaml
+notify:
+  slack:
+    webhook_url: '[先ほどコピったSlackのWebhookURL]'
+    username: '[Slackのユーザ]'
+    channel: '#[放り込みたいChannel]'
+    on_started: false
+    on_success: true
+    on_failure: true
+```
+
+
+---
+
+# (やっとこさ)<br/>実プログラミング
 
 ---
 
 ## チュートリアルこなす
 
-TODO
+[このサイト](http://go-tour-jp.appspot.com/#1) を一通りやればだいぶ身につく！
+
+### 直感的にわからなかったとこ
+
++ ゴルーチンとチャネル
+  + あたりまえだけど「お手本を実際に改造してみないと…」
++ ポインタは「よう考えんと」わからん
+  + 三浦個人の理由で昔から
 
 ---
 
 ## 実際にモノ作る
 
 TODO
+
+---
+
+## これからやってくこと
+
++ パッケージ管理導入(godepかなー)
++ 開発環境自体の「As Code」
 
 ----
 
