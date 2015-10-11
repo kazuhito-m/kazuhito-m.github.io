@@ -545,6 +545,18 @@ __「GOが普及し、整備されている」__
 
 ---
 
+## CI準備-CircleCI設定
+
+例により
+
+「GithubリポジトリのREADMEにバッジ貼っとく」
+
+とかっこいいかも？
+
+![SuccessBadge!](images/circleci_successbadge.png)
+
+---
+
 ## CI通知系準備
 
 ---
@@ -598,21 +610,13 @@ Channelを選ぶと「Add Incoming WebHooks Integration」
 
 ## CI通知系準備-チャット
 
-今度はgithubのプロジェクトに戻り、直下に "drone.yml" というファイルを作成。
+CircleCIに戻り、プロジェクト画面から「Project Settings」<br/>
+-> (左メニューの)「Chat Notifications」
+をクリックして下さい。
 
-以下の内容を書き込んで下さい。
+![ChatSettings](images/circleci_chat_notification.png)
 
-```yaml
-notify:
-  slack:
-    webhook_url: '[先ほどコピったSlackのWebhookURL]'
-    username: '[Slackのユーザ]'
-    channel: '#[放り込みたいChannel]'
-    on_started: false
-    on_success: true
-    on_failure: true
-```
-
+先ほどのURLを「Webhook URL」に入力、Saveして下さい。
 
 ----
 
