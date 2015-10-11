@@ -371,7 +371,6 @@ vi build.sh
 ```
 ```bash
 #!/bin/bash
-
 # ビルド・インストール
 go install
 ```
@@ -498,7 +497,20 @@ ok  	github.com/kazuhito-m/go-first-project/calc	0.003s
 
 ## CI準備
 
+テストが出来るなら「テストがコケたら怒ってくれるモノ=CI」を、
+仕込んできたくなるので仕込みます。
 
+ローカルでJenkins…がいつものオレですが
+
+__「GOが普及し、整備されている」__
+
+を示すため「ネット上CIサービス」を使って行きたく思います。
+
+[TraviceCI](https://travis-ci.org/), [drone.io](https://drone.io/)等、最近は色々あるようですが、
+
+## [CircleCI](https://circleci.com/)
+
+ を使って行きたいと思います。
 
 ---
 
