@@ -739,6 +739,8 @@ CircleCIに戻り、プロジェクト画面から「Project Settings」<br/>
 + [Goコードの書き方](http://golang-jp.org/doc/code.html)
 + [Mac OS X で Golang に入門してみる](http://blog.amedama.jp/entry/2015/10/06/231038)
 + [Go事始め作業ログ](http://qiita.com/1000ch/items/e42e7c28cf7a7b798a02)
++ [言語仕様](http://golang.jp/go_spec#For_statements)
++ [逆引きGolang](http://ashitani.jp/golangtips/tips_regexp.html#regexp_Replace)
 
 ---
 
