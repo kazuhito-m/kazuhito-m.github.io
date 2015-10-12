@@ -348,7 +348,7 @@ git push -u origin master
 こんな感じ！
 
 ```
-./
+[HOME]/go
 ├── current
 │   ├── bin
 │   ├── pkg
