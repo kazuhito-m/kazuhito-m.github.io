@@ -343,6 +343,28 @@ git push -u origin master
 
 ---
 
+## (俗に言う)プロジェクト作成
+
+こんな感じ！
+
+```
+./
+├── current
+│   ├── bin
+│   ├── pkg
+│   └── src
+│       └── github.com
+│           └── kazuhito-m
+│               └─ go-first-project
+└── third
+    ├── bin
+    ├── pkg
+    └── src
+```
+
+---
+
+
 # プログラム<br/>書き初め
 
 ---
