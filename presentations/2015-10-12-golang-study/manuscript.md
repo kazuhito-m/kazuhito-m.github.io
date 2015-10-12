@@ -253,6 +253,8 @@ mkdir -p ~/go/${GO_WORKSPACE}/{src,bin,pkg}
 
 ## GOPATH設定
 
+こんな感じ！
+
 ```
 [HOME]/go
 ├── current
