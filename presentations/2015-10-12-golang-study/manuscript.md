@@ -283,7 +283,7 @@ Choose installation path: /home/[おまえさん]/tools/ide/idea
 
 IDEAに「go-lang-idea-plugin」を入れていきます…。
 
-が、GUIなので手順だけ。(詳しくは[こちらのサイト](http://stormcat.hatenablog.com/entry/2015/04/13/)へ)
+が、GUIなので手順だけ。(詳しくは[こちらのサイト](http://stormcat.hatenablog.com/entry/2015/04/13/123000)へ)
 
 0. Preference -> Plugins -> Browse Repositories から「Manage repositories」ボタン押す
 0. 開いた「Custom Plugin Repositories」で"https://plugins.jetbrains.com/plugins/alpha/list"を追加する
