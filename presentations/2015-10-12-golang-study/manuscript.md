@@ -251,6 +251,22 @@ mkdir -p ~/go/${GO_WORKSPACE}/{src,bin,pkg}
 
 ---
 
+## GOPATH設定
+
+```
+[HOME]/go
+├── current
+│   ├── bin
+│   ├── pkg
+│   └── src
+└── third
+    ├── bin
+    ├── pkg
+    └── src
+```
+
+---
+
 # IDEインストール
 
 ---
