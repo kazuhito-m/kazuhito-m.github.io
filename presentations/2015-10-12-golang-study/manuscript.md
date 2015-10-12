@@ -181,7 +181,7 @@ div.picleft {
 
 # 実録！カタチから入るgolang
 
-2015/10/11 第01回関西golang勉強会LT
+2015/10/12 第01回関西golang勉強会LT
 
 ----
 
