@@ -19,46 +19,46 @@ tags: [golang,programing]
 [このはなし](/study-meeting-repo/2015/09/21/golang-study-01/)の延長線上にあって、
 「やっとこさ正規開催となった」golangの勉強会に、自分もアンテナ張って、ある程度見識を広めようと来ました。
 
-…まぁ「自身が0会を時安請け合いしたLT」をこなす のも、自身の参加する目的の部分で大かったわけ ですが…。
+…まぁ「自身がゼロ回目(企画会議)の際に安請け合いしたLT」を「なんとかこなす！」ってのも、自身の参加する目的の部分で大かったわけ ですが…。
 
 # 内容
 
 ## 1コマ目「GoでGoのプラグインを書く・・けなかった話」
 
 + 登壇者 : Yusuke Hatanaka さん( [@Hatajoe](https://twitter.com/Hatajoe) )
-+ 資料 : [こちら](http://go-talks.appspot.com/github.com/hatajoe/go-plugin-example/index.slide) 
++ 資料 : [こちら](http://go-talks.appspot.com/github.com/hatajoe/go-plugin-example/index.slide)
 
 
 
 ## 2コマ目「Go初めて2ヶ月くらいの初心者がソシャゲっぽいのを作ってみた(仮」
 
 + 登壇者 : 藤井 陽介 さん( [@syo_sa1982](https://twitter.com/syo_sa1982) )
-+ 資料 : [こちら](http://syo-sa1982.github.io/KUG2/) 
++ 資料 : [こちら](http://syo-sa1982.github.io/KUG2/)
 
 
 ## 3コマ目「PHPerがgolangでもがいてる話」
 
 + 登壇者 : うつみ けいすけ さん( [voidofglans](https://twitter.com/voidofglans) )
-+ 資料 : 
++ 資料 :
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/lbvjhv73gS2E3P" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/voidofglans/phpergolang-golang" title="PHPerがgolangでもがいてる話@第１回 関西Golang勉強会" target="_blank">PHPerがgolangでもがいてる話@第１回 関西Golang勉強会</a> </strong> from <strong><a href="//www.slideshare.net/voidofglans" target="_blank">Keisuke Utsumi</a></strong> </div>
 
 
 ## 4コマ目「周回遅れのgolang」
 
 + 登壇者 :  [オレ](https://twitter.com/kazuhito_m) )
-+ 資料 : [こちら](http://kazuhito-m.github.io/presentations/2015-10-12-golang-study) 
++ 資料 : [こちら](http://kazuhito-m.github.io/presentations/2015-10-12-golang-study)
 
 
 ## 5コマ目「」
 
 + 登壇者 : まつもと まさひろ さん( [massan_77](https://twitter.com/massan_77) )
-+ 資料 : [捜索中](https://twitter.com/massan_77/status/653528730602618881) 
++ 資料 : [捜索中](https://twitter.com/massan_77/status/653528730602618881)
 
 
 ## 6コマ目「Goでモバイルアプリを作ろう！」
 
 + 登壇者 : nobonobo さん( [nobonobo](https://twitter.com/nobonobo) )
-+ 資料 : [こちら](http://golang.rdy.jp/GoMobileStrategy.svg) 
++ 資料 : [こちら](http://golang.rdy.jp/GoMobileStrategy.svg)
 
 
 
@@ -70,4 +70,3 @@ tags: [golang,programing]
 
 
 ---
-
