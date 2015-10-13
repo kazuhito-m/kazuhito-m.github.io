@@ -47,27 +47,15 @@ tags: [golang,programing]
 
 ## 5コマ目「」
 
-+ 登壇者 :  さん( [](https://twitter.com/) )
-+ 資料 : [こちら]() 
++ 登壇者 : まつもと まさひろ さん( [massan_77](https://twitter.com/massan_77) )
++ 資料 : [捜索中](https://twitter.com/massan_77/status/653528730602618881) 
 
 
-## 6コマ目「」
+## 6コマ目「Goでモバイルアプリを作ろう！」
 
-+ 登壇者 :  さん( [](https://twitter.com/) )
-+ 資料 : [こちら]() 
++ 登壇者 : nobonobo さん( [nobonobo](https://twitter.com/nobonobo) )
++ 資料 : [こちら](http://golang.rdy.jp/GoMobileStrategy.svg) 
 
-
-
-## 7コマ目「」
-
-+ 登壇者 :  さん( [](https://twitter.com/) )
-+ 資料 : [こちら]() 
-http://golang.rdy.jp/GoMobileStrategy.svg 
-
-## 8コマ目「」
-
-+ 登壇者 :  さん( [](https://twitter.com/) )
-+ 資料 : [こちら]() 
 
 
 
