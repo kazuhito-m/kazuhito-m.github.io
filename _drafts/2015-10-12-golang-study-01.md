@@ -32,51 +32,42 @@ tags: [golang,programing]
 + 資料 : [こちら](http://syo-sa1982.github.io/KUG2/) 
 
 
-## 3コマ目「」
+## 3コマ目「PHPerがgolangでもがいてる話」
+
++ 登壇者 : うつみ けいすけ さん( [voidofglans](https://twitter.com/voidofglans) )
++ 資料 : 
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/lbvjhv73gS2E3P" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/voidofglans/phpergolang-golang" title="PHPerがgolangでもがいてる話@第１回 関西Golang勉強会" target="_blank">PHPerがgolangでもがいてる話@第１回 関西Golang勉強会</a> </strong> from <strong><a href="//www.slideshare.net/voidofglans" target="_blank">Keisuke Utsumi</a></strong> </div>
+
+
+## 4コマ目「周回遅れのgolang」
+
++ 登壇者 :  [オレ](https://twitter.com/kazuhito_m) )
++ 資料 : [こちら](http://kazuhito-m.github.io/presentations/2015-10-12-golang-study) 
+
+
+## 5コマ目「」
 
 + 登壇者 :  さん( [](https://twitter.com/) )
 + 資料 : [こちら]() 
 
 
-## 3コマ目「」
-
-+ 登壇者 :  さん( [](https://twitter.com/) )
-+ 資料 : [こちら]() 
-
-
-## 3コマ目「」
-
-+ 登壇者 :  さん( [](https://twitter.com/) )
-+ 資料 : [こちら]() 
-
-
-## 3コマ目「」
-
-+ 登壇者 :  さん( [](https://twitter.com/) )
-+ 資料 : [こちら]() 
-
-
-
-## 3コマ目「」
+## 6コマ目「」
 
 + 登壇者 :  さん( [](https://twitter.com/) )
 + 資料 : [こちら]() 
 
 
 
-## 3コマ目「」
+## 7コマ目「」
 
 + 登壇者 :  さん( [](https://twitter.com/) )
 + 資料 : [こちら]() 
+http://golang.rdy.jp/GoMobileStrategy.svg 
 
-
-
-## 3コマ目「」
+## 8コマ目「」
 
 + 登壇者 :  さん( [](https://twitter.com/) )
 + 資料 : [こちら]() 
-
-
 
 
 
