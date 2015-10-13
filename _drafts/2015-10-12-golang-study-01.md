@@ -19,6 +19,70 @@ tags: [golang,programing]
 
 # 内容
 
+## 1コマ目「GoでGoのプラグインを書く・・けなかった話」
+
++ 登壇者 : Yusuke Hatanaka さん( [@Hatajoe](https://twitter.com/Hatajoe) )
++ 資料 : [こちら](http://go-talks.appspot.com/github.com/hatajoe/go-plugin-example/index.slide) 
+
+
+
+## 2コマ目「Go初めて2ヶ月くらいの初心者がソシャゲっぽいのを作ってみた(仮」
+
++ 登壇者 : 藤井 陽介 さん( [@syo_sa1982](https://twitter.com/syo_sa1982) )
++ 資料 : [こちら](http://syo-sa1982.github.io/KUG2/) 
+
+
+## 3コマ目「」
+
++ 登壇者 :  さん( [](https://twitter.com/) )
++ 資料 : [こちら]() 
+
+
+## 3コマ目「」
+
++ 登壇者 :  さん( [](https://twitter.com/) )
++ 資料 : [こちら]() 
+
+
+## 3コマ目「」
+
++ 登壇者 :  さん( [](https://twitter.com/) )
++ 資料 : [こちら]() 
+
+
+## 3コマ目「」
+
++ 登壇者 :  さん( [](https://twitter.com/) )
++ 資料 : [こちら]() 
+
+
+
+## 3コマ目「」
+
++ 登壇者 :  さん( [](https://twitter.com/) )
++ 資料 : [こちら]() 
+
+
+
+## 3コマ目「」
+
++ 登壇者 :  さん( [](https://twitter.com/) )
++ 資料 : [こちら]() 
+
+
+
+## 3コマ目「」
+
++ 登壇者 :  さん( [](https://twitter.com/) )
++ 資料 : [こちら]() 
+
+
+
+
+
+
+
+
 # 小並感
 
 
