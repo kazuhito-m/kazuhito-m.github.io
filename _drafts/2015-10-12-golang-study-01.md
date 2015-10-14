@@ -98,7 +98,7 @@ tags: [golang,programing]
 <blockquote class="twitter-tweet" lang="ja" data-conversation="none"><p lang="ja" dir="ltr">今日の <a href="https://twitter.com/hashtag/KUG2?src=hash">#KUG2</a> 、Go知らない人からそこそこ触ってる人までそれなりに聞ける話があったんじゃないかなと思う。僕は楽しかった！</p>&mdash; Yusuke Hatanaka (@Hatajoe) <a href="https://twitter.com/Hatajoe/status/653563075249868800">2015, 10月 12</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-自分が聞いてて思ったのは6人の登壇者で
+そうなんですよ。自分が聞いてて思ったのは6人の登壇者中で…
 
 + ジャンルは完全には重ならないが2〜3くらい重なってる人らが居る
 	+ 低レイヤー、C畑、IoT畑、環境、言語、etc...
