@@ -75,8 +75,8 @@ tags: [golang,programing]
 ## 5コマ目「Google App Engine/Goを触ってみた」
 
 + 登壇者 : まつもと まさひろ さん( [massan_77](https://twitter.com/massan_77) )
-+ 資料 : [捜索中](https://twitter.com/massan_77/status/653528730602618881)
-
++ 資料 : 
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/4YKDSQmF3e71Uv" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/masahiromatsumoto589/google-app-enginego" title="Google App Engine/Goを触ってみた" target="_blank">Google App Engine/Goを触ってみた</a> </strong> from <strong><a href="//www.slideshare.net/masahiromatsumoto589" target="_blank">Masahiro Matsumoto</a></strong> </div>
 
 ## 6コマ目「Goでモバイルアプリを作ろう！」
 
