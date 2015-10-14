@@ -1,10 +1,12 @@
 ---
 published: false
 layout: post
-title: 勉強会行ってみた「第01回 関西golang勉強会」#KUG2
+title: 勉強会行ってみた＆登壇してみた「第01回 関西golang勉強会」#KUG2
 category: study-meeting-repo
 tags: [golang,programing]
 ---
+
+![画面はコラです](images/2015-10-12-karaagematsuri.jpg)
 
 関西で正式にGO言語の勉強会が始まった…はずなんだがやっぱりカラアゲだった。
 
