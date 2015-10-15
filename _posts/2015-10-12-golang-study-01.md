@@ -5,7 +5,7 @@ category: study-meeting-repo
 tags: [golang,programing]
 ---
 
-![画面はコラです](images/2015-10-12-karaagematsuri.jpg)
+![画面はコラです](/images/2015-10-12-karaagematsuri.jpg)
 
 関西で正式にGO言語の勉強会が始まった…はずなんだがやっぱりカラアゲだった。
 
