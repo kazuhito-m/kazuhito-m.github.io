@@ -31,6 +31,23 @@ tags: [golang,programing]
 + 登壇者 : Yusuke Hatanaka さん( [@Hatajoe](https://twitter.com/Hatajoe) )
 + 資料 : [こちら](http://go-talks.appspot.com/github.com/hatajoe/go-plugin-example/index.slide)
 
+golangで「C言語のshared libraryを書く」という話しをメインに、golang用のプラグインを書こうとした奮闘記でした。
+
+自分はCも昔ちょっと触った程度ですが「他言語製のモジュール連携」は、C->Other,Other->Cともに、労が多かった記憶があります。
+
+それが「コメント活用も合わせこの程度で書ける」というのは、隔世の感がありました。
+
+---
+
+プラグインの話しは、おそらく「感心事の分離」を「どんな手段でやるか」だと思います。
+
+その一つが「プラグイン」であり、その一つが「サーバを小さく分ける(マイクロサービス化)」なのだろうと思います。
+
+そういう意味では「golangのAOP周りってなんかキテるやつあるのかな？」という興味がわきました。
+
+---
+
+golang-nuts、是非活用したいなぁ。 (英語が９点とか取る勢の戯言)
 
 
 ## 2コマ目「Go初めて2ヶ月くらいの初心者がソシャゲっぽいのを作ってみた(仮」
