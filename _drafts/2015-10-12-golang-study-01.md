@@ -84,6 +84,41 @@ golang-nuts、是非活用したいなぁ。 (英語が９点とか取る勢の�
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/lbvjhv73gS2E3P" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/voidofglans/phpergolang-golang" title="PHPerがgolangでもがいてる話@第１回 関西Golang勉強会" target="_blank">PHPerがgolangでもがいてる話@第１回 関西Golang勉強会</a> </strong> from <strong><a href="//www.slideshare.net/voidofglans" target="_blank">Keisuke Utsumi</a></strong> </div>
 
 
+ゲーム制作に際してツールをgolangでバリバリ実装している、うつみさんからの「どのように選定されたか」「適用したか」のお話しです。
+
+(資料中の「質問タイム」とは「登壇者から参加者へ」の質問タイムですｗ)
+
+---
+
+golangを「利点だけ並べたら採用確定」なのに「会社/現場がNOという」という話しは、少ないが何例か聞きます。
+
+そういう議論を
+
+__「新しいもの/新しい環境に当たる？じゃ"ビギナー"という点では一緒だね」__
+
+
+という一点押しで突破してるのはすごくロックでかっこいいですね。
+
+
+C++との比較で「開発環境の調達が簡易」という観点の利点を出してきてるのは、
+他の比較対象(言語でも技術選定でも)に転用できそうな「利点のアピールポイント」をもらいました。
+
+---
+
+golangは「言語仕様側でいくつかの問題と宗教戦争を解決済み」っていうところ、評価されてる方が多いですね。
+
+その反面「強烈な利点で霞むが、この考慮が手薄」というものが割とある印象で…
+
++ go get -> バージョン・依存性管理
+
+などは代表的なところかと。ま、それも今後に期待できるので「悩むにゃ早い」対象かもしれませんが。
+
+---
+
+インターフェイス(interface)については、他のセッションの質疑の議題にも上がっていたと思うのですが、
+「扱いかたにあぐねている」方が一定数居るようで…他言語を知ってる方からは頭を切り替える必要がある…のかな？
+
+
 ## 4コマ目「周回遅れのgolang」
 
 + 登壇者 :  [オレ](https://twitter.com/kazuhito_m)
