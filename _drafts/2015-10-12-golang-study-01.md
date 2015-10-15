@@ -159,15 +159,34 @@ __goに入らばgoに従え__
 + 資料 : 
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/4YKDSQmF3e71Uv" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/masahiromatsumoto589/google-app-enginego" title="Google App Engine/Goを触ってみた" target="_blank">Google App Engine/Goを触ってみた</a> </strong> from <strong><a href="//www.slideshare.net/masahiromatsumoto589" target="_blank">Masahiro Matsumoto</a></strong> </div>
 
+golangの入門で「Google App Engine」で自分の書いたもの動かす…をやられた経緯と利点と知見を共有する、そんなLTでした。
+
+お話ぶりを聞いているとそうは思えなかったのですが…「開始１ヶ月」「新しい言語を身に着けたかった」という、俺とちょっと近い状況なのでしょうか。
+
+--- 
+
+どうも最近、自身の周りで「Google App Engine」の話しをよく聞く…と同量の「困ってる」も聞くのですがｗ
+
++ 起動時間の遅さの解消
++ Googleという限りは親和性高そう(感じ
+
+という理由でgolangの話しが出てくる感じがします。(本当のところはどうなのでしょうか？)
+
+---
+
+「goroutinは…」という話しは、
+
+__「GAEはCPUが一個が固定されているため、動きには問題ないが『マルチCPU時の並列処理の恩恵』みたいなものは得られない」__
+
+というのを直感的に想像したのですが、どうなのでしょうか。(読めってなｗ)
+
+
+
+
 ## 6コマ目「Goでモバイルアプリを作ろう！」
 
 + 登壇者 : nobonobo さん( [nobonobo](https://twitter.com/nobonobo) )
 + 資料 : [こちら](http://golang.rdy.jp/GoMobileStrategy.svg)
-
-
-
-
-
 
 
 # 小並感
@@ -254,6 +273,7 @@ __goに入らばgoに従え__
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 これ、「前回で流れ決まった」感あるけど…定例になるんやろか？ｗ
+
 
 
 
