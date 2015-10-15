@@ -198,7 +198,7 @@ golangでモバイルアプリを作る方法を「PlanA〜C」という選択�
 	+ OS機能使えず、単一ソースクロス環境は無理
 + PlanB : golangでgomobile-APIを使うプログラムを書く
 	+ OS機能は限定的、単一ソースクロス環境可能
-+ PlanC + golangで書いたプログラムをGopherJSでjsに変換ハイブリッドSDKでOS機能呼び出し
++ PlanC : golangで書いたプログラムをGopherJSでjsに変換ハイブリッドSDKでOS機能呼び出し
 	+ OS機能は限定的、ブラウザ機能がほぼすべて使える
 
 でしょうか。
