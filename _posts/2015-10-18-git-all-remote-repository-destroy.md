@@ -27,7 +27,8 @@ for i in $( git branch -a | grep remotes | grep -v master ) ; do git checkout -b
 git checkout master
 
 # ローカルブランチをことごとく殺す。
-# (master以外のすべてのローカルブランチを殺すので作業と途中のものが在る場合は実行しないorGrepを工夫すること)
+# (master以外のすべてのローカルブランチを殺すので、
+# 作業が途中のものが在る場合は、実行しない or Grepを工夫すること)
 git branch | grep -v master | xargs git branch -d
 
 # リモートブランチ名を削って、ローカル「ブランチ消した」という操作をpush。
