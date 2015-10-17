@@ -17,7 +17,7 @@ tags: [git,bash,tips,howto]
 
 # オペレーション
 
-※破壊的「一回きり操作」なので、真似してミスっても [kazuhito_m](https://twitter.com/kazuhito_m)に訴えない事。:w
+※破壊的「一回きり操作」なので、真似してミスっても [kazuhito_m](https://twitter.com/kazuhito_m)に訴えない事。
 
 ```bash
 # master以外のリモートブランチをすべてローカルに落とす。
