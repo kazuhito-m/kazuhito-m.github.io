@@ -12,9 +12,41 @@ tags: [linux,aws,setup,howto,ubuntu,desktop,vnc]
 # 前提
 
 + AWS上はUbuntu14.04
-+ ポートは〜〜でTCP:5901を開放している事
++ ポートは〜〜でTCP:5901を開放している
++ デフォルトユーザの"ubuntu"でログインしている
+
 
 # オペレーション
+
+以下のコマンドを順番に打っていくだけです。
+
+※対話型のやり取りもあるので、完全自動とは行きませんが…。
+
+
+```bash
+
+# リポジトリ最新化 & 必要なものインストール
+sudo apt-get update -y
+sudo apt-get upgrade -y
+sudo apt-get install -y gdm gnome-core ubuntu-desktop tightvncserver 
+# 初回、vncserverパスワード決め
+vncserver :1
+# すぐさま殺す
+vncserver -kill :1
+# ~/.vnc/xstartup 書き換え
+mv ~/.vnc/xstartup ~/.vnc/xstartup.org
+grep -v '^x-.*' ~/.vnc/xstartup.org > ~/.vnc/xstartup
+cat << _EOS_ >>  ~/.vnc/xstartup
+exec gnome-session &
+gnome-panel &
+gnome-settings-daemon &
+metacity &
+nautilus -n &
+_EOS_
+# vncserver本稼働
+vncserver :1
+```
+
 
 # Unityはむつかしそう(俺調べ、確定じゃないです)
 
@@ -37,7 +69,7 @@ Error: unable to open display
 
 ---
 
-「デスクトップ環境が動けば」という簡易手段や、GUIでのテストもあるので、アイディア次第では使えるのではと…これから使っていく予定です♪
+「デスクトップ環境が動けば」という簡易手段や、GUIでのテストも出来るので、アイディア次第では使えるのではと…これから使っていく予定です♪
 
 
 # 参考
@@ -48,3 +80,5 @@ Error: unable to open display
 + https://www.youtube.com/watch?v=ljvgwmJCUjw
 + http://qiita.com/YuukiMiyoshi/items/7777bd36016d8ed1fae2 (tigervncは現在使えなくなってる模様)
 + http://qiita.com/ryunosinfx@github/items/b28e23f65c74a0f59d03
++ http://qiita.com/akito1986/items/375e82b420853da1a7c8
++ http://server-setting.info/ubuntu/vnc-remote-desktop.html (ここのデスクトップ網羅は素晴らしい)
