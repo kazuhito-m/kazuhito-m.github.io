@@ -22,7 +22,7 @@ tags: [linux,aws,docker,setup,howto]
 
 + テストしたのはAmazon Linux
     + おそらくAWSに用意されてる最近のLinux(UpStart式)なら大体行ける…はず
-+ デフォルトユーザの"ubuntu"でログインしており、sudoが使えること
++ デフォルトユーザでログインしており、sudoが使えること
 
 
 # オペレーション
