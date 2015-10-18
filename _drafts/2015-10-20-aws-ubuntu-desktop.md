@@ -32,12 +32,12 @@ Error: unable to open display
 
 と表示されてしまいます。
 
-どうも[世界の人の例(何例か)](https://www.youtube.com/watch?v=ljvgwmJCUjw)を見ていると「ここまでで完成にしてる」ことが多いので「完全再現は難しい」のかもしれないなーという結論で終わらせています。
+どうも[世界の人の例(何例か)](https://www.youtube.com/watch?v=ljvgwmJCUjw
+)を見ていると「ここまでで完成にしてる」ことが多いので「完全再現は難しい」のかもしれないなーという結論で終わらせています。
 
 ---
 
-「デスクトップ環境が動けば」という簡易手段や、GUIでのテストもあるので、アイディア次第では使えるのではと思います。
-
+「デスクトップ環境が動けば」という簡易手段や、GUIでのテストもあるので、アイディア次第では使えるのではと…これから使っていく予定です♪
 
 
 # 参考
@@ -45,4 +45,6 @@ Error: unable to open display
 以下を参考にさせていただきました。ありがとうございます。
 
 + https://wiki.ubuntulinux.jp/UbuntuTips/Desktop/HowToUseUnity
-
++ https://www.youtube.com/watch?v=ljvgwmJCUjw
++ http://qiita.com/YuukiMiyoshi/items/7777bd36016d8ed1fae2 (tigervncは現在使えなくなってる模様)
++ http://qiita.com/ryunosinfx@github/items/b28e23f65c74a0f59d03
