@@ -46,7 +46,7 @@ sudo chmod +s /usr/bin/docker
 
 これで、`docker version`、`docker ps` など叩いてみて、いつものDockerならOKです。
 
-^^^
+---
 
 あとはコンテナ動かしてみるのみ。
 
