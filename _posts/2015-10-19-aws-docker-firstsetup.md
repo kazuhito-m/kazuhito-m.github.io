@@ -27,9 +27,6 @@ tags: [linux,aws,docker,setup,howto]
 
 # オペレーション
 
-以下のコマンドを順番に打ってって下さい。
-
-
 ```bash
 # Docker本体
 sudo wget https://get.docker.io/builds/Linux/x86_64/docker-latest -O /usr/bin/docker
