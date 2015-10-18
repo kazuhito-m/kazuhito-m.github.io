@@ -11,8 +11,8 @@ tags: [linux,aws,setup,howto,ubuntu,desktop,vnc]
 
 # 前提
 
-+ AWS上はUbuntu14.04
-+ ポートは〜〜でTCP:5901を開放している
++ AWS上はUbuntu Server 14.04 LTS
++ ポートはセキュリティグループでTCP:5901を開放している
 + デフォルトユーザの"ubuntu"でログインしている
 
 
@@ -20,7 +20,7 @@ tags: [linux,aws,setup,howto,ubuntu,desktop,vnc]
 
 以下のコマンドを順番に打っていくだけです。
 
-※対話型のやり取りもあるので、完全自動とは行きませんが…。
+対話型のやり取りもあるので、完全自動とは行きませんが…。
 
 
 ```bash
@@ -28,12 +28,13 @@ tags: [linux,aws,setup,howto,ubuntu,desktop,vnc]
 # リポジトリ最新化 & 必要なものインストール
 sudo apt-get update -y
 sudo apt-get upgrade -y
-sudo apt-get install -y gdm gnome-core ubuntu-desktop tightvncserver 
+sudo apt-get install -y gnome-core ubuntu-desktop tightvncserver
+# 途中の「gdmかligtdmか」はgdmを選びました
 # 初回、vncserverパスワード決め
 vncserver :1
 # すぐさま殺す
 vncserver -kill :1
-# ~/.vnc/xstartup 書き換え
+# ~/.vnc/xstartup バックアップ＆書き換え
 mv ~/.vnc/xstartup ~/.vnc/xstartup.org
 grep -v '^x-.*' ~/.vnc/xstartup.org > ~/.vnc/xstartup
 cat << _EOS_ >>  ~/.vnc/xstartup
@@ -43,9 +44,18 @@ gnome-settings-daemon &
 metacity &
 nautilus -n &
 _EOS_
+chmod 755 ~/.vnc/xstartup
 # vncserver本稼働
 vncserver :1
 ```
+
+パスワード設定やxstartupを外から持ち込めるなら、完全自動化できると思われます。
+
+---
+
+あとは、好きなVNCクライアントから `http://[AWSのインスタンスのIP]:5901` で接続すれば、こんな感じでデスクトップが操作できます。
+
+![なぜAWSで艦コレをしているんだ…](/images/2015-10-20-aws-ubuntu.png)
 
 
 # Unityはむつかしそう(俺調べ、確定じゃないです)
@@ -74,7 +84,7 @@ Error: unable to open display
 
 # 参考
 
-以下を参考にさせていただきました。ありがとうございます。
+以下の記事を参考にさせていただきました。ありがとうございます。
 
 + https://wiki.ubuntulinux.jp/UbuntuTips/Desktop/HowToUseUnity
 + https://www.youtube.com/watch?v=ljvgwmJCUjw
