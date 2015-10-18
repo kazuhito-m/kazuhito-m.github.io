@@ -1,11 +1,11 @@
 ---
 layout: post
-title: (AWSなど)仮想機に最速で「その時最新のDockerをインストールする」方法
+title: AWSに最速で「その時最新のDockerをインストールする」方法
 category: tech
 tags: [linux,aws,docker,setup,howto]
 ---
 
-クラウドのサーバを「いくつでも作れる実験場」にするため「手っ取り早くDocker入れたい」と思うことが多いのです。
+クラウド(今回はAWSにですが)のサーバを「いくつでも作れる実験場」にするため「手っ取り早くDocker入れたい」と思うことが多いのです。
 
 しかし
 
