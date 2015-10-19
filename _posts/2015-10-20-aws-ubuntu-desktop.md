@@ -85,9 +85,9 @@ Error: unable to open display
 
 以下の記事を参考にさせていただきました。ありがとうございます。
 
-+ https://wiki.ubuntulinux.jp/UbuntuTips/Desktop/HowToUseUnity
-+ https://www.youtube.com/watch?v=ljvgwmJCUjw
-+ http://qiita.com/YuukiMiyoshi/items/7777bd36016d8ed1fae2 (tigervncは現在使えなくなってる模様)
-+ http://qiita.com/ryunosinfx@github/items/b28e23f65c74a0f59d03
-+ http://qiita.com/akito1986/items/375e82b420853da1a7c8
-+ http://server-setting.info/ubuntu/vnc-remote-desktop.html (ここのデスクトップ網羅は素晴らしい)
++ [https://wiki.ubuntulinux.jp/UbuntuTips/Desktop/HowToUseUnity](https://wiki.ubuntulinux.jp/UbuntuTips/Desktop/HowToUseUnity)
++ [https://www.youtube.com/watch?v=ljvgwmJCUjw](https://www.youtube.com/watch?v=ljvgwmJCUjw)
++ [http://qiita.com/YuukiMiyoshi/items/7777bd36016d8ed1fae2](http://qiita.com/YuukiMiyoshi/items/7777bd36016d8ed1fae)2 (tigervncは現在使えなくなってる模様)
++ [http://qiita.com/ryunosinfx@github/items/b28e23f65c74a0f59d03](http://qiita.com/ryunosinfx@github/items/b28e23f65c74a0f59d03)
++ [http://qiita.com/akito1986/items/375e82b420853da1a7c8](http://qiita.com/akito1986/items/375e82b420853da1a7c8)
++ [http://server-setting.info/ubuntu/vnc-remote-desktop.html](http://server-setting.info/ubuntu/vnc-remote-desktop.html) (ここのデスクトップ網羅は素晴らしい)
