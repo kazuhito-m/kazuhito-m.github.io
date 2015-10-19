@@ -64,7 +64,7 @@ vncserver :1
 
 スクリーンショットを見て頂ければ解るのですが、「GNOMEデスクトップ」です。
 
-「マシンがUnityに対応しているか？」の[日本チーム公式のチェック方法](https://wiki.ubuntulinux.jp/UbuntuTips/Desktop/HowToUseUnity)を試しても、
+「マシンがUnityに対応しているか？」の[Ubuntu日本チーム公式のチェック方法](https://wiki.ubuntulinux.jp/UbuntuTips/Desktop/HowToUseUnity)を試しても、
 
 ```bash
 /usr/lib/nux/unity_support_test -p
