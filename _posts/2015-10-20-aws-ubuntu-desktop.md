@@ -68,7 +68,6 @@ vncserver :1
 
 ```bash
 /usr/lib/nux/unity_support_test -p
-
 Error: unable to open display
 ```
 
