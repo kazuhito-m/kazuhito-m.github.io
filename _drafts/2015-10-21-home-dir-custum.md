@@ -43,9 +43,51 @@ LC_ALL=C xdg-user-dirs-gtk-update
 
 ---
 
-でも、自分は「環境のAsCode」を目指して居るので「出来ればCLIでやりたいのです…。
+でも、自分は「環境のAsCode」を目指して居るので「出来ればCLIでやりたい]のです…。
 
 
+# コマンドのみで英語名にする方法
+
+「gtkはGUIのキット」ということで、コマンドから削ると、変更することができました。
+
+```bash
+xdg-user-dirs-update --force
+```
+
+ただ…「GUI版と違ってリネームではなくディレクトリ作成＆設定変更」な機能のようで、結局「日本語名のディレクトリも残ってしまう」状態になります。
+
+![だめだわー]()
+
+うーん、一つ解決すると一つ上手く行かないものですね。
+
+## いろいろかなぐり捨ててとりあえずの強引な解決
+
+なんとか「冪当を確保しつつ」「オプションを工夫して」「ループしてコピーしてファイルを維持して…」など試行錯誤したのですが、
+上手く行かなかったので…。
+
+0. 冪当を捨てる(環境構築時一回だけ走らせる想定)
+0. ホームディレクトリのトップには日本語ディレクトリを置かない運用
+
+と決め打ちで、
+
+```bash
+# 設定変更 ＆ 英名への変更
+xdg-user-dirs-update --force
+# ホームディレクトリにある「名前に２バイト文字を含む」全てのディレクトリをデストロイ。
+find ~/ -maxdepth 1 -type d  | LANG=C grep  -v '^[[:cntrl:][:print:]]*$' | xargs rm -rf
+```
+
+という「短さ重視の２行」で片付けました。
+
+---
+
+すごく「これやったんや、俺の欲してたものは！」というコマンドｎ出会っても、
+対話型だったりダイアログ上がってくるのが必須だったりして、
+「CLIだけで片付かないもの」が多く在ります。
+
+今回は「たまたまコマンド叩いてみて見つけた」レベルなのですが、
+「これに対応する(CLIの）コマンド無いかな？」
+という嗅覚と視点で、コマンドを探して行きたいなと思います。
 
 # 参考
 
@@ -54,9 +96,4 @@ LC_ALL=C xdg-user-dirs-gtk-update
 + [http://freedesktop.org/wiki/Software/xdg-user-dirs/](http://freedesktop.org/wiki/Software/xdg-user-dirs/)
 + [https://ja.wikipedia.org/wiki/Freedesktop.org](https://ja.wikipedia.org/wiki/Freedesktop.org)
 + [http://qiita.com/taiko19xx/items/d1a001bfc25245b91354](http://qiita.com/taiko19xx/items/d1a001bfc25245b91354)
-+ []()
-+ []()
-+ []()
-+ []()
-+ []()
-+ []()
++ [http://oshiete.goo.ne.jp/qa/5382554.html](http://oshiete.goo.ne.jp/qa/5382554.html)
