@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LinuxデスクトップでディレクトリをCLIから英語名にする方法
+title: LinuxデスクトップでディレクトリをCLIだけで英語名に変更する方法
 category: tech
 tags: [linux,ubuntu,desktop,howto,tips]
 ---
