@@ -13,18 +13,15 @@ Linuxには「デスクトップ運用する場合のユーザのホームディ
 
 それは「概念的なディレクトリ」であり、初回ディレクトリ時に「言語ロケールごとに実ディレクトリ名がローカライズされ」ます。
 
-![こんな感じのです]()
+![こんな感じのです](/images/2015-10-21-well-known-dirs.png)
 
 これは「意味のある特別扱い」のディレクトリで、アイコンも代わり、例えばファイル選択ダイアログに意味に追うじて最初から入っているなど、扱いが違います。
 
 ですので、おいそれとリネーム/移動などは出来ず「設定と一緒に変更する」必要があります。
 
-Todo 
-
-メカニズム的には、
+メカニズム的には、`~/.config/user-dirs.locale` ファイルに、「概念的なディレクトリと実ディレクトリ名のマッピング」が管理されている感じです。
 
 そんなスペシャルなディレクトリですが、日本語環境だと「コンソールから移動するのに入力が面倒」という理由から「ロケールを英語圏にしてアルファベットに変えてしまう」という知見が、
-
 [世では多く在り](https://www.google.co.jp/search?sourceid=chrome-psyapi2&ion=1&espv=2&ie=UTF-8&q=ubuntu%20%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%20%E8%8B%B1%E8%AA%9E%E5%8C%96&oq=Ubuntu%20%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%20%E8%8B%B1%E8%AA%9E&aqs=chrome.1.69i57j0l5.12343j0j7)ます。
 ## 一般的な変更方法。
 
@@ -36,7 +33,7 @@ LC_ALL=C xdg-user-dirs-gtk-update
 
 とやると、ダイアログが表示されるので…
 
-![xdg-user-dirs-gtk-updateリネーム確認ダイアログ]()
+![xdg-user-dirs-gtk-updateリネーム確認ダイアログ](/images/2015-10-21-xdg-user-dirs-gtk-update.png)
 
 
 「Update Names」をクリック。するとディレクトリ名がアルファベットにリネームされます。
@@ -51,12 +48,12 @@ LC_ALL=C xdg-user-dirs-gtk-update
 「gtkはGUIのキット」ということで、コマンドから削ると、変更することができました。
 
 ```bash
-xdg-user-dirs-update --force
+LC_ALL=C xdg-user-dirs-update --force 
 ```
 
 ただ…「GUI版と違ってリネームではなくディレクトリ作成＆設定変更」な機能のようで、結局「日本語名のディレクトリも残ってしまう」状態になります。
 
-![だめだわー]()
+![だめだわー](/images/2015-10-21-all-dir.png)
 
 うーん、一つ解決すると一つ上手く行かないものですね。
 
@@ -72,7 +69,7 @@ xdg-user-dirs-update --force
 
 ```bash
 # 設定変更 ＆ 英名への変更
-xdg-user-dirs-update --force
+LC_ALL=C xdg-user-dirs-update --force
 # ホームディレクトリにある「名前に２バイト文字を含む」全てのディレクトリをデストロイ。
 find ~/ -maxdepth 1 -type d  | LANG=C grep  -v '^[[:cntrl:][:print:]]*$' | xargs rm -rf
 ```
