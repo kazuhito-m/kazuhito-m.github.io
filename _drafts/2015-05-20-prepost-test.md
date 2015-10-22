@@ -14,7 +14,7 @@ tags: [test,dbunit]
 
 仕事で使う目的で家でちょこちょこ触っていました「Dbunt」に、俺の変更を取り込んでいただきました。
 
-([ここ](http://dbunit.sourceforge.net/changes-report.html#a2.5.1)の "Upgrade Apache POI library from ..." が「自分のプルリクの内容」とです。)
+([ここ](http://dbunit.sourceforge.net/changes-report.html#a2.5.1)の "Upgrade Apache POI library from ..." が「自分のプルリクの内容」です。)
 
 # 自分、よく考えたら他人に"pull request"とかしたこと無かったんです
 
