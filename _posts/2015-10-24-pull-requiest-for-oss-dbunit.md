@@ -1,7 +1,7 @@
 ---
 published: true 
 layout: post
-title: 人生初プルリクをOSSに投げ込んでみた結果 #DBUnit
+title: 人生初プルリクをOSSに投げ込んでみた結果#DBUnit
 category: tech
 tags: [test,dbunit,oss,git]
 ---
@@ -45,8 +45,10 @@ DBUnitは2007未満の形式であるxls形式にしか対応していなかっ�
 
 DBUnitの「Excelファイル <-> DB インポート/エクスポート機能に、[xlsx形式(Excel2007からのファイル形式)](http://mitsutakauomi.com/?p=362)に対応しました。(今まで出来なかったのです)
 
- xls形式,xlsx形式ファイル --> DBUnit(XlsDataSet) --> DB
- DB --> DBUnit(XlsDataSet) --> xls形式ファイル
+```
+xls形式,xlsx形式ファイル --> DBUnit(XlsDataSet) --> DB
+DB --> DBUnit(XlsDataSet) --> xls形式ファイル
+```
 
 インポート時には「ファイル形式は自動判定」で読み込まれます。
 
