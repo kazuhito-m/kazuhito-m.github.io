@@ -70,11 +70,11 @@ Mavenを使っているなら、pom.xml の<dependencies>タグに以下です�
 
 ### インポートの実装方法
 
-「いままで通りの実装方法」でxlsx対応となります。
+xlsx形式で読み込みたい場合は「いままで通りの実装方法」でOKです。
 
 例えば、Excelワークシートをインポートする一般的なコード…
 
-```bash
+```java
 public static void main(String[] args) throws Exception {
     IDatabaseConnection con = null;
     try {
@@ -89,7 +89,7 @@ public static void main(String[] args) throws Exception {
 }
 ```
 
-とした際に、`"Excelのデータファイル"` が、xlsでもxlsxでも意識せず読み込みます。
+があるとした際に、`"Excelのデータファイル"` が、xlsでもxlsxでも意識せず読み込みます。
 
 あとは、おそらく使ってる方としては「自前FWとかなんかかぶせて使ってる」と思われるのですが
 
@@ -100,6 +100,72 @@ public static void main(String[] args) throws Exception {
 
 ### エクスポートの実装方法
 
+xlsx形式で書き込みたい場合「既存の実装を改造」する必要があります。
+
+例えば、Excelワークシートをエクスポートする一般的なコード…
+
+```java
+public static void mail(String[] args) throws Exception {
+	IDatabaseConnection con = null;
+	try  {
+		con = getConnection();
+		IDataSet dataset = con.createDataSet();
+		XlsDataSet.write(dataset, new FileOutputStream("Excelのデータファイル"));
+	} finally {
+		if (con != null) {
+			con.close();
+		}
+	}
+}
+```
+
+があるとした場合、上記の
+
+```java
+XlsDataSet.write(dataset, new FileOutputStream("Excelのデータファイル"));
+```
+
+の箇所は、内部の実装を展開すると
+
+```java
+XlsDataSetWriter writer = new XlsDataSetWriter();
+writer.write(dataset, new FileOutputStream("Excelのデータファイル"));
+```
+
+となるのですが、この"XlsDataSetWriter"のメソッドを一部オーバーライドすることにより、xlsx形式で出力できます。
+
+実際に書いてみますと…
+
+```
+public static void main(String[] args) throws Exception {
+	IDatabaseConnection con = null;
+	try  {
+		con = getConnection();
+		IDataSet dataset = con.createDataSet();
+		XlsDataSetWriter writer = new XlsDataSetWriter() {
+			@Override
+			public Workbook createWorkbook() {
+				return new XSSFWorkbook();
+			}
+		};
+		writer.write(dataset, new FileOutputStream("export.xlsx"));
+	} finally {
+		if (con != null) {
+			con.close();
+		}
+	}
+}
+```
+
+と「６行追加」の対応となりますね。
+
+※割と煩雑ですね…今考えると、
+
++ XlsDataSet.writeX()みたいなの作る
++ 
++ 
+
+など出来そうなのですが、当時は「修正ソースを極力少なく!」と考えてたのでいたしかたありません。
 
 # 頓挫していた(と思しき)理由
 
