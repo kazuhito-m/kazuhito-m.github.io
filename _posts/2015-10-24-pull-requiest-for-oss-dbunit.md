@@ -95,7 +95,7 @@ public static void main(String[] args) throws Exception {
 
 あとは、おそらく使ってる方としては「自前FWとかなんかかぶせて使ってる」と思われるのですが
 
-+ プログラム中に埋まってるファイル名修正(自動認識なら探す文字列)
++ プログラム中に埋まってるExcelファイル名の文字列修正(.xls -> .xlsx)
 + Excelファイルの変換
 
 くらいが仕事かと思われますが「ファイルサイズが小さくなる」など[それなりのメリット](http://www.itmedia.co.jp/enterprise/articles/0702/08/news051.html)に魅力があるなら移行されたらいかがでしょうか、というところで。
