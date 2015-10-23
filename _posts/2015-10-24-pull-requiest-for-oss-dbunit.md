@@ -60,7 +60,7 @@ DB --> DBUnit(XlsDataSet) --> xls形式ファイル
 
 例によりMaven Centralから「DBUnitを自プログラムに読み込む」ようにして下さい。
 
-Mavenを使っているなら、pom.xml の<dependencies>タグに以下ですね。
+Mavenを使っているなら、pom.xml の`<dependencies>`タグに以下ですね。
 
 ```xml
 <dependency>
