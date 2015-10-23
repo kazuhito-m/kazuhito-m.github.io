@@ -1,7 +1,7 @@
 ---
 published: true 
 layout: post
-title: 人生初プルリクをOSSに投げ込んでみた結果#DBUnit
+title: 人生初プルリクをOSSに投げ込んでみた結果　#dbunit
 category: tech
 tags: [test,dbunit,oss,git]
 ---
