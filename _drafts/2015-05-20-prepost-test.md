@@ -75,11 +75,21 @@ Mavenを使っているなら、pom.xml の<dependencies>タグに以下です�
 例えば、Excelワークシートをインポートする一般的なコード…
 
 ```bash
-TODO
-	
+public static void main(String[] args) throws Exception {
+    IDatabaseConnection con = null;
+    try {
+        con = getConnection();
+        IDataSet dataset = new XlsDataSet(new File("Excelのデータファイル"));
+        DatabaseOperation.CLEAN_INSERT.execute(con, dataset);  // deleteしてからinsert
+    } finally {
+        if (con != null) {
+            con.close();
+        }
+    }
+}
 ```
 
-とした際に、`"データのファイル"` が、xlsでもxlsxでも意識せず読み込みます。
+とした際に、`"Excelのデータファイル"` が、xlsでもxlsxでも意識せず読み込みます。
 
 あとは、おそらく使ってる方としては「自前FWとかなんかかぶせて使ってる」と思われるのですが
 
