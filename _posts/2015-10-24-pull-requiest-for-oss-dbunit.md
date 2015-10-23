@@ -43,7 +43,7 @@ DBUnitは2007未満の形式であるxls形式にしか対応していなかっ�
 
 ## 変更の概要
 
-DBUnitの「Excelファイル <-> DB インポート/エクスポート機能に、[xlsx形式(Excel2007からのファイル形式)](http://mitsutakauomi.com/?p=362)に対応しました。(今まで出来なかったのです)
+DBUnitの「Excelファイル <-> DB インポート/エクスポート機能」に、[xlsx形式(Excel2007からのファイル形式)](http://mitsutakauomi.com/?p=362)に対応しました。(今まで出来なかったのです)
 
 ```
 xls形式,xlsx形式ファイル --> DBUnit(XlsDataSet) --> DB
@@ -167,7 +167,7 @@ public static void main(String[] args) throws Exception {
 + XlsxDataSetWriter作る 
 + XlsDataSetWriterにフラグでもなんでもつける
 
-など出来そうなのですが、当時「修正ソースを極力少なく!」と考えてたのでいたしかたありません。
+など出来そうなのですが、当時(後述する理由で)ヘタレまくっていたのでいたしかたありません。
 
 # 頓挫していた(と思しき)理由
 
