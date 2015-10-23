@@ -5,7 +5,7 @@ category: tech
 tags: [test,dbunit]
 ---
 
-![親方！サイトに俺の名前がっ！](/images/baban.png)
+![親方！サイトに俺の名前がっ！](/images/2015-10-24-baban.png)
 
 少し前の話しなのですが…もうなんだか「すごく嬉しかった」ので、恥ずかしながら書いていきます。
 
