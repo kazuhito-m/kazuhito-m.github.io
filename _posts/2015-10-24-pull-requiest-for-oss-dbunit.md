@@ -2,7 +2,7 @@
 layout: post
 title: 人生初プルリクをOSSに投げ込んでみた結果 #DBUnit
 category: tech
-tags: [test,dbunit]
+tags: [test,dbunit,oss,git]
 ---
 
 ![親方！サイトに俺の名前がっ！](/images/2015-10-24-baban.png)
