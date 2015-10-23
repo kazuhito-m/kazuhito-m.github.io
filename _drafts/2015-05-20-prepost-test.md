@@ -8,17 +8,17 @@ tags: [test,dbunit]
 
 ![親方！サイトに俺の名前がっ！](/images/baban.png)
 
-少し前の話しなのですが…もうなんだか「ちびりそうに嬉しかった」ので、恥ずかしながら書いていきます。
+少し前の話しなのですが…もうなんだか「すごく嬉しかった」ので、恥ずかしながら書いていきます。
 
 # OSSのプロダクトに自分の変更を取り込んでいただきました
 
-仕事で使う目的で家でちょこちょこ触っていました「Dbunt」に、俺の変更を取り込んでいただきました。
+仕事で使う目的で家でちょこちょこ触っていました「DBUnit」に、俺の変更を取り込んでいただきました。
 
 ([ここ](http://dbunit.sourceforge.net/changes-report.html#a2.5.1)の "Upgrade Apache POI library from ..." が「自分のプルリクの内容」です。)
 
 # 自分、よく考えたら他人に"pull request"とかしたこと無かったんです
 
-よく考えなくともですが、仕事でgit使った事ないし、多人数開発してないし、GitHubの垢るけど他人にプルリク投げたことないし…。
+よく考えなくともですが、仕事でgit使った事ないし、多人数開発してないし、GitHubの垢あるけど他人にプルリク投げたことないし…。
 
 そういう初物づくしだったけど「ま、こんだけ初物だらけやったらミスっても凹まんやろ」
 ってのと「そろそろ禊が必要かな？」って思ってたので、勢い出してやってみたです。
@@ -72,7 +72,7 @@ Mavenを使っているなら、pom.xml の<dependencies>タグに以下です�
 
 xlsx形式で読み込みたい場合は「いままで通りの実装方法」でOKです。
 
-例えば、Excelワークシートをインポートする一般的なコード…
+例えば、ExcelワークシートのデータをDBへインポートする一般的なコード…
 
 ```java
 public static void main(String[] args) throws Exception {
@@ -102,7 +102,7 @@ public static void main(String[] args) throws Exception {
 
 xlsx形式で書き込みたい場合「既存の実装を改造」する必要があります。
 
-例えば、Excelワークシートをエクスポートする一般的なコード…
+例えば、DB中のデータをExcelワークシートへエクスポートする一般的なコード…
 
 ```java
 public static void mail(String[] args) throws Exception {
@@ -136,7 +136,7 @@ writer.write(dataset, new FileOutputStream("Excelのデータファイル"));
 
 実際に書いてみますと…
 
-```
+```java
 public static void main(String[] args) throws Exception {
 	IDatabaseConnection con = null;
 	try  {
@@ -148,7 +148,7 @@ public static void main(String[] args) throws Exception {
 				return new XSSFWorkbook();
 			}
 		};
-		writer.write(dataset, new FileOutputStream("export.xlsx"));
+		writer.write(dataset, new FileOutputStream("Excelのデータファイル"));
 	} finally {
 		if (con != null) {
 			con.close();
@@ -157,19 +157,24 @@ public static void main(String[] args) throws Exception {
 }
 ```
 
-と「６行追加」の対応となりますね。
+と「６行追加」の対応となります。
 
 ※割と煩雑ですね…今考えると、
 
 + XlsDataSet.writeX()みたいなの作る
-+ 
-+ 
++ XlsxDataSetWriter作る 
++ XlsDataSetWriterにフラグでもなんでもつける
 
-など出来そうなのですが、当時は「修正ソースを極力少なく!」と考えてたのでいたしかたありません。
+など出来そうなのですが、当時「修正ソースを極力少なく!」と考えてたのでいたしかたありません。
 
 # 頓挫していた(と思しき)理由
 
-TODO
+※俺は「学生当時、英語ひと桁点が常態」だったので、推測を多分に含む、ということを前置きしておきます。
+
+この対応の要求は[こちら](https://sourceforge.net/p/dbunit/feature-requests/161/)に5年前に出ていたのですが…どうして「長らく対応が無かったか」というと…
+
+0. チケットつくった人「POI(Excelのライブラリ)の最新に対応してくれ。パッチ作ったし反映してよ。」
+0. チケットつくった人「(無言でパッチのファイル貼る)」
 
 
 # 気をつけたこと
