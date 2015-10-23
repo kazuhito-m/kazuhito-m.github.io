@@ -293,7 +293,7 @@ public static void main(String[] args) throws Exception {
 
 などを「生活に支障のない程度に狙ってみる」のも、なんとなく楽しくなれるかもしれません。
 
-俺みたいな「底辺ギョームプログラマー」でも(時と場合により)世界は優しいです。
+俺みたいな「底辺落ちこぼれギョームプログラマー」でも(時と場合により)世界は優しいです。
 
 ---
 
@@ -306,5 +306,13 @@ public static void main(String[] args) throws Exception {
 + [http://qiita.com/wheatter/items/77dc40e0bb526660af3a](http://qiita.com/wheatter/items/77dc40e0bb526660af3a)
 + [http://hermesian.hatenablog.com/entry/2014/06/21/141720](http://hermesian.hatenablog.com/entry/2014/06/21/141720)
 + [http://www.52testing.com/showart.asp?id=180](http://www.52testing.com/showart.asp?id=180)
-+ []()
-
++ [http://blue-red.ddo.jp/~ao/wiki/wiki.cgi?page=JUnit](http://blue-red.ddo.jp/~ao/wiki/wiki.cgi?page=JUnit)
++ [http://irof.hateblo.jp/entry/20100703/p1](http://irof.hateblo.jp/entry/20100703/p1)
++ [http://mitsutakauomi.com/?p=362](http://mitsutakauomi.com/?p=362)
++ [http://www.itmedia.co.jp/enterprise/articles/0702/08/news051.html](http://www.itmedia.co.jp/enterprise/articles/0702/08/news051.html)
++ [http://www.techscore.com/tech/Java/Others/DBUnit/2-3/](http://www.techscore.com/tech/Java/Others/DBUnit/2-3/)
++ [本家サイト系から拝借したURL](http://dbunit.sourceforge.net/)
+    + [http://dbunit.sourceforge.net/changes-report.html#a2.5.1](http://dbunit.sourceforge.net/changes-report.html#a2.5.1)
+    + [http://sourceforge.net/p/dbunit/feature-requests/161/](http://sourceforge.net/p/dbunit/feature-requests/161/)
+    + [http://sourceforge.net/p/dbunit/code.git/merge-requests/6/](http://sourceforge.net/p/dbunit/code.git/merge-requests/6/)
+    + [http://sourceforge.net/u/kazuhito-m/dbunit/ci/c6a6ba9e4fe929865c147af8e44eb35ea234ceca/](http://sourceforge.net/u/kazuhito-m/dbunit/ci/c6a6ba9e4fe929865c147af8e44eb35ea234ceca/)
