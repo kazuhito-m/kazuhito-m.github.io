@@ -8,7 +8,7 @@ tags: [mindmeister,trello,conscript,scala,trello-java-wrapper,json4s]
 
 自身は「何かどうやっていいかわからないこと」や「ゴールへの道筋がわからないもの」に当たる時、「マインドマップツール」を使用します。
 
-この時の使い方は「タスク分解機」であり「放射状アウトラインエディタ」だったりします。
+この時の使い方は「タスク分解機」であり「放射状アウトラインエディタ」だったりします。(マインドマップ書いてませんw)
 
 最近は「複数人で同時編集出来る」という理由で「[Mindmeister](https://www.mindmeister.com/)」というWebサービスを使うことが多いのです。
 
@@ -63,11 +63,11 @@ curl https://raw.githubusercontent.com/n8han/conscript/master/setup.sh | sh
 
 Mindmeisterで「タスクにしたいマインドマップ」を開いて下さい。
 
-![明日やること](/images/2015-11-01-mm-todo.png)
+![明日やること](/images/2015-11-02-mm-todo.png)
 
 画面右下の (↓) マークをクリックすると、エクスポート先選択のダイアログが現れます。
 
-![エクスポート先選択](/images/2015-11-01-mm-export.png)
+![エクスポート先選択](/images/2015-11-02-mm-export.png)
 
 最初から選択されている「Mindmeisterフォーマット」をそのままに、
 「エクスポート」をクリックして下さい。
@@ -75,7 +75,7 @@ Mindmeisterで「タスクにしたいマインドマップ」を開いて下さ
 `[マインドマップの名前].mind` というファイル名のZipファイルが落ちてきますので、
 解凍して `map.json` というファイルを取り出して置いて下さい。
 
-![MindmeisterのエクスポートZipファイル](/images/2015-11-01-mm-archive.png)
+![MindmeisterのエクスポートZipファイル](/images/2015-11-02-mm-archive.png)
 
 ### Trelloからの情報取得
 
@@ -186,7 +186,7 @@ m2ti XXXX... XXXX... XXXX... 'To Do' map.json
 
 実行すると目的のタスクボード、タスクリストに"-"(ハイフン)区切りで要素名をつなげたカードが出来上がります。
 
-![こんな感じ](/images/2015-11-01-mm-exported.png)
+![こんな感じ](/images/2015-11-02-mm-exported.png)
 
 Trelloを表示しながらコマンドを実行すると「カードがみるみる足されていく」ので面白いですね。
 
