@@ -62,11 +62,11 @@ curl https://raw.githubusercontent.com/n8han/conscript/master/setup.sh | sh
 
 Mindmeisterで「タスクにしたいマインドマップ」を開いて下さい。
 
-![明日やること](/images/2015-11-02-mm-todo.png)
+`![明日やること](/images/2015-11-02-mm-todo.png)`
 
 画面右下の (↓) マークをクリックすると、エクスポート先選択のダイアログが現れます。
 
-![エクスポート先選択](/images/2015-11-02-mm-export.png)
+`![エクスポート先選択](/images/2015-11-02-mm-export.png)`
 
 最初から選択されている「Mindmeisterフォーマット」をそのままに、
 「エクスポート」をクリックして下さい。
@@ -74,7 +74,7 @@ Mindmeisterで「タスクにしたいマインドマップ」を開いて下さ
 `[マインドマップの名前].mind` というファイル名のZipファイルが落ちてきますので、
 解凍して `map.json` というファイルを取り出して置いて下さい。
 
-![MindmeisterのエクスポートZipファイル](/images/2015-11-02-mm-archive.png)
+`![MindmeisterのエクスポートZipファイル](/images/2015-11-02-mm-archive.png)`
 
 ### Trelloからの情報取得
 
@@ -185,7 +185,7 @@ m2ti XXXX... XXXX... XXXX... 'To Do' map.json
 
 実行すると目的のタスクボード、タスクリストに"-"(ハイフン)区切りで要素名をつなげたカードが出来上がります。
 
-![こんな感じ](/images/2015-11-02-mm-exported.png)
+`![こんな感じ](/images/2015-11-02-mm-exported.png)`
 
 Trelloを表示しながらコマンドを実行すると「カードがみるみる足されていく」ので面白いですね。
 
