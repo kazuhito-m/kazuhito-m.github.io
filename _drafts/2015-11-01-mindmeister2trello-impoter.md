@@ -24,7 +24,28 @@ TODO タイトル、タグ編集
 
 trello4jとtrello-java-wrapperを迷いましたが…
 
-  + maven-centralに入ってる事
-  + ぱっと見、Usageが簡単そう感をアピってたから
++ maven-centralに入ってる事(sbtにリポジトリ追加しなくていい)
++ ぱっと見、Usageが簡単そう感をアピってたから
 
 trello-java-wrapperにしました。
+
+
+## 参考
+
+以下を参考にさせていただきました。ありがとうございます。
+
+
++ [https://github.com/bywan/trello-java-wrapper](https://github.com/bywan/trello-java-wrapper)
++ [https://github.com/ForNeVeR/trello4j](https://github.com/ForNeVeR/trello4j)
++ [http://qiita.com/isseium/items/8eebac5b79ff6ed1a180](http://qiita.com/isseium/items/8eebac5b79ff6ed1a180)
++ []()
++ []()
++ []()
++ []()
++ []()
++ []()
++ []()
++ []()
++ []()
++ []()
++ []()
