@@ -61,9 +61,19 @@ curl https://raw.githubusercontent.com/n8han/conscript/master/setup.sh | sh
 
 ### mindmeisterから「JSON入りアーカイブ」のダウンロードと解凍
 
-mindmeisterで画面右下の (↓) マークをクリックすると、エクスポート先選択のダイアログが現れます。
+mindmeisterで「タスクにしたいマインドマップ」を開いて下さい。
 
-![]()
+![明日やること](/images/2015-11-01-mm-todo.png)
+
+画面右下の (↓) マークをクリックすると、エクスポート先選択のダイアログが現れます。
+
+![エクスポート先選択](/images/2015-11-01-mm-export.png)
+
+最初から選択されている「Mindmeisterフォーマット」をそのままに、
+「エクスポート」をクリックして下さい。
+
+
+
 
 ### Trelloからの情報取得
 
