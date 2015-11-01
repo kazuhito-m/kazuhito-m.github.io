@@ -1,5 +1,4 @@
 ---
-published: false
 layout: post
 title: 「MindmeisterからTrelloのカードを作成するツール」をScala作ってみた
 category: tech
