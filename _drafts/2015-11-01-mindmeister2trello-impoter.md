@@ -51,14 +51,21 @@ curl https://raw.githubusercontent.com/n8han/conscript/master/setup.sh | sh
 
 ちょーっとこっちが面倒臭いのですが、Webサービス側からの準備として
 
-0. mindmeisterから「JSON入りアーカイブ」のダウンロードと解凍
+1. mindmeisterから「JSON入りアーカイブ」のダウンロードと解凍
 0. Trelloからの情報取得
-		+ 「Developer API Keys」の取得
-		+ 「」の取得
-		+ 「タスクボードのID」の取得
+	+ 「Developer API Key」の取得
+	+ 「」の取得
+	+ 「タスクボードのID」の取得
 
 という作業が必要です。(これはプログラムではなんともならんかった…)
 
+### mindmeisterから「JSON入りアーカイブ」のダウンロードと解凍
+
+mindmeisterで画面右下の (↓) マークをクリックすると、エクスポート先選択のダイアログが現れます。
+
+![]()
+
+### Trelloからの情報取得
 
 ## ツールインストール
 
