@@ -53,8 +53,8 @@ curl https://raw.githubusercontent.com/n8han/conscript/master/setup.sh | sh
 
 1. mindmeisterから「JSON入りアーカイブ」のダウンロードと解凍
 0. Trelloからの情報取得
-	+ 「Developer API Key」の取得
-	+ 「」の取得
+	+ 「API Key」の取得
+	+ 「API Token」の取得
 	+ 「タスクボードのID」の取得
 
 という作業が必要です。(これはプログラムではなんともならんかった…)
@@ -77,36 +77,120 @@ mindmeisterで「タスクにしたいマインドマップ」を開いて下さ
 
 ![mindmeisterのエクスポートZipファイル](/images/2015-11-01-mm-archive.png)
 
-
 ### Trelloからの情報取得
 
+[こちらのページ](http://qiita.com/isseium/items/8eebac5b79ff6ed1a180)と同じことをするのですが、ちょいちょい説明していきます。
+
+#### 「API Key」の取得
+
+Trelloにログインした状態で、
+
+[https://trello.com/1/appKey/generate](https://trello.com/1/appKey/generate)
+
+にアクセスして下さい。
+
+画面、上側ｎ表示されている「Key:」の文字列がAPI Keyです。記録しておいてください。
+
+#### 「API Token」の取得
+
+今度は、取得した「API Key」を使って「Cardの投稿が出来る権限」を持った「API Token」を取得します。
+
+以下のURLを組み立てて、アクセスして下さい。
+
+```bash
+https://trello.com/1/authorize?key=<上で取得したKey>&name=&expiration=never&response_type=token&scope=read,write
+```
+
+確認画面が出るので「Allow」をクリックして下さい。
+
+クリックすると「シンプルな白地テキスト」以下のような感じの表示がなされます。
+
+```
+You have granted access to your Trello information.
+To complete the process, please give this token:
+  XXXXXXXXXXXXXXXXXXXXXXXX
+```
+
+この「XXX...」の部分が「API Token」です。記録しておいて下さい。
+
 #### タスクボードのID
+
+タスクボードへは「タスクボード名」でも「日頃見てるURL」でもなく、内部で使用している
+「タスクボードのID」とでも呼ぶようなものでタスクボードを特定します。
+
+そのため、対象と成る「タスクボードのID」を取得しましょう。
 
 ```url
 https://trello.com/1/members/<username>/boards?key=<Key>&token=<Token>&fields=name
 ```
 
-なのですが、ログイン中ならkeyとtokenはケズれるので…
+を指定することで「自身が見られるタスクボード名とIDの一覧」が取得できます。
+
+…が、ログイン中ならkeyとtokenはケズれるので…
 
 ```url
 https://trello.com/1/members/<username>/boards?fields=name
 ```
 
+で取得できます。指定すると…
+
+```json
+[
+    {"name": "テスト","id": "XXXXXXXXX..."},
+    {"name": "日常","id": "XXXXXXXXX..."}
+]
+```
+のようなJSONが帰ってきます。(実際は改行無し)
+
+"name"で「今回カードを作りたいタスクボード」を探し、"id"を記録しておいて下さい。
+
 ## ツールインストール
+
+ここで、やっと「準備」で用意した「conscript(csコマンド)」を使います。
+
+コンソールから、以下を実行して下さい。
 
 ```bash
 cs kazuhito-m/mindmeister2trello-importer
 ```
 
+最後に
+
+```
+Conscripted kazuhito-m/mindmeister2trello-importer to ...
+```
+
+とか出ていればインストール完了です。
+
+
 ## コマンド実行
 
 上記で収集した情報をすべて引数にのせて、インポートを実行します。
 
+以下をコンソールから実行して下さい。
+
 ```bash
-m2ti [Developer API Key] [token] [タスクボードのIDの] [タスクリスト名] map.json
+m2ti <API Key> <token> <タスクボードのIDの> <タスクリスト名> map.json
 ```
 
-##
+「タスクリスト名」というのは「タスクボード中のリストの表示名」です。(よく"Doing","Done"とかにしてるアレです)
+
+今回の情報を元にすると…
+
+```bash
+m2ti XXXX... XXXX... XXXX... 'To Do' map.json
+```
+という感じになりました。(割と長いコマンドになりますね)
+
+---
+
+実行すると目的のタスクボード、タスクリストに"-"(ハイフン)区切りで要素名をつなげたカードが出来上がります。
+
+![こんな感じ](/images/2015-11-01-mm-exported.png)
+
+Trelloを表示しながらコマンドを実行すると「カードがみるみる足されていく」ので面白いですね。
+
+## 実装面
 
 ## ライブラリ選定
 
@@ -132,9 +216,9 @@ trello-java-wrapperにしました。
 以下を参考にさせていただきました。ありがとうございます。
 
 
++ [http://qiita.com/isseium/items/8eebac5b79ff6ed1a180](http://qiita.com/isseium/items/8eebac5b79ff6ed1a180) これがキモ
 + [https://github.com/bywan/trello-java-wrapper](https://github.com/bywan/trello-java-wrapper)
 + [https://github.com/ForNeVeR/trello4j](https://github.com/ForNeVeR/trello4j)
-+ [http://qiita.com/isseium/items/8eebac5b79ff6ed1a180](http://qiita.com/isseium/items/8eebac5b79ff6ed1a180)
 + [https://github.com/n8han/conscript](https//github.com/n8han/conscript)
 + [http://qiita.com/ha_g1/items/d41febac011df4601544](http://qiita.com/ha_g1/items/d41febac011df4601544)
 + [http://mocobeta-backup.tumblr.com/post/123266618477/100-2015-scala-3](http://mocobeta-backup.tumblr.com/post/123266618477/100-2015-scala-3)
