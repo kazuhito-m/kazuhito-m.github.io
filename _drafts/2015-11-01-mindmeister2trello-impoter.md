@@ -3,21 +3,21 @@ published: false
 layout: post
 title: 「MindmeisterからTrelloのカードを作成するツール」をScala作ってみた
 category: tech
-tags: [mindmeister,trello,conscript,scala,trello-java-wrapper]
+tags: [mindmeister,trello,conscript,scala,trello-java-wrapper,json4s]
 ---
 
 自身は「何かどうやっていいかわからないこと」や「ゴールへの道筋がわからないもの」に当たる時、「マインドマップツール」を使用します。
 
 この時の使い方は「タスク分解機」であり「放射状アウトラインエディタ」だったりします。
 
-最近は「複数人で同時編集出来る」という理由で「[mindmeister](https://www.mindmeister.com/)」というWebサービスを使うことが多いのです。
+最近は「複数人で同時編集出来る」という理由で「[Mindmeister](https://www.mindmeister.com/)」というWebサービスを使うことが多いのです。
 
 で、そのタスク分解したものは「[Trello](https://trello.com)」という、
 タスクボードのコレまたWebサービスに転記して整理・Todo消化とかしていくわけです。
 
-ただ！当たり前ながらその転記がめんどい…ので！
+がっ！当たり前ながらその転記がめんどい…ので！
 
-「mindmeisterの末端アーティクル -> Trelloのカード へと転送」
+`「Mindmeisterの末端アーティクル -> Trelloのカード へと転送」`
 
 するバッチを作りました。
 
@@ -26,7 +26,7 @@ tags: [mindmeister,trello,conscript,scala,trello-java-wrapper]
 ## 前提
 
 + Scala/conscriptが動くOS環境であること(筆者はUbuntu Linux)
-+ mindmeister, Trelloにはアカウントを持っていること
++ Mindmeister, Trelloにはアカウントを持っていること
 
 ## 準備
 
@@ -51,7 +51,7 @@ curl https://raw.githubusercontent.com/n8han/conscript/master/setup.sh | sh
 
 ちょーっとこっちが面倒臭いのですが、Webサービス側からの準備として
 
-1. mindmeisterから「JSON入りアーカイブ」のダウンロードと解凍
+1. Mindmeisterから「JSON入りアーカイブ」のダウンロードと解凍
 0. Trelloからの情報取得
 	+ 「API Key」の取得
 	+ 「API Token」の取得
@@ -59,9 +59,9 @@ curl https://raw.githubusercontent.com/n8han/conscript/master/setup.sh | sh
 
 という作業が必要です。(これはプログラムではなんともならんかった…)
 
-### mindmeisterから「JSON入りアーカイブ」のダウンロードと解凍
+### Mindmeisterから「JSON入りアーカイブ」のダウンロードと解凍
 
-mindmeisterで「タスクにしたいマインドマップ」を開いて下さい。
+Mindmeisterで「タスクにしたいマインドマップ」を開いて下さい。
 
 ![明日やること](/images/2015-11-01-mm-todo.png)
 
@@ -75,7 +75,7 @@ mindmeisterで「タスクにしたいマインドマップ」を開いて下さ
 `[マインドマップの名前].mind` というファイル名のZipファイルが落ちてきますので、
 解凍して `map.json` というファイルを取り出して置いて下さい。
 
-![mindmeisterのエクスポートZipファイル](/images/2015-11-01-mm-archive.png)
+![MindmeisterのエクスポートZipファイル](/images/2015-11-01-mm-archive.png)
 
 ### Trelloからの情報取得
 
@@ -248,10 +248,6 @@ trello-java-wrapperにしました。
 + [https://github.com/json4s/json4s](https://github.com/json4s/json4s)
 + [http://d.hatena.ne.jp/Kazuhira/20140419/1397895464](http://d.hatena.ne.jp/Kazuhira/20140419/1397895464)
 + [conscript周り](http://pab-tech.tumblr.com/post/21134862609/scaladispatch%E3%81%A7tumblr%E3%81%AEapi%E3%82%92%E5%8F%A9%E3%81%8Fconscript%E3%81%A7%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%82%92%E4%BD%9C%E3%82%8B%E7%B7%A8)
-+ []()
-+ []()
-+ []()
-+ []()
 + Scalaらへん
 	+ [http://tech-blog.tsukaby.com/archives/646](http://tech-blog.tsukaby.com/archives/646)
 	+ [http://d.hatena.ne.jp/xuwei/20110217/1297904429](http://d.hatena.ne.jp/xuwei/20110217/1297904429)
@@ -265,5 +261,3 @@ trello-java-wrapperにしました。
 	+ [http://uriku.hatenablog.com/entry/2015/05/24/225349](http://uriku.hatenablog.com/entry/2015/05/24/225349)
 	+ [sbtがらみのトラブル](http://stackoverflow.com/questions/19805102/unresolved-dependency-org-scala-sbtsbt0-13-not-found-when-running-sbt-0-13)
 	+ [http://qiita.com/asmasa/items/68f90db705bd44f4e590](http://qiita.com/asmasa/items/68f90db705bd44f4e590)
-  + []()
-	+ []()
