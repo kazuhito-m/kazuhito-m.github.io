@@ -3,27 +3,72 @@ published: false
 layout: post
 title: 「MindmeisterからTrelloのカードを作成するツール」をScala作ってみた
 category: tech
-tags: [usb,ci,hardware]
+tags: [mindmeister,trello,conscript,scala,trello-java-wrapper]
 ---
 
 自身は「何かどうやっていいかわからないこと」や「ゴールへの道筋がわからないもの」に当たる時、「マインドマップツール」を使用します。
 
 この時の使い方は「タスク分解機」であり「放射状アウトラインエディタ」だったりします。
 
-で、最近は「複数人で同時編集出来る」という理由で「mindmeister」というWebサービスを使うことが多いのです。
+最近は「複数人で同時編集出来る」という理由で「[mindmeister](https://www.mindmeister.com/)」というWebサービスを使うことが多いのです。
 
+で、そのタスク分解したものは「[Trello](https://trello.com)」という、
+タスクボードのコレまたWebサービスに転記して整理・Todo消化とかしていくわけです。
 
-TODO タイトル、タグ編集
+ただ！当たり前ながらその転記がめんどい…ので！
 
-# 使い方 
+「mindmeisterの末端アーティクル -> Trelloのカード へと転送」
+
+するバッチを作りました。
+
+# 使い方
 
 ## 前提
 
++ Scala/conscriptが動くOS環境であること(筆者はUbuntu Linux)
++ mindmeister, Trelloにはアカウントを持っていること
+
 ## 準備
+
+ツールを入れるため、その前にやっておくこととして…
+
++ Javaインストール
++ [conscript(csコマンド)](https://github.com/n8han/conscript)のインストールが
+
+が必要です。
+
+[ここ(本家README)](https://github.com/n8han/conscript)を参考に、conscriptのインストールを行って下さい
+
+自身はUbuntuLinuxですので
+
+```bash
+curl https://raw.githubusercontent.com/n8han/conscript/master/setup.sh | sh
+```
+
+でサクッと「csコマンド打てる状態」になりました。
+
+## Webサービス側での用意
+
+ちょーっとこっちが面倒臭いのですが、Webサービス側からの準備として
+
+0. mindmeisterから「JSON入りアーカイブ」のダウンロードと解凍
+0. Trelloからの情報取得
+		+ 「Developer API Keys」の取得
+		+ 「」の取得
+		+ 「タスクボードのID」の取得
+
+という作業が必要です。(これはプログラムではなんともならんかった…)
+
+
+## ツールインストール
 
 ## コマンド実行
 
+
+
 # 実装について
+
+##
 
 ## ライブラリ選定
 
@@ -55,7 +100,7 @@ trello-java-wrapperにしました。
 + [http://mocobeta-backup.tumblr.com/post/123266618477/100-2015-scala-3](http://mocobeta-backup.tumblr.com/post/123266618477/100-2015-scala-3)
 + [https://gist.github.com/takuya71/4025974](https://gist.github.com/takuya71/4025974)
 + [http://d.hatena.ne.jp/Kazuhira/20140419/1397895464](http://d.hatena.ne.jp/Kazuhira/20140419/1397895464)
-+ []()
++ [conscript周り](http://pab-tech.tumblr.com/post/21134862609/scaladispatch%E3%81%A7tumblr%E3%81%AEapi%E3%82%92%E5%8F%A9%E3%81%8Fconscript%E3%81%A7%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%82%92%E4%BD%9C%E3%82%8B%E7%B7%A8)
 + []()
 + []()
 + []()
