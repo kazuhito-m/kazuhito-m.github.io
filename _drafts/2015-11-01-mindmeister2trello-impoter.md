@@ -14,3 +14,17 @@ tags: [usb,ci,hardware]
 
 
 TODO タイトル、タグ編集
+
+
+
+
+## 実装について
+
+### ライブラリ選定
+
+trello4jとtrello-java-wrapperを迷いましたが…
+
+  + maven-centralに入ってる事
+  + ぱっと見、Usageが簡単そう感をアピってたから
+
+trello-java-wrapperにしました。
