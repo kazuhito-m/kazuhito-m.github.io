@@ -80,13 +80,31 @@ mindmeisterで「タスクにしたいマインドマップ」を開いて下さ
 
 ### Trelloからの情報取得
 
+#### タスクボードのID
+
+```url
+https://trello.com/1/members/<username>/boards?key=<Key>&token=<Token>&fields=name
+```
+
+なのですが、ログイン中ならkeyとtokenはケズれるので…
+
+```url
+https://trello.com/1/members/<username>/boards?fields=name
+```
+
 ## ツールインストール
+
+```bash
+cs kazuhito-m/mindmeister2trello-importer
+```
 
 ## コマンド実行
 
+上記で収集した情報をすべて引数にのせて、インポートを実行します。
 
-
-# 実装について
+```bash
+m2ti [Developer API Key] [token] [タスクボードのIDの] [タスクリスト名] map.json
+```
 
 ##
 
@@ -105,7 +123,9 @@ trello-java-wrapperにしました。
 
 個人的には「なかなか便利になった」感じがあるので、複数人での「ブレストからのタスク出し」に活用していきたいと思います。
 
-そして「INとOUTがはっきりしたツール」なので、Webサービス化もあるかも？…とか構想が広がりますねw
+そして「INとOUTがはっきりしたツール」なので、Webサービス化もあるかも？…とか構想が広がりますね。
+
+ま、気が向けばやってきますね。
 
 # 参考
 
