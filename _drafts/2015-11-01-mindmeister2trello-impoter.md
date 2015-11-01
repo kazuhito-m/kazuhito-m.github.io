@@ -192,6 +192,25 @@ Trelloを表示しながらコマンドを実行すると「カードがみる�
 
 ## 実装面
 
+[こちらのリポジトリ](https://github.com/kazuhito-m/mindmeister2trello-importer) にソースがあります。
+
+基本構成は、
+
++ Scala
++ [sbt](http://www.scala-sbt.org/0.13/tutorial/ja/)
++ [conscript](https://github.com/n8han/conscript)
++ [giter8でテンプレ作成](http://qiita.com/asmasa/items/68f90db705bd44f4e590)
++ github-pagesをリポジトリにして配布
+
+な[昨年末クローラ作った時の構成](http://natural-born-minority.blogspot.jp/2014/12/bot-irofhistory.html) です。
+
+実現機能のために、
+
++ [json4s](https://github.com/json4s/json4s)
++ [trello-java-wrapper](https://github.com/bywan/trello-java-wrapper)
+
+を追加しています。
+
 ## ライブラリ選定
 
 trello4jとtrello-java-wrapperを迷いましたが…
@@ -201,11 +220,15 @@ trello4jとtrello-java-wrapperを迷いましたが…
 
 trello-java-wrapperにしました。
 
-
-
 # 小並感
 
-個人的には「なかなか便利になった」感じがあるので、複数人での「ブレストからのタスク出し」に活用していきたいと思います。
+いやーScalaはなというか…「加減考えんといかんくらいリファクタングが出来る」のが凄いですね。
+
+数えて見ると…「賞味のロジックが１ファイル20行満たない」「でも頃合い」というのは凄い。
+
+---
+
+ツールとして、個人的には「なかなか便利になった」感じがあるので、複数人での「ブレストからのタスク出し」に活用していきたいと思います。
 
 そして「INとOUTがはっきりしたツール」なので、Webサービス化もあるかも？…とか構想が広がりますね。
 
@@ -215,7 +238,6 @@ trello-java-wrapperにしました。
 
 以下を参考にさせていただきました。ありがとうございます。
 
-
 + [http://qiita.com/isseium/items/8eebac5b79ff6ed1a180](http://qiita.com/isseium/items/8eebac5b79ff6ed1a180) これがキモ
 + [https://github.com/bywan/trello-java-wrapper](https://github.com/bywan/trello-java-wrapper)
 + [https://github.com/ForNeVeR/trello4j](https://github.com/ForNeVeR/trello4j)
@@ -223,6 +245,7 @@ trello-java-wrapperにしました。
 + [http://qiita.com/ha_g1/items/d41febac011df4601544](http://qiita.com/ha_g1/items/d41febac011df4601544)
 + [http://mocobeta-backup.tumblr.com/post/123266618477/100-2015-scala-3](http://mocobeta-backup.tumblr.com/post/123266618477/100-2015-scala-3)
 + [https://gist.github.com/takuya71/4025974](https://gist.github.com/takuya71/4025974)
++ [https://github.com/json4s/json4s](https://github.com/json4s/json4s)
 + [http://d.hatena.ne.jp/Kazuhira/20140419/1397895464](http://d.hatena.ne.jp/Kazuhira/20140419/1397895464)
 + [conscript周り](http://pab-tech.tumblr.com/post/21134862609/scaladispatch%E3%81%A7tumblr%E3%81%AEapi%E3%82%92%E5%8F%A9%E3%81%8Fconscript%E3%81%A7%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%82%92%E4%BD%9C%E3%82%8B%E7%B7%A8)
 + []()
@@ -241,4 +264,6 @@ trello-java-wrapperにしました。
 	+ [http://www.mwsoft.jp/programming/scala/fileread.html](http://www.mwsoft.jp/programming/scala/fileread.html)
 	+ [http://uriku.hatenablog.com/entry/2015/05/24/225349](http://uriku.hatenablog.com/entry/2015/05/24/225349)
 	+ [sbtがらみのトラブル](http://stackoverflow.com/questions/19805102/unresolved-dependency-org-scala-sbtsbt0-13-not-found-when-running-sbt-0-13)
+	+ [http://qiita.com/asmasa/items/68f90db705bd44f4e590](http://qiita.com/asmasa/items/68f90db705bd44f4e590)
+  + []()
 	+ []()
