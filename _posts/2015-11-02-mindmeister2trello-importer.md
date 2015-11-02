@@ -120,17 +120,11 @@ To complete the process, please give this token:
 そのため、対象と成る「タスクボードのID」を取得しましょう。
 
 
-```url
-https://trello.com/1/members/[username]/boards?key=[Key]&token=[Token]&fields=name
-```
 
 を指定することで「自身が見られるタスクボード名とIDの一覧」が取得できます。
 
 …が、ログイン中ならkeyとtokenはケズれるので…
 
-```url
-https://trello.com/1/members/[username]/boards?fields=name
-```
 
 で取得できます。指定すると…
 
