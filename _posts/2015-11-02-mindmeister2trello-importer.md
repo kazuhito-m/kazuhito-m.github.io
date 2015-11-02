@@ -5,6 +5,7 @@ category: tech
 tags: [mindmeister,trello,conscript,scala,trello-java-wrapper,json4s]
 ---
 
+<<<<<<< HEAD
 自身は「何かどうやっていいかわからないこと」や「ゴールへの道筋がわからないもの」に当たる時、「マインドマップツール」を使用します。
 
 この時の使い方は「タスク分解機」であり「放射状アウトラインエディタ」だったりします。(マインドマップ書いてませんw)
@@ -46,3 +47,5 @@ curl https://raw.githubusercontent.com/n8han/conscript/master/setup.sh | sh
 
 でサクッと「csコマンド打てる状態」になりました。
 
+=======
+>>>>>>> 452c0262db2e559664735d6e88c7dc07311f5317
