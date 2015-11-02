@@ -221,6 +221,9 @@ trello4jとtrello-java-wrapperを迷いましたが…
 
 trello-java-wrapperにしました。
 
+…その割には「spring-webをDependencyに足さないと動かない」など
+要らないものも持ってきてしまいましたがw
+
 # 小並感
 
 いやーScalaはなというか…「加減考えんといかんくらいリファクタングが出来る」のが凄いですね。
