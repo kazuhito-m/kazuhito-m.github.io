@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 「MindmeisterからTrelloのカードを作成するツール」をScala作ってみた
+title: 「MindmeisterからTrelloのカードを作成するツール」をScalaで作ってみた
 category: tech
 tags: [mindmeister,trello,conscript,scala,trello-java-wrapper,json4s]
 ---
