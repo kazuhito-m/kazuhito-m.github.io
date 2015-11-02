@@ -16,7 +16,7 @@ tags: [mindmeister,trello,conscript,scala,trello-java-wrapper,json4s]
 
 がっ！当たり前ながらその転記がめんどい…ので！
 
-`「Mindmeisterの末端アーティクル -> Trelloのカード へと転送」`
+`「Mindmeisterの末端アーティクル →  Trelloのカード へと転送」`
 
 するバッチを作りました。
 
@@ -97,7 +97,7 @@ Trelloにログインした状態で、
 以下のURLを組み立てて、アクセスして下さい。
 
 ```bash
-https://trello.com/1/authorize?key=<上で取得したKey>&name=&expiration=never&response_type=token&scope=read,write
+https://trello.com/1/authorize?key=[上で取得したKey]&name=&expiration=never&response_type=token&scope=read,write
 ```
 
 確認画面が出るので「Allow」をクリックして下さい。
@@ -164,7 +164,7 @@ Conscripted kazuhito-m/mindmeister2trello-importer to ...
 以下をコンソールから実行して下さい。
 
 ```bash
-m2ti <API Key> <token> <タスクボードのIDの> <タスクリスト名> map.json
+m2ti [API Key] [token] [タスクボードのIDの] [タスクリスト名] map.json
 ```
 
 「タスクリスト名」というのは「タスクボード中のリストの表示名」です。(よく"Doing","Done"とかにしてるアレです)
