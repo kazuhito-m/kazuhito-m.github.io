@@ -5,7 +5,6 @@ category: tech
 tags: [mindmeister,trello,conscript,scala,trello-java-wrapper,json4s]
 ---
 
-<<<<<<< HEAD
 自身は「何かどうやっていいかわからないこと」や「ゴールへの道筋がわからないもの」に当たる時、「マインドマップツール」を使用します。
 
 この時の使い方は「タスク分解機」であり「放射状アウトラインエディタ」だったりします。(マインドマップ書いてませんw)
@@ -47,5 +46,69 @@ curl https://raw.githubusercontent.com/n8han/conscript/master/setup.sh | sh
 
 でサクッと「csコマンド打てる状態」になりました。
 
-=======
->>>>>>> 452c0262db2e559664735d6e88c7dc07311f5317
+## Webサービス側での用意
+
+ちょーっとこっちが面倒臭いのですが、Webサービス側からの準備として
+
+1. Mindmeisterから「JSON入りアーカイブ」のダウンロードと解凍
+0. Trelloからの情報取得
+	+ 「API Key」の取得
+	+ 「API Token」の取得
+	+ 「タスクボードのID」の取得
+
+という作業が必要です。(これはプログラムではなんともならんかった…)
+
+### Mindmeisterから「JSON入りアーカイブ」のダウンロードと解凍
+
+Mindmeisterで「タスクにしたいマインドマップ」を開いて下さい。
+
+`![明日やること](/images/2015-11-02-mm-todo.png)`
+
+画面右下の (↓) マークをクリックすると、エクスポート先選択のダイアログが現れます。
+
+`![エクスポート先選択](/images/2015-11-02-mm-export.png)`
+
+最初から選択されている「Mindmeisterフォーマット」をそのままに、
+「エクスポート」をクリックして下さい。
+
+`[マインドマップの名前].mind` というファイル名のZipファイルが落ちてきますので、
+解凍して `map.json` というファイルを取り出して置いて下さい。
+
+`![MindmeisterのエクスポートZipファイル](/images/2015-11-02-mm-archive.png)`
+
+### Trelloからの情報取得
+
+[こちらのページ](http://qiita.com/isseium/items/8eebac5b79ff6ed1a180)と同じことをするのですが、ちょいちょい説明していきます。
+
+#### 「API Key」の取得
+
+Trelloにログインした状態で、
+
+[https://trello.com/1/appKey/generate](https://trello.com/1/appKey/generate)
+
+にアクセスして下さい。
+
+画面、上側ｎ表示されている「Key:」の文字列がAPI Keyです。記録しておいてください。
+
+#### 「API Token」の取得
+
+今度は、取得した「API Key」を使って「Cardの投稿が出来る権限」を持った「API Token」を取得します。
+
+以下のURLを組み立てて、アクセスして下さい。
+
+```bash
+https://trello.com/1/authorize?key=<上で取得したKey>&name=&expiration=never&response_type=token&scope=read,write
+```
+
+確認画面が出るので「Allow」をクリックして下さい。
+
+クリックすると「シンプルな白地テキスト」以下のような感じの表示がなされます。
+
+```
+You have granted access to your Trello information.
+To complete the process, please give this token:
+  XXXXXXXXXXXXXXXXXXXXXXXX
+```
+
+この「XXX...」の部分が「API Token」です。記録しておいて下さい。
+
