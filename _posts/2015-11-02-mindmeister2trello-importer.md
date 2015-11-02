@@ -202,7 +202,7 @@ Trelloを表示しながらコマンドを実行すると「カードがみる�
 + [giter8でテンプレ作成](http://qiita.com/asmasa/items/68f90db705bd44f4e590)
 + github-pagesをリポジトリにして配布
 
-な[昨年末クローラ作った時の構成](http://natural-born-minority.blogspot.jp/2014/12/bot-irofhistory.html) です。
+な[昨年末クローラ作った時の構成](http://natural-born-minority.blogspot.jp/2014/12/bot-irofhistory.html) です。(トレンド考えると少し古い技術でしょうか)
 
 実現機能のために、
 
