@@ -125,7 +125,7 @@ https://trello.com/1/members/<username>/boards?key=<Key>&token=<Token>&fields=na
 
 を指定することで「自身が見られるタスクボード名とIDの一覧」が取得できます。
 
-…が、ログイン中ならkeyとtokenはケズれるので…
+ですが、ログイン中ならkeyとtokenはケズれるので…
 
 ```url
 https://trello.com/1/members/<username>/boards?fields=name
