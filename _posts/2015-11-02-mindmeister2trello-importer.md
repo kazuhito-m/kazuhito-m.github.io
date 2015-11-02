@@ -127,3 +127,32 @@ To complete the process, please give this token:
 で取得できます。指定すると…
 
 
+```json
+[
+    {"name": "テスト","id": "XXXXXXXXX..."},
+    {"name": "日常","id": "XXXXXXXXX..."}
+]
+```
+のようなJSONが帰ってきます。(実際は改行無し)
+
+"name"で「今回カードを作りたいタスクボード」を探し、"id"を記録しておいて下さい。
+
+## ツールインストール
+
+ここで、やっと「準備」で用意した「conscript(csコマンド)」を使います。
+
+コンソールから、以下を実行して下さい。
+
+```bash
+cs kazuhito-m/mindmeister2trello-importer
+```
+
+最後に
+
+```
+Conscripted kazuhito-m/mindmeister2trello-importer to ...
+```
+
+とか出ていればインストール完了です。
+
+
