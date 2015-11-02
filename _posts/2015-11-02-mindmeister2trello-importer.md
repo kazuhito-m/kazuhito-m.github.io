@@ -143,22 +143,4 @@ https://trello.com/1/members/<username>/boards?fields=name
 
 "name"で「今回カードを作りたいタスクボード」を探し、"id"を記録しておいて下さい。
 
-## ツールインストール
-
-ここで、やっと「準備」で用意した「conscript(csコマンド)」を使います。
-
-コンソールから、以下を実行して下さい。
-
-```bash
-cs kazuhito-m/mindmeister2trello-importer
-```
-
-最後に
-
-```
-Conscripted kazuhito-m/mindmeister2trello-importer to ...
-```
-
-とか出ていればインストール完了です。
-
 
