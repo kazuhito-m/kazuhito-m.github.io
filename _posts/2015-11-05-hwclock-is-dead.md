@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 「ハードウェアクロックが狂ってるとなんかもう色々しっちゃかめっちゃかになる」話
+title: 「PCのハードウェアクロックが狂ってるとしっちゃかめっちゃかになる」話
 category: tech
-tags: [mindmeister,trello,conscript,scala,trello-java-wrapper,json4s]
+tags: [hardware,problem,tips,linux,ubuntu]
 ---
 
 技術的検証も、ハードコピーも、なーにも出来てないんですけど…
@@ -26,6 +26,8 @@ tags: [mindmeister,trello,conscript,scala,trello-java-wrapper,json4s]
 + DHCPサーバから、プライマリDNSが取れない
 + 手動でIP、DNSサーバを設定しても名前解決が出来ない
 + 証明書が役立たず(HTTPS/SSL通信が出来ない)
++ NTPサーバを設定していたとしても「ネット繋がらない」ので自動補正効かず解決に向かわない
++ 電源切ると「ハードクロック側」を最初に参照するのでシステムクロックを補正してもまたおかしくなる
 + Linux的には
   + パッケージ管理がズタボロ(出来たり出来なかったりするので依存性がむちゃくちゃに)
   + Ubuntuのディストリインストーラが途中でこける
@@ -40,3 +42,13 @@ tags: [mindmeister,trello,conscript,scala,trello-java-wrapper,json4s]
 
 (その間、めっちゃ時間をかけてインストールしたり、ディストリのバージョンを3つくらい行き来してみたり…の試行錯誤。)
 
+# 対処(解決策)
+
+インストーラが動かないせいで「内部ディスクのOSは当てにならない」状態となってしまったため、
+USBメモリブータブルUbuntuLinuxを起動させ、そこで作業を行いました。
+
+まず、システムクロック(ソフトウェア上の時間)を、「出来る限り現在の時間」に寄せて、補正しました。
+
+```bash
+sudo date --set '2015-11-04 23:15:00' # 正確でなくても良いです。ある程度寄ってれば…
+```
