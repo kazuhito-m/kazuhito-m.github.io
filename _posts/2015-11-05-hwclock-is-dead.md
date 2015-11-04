@@ -47,8 +47,40 @@ tags: [hardware,problem,tips,linux,ubuntu]
 インストーラが動かないせいで「内部ディスクのOSは当てにならない」状態となってしまったため、
 USBメモリブータブルUbuntuLinuxを起動させ、そこで作業を行いました。
 
+最初の時点で、どうやら日付がおかしい…。
+
+```bash
+date
+2172年 10月 21日 水曜日 06:26:37 JST
+```
+DNSの名前解決をすると、以下のような状態になり、名前が引けません。
+
+```bash
+host google.co.jp
+timer.c:811: fatal error: RUNTIME_CHECK(isc_time_now((&now)) == 0) failed
+中止 (コアダンプ)
+```
+
+ここで「timer.c ... ?」という疑いから、原因に辿りつけたのですけど…。
+
+---
+
 まず、システムクロック(ソフトウェア上の時間)を、「出来る限り現在の時間」に寄せて、補正しました。
 
 ```bash
 sudo date --set '2015-11-04 23:15:00' # 正確でなくても良いです。ある程度寄ってれば…
 ```
+
+この時点で、DHCPでのIP取得とDNSでの名前解決が復活します。
+
+```bash
+host google.co.jp
+google.co.jp has address 216.58.221.3
+google.co.jp mail is handled by 30 alt2.aspmx.l.google.com.
+google.co.jp mail is handled by 40 alt3.aspmx.l.google.com.
+...
+```
+よし、復活！…なのですが、インターネット参照が復活していることから、
+NTPでの「時間合わせ」も復活してることをGUIで確認します。
+
+![]()
