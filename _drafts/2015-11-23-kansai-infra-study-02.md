@@ -181,6 +181,9 @@ tags: [infrastracture]
 + vROps
   + 管理ツールの違い
     + 「普段の振る舞い」を解析し「異常検知」と「アドバイスしてくれる」仕組み
++ Dockerとの連携
+  + PHOTHON
+
 
 エピソード：Windows7上でWindows3.1が動く。
 
