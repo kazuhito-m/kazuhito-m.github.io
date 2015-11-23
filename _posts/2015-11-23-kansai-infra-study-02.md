@@ -53,30 +53,29 @@ tags: [infrastracture]
 + 最近のセキュリティ系協議会
   1. SECCON
   0. Hardening Project
-    + 脆弱性のあるサイトが構築してあるのでそれに対応する
   0. CTF
 + CTF - Capture The Flag
   + 「フラグ」という「何らかの答え」を探す
-    + バイナリ系
-    + フォレンジック系
-    + WEb系
+      + バイナリ系
+      + フォレンジック系
+      + WEb系
   + インフラエンジニアの出番は？ → ネットワーク系問題
-    + pcapを解析する問題
-    + 問題の内容「ftp ...」
-      + Responseパケットしかない
-      + Requiestが無い…
-      + FTP読もう
-        + ログイン、ls、flag.tar...
-      + ftpでの実バイナリはftp-dataプロトコルで送る
-      + 分割されてるけど
-        + Wiresharkでくっつける
-      + Tarの中にflagありそう → 展開
-      + tarの中にtar
-      + 後ろに== → Base64だろう → デコード
+      + pcapを解析する問題
+      + 問題の内容「ftp ...」
+          + Responseパケットしかない
+          + Requiestが無い…
+          + FTP読もう
+              + ログイン、ls、flag.tar...
+          + ftpでの実バイナリはftp-dataプロトコルで送る
+          + 分割されてるけど
+              + Wiresharkでくっつける
+          + Tarの中にflagありそう → 展開
+          + tarの中にtar
+          + 後ろに== → Base64だろう → デコード
   + 必要な知識
-    + プロトコル(ftp)
-    + Wireshark
-    + base64
+      + プロトコル(ftp)
+      + Wireshark
+      + base64
 
 ### 会場に対する「宿題」
 
