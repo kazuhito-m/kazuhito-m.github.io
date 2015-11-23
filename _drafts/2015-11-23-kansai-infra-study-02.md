@@ -195,11 +195,28 @@ NSXについては
 
 ## 5コマ目「マニアックツール紹介、マネジメントのKnife-Zero(Chef)とテストスイートInSpec」
 
-+ 登壇者 :   さん ( [@sawanoboly](https://twitter.com/sawanoboly) )
++ 登壇者 : Yukihiko Sawanobor さん ( [@sawanoboly](https://twitter.com/sawanoboly) )
 + 資料 :  
 
++ Knife-Zeroの使い方
+  + bootstrap
+    + 対象のサーバにChefインストール
+    + 情報を収集してローカルに保存
++ Knife-Zeroで良かったこと
+  + SSH x 管理権げで触れるサーバの台帳(構成管理)が作れる＆コードで管理をしやすくなった
+  + C/S環境向けのレシピが使いやすくなった
+  + ファイルの転送は必要分だけなので、わりと早い
++ 新しめのテストスイート「InSpec」
+  + 基本ServerSpecと似てる
+  + 監査向けの強化
+  + Specにスコアをつけて影響度を合算、のような結果を出せる
 
+## 6コマ目「Cent7@zabbix2.4を試す」
 
++ 登壇者 : 白石 雅義 さん ( [@m_46 ](https://twitter.com/m_46 ) )
++ 資料 :  
+
++ 
 
 ## 5コマ目「ディスカッションとか突発ライトニングトーク大会とか」
 
