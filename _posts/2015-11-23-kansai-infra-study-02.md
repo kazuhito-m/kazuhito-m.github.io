@@ -1,5 +1,4 @@
 ---
-published: false
 layout: post
 title: 勉強会行ってみた「第02回 関西ITインフラ勉強会」#kistudy
 category: study-meeting-repo
