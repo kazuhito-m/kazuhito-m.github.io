@@ -192,7 +192,7 @@ __[このファイル](http://www.nsc.gr.jp/kistudy2/162-basic.pcap)を元に「
 + 登壇者 : 萩原 隆博 さん ( [@shadowhat](https://twitter.com/shadowhat) )
 + 資料 : 捜索中  
 
-語り口が素晴らしい、VMWare社の方である萩原さんのセッションです。
+語り口が素晴らしい、萩原さんのセッションです。
 
 ### 内容
 
