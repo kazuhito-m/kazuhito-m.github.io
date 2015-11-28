@@ -62,7 +62,7 @@ tags: [java]
 ## 3コマ目  「GH-1 JAX-RS入門および実践」
 
 + 登壇者 : 浦上 太一 さん ( [@backpaper0](https://twitter.com/backpaper0) )
-+ 資料 :
++ 資料 : [http://backpaper0.github.io/ghosts/jaxrs-getting-started-and-practice.html](http://backpaper0.github.io/ghosts/jaxrs-getting-started-and-practice.html)
 
 個人的興味として「大きな会場でのうらがみさんの発表がどんなもんか」が見たかったのですが…さすがでしたｗ
 
