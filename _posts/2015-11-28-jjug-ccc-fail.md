@@ -78,7 +78,7 @@ tags: [java]
 ## 5コマ目「CD-3 よくある業務開発の自動化事情」
 
 + 登壇者 : [@irof](https://twitter.com/irof) さん
-+ 資料 :
++ 資料 : <iframe src="//www.slideshare.net/slideshow/embed_code/key/mkCRE8ss0dCb0y" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/irof/jjugccc-ccccd3" title="よくある業務開発の自動化事情 #jjug_ccc #ccc_cd3" target="_blank">よくある業務開発の自動化事情 #jjug_ccc #ccc_cd3</a> </strong> from <strong><a href="//www.slideshare.net/irof" target="_blank">irof N</a></strong> </div>
 
 ## 6コマ目「EF-4 ソラコムでのJava/AWS活用 – SIM管理やAWS Lambda Javaなど」
 
