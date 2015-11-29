@@ -336,7 +336,7 @@ __すげぇ楽しかった！また来たいぜ！__
 + 初対面で気さくにはなしていただいた [@takesi_yosimura](https://twitter.com/takesi_yosimura) さん、[@i_takehiro](https://twitter.com/i_takehiro) さん  
 + ニアミスからやっと相互認識頂いた [@cero_t](https://twitter.com/cero_t) さん
 + 酷い質問したけど「相互認識いただいていた」 [@yoshioterada](https://twitter.com/yoshioterada) さん
-+ 「ナンパしたことになってる」 [@dahlia_cocoa](https://twitter.com/dahlia_cocoa) さん (すみません)
++ 初対面で風評被害にあわせてしまった [@dahlia_cocoa](https://twitter.com/dahlia_cocoa) さん (すみません)
 + (見てないけど)会場どっかんどっかんだったらしい [@yy_yank](https://twitter.com/yy_yank) さん(見てないけど)
 + リアルに会ってもきっちり「そゆのもったいない！がんばれよ！」の言葉をくれはった [@yusuke](https://twitter.com/yusuke) さん
 + 「この人としゃべるでしょ！紹介するよ！」って連れてってくれた [@kotomacontact](https://twitter.com/kotomacontact) さん、[@haljik](https://twitter.com/haljik) さん、[@chiroito](https://twitter.com/chiroito) さん、[@soudai1025](https://twitter.com/soudai1025) さん
