@@ -31,8 +31,6 @@ tags: [java,jjug]
 
 # 内容
 
-※あんまJavaについては語れるものが無いので、一言感想だけ。
-
 ## 1コマ目「基調講演1 : Javaは守りに入らない、これが今のJavaだ」
 
 + 登壇者 : 谷本 心 ( [@cero_t](https://twitter.com/cero_t) ) さん
@@ -45,7 +43,7 @@ tags: [java,jjug]
 
 自分はせろてぃさんの発表を聞くのは二回目なんですが…
 
-「"スベる"という現象が起きようが起きまいが"スベる"というエンターテイメントを提供するゲラゲラ」
+__「"スベる"という現象が起きようが起きまいが"スベる"というエンターテイメントを提供するゲラゲラ」__
 
 というちょっと嫉妬してしまう、そんな素晴らしい(俺好みの)セッションでした(ファンです)。
 
@@ -152,8 +150,28 @@ Hazelcast CTO、Gregさんによる、キャッシュライブラリ「JCache」
 + 登壇者 : [@irof](https://twitter.com/irof) さん
 + 資料 : <iframe src="//www.slideshare.net/slideshow/embed_code/key/mkCRE8ss0dCb0y" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/irof/jjugccc-ccccd3" title="よくある業務開発の自動化事情 #jjug_ccc #ccc_cd3" target="_blank">よくある業務開発の自動化事情 #jjug_ccc #ccc_cd3</a> </strong> from <strong><a href="//www.slideshare.net/irof" target="_blank">irof N</a></strong> </div>
 
+もうプログラム分野では多彩すぎて「関西住みのJavaのすごい人」としか言いようがない、[@irof](https://twitter.com/irof) さんのセッションです。
 
+「自身が見聞きしてきた直近のいくつかの現場における、ギョームアプリ開発の自動化」についての知見…をJava視点でまとめたものですかね。
 
+※この記事のトップ絵は、このセッションのものです。超満員！！
+
+---
+
+感じたのは「発表巧者だなー」と言うところ。
+
+俺は、勉強会の技術系のセッションでも「上手い人の発表はエンターテイメント」だと思ってる人です。
+
+そういうエンタメ目線で行くと、お客さんの「注目を維持する」ってのは、かなり難しくて
+
++ つかみ重要
++ 全編平坦はだめ、全編テンション高でもだめ
++ つかみはOK、でもその後盛り上がりがなければ「期待したけど…そんなか」の印象を与えかねない
++ 要所要所にお客さんが盛り上がるトコがあるのが重要
+
+などを(ある程度)考えないと、「後半睡眠者続出」とかになりかねない…。
+
+と！言うところを「(上に書いたこと)全部うまいことやってた」のでそこに感動しました。
     
 
 ## 6コマ目「EF-4 ソラコムでのJava/AWS活用 – SIM管理やAWS Lambda Javaなど」
@@ -191,25 +209,77 @@ Hazelcast CTO、Gregさんによる、キャッシュライブラリ「JCache」
 ## 7コマ目「EF-5 これからのコンピューティングの変化とJava」
 
 + 登壇者 : きしだなおき さん ( [@kis](https://twitter.com/kis) )
-+ 資料 :
++ 資料 : <iframe src="//www.slideshare.net/slideshow/embed_code/key/A9IgZIp9cRBwnB" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/nowokay/javahacker-tackle" title="これからのコンピューティングとJava(Hacker Tackle)" target="_blank">これからのコンピューティングとJava(Hacker Tackle)</a> </strong> from <strong><a href="//www.slideshare.net/nowokay" target="_blank">なおき きしだ</a></strong> </div>
 
-アニメの話、昨今のコンピュータの話から、それを使った問題解決のトレンド、そしてそれに関連して検討されているJavaの仕様の話を凝縮したセッションでした。
+アニメの話、昨今のコンピュータの話から、それを使った「機会学習」など問題解決のトレンド、そしてそれに関連して検討されているJavaの仕様の話を凝縮した、手書きの図がかわいげなセッションでした。
 
+内容ももちろん上質だったのですが、すごい！と思ったのは「そのセッションの構造」で、「これだけの広く距離のあるパラダイムをシームレスにつないで50分におさめている」ところ。
+
+無理なく興味の質を失わせず、自然に聞かせる…という事を感じつつ、口あけながら聞いていました。
 
 
 
 ## 8コマ目「GH-6 Java8 Stream APIとApache SparkとAsakusa Frameworkの類似点・相違点」
 
 + 登壇者 : ひしだま さん ( [@hishidama](https://twitter.com/hishidama) )
-+ 資料 :
++ 資料 : <iframe src="//www.slideshare.net/slideshow/embed_code/key/23yOyPJaKS8ZIr" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/hishidama/java8-stream-apiapache-sparkasakusa-framework" title="Java8 Stream APIとApache SparkとAsakusa Frameworkの類似点・相違点" target="_blank">Java8 Stream APIとApache SparkとAsakusa Frameworkの類似点・相違点</a> </strong> from <strong><a href="//www.slideshare.net/hishidama" target="_blank">hishidama</a></strong> </div>
+
+「日本全国のJavaプログラマの"入門"や"ググれ"を一手に支えてる」のではないか？
+といっても過言ではないと思われる、ひしだまさんによる「分散データ処理機構の比較」のセッションです。
+
+内容は
+
++ Java8 Stream API
++ Apache Spark(Apache Hadoop)
++ Asakusa Framework
+
+の目的/方針や構造、特性や「使う時の構文」の違いと実用した結果についての考察でした。
+
+「DAG(有向非循環グラフ)」を知っている事が前提っぽく、俺は知らなかったので、それを知ったうええ見返したく思います。
+
+
+上に同列に書きましたが「Asakusa Frameworkで書いて実行基盤をSparkに」など出来るので、
+「Asakusa Framework + Apache Spark」が結論としてベスト、という感じがしました。
+
+Asakusa Fremeworkの思想「バッチアプリケーションを作成するため」ってのが「どのようなところに対応されているのか」というところ、俺はギョームプログラマで「提案の種」なので、きっちり知りたくなりました。
+
+また「バッチのため」といえども「世の大半のギョームアプリはRDBMSにデータを貯めている」というところから「分散DBにする設計と事例」も興味を持ちました。
+
+…まぁ…「世の中には情報ある」だろうし、調べてないだけなので、自分の問題ですがw
+
 
 ## 8コマ目「GH-7 てらだよしおの赤裸々タイム」
 
 + 登壇者 : てらだよしお さん ( [@yoshioterada](https://twitter.com/yoshioterada) )
-+ 資料 :
++ 資料 : (恐らく無いんじゃないかなーw)
+
+てらだよしおさんによる「台本の無い？」セッションです。
+
+7月にMSに電撃移籍をされたその理由や自身の思いを語ってらっしゃいました。
+
+中盤に質問コーナーがありまして、
+
++ MS入社したて一発目であった「ニコニコ生放送」の事情(質問は俺でしたすみませんw)
++ 今「一番聞かれたく無い質問」はなんですか？
++ 転職において重要なこと(人の見方？)はなんですか
+
+に答えてらっしゃいました。(内容は書きません、参加者のみの特典、ということでw)
+
+---
+
+最後の質問の答えで「自分の言葉ではない」と言いつつ、
+
+__「オールマイティな人より、ピンが尖ってる人をあつめ、その横のつながりを強化していったほうが良いのではないかなと…」__
+
+っておっしゃられたのは、すごい納得なのと「じゃあ、俺にそういうもんは？…うーん」と考えさせられる言葉でした。
 
 
 ## 懇親会(ビアバッシュ)
+
+朝の時点で「無料になりました」「申込者以外も自由になりました」嬉しいサプライズもあり、盛況でした。
+
+LT大会や「それが聞こえない程みなコミニュケーション取ってる」「ところどころ人だかりが自然発生」という状況、みんな楽しんでたんだろうなーと思います。
+
 
 
 # 小並感
@@ -220,6 +290,37 @@ Hazelcast CTO、Gregさんによる、キャッシュライブラリ「JCache」
 
 それらを維持している並々ならぬ努力には、感謝するばかりです。
 
----s
+---
 
-# おまけ
+恐らく「多くの人がそう思ってる」とおもいますが…
+
+__くっそー、あの「横でやってた話」すっげーききたかったぜー！！(泣__
+
+という感覚。
+
+なんか伝聞で
+
++ あのうらがみ氏がマイクを持った
++ Dockerの話おもしろかった
++ 「技術的負債」の話、超満員だった
++ 「Reactiveの話」はいろいろと勉強になった
++ ヤンク氏会場どっかんどっかん揺らす
+
+とか「そんなんおもろいにキマってるやんｗ」を見逃したものが多かった。(とくに泣く泣く切ったものに限ってw)
+
+まーそれだけ「JJUG-CCCは魅力的なコンテンツを集約できている」という証左でもありますか。
+
+---
+
+すーごく「雑な纏め」をすると
+
+
+__すげぇ楽しかった！また来たいぜ！__
+
+
+てな感じでした。参加された方もそうでない方も、またお会いしましょう！
+
+# 感謝の意
+
+
+
