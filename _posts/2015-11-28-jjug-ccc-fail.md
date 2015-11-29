@@ -179,7 +179,7 @@ Hazelcast CTO、Gregさんによる、キャッシュライブラリ「JCache」
 + 登壇者 : 片山 暁雄 さん ( [@c9katayama](https://twitter.com/c9katayama) )
 + 資料 : <iframe src="//www.slideshare.net/slideshow/embed_code/key/Myt7G3fP1JL81I" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/SORACOM/java-jjug-ccc-2015-fall-by" title="日本 Java ユーザーグループ　JJUG CCC 2015 Fall by ソラコム 片山 " target="_blank">日本 Java ユーザーグループ　JJUG CCC 2015 Fall by ソラコム 片山 </a> </strong> from <strong><a href="//www.slideshare.net/SORACOM" target="_blank">SORACOM,INC</a></strong> </div>
 
-本読んでるのに忘れてた「AWS-CloudDesignPattern」の共著者、片山さんのセッションです。
+本読んでるのに忘れてた「AWS-CloudDesignPattern」の著者のお一人、片山さんのセッションです。
 
 序盤「ソラコムがAWSを使って作成したIoT事業者向けサービス」の話をされていて、
 しょーじき「プロダクトの宣伝？」と思ったのですが…。
