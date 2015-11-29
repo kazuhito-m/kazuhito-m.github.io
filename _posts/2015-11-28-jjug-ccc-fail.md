@@ -83,7 +83,7 @@ __「再編されてからは、JavaEEはトレンドや議論を呼んだプロ
 
 ## 3コマ目  「GH-1 JAX-RS入門および実践」
 
-+ 登壇者 : 浦上 太一 さん ( [@backpaper0](https://twitter.com/backpaper0) )
++ 登壇者 : うらがみ さん ( [@backpaper0](https://twitter.com/backpaper0) )
 + 資料 : [http://backpaper0.github.io/ghosts/jaxrs-getting-started-and-practice.html](http://backpaper0.github.io/ghosts/jaxrs-getting-started-and-practice.html)
 
 個人的興味として「大きな会場でのうらがみさんの発表がどんなもんか」が見たかったのですが…さすがでしたｗ
@@ -330,18 +330,18 @@ __すげぇ楽しかった！また来たいぜ！__
 + 心細かったとこに耐えずどっかにおって声かけてくれた関西勢のみなさん( @s_kozake さん , @yukeen さん , @irof さん , bufferings さん)
 + 会話が「あ、みうみうおつかれー。探してんねん炭水化物！炭水化物！！」だけだった @backpaper0 さん
 + 邂逅一番「もー落ち込んでるって聞いて心配してたんですよー！」つって肩脱臼するくらいバンバン殴打してくれた ビルの主 ( @syobochim さん )
-+ 久々でも「おひさ♪」くらいの気軽さで話しかけてくれた @zer0_u 嬢、@ngsw_taro さん
++ 久々でも「おひさ♪」くらいの気軽さで話しかけてくれた @zer0_u 嬢、@ngsw_taro さん 、 @kis さん
 + そちらからお声をかけて(俺なら勇気が要ります！)いただいた @PoohSunny さん
 + やっと相互認識いただいた(こちらもできた) @mike_neck さん 、 @peko_kun さん、@mame_pika さん、@kazuhira_r さん、@soudai1025 さん
 + 初対面で気さくにはなしていただいた @takesi_yosimura さん、@i_takehiro さん  
 + ニアミスからやっと相互認識頂いた @cero_t さん
 + 酷い質問したけど「相互認識いただいていた」 @yoshioterada さん
-+ なぜか「ナンパしたことになってる」 @dahlia_cocoa さん
++ 「ナンパしたことになってる」 @dahlia_cocoa さん (すみません)
 + (見てないけど)会場どっかんどっかんだったらしい @yy_yank さん(見てないけど)
-+ リアルに会ってもきっちり「そゆのもったいない！がんばれよ！」の言葉をいただいた @yusuke さん
-+ 「この人としゃべるでしょ！紹介するよ！」って連れてってくれた @kotomacontact さん、@haljik さん、@chiroito さん、そして @soudai1025 さん
++ リアルに会ってもきっちり「そゆのもったいない！がんばれよ！」の言葉をくれはった @yusuke さん
++ 「この人としゃべるでしょ！紹介するよ！」って連れてってくれた @kotomacontact さん、@haljik さん、@chiroito さん、@soudai1025 さん
 + 何が何でも「会ってくれなかっ」た @hijireee さん
-+ 要所要所邪魔なちゃちゃいれてきた @tonymorrisjp
++ 要所要所いーかんじでちゃちゃいれてきた @tonymorrisjp
 + その他相手してくれたみなさん
 
 な皆様、本当にありがとうございました。 
