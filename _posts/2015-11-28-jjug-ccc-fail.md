@@ -327,7 +327,7 @@ __すげぇ楽しかった！また来たいぜ！__
 まぁ、正直な話「Javaにはあんまり縁はない」「ほっとくとボッチまっしぐら」な俺に対して、
 
 + まさかの受付にて「なんできたん？」対応してくれた [@ihcomega](https://twitter.com/ihcomega) さん
-+ 心細かったとこに耐えずどっかにおって声かけてくれた関西勢のみなさん( [@s_kozake](https://twitter.com/s_kozake) さん , [@yukeen](https://twitter.com/yukeen) さん , [@irof](https://twitter.com/irof) さん , [@bufferings](https://twitter.com/bufferings) さん)
++ 心細かったとこに耐えずどっかにおって声かけてくれた関西勢のみなさん( [@s_kozake](https://twitter.com/s_kozake) さん , [@yukieen](https://twitter.com/yukieen) さん , [@irof](https://twitter.com/irof) さん , [@bufferings](https://twitter.com/bufferings) さん)
 + 会話が「あ、みうみうおつかれー。探してんねん炭水化物！炭水化物！！」だけだった [@backpaper0](https://twitter.com/backpaper0) さん
 + 邂逅一番「もー落ち込んでるって聞いて心配してたんですよー！」つって肩脱臼するくらいバンバン殴打してくれた ビルの主 ( [@syobochim](https://twitter.com/syobochim) さん )
 + 久々でも「おひさ♪」くらいの気軽さで話しかけてくれた [@zer0_u](https://twitter.com/zer0_u) 嬢、[@ngsw_taro](https://twitter.com/ngsw_taro) さん 、 [@kis](https://twitter.com/kis) さん
