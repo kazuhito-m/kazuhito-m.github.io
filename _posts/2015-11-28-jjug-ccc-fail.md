@@ -322,26 +322,26 @@ __すげぇ楽しかった！また来たいぜ！__
 
 ---
 
-# 感謝の意
+# 感謝
 
 まぁ、正直な話「Javaにはあんまり縁はない」「ほっとくとボッチまっしぐら」な俺に対して、
 
-+ まさかの受付にて「なんできたん？」対応してくれた @ihcomega さん
-+ 心細かったとこに耐えずどっかにおって声かけてくれた関西勢のみなさん( @s_kozake さん , @yukeen さん , @irof さん , bufferings さん)
-+ 会話が「あ、みうみうおつかれー。探してんねん炭水化物！炭水化物！！」だけだった @backpaper0 さん
-+ 邂逅一番「もー落ち込んでるって聞いて心配してたんですよー！」つって肩脱臼するくらいバンバン殴打してくれた ビルの主 ( @syobochim さん )
-+ 久々でも「おひさ♪」くらいの気軽さで話しかけてくれた @zer0_u 嬢、@ngsw_taro さん 、 @kis さん
-+ そちらからお声をかけて(俺なら勇気が要ります！)いただいた @PoohSunny さん
-+ やっと相互認識いただいた(こちらもできた) @mike_neck さん 、 @peko_kun さん、@mame_pika さん、@kazuhira_r さん、@soudai1025 さん
-+ 初対面で気さくにはなしていただいた @takesi_yosimura さん、@i_takehiro さん  
-+ ニアミスからやっと相互認識頂いた @cero_t さん
-+ 酷い質問したけど「相互認識いただいていた」 @yoshioterada さん
-+ 「ナンパしたことになってる」 @dahlia_cocoa さん (すみません)
-+ (見てないけど)会場どっかんどっかんだったらしい @yy_yank さん(見てないけど)
-+ リアルに会ってもきっちり「そゆのもったいない！がんばれよ！」の言葉をくれはった @yusuke さん
-+ 「この人としゃべるでしょ！紹介するよ！」って連れてってくれた @kotomacontact さん、@haljik さん、@chiroito さん、@soudai1025 さん
-+ 何が何でも「会ってくれなかっ」た @hijireee さん
-+ 要所要所いーかんじでちゃちゃいれてきた @tonymorrisjp
++ まさかの受付にて「なんできたん？」対応してくれた [@ihcomega](https://twitter.com/ihcomega) さん
++ 心細かったとこに耐えずどっかにおって声かけてくれた関西勢のみなさん( [@s_kozake](https://twitter.com/s_kozake) さん , [@yukeen](https://twitter.com/yukeen) さん , [@irof](https://twitter.com/irof) さん , [@bufferings](https://twitter.com/bufferings) さん)
++ 会話が「あ、みうみうおつかれー。探してんねん炭水化物！炭水化物！！」だけだった [@backpaper0](https://twitter.com/backpaper0) さん
++ 邂逅一番「もー落ち込んでるって聞いて心配してたんですよー！」つって肩脱臼するくらいバンバン殴打してくれた ビルの主 ( [@syobochim](https://twitter.com/syobochim) さん )
++ 久々でも「おひさ♪」くらいの気軽さで話しかけてくれた [@zer0_u](https://twitter.com/zer0_u) 嬢、[@ngsw_taro](https://twitter.com/ngsw_taro) さん 、 [@kis](https://twitter.com/kis) さん
++ そちらからお声をかけて(俺なら勇気が要ります！)いただいた [@PoohSunny](https://twitter.com/PoohSunny) さん
++ やっと相互認識いただいた(こちらもできた) [@mike_neck](https://twitter.com/mike_neck) さん 、 [@peko_kun](https://twitter.com/peko_kun) さん、[@mame_pika](https://twitter.com/mame_pika) さん、[@kazuhira_r](https://twitter.com/kazuhira_r) さん、[@soudai1025](https://twitter.com/soudai1025) さん
++ 初対面で気さくにはなしていただいた [@takesi_yosimura](https://twitter.com/takesi_yosimura) さん、[@i_takehiro](https://twitter.com/i_takehiro) さん  
++ ニアミスからやっと相互認識頂いた [@cero_t](https://twitter.com/cero_t) さん
++ 酷い質問したけど「相互認識いただいていた」 [@yoshioterada](https://twitter.com/yoshioterada) さん
++ 「ナンパしたことになってる」 [@dahlia_cocoa](https://twitter.com/dahlia_cocoa) さん (すみません)
++ (見てないけど)会場どっかんどっかんだったらしい [@yy_yank](https://twitter.com/yy_yank) さん(見てないけど)
++ リアルに会ってもきっちり「そゆのもったいない！がんばれよ！」の言葉をくれはった [@yusuke](https://twitter.com/yusuke) さん
++ 「この人としゃべるでしょ！紹介するよ！」って連れてってくれた [@kotomacontact](https://twitter.com/kotomacontact) さん、[@haljik](https://twitter.com/haljik) さん、[@chiroito](https://twitter.com/chiroito) さん、[@soudai1025](https://twitter.com/soudai1025) さん
++ 何が何でも「会ってくれなかっ」た [@hijireee](https://twitter.com/hijireee) さん
++ 要所要所いーかんじでちゃちゃいれてきた [@tonymorrisjp](https://twitter.com/tonymorrisjp)
 + その他相手してくれたみなさん
 
 な皆様、本当にありがとうございました。 
