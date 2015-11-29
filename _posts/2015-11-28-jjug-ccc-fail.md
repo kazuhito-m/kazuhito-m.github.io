@@ -2,7 +2,7 @@
 layout: post
 title: 勉強会行ってみた「JJUG CCC 2015 Fall」#jjug_ccc
 category: study-meeting-repo
-tags: [java]
+tags: [java,jjug]
 ---
 
 ![会場の様子](/images/)
@@ -24,6 +24,8 @@ tags: [java]
 「あんま知らんおれが行ってもなぁ」と思ってまして。
 
 ただ、今回は「[あの人](https://twitter.com/irof)や[あの人](https://twitter.com/backpaper0)が登壇する？」と聞いて、これは良い機会！と思い切って参加してみました。
+
+※俺にとっては勉強会はエンターテイメントで登壇者はスターなんで、ただのファンの追っかけ…といえますねｗ
 
 # 内容
 
