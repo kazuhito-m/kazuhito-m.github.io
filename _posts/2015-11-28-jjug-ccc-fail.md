@@ -109,7 +109,7 @@ __「再編されてからは、JavaEEはトレンドや議論を呼んだプロ
 ## 4コマ目「EF-2 How to speed up your application using JCache」
 
 + 登壇者 : Greg Luck さん ( [@gregrluck](https://twitter.com/gregrluck) )
-+ 資料 :
++ 資料 : <iframe src="//www.slideshare.net/slideshow/embed_code/key/HyTmK5TALTomT1" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/jjug/jcache-using-jcache" title="JCache Using JCache" target="_blank">JCache Using JCache</a> </strong> from <strong><a href="//www.slideshare.net/jjug" target="_blank">日本Javaユーザーグループ</a></strong> </div>
 
 Hazelcast CTO、Gregさんによる、キャッシュライブラリ「JCache」の解説セッション…のはずだったのですが。
 
@@ -345,7 +345,5 @@ __すげぇ楽しかった！また来たいぜ！__
 + その他相手してくれたみなさん
 
 な皆様、本当にありがとうございました。 
-
-
 
 
