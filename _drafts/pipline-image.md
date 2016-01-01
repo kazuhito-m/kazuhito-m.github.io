@@ -14,3 +14,6 @@
 + 動画録画
 + gitからの取得
 + gebでのテスト書く
++ JenkinsWorkFlowを入れられるようなら
++ Docker
++ SeleniumGridのDockerイメージ
