@@ -19,3 +19,4 @@
 + JenkinsWorkFlowを入れられるようなら
 + Docker
 + SeleniumGridのDockerイメージ
++ メトリクスを取る（別で
