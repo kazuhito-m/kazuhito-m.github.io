@@ -20,3 +20,4 @@
 + Docker
 + SeleniumGridのDockerイメージ
 + メトリクスを取る（別で
++ バイナリのビルド
