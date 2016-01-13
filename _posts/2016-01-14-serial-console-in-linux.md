@@ -42,7 +42,7 @@ sudo screen /dev/ttyS0 115200
 ※ sudoかrootユーザでないと/devのデバイスファイルを弄れないので
 
 
-！[ターミナル](/images/2016-01-14-screen.png)
+![ターミナル](/images/2016-01-14-screen.png)
 
 すると
 
