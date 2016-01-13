@@ -17,7 +17,7 @@ tags: [linux,serial_console,centos,ubuntu,screen]
 色々と手段があるようですが、比較的やりやすいのは"scrren"コマンドのようでした。
 
 ```bash
-sudo screan 「デバイス名」 「ボーレート」
+sudo screen 「デバイス名」 「ボーレート」
 ```
 
 # お膳立て
@@ -37,11 +37,12 @@ sudo screan 「デバイス名」 「ボーレート」
 「ボーレート」は資料が残っていたので、 `yum install screen` した後、
 
 ```bash
-sudo screan /dev/ttyS0 115200
+sudo screen /dev/ttyS0 115200
 ```
 ※ sudoかrootユーザでないと/devのデバイスファイルを弄れないので
 
-！[ターミナル](/images/2016-01-14-screan.png)
+
+！[ターミナル](/images/2016-01-14-screen.png)
 
 すると
 
