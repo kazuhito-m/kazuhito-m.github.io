@@ -41,7 +41,7 @@ sudo screan /dev/ttyS0 115200
 ```
 ※ sudoかrootユーザでないと/devのデバイスファイルを弄れないので
 
-！[ターミナル](/iｍages/2016-01-14-screan.png)
+！[ターミナル](/images/2016-01-14-screan.png)
 
 すると
 
