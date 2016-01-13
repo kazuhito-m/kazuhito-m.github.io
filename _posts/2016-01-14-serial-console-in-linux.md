@@ -14,7 +14,7 @@ tags: [linux,serial_console,centos,ubuntu,screen]
 
 # Linuxでシリアルコンソールクライアントになるには"screen"が一番簡単っぽい
 
-色々と手段があるようだが、比較的やりやすいのは"scrren"コマンドのようでした。
+色々と手段があるようですが、比較的やりやすいのは"scrren"コマンドのようでした。
 
 ```bash
 sudo screan 「デバイス名」 「ボーレート」
@@ -41,7 +41,7 @@ sudo screan /dev/ttyS0 115200
 ```
 ※ sudoかrootユーザでないと/devのデバイスファイルを弄れないので
 
-！[ターミナル](/iages/2016-01-14-screan.png)
+！[ターミナル](/iｍages/2016-01-14-screan.png)
 
 すると
 
