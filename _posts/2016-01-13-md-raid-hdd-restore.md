@@ -176,6 +176,24 @@ shutdown -h now
 
 ![NASのHDD交換の様子](/images/2016-01-13-hdd-change.jpg)
 
+## 新しいディスクの領域作成
+
+認識しているようなら、その新ディスクに「単一プライマリパーティション」を作ります。
+
+同時にパーティションタイプを「Linux raid autodetect」に変更すること。
+
+```basｈ
+fdisk /dev/sdc
+〜
+Command (m for help): t
+Hex code (type L to list codes): fd
+```
+## 新ディスクをRAID構成に参加させる
+
+```bash
+mdadm /dev/md0 --add /dev/sdc1
+```
+
 
 ## 構成として認識
 
