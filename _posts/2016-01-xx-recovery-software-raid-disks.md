@@ -95,4 +95,14 @@ sudo foremost -t all -i /dev/sdb1 -o ./
 
 ツールの特性上「フォルダ構成が出せない」のは良いとしても、せめて「名前だけでも元に」「連番ファイルと名前のひも付きをテキストに残す」くらいやってくれてもいいのに…。
 
-ともあれ！ここで「ファイルデータはまだある！」というのがわかったので、次のアプローチの行けそうです。
+ともあれ！ここで「ファイルデータはまだある！」というのがわかったので、また違うアプローチに行けそうです。
+
+
+
+# 参考させていただいたサイト
+
++ [http://unix.stackexchange.com/questions/64889/how-to-mount-recover-data-on-a-disk-that-was-part-of-a-mdadm-raid-1-on-another-m](http://unix.stackexchange.com/questions/64889/how-to-mount-recover-data-on-a-disk-that-was-part-of-a-mdadm-raid-1-on-another-m)
+  + ここ超役に立った…海外の方感謝！
++ [http://sdk0815.blogspot.jp/2013/01/raid-lvm-4k.html]s(http://sdk0815.blogspot.jp/2013/01/raid-lvm-4k.html)
++ [http://srad.jp/~hix/journal/455551/](http://srad.jp/~hix/journal/455551/)
+  + ほぼドンピシャ！やりたいことをやっている方だった…感謝
