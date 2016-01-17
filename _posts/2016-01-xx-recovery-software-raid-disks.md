@@ -80,6 +80,8 @@ TODO 結論的にはできなそいう
 
 ## Linuxのコマンドによる「取れるファイルだけ取る」サルベージ
 
+### testdiskで状態を知る
+
 ### foremost
 
 ```bash
@@ -108,7 +110,7 @@ sudo foremost -t all -i /dev/sdb1 -o ./
   + ほぼドンピシャ！やりたいことをやっている方だった…感謝
 + [https://wiki.archlinuxjp.org/index.php/Foremost](https://wiki.archlinuxjp.org/index.php/Foremost)
 + [http://kledgeb.blogspot.jp/2014/03/ubuntu-mdadm-4-md.html](http://kledgeb.blogspot.jp/2014/03/ubuntu-mdadm-4-md.html)
-+ []()
++ [http://qiita.com/tukiyo3/items/090994fc1068c93f4762](http://qiita.com/tukiyo3/items/090994fc1068c93f4762)
 + []()
 + []()
 + []()
