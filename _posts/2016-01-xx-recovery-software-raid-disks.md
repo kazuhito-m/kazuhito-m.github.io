@@ -82,7 +82,9 @@ TODO 結論的にはできなそいう
 
 ### testdiskで状態を知る
 
-### foremost
+
+
+### foremostで個別にファイルサルベージ
 
 ```bash
 sudo foremost -t all -i /dev/sdb1 -o ./
@@ -99,6 +101,7 @@ sudo foremost -t all -i /dev/sdb1 -o ./
 
 ともあれ！ここで「ファイルデータはまだある！」というのがわかったので、また違うアプローチに行けそうです。
 
+### GPartedでファイルシステム捜索
 
 
 # 参考させていただいたサイト
