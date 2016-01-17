@@ -106,3 +106,10 @@ sudo foremost -t all -i /dev/sdb1 -o ./
 + [http://sdk0815.blogspot.jp/2013/01/raid-lvm-4k.html]s(http://sdk0815.blogspot.jp/2013/01/raid-lvm-4k.html)
 + [http://srad.jp/~hix/journal/455551/](http://srad.jp/~hix/journal/455551/)
   + ほぼドンピシャ！やりたいことをやっている方だった…感謝
++ [https://wiki.archlinuxjp.org/index.php/Foremost](https://wiki.archlinuxjp.org/index.php/Foremost)
++ [http://kledgeb.blogspot.jp/2014/03/ubuntu-mdadm-4-md.html](http://kledgeb.blogspot.jp/2014/03/ubuntu-mdadm-4-md.html)
++ []()
++ []()
++ []()
++ []()
++ []()
