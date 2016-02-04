@@ -1,33 +1,14 @@
-# Nasの蘇り計画
+---
+published : false
+layout: post
+title: Fabricで「対話型インストール」を突破する方法
+category: tech
+tags: [linux,raid ,fabric]
+---
 
-## 課題
 
-+ スイッチ
-+ 大きさ
-+ 電源
+# 参考資料・サイト
 
-## 実際にやること
-
-### 液晶がついたユニットをスイッチに使えるか検証
-
-他のマシンの「スイッチユニット」にピンをつないで
-
-+ どれかがスイッチに当たらないか
-+ SATAのアクセスランプにあたらないか
-
-を検証する。
-
-### 電源確認
-
-電源ユニットが使えるかを確認
-
-+ ○ まず行けそうか
-+ ○ ワット数がイケるか
-+ SATAのケーブルについてる形式に変換できるか
-
-### 新しいMBで再構成する作業
-
-+ 機器を買う
-  + ○ マザーボード
-  + ○ AC対応電源
-  + ○ 電源スイッチ
++ [http://mo.kerosoft.com/0200](http://mo.kerosoft.com/0200)
++ [http://www.ioss.jp/sohodiy/mdadm8-1_5.php](http://www.ioss.jp/sohodiy/mdadm8-1_5.php)
++ [http://d.hatena.ne.jp/h2onda/20080527/1211838066](http://d.hatena.ne.jp/h2onda/20080527/1211838066)
