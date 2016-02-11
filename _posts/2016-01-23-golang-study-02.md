@@ -1,4 +1,5 @@
 ---
+published: false
 layout: post
 title: 勉強会行ってみた「第２回 関西golang勉強会」#KUG2
 category: study-meeting-repo
