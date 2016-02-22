@@ -1,3 +1,16 @@
+---
+published: false
+layout: post
+title: CentOS5.6でDRBD(ディスク冗長構成)を作る
+category: tech
+tags: [Linux,CentOS,DRBD,reprication]
+---
+
+俺は「冗長構成」とか「レプリケーション」とかは、「死ぬとき死ぬ」と思ってるので、あまり力を入れていないのですが…。
+
+今回、必要があり「DRBD」というプロダクトを試し「他のマシンのディスクを絶えず同期し続ける」という構成を試したので、
+自身の備忘録として記しておきます。
+
 # 環境作成
 
 ## 下準備
@@ -8,7 +21,7 @@
 - yum がインターネットに出れる(proxyあるならしこんでる)
 - コンソールにhttp_proxy,httpd_proxyが仕込んであること
 
-## CentOSにインストール
+## CentOSにDRBDをインストール
 
 
 ```bash
