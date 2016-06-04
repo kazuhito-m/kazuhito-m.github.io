@@ -17,7 +17,7 @@ Scrum o-d- Practice
 XP o-d- Practice
 
 Move <|.. Agile
-Frame <|.. Scrum
+Frame <|.r. Scrum
 
 Practice <|.. PairPro
 Practice <|.. TDD
