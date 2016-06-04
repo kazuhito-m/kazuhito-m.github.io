@@ -13,8 +13,8 @@ interface "Frame?" as Frame
 Agile <|-- Scrum
 Agile <|-- XP
 
-Scrum "0..*" o-d- "1" Practice
-XP "0..*" o-d- "1" Practice
+Scrum o-d- Practice
+XP o-d- Practice
 
 Move <|.. Agile
 Frame <|.. Scrum
@@ -23,5 +23,6 @@ Practice <|.. PairPro
 Practice <|.. TDD
 Practice <|.. Refactaring
 
+Practice o-- Practice
 
 @enduml
