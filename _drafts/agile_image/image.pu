@@ -1,0 +1,27 @@
+@startuml
+
+abstract Agile
+
+class Scrum
+class "XP Programing" as XP
+
+interface "Practice"
+
+interface "やり方？" as Move
+interface "Frame?" as Frame
+
+Agile <|-- Scrum
+Agile <|-- XP
+
+Scrum "0..*" o-d- "1" Practice
+XP "0..*" o-d- "1" Practice
+
+Move <|.. Agile
+Frame <|.. Scrum
+
+Practice <|.. PairPro
+Practice <|.. TDD
+Practice <|.. Refactaring
+
+
+@enduml
