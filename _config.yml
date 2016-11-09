@@ -1,17 +1,21 @@
-permalink: /:categories/:year/:month/:day/:title 
+permalink: /:categories/:year/:month/:day/:title
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 
-title : Jekyll Bootstrap
-tagline: Site Tagline
+# markdown は「正体がつかめるまで、Jekyll3のデフォルト」で。
+# jekyll3の雛形にあったやつ / markdown: kramdown
+# 以前のサイトに指定してあったやつ / markdown: redcarpet
+
+title : NBM2
+tagline: natural born minority
 author :
-  name : Name Lastname
-  email : blah@email.test
-  github : username
-  twitter : username
+  name : Kazuhito Miura
+  email : a@exsample.com
+  github : kazuhito-m
+  twitter : kazuhito_m
   feedburner : feedname
 
-production_url : http://username.github.io
+production_url : http://kazuhito-m.github.io
 
 gems:
   - jemoji
@@ -22,6 +26,9 @@ gems:
 
 JB :
   version : 0.3.0
+
+  extensions: [tables,autolink,strikethrough]
+
   BASE_PATH : false
   ASSET_PATH : false
 
@@ -34,7 +41,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : jekyllbootstrap
+      short_name : nbm2
     livefyre :
       site_id : 123
     intensedebate :
@@ -44,17 +51,13 @@ JB :
       num_posts: 5
       width: 580
       colorscheme: light
-    duoshuo :
-      short_name : jekyllbootstrap
-   
+
   analytics :
     provider : google
-    gauges :
-        site_id : 'SITE ID'
-    google : 
-        tracking_id : 'UA-123-12'
+    google :
+        tracking_id : 'UA-63094663-1'
     getclicky :
-      site_id : 
+      site_id :
     mixpanel :
         token : '_MIXPANEL_TOKEN_'
     piwik :
@@ -62,8 +65,7 @@ JB :
         idsite : '1'                   # the id of the site on Piwik
 
   sharing :
-    provider : false
-
+    provider : custom
 
 # from Jekyll default settings.
 
