@@ -5,8 +5,6 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 # markdown は「正体がつかめるまで、Jekyll3のデフォルト」で。
 # jekyll3の雛形にあったやつ / markdown: kramdown
 # 以前のサイトに指定してあったやつ / markdown: redcarpet
-t 
-markdown: redcarpet
 
 title : NBM2
 tagline: natural born minority
