@@ -28,10 +28,10 @@ tags: [linux,debian,sudo]
 
 ※なんとなくのディストリ分類は
 
-+ 1. Ubuntu系
-+ 2. AMI系
-+ 3. CentOS/RH系
-+ 4. Debian
++ Ubuntu系
++ AMI系
++ CentOS/RH系
++ Debian
 
 かなぁ？という感覚はありましたが…(この認識もおそらく間違ってるだろけど
 
