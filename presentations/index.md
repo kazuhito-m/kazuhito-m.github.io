@@ -10,7 +10,7 @@ title: 発表履歴
 
 <iframe 
   src="https://docs.google.com/spreadsheets/d/10rroSv-xLTuIpSHqPyzrn7qEaMmV6T5ucq53iMEqQW8/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"
-  width="750"
+  width="725"
   height="475"
 >
 </iframe>
