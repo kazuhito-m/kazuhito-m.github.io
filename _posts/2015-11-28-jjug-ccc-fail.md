@@ -36,9 +36,7 @@ tags: [java,jjug]
 + 登壇者 : 谷本 心 ( [@cero_t](https://twitter.com/cero_t) ) さん
 + 資料: 
 
-<div>
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/B782CQuiAV59q1" width="340" height="290" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/shintanimoto/jjug-ccc-2015-fall-keynote" title="JJUG CCC 2015 Fall keynote" target="_blank">JJUG CCC 2015 Fall keynote</a> </strong> from <strong><a target="_blank" href="//www.slideshare.net/shintanimoto">心 谷本</a></strong> </div>
-</div>
 
 残念ながら間に合わず、前半聞きそびれました…。(なので前半話したらしい「トレンド」の感想無し)
 
