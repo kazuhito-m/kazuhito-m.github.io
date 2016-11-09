@@ -8,6 +8,10 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 
 markdown: kramdown
 
+kramdown:
+ input: GFM
+ hard_wrap: false
+
 title : NBM2
 tagline: natural born minority
 author :
