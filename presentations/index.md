@@ -8,4 +8,5 @@ title: 発表履歴
 ## 発表履歴と資料
 
 
-<iframe src="https://docs.google.com/spreadsheets/d/10rroSv-xLTuIpSHqPyzrn7qEaMmV6T5ucq53iMEqQW8/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/10rroSv-xLTuIpSHqPyzrn7qEaMmV6T5ucq53iMEqQW8/pubhtml?gid=0&amp;single=true&amp;widget=false&amp;headers=false">
+</iframe>
