@@ -6,6 +6,8 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 # jekyll3の雛形にあったやつ / markdown: kramdown
 # 以前のサイトに指定してあったやつ / markdown: redcarpet
 
+markdown: kramdown
+
 title : NBM2
 tagline: natural born minority
 author :
