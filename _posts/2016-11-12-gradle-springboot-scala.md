@@ -49,7 +49,7 @@ __(明日、仕事で使う=いわば生きるか死ぬかのメシのタネに�
 
 `build.gradle` に以下の編集をします。
 
-```grooby:build.gradle
+```grooby
 repositories {
     jcenter()
 }
@@ -82,7 +82,9 @@ dependencies {
 
 ２つのScalaクラスファイルを作ります。
 
-```scala:./src/main/scala/Application.scala
+`./src/main/scala/Application.scala`
+
+```scala
 package なんでもいいです
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
@@ -96,7 +98,9 @@ object Application extends App {
 }
 ```
 
-```scala:./src/main/scala/SampleController.scala
+`./src/main/scala/SampleController.scala`
+
+```scala
 package なんでもいいです
 import org.springframework.web.bind.annotation.{RequestMapping, RequestMethod, RestController}
 
@@ -128,7 +132,9 @@ class SampleController {
 
 Specs2形式のScalaテストクラスファイルを作ります。
 
-```scala:./src/test/scala/SampleControllerTest.scala
+`./src/test/scala/SampleControllerTest.scala`
+
+```scala
 package なんでもいいです
 import org.junit.runner.RunWith
 import org.specs2.mutable.Specification
