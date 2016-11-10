@@ -87,7 +87,9 @@ Graphbiz系から自力でたどりついて、現場でつかってた「[Plant
 ## ３コマ目「ドメイン『駆動』『開発』」
 
 + 登壇者 : 前川 博志さん( [@posaune](https://twitter.com/posaune) )
-+ 資料 : <iframe src="//www.slideshare.net/slideshow/embed_code/key/9PIP6SmhYt4Ys" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/Posaune/ss-52982034" title="ドメイン『駆動』『開発』" target="_blank">ドメイン『駆動』『開発』</a> </strong> from <strong><a href="http://www.slideshare.net/Posaune" target="_blank">Hiroshi Maekawa</a></strong> </div>
++ 資料 : 
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/9PIP6SmhYt4Ys" width="340" height="290" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/Posaune/ss-52982034" title="ドメイン『駆動』『開発』" target="_blank">ドメイン『駆動』『開発』</a> </strong> from <strong><a href="http://www.slideshare.net/Posaune" target="_blank">Hiroshi Maekawa</a></strong> </div>
 
 ### DDDを広めるための取り組み
 
