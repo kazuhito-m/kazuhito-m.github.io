@@ -1,5 +1,4 @@
 ---
-published : false
 layout: post
 title: Gradle + ScpringBoot + Scalaで開発始める始める方法
 category: tech
