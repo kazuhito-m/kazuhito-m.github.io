@@ -98,7 +98,11 @@ _「作りたい業務の"短期変化点(Hotspot)だけ"を穴あき問題に�
 ### 3コマ目「私のアーキテクチャルディシジョン」
 
 + 登壇者 : 岡 大勝 さん [@OkaHiromasa](https://twitter.com/OkaHiromasa) さん
-+ 資料 : (見つからず…なので資料公開までは[自作のメモ](/memos/2015-09-14-my-architectural-decision.html)を置いときます)
++ 資料 :
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/q59qS6sRJtpylX" width="340" height="290" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/hiromasaoka/ss-52914432" title="私のアーキテクチャルディシジョン" target="_blank">私のアーキテクチャルディシジョン</a> </strong> from <strong><a target="_blank" href="//www.slideshare.net/hiromasaoka">Hiromasa Oka</a></strong> </div>
+
+※わりかし「口頭で話したこと」も多かったので、 [自作のメモ](/memos/2015-09-14-my-architectural-decision.html)を置いときます。
 
 なんとなく…「人生は一秒も無駄にしちゃいけない！」と思わされるような衝撃のあるセッションでした。
 
