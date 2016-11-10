@@ -411,7 +411,7 @@ Knife-Zeroは「世界のプロダクト」ながら [@sawanoboly](https://twitt
 
 会場をそのままに、ケータリングを駆使してのビアバッシュっぽい懇親会が行われ、参加してきました。
 
-終わり際に「 [@Anubis_369] (https://twitter.com/Anubis_369) 氏が 即席LTしてた」ので、
+終わり際に「 [@Anubis_369](https://twitter.com/Anubis_369) 氏が 即席LTしてた」ので、
 それについて [@sawanoboly](https://twitter.com/sawanoboly) さんにたしなめられながら、
 ヤカラな質問かましてたのですが…。
 
