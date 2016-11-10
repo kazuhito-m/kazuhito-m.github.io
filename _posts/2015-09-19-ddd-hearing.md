@@ -1,8 +1,10 @@
 ---
 layout: post
-title: 勉強会行ってみた「DDD（ドメイン駆動設計）実践者の話を聞いてみよう」#Devkan
+title: '勉強会行ってみた「DDD（ドメイン駆動設計）実践者の話を聞いてみよう」#Devkan'
 category: study-meeting-repo
-tags: [ddd]
+tags:
+  - ddd
+published: true
 ---
 
 ![会場の様子](/images/2015-09-19-ddd2.jpg)
@@ -29,7 +31,9 @@ tags: [ddd]
 ## 1コマ目「ドメイン駆動設計 思えば遠くにきたもんだ」
 
 + 登壇者: 増田 亨さん ( [@masuda220](https://github.com/masuda220) )
-+ 資料: <iframe src="//www.slideshare.net/slideshow/embed_code/key/BevtPE8jbuRTyY" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/masuda220/ss-52960414" title="ドメイン駆動設計 思えば遠くにきたもんだ" target="_blank">ドメイン駆動設計 思えば遠くにきたもんだ</a> </strong> from <strong><a href="//www.slideshare.net/masuda220" target="_blank">増田 亨</a></strong> </div>
++ 資料: 
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/BevtPE8jbuRTyY" width="340" height="290" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/masuda220/ss-52960414" title="ドメイン駆動設計 思えば遠くにきたもんだ" target="_blank">ドメイン駆動設計 思えば遠くにきたもんだ</a> </strong> from <strong><a href="//www.slideshare.net/masuda220" target="_blank">増田 亨</a></strong> </div>
 
 「エリックエバンスのドメイン駆動設計」の書籍を題材に、増田さんの歩んだ道ともに、DDDの勘所をお教えいただいています。
 
@@ -122,7 +126,9 @@ ERでも画面図でもなく「お客業務の縮図」を見て「どうしょ
 ## ４コマ目「保守とDDDと私」
 
 + 登壇者 : 川辺 卓矢さん( [@kawakawa](https://twitter.com/kawakawa) )
-+ 資料 : <iframe src="//www.slideshare.net/slideshow/embed_code/key/jUFc2mKFuzhayy" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/kawakawa__/ddd-52952272" title="保守とDddと私" target="_blank">保守とDddと私</a> </strong> from <strong><a href="//www.slideshare.net/kawakawa__" target="_blank">Takuya Kawabe</a></strong> </div>
++ 資料 : 
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/jUFc2mKFuzhayy" width="340" height="290" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/kawakawa__/ddd-52952272" title="保守とDddと私" target="_blank">保守とDddと私</a> </strong> from <strong><a href="//www.slideshare.net/kawakawa__" target="_blank">Takuya Kawabe</a></strong> </div>
 
 なんとなく…立ち場は違えど「なんとなく解かる」事が多かったり…。
 
@@ -149,7 +155,7 @@ ERでも画面図でもなく「お客業務の縮図」を見て「どうしょ
 
 受付時、付箋とペンを配られ「自身が疑問・問題に思うもの」を各自書いて前のHBに貼る…とした結果、
 
-0. DDDをどう実装するの
+1. DDDをどう実装するの
 0. DDDとモデリング
 0. DDDをどうチーム・組織に入れていくのか
 
@@ -178,7 +184,7 @@ ERでも画面図でもなく「お客業務の縮図」を見て「どうしょ
 
 とはいえ、これには
 
-0. チームを「劇的に全入れ替え」とかしない
+1. チームを「劇的に全入れ替え」とかしない
 0. リモートワークやってる利点として「共有時に記録される」ので履歴が追える
 
 という前提があるので、とのこと。
@@ -233,7 +239,7 @@ _再利用性の高いものとして扱う時に「言語仕様としてサポ�
 
 ご自身もコーチとしてのチーム育成をされているようで、
 
-0. Javaの２つのチームやScalaのチームをレビューしていくと、最終的に「よく似たコード」になる
+1. Javaの２つのチームやScalaのチームをレビューしていくと、最終的に「よく似たコード」になる
 0. チームは気付きとしての成長が在る
 
 が面白いとのこと。
