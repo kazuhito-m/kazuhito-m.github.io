@@ -1,8 +1,10 @@
 ---
 layout: post
-title: 勉強会行ってみた「第一回 関西ITインフラ勉強会」#kistudy
+title: '勉強会行ってみた「第一回 関西ITインフラ勉強会」#kistudy'
 category: study-meeting-repo
-tags: [infrastracture]
+tags:
+  - infrastracture
+published: true
 ---
 
 ![会場の様子](/images/2015-09-13-kistudy.jpg)
@@ -39,7 +41,9 @@ _「大阪にはインフラの勉強会、無いですからね…」_
 ### オープニング 「関西ITインフラ系勉強会( [#kistudy](https://twitter.com/search?q=%23kistudy) )発足について」
 
 + 登壇者 : Yuki Okuno ( [@snowoy0113](https://twitter.com/snowoy0113) ) さん
-+ 資料: <iframe src="//www.slideshare.net/slideshow/embed_code/key/9wm0nJnFh0BaKq" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/yukiokuno0113/it-kistudy" title="関西ITインフラ系勉強会 (ハッシュタグ #kistudy) 発足について" target="_blank">関西ITインフラ系勉強会 (ハッシュタグ #kistudy) 発足について</a> </strong> from <strong><a href="//www.slideshare.net/yukiokuno0113" target="_blank">Yuki Okuno</a></strong> </div>
++ 資料: 
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/9wm0nJnFh0BaKq" width="340" height="290" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/yukiokuno0113/it-kistudy" title="関西ITインフラ系勉強会 (ハッシュタグ #kistudy) 発足について" target="_blank">関西ITインフラ系勉強会 (ハッシュタグ #kistudy) 発足について</a> </strong> from <strong><a href="//www.slideshare.net/yukiokuno0113" target="_blank">Yuki Okuno</a></strong> </div>
 
 アカン…そのパロディでは、インフラエンジニアはみんなゾンビになってまう…ｗ
 
@@ -77,7 +81,9 @@ _「大阪にはインフラの勉強会、無いですからね…」_
 ### ２コマ目「LinuxコンテナとLXC入門」
 
 + 登壇者 : 加藤泰文さん( [@ten_forward](https://twitter.com/ten_forward) )
-+ 資料 : <div style="width: 65%"><script async class="speakerdeck-embed" data-id="71f0fe44770b4a1e8755469e6aaa5104" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script></div>
++ 資料 : 
+
+<div style="width: 50%"><script async class="speakerdeck-embed" data-id="71f0fe44770b4a1e8755469e6aaa5104" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script></div>
 
 個人的には「[OSC京都で登壇されてたLXCの中の人](https://speakerdeck.com/tenforward/osc-2015-kansai-at-kyoto)」という、
 まだ記憶に新しい前登壇を見ていましたので「前セッションとの差異」を中心にウォッチしていました。
@@ -109,7 +115,9 @@ _「大阪にはインフラの勉強会、無いですからね…」_
 ### 3コマ目「インフラエンジニアに必要なスキル」
 
 + 登壇者 : [@Anubis_369](https://twitter.com/Anubis_369) さん
-+ 資料 : <iframe src="//www.slideshare.net/slideshow/embed_code/key/KEhLS4Ut3ywYjD" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/anubis_369/ss-52717237" title="関西インフラ勉強会 スライド" target="_blank">関西インフラ勉強会 スライド</a> </strong> from <strong><a href="//www.slideshare.net/anubis_369" target="_blank">anubis_369</a></strong> </div>
++ 資料 : 
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/KEhLS4Ut3ywYjD" width="340" height="290" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/anubis_369/ss-52717237" title="関西インフラ勉強会 スライド" target="_blank">関西インフラ勉強会 スライド</a> </strong> from <strong><a href="//www.slideshare.net/anubis_369" target="_blank">anubis_369</a></strong> </div>
 
 「インフラエンジニア」の意味、つまり「人間系のロールの話し」なセッションでした。
 
@@ -128,7 +136,9 @@ _「大阪にはインフラの勉強会、無いですからね…」_
 ### 4コマ目「イベント会場ネットワーク」
 
 + 登壇者 : Fumihisa Shigekane さん ( [@shige2313](https://twitter.com/shige2313) )
-+ 資料 :  <iframe src="//www.slideshare.net/slideshow/embed_code/key/GEriB7i6A2ktic" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/fumihisashigekane/ss-52733738" title="イベント会場ネットワーク" target="_blank">イベント会場ネットワーク</a> </strong> from <strong><a href="//www.slideshare.net/fumihisashigekane" target="_blank">Fumihisa Shigekane</a></strong> </div>
++ 資料 :  
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/GEriB7i6A2ktic" width="340" height="290" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/fumihisashigekane/ss-52733738" title="イベント会場ネットワーク" target="_blank">イベント会場ネットワーク</a> </strong> from <strong><a href="//www.slideshare.net/fumihisashigekane" target="_blank">Fumihisa Shigekane</a></strong> </div>
 
 「"cat myself.ldif" するとこうなります」という自己紹介すげぇｗ
 
