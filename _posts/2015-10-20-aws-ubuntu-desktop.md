@@ -2,7 +2,15 @@
 layout: post
 title: AWSのUbuntuにVNC経由のデスクトップ環境を最速で立てる方法
 category: tech
-tags: [linux,aws,setup,howto,ubuntu,desktop,vnc]
+tags:
+  - linux
+  - aws
+  - setup
+  - howto
+  - ubuntu
+  - desktop
+  - vnc
+published: true
 ---
 
 以前、[Docker内のCentOSでVNCデスクトップ](https://github.com/kazuhito-m/dockers/blob/master/desktop_and_browser_vnc/Dockerfile) はやってたのですが、今度はそれの「AWS✕Ubuntu版」をやってみたので、記録しておきます。
@@ -24,7 +32,6 @@ tags: [linux,aws,setup,howto,ubuntu,desktop,vnc]
 
 
 ```bash
-
 # リポジトリ最新化 & 必要なものインストール
 sudo apt-get update -y
 sudo apt-get upgrade -y

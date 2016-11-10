@@ -1,8 +1,10 @@
 ---
 layout: post
-title: 勉強会行ってみた「第02回 関西ITインフラ勉強会」#kistudy
+title: '勉強会行ってみた「第02回 関西ITインフラ勉強会」#kistudy'
 category: study-meeting-repo
-tags: [infrastracture]
+tags:
+  - infrastracture
+published: true
 ---
 
 ![会場の様子](/images/2015-11-23-art.jpg)
@@ -91,7 +93,9 @@ __[このファイル](http://www.nsc.gr.jp/kistudy2/162-basic.pcap)を元に「
 ## ２コマ目「Network Namespace について」
 
 + 登壇者 : 加藤泰文さん( [@ten_forward](https://twitter.com/ten_forward) )
-+ 資料 : <script async class="speakerdeck-embed" data-id="5946c8cfc0244079ba82d58f4ad6aec8" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
++ 資料 : 
+
+<script async class="speakerdeck-embed" data-id="5946c8cfc0244079ba82d58f4ad6aec8" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 
 「豆知識のようなセッションなんですけど…」とかいう導入ですが…そんなことはないセッションです。
 
@@ -136,7 +140,9 @@ __[このファイル](http://www.nsc.gr.jp/kistudy2/162-basic.pcap)を元に「
 ## 3コマ目「イマドキなWebサーバー「Hiawatha」の紹介」
 
 + 登壇者 : 四方八方 さん ( [@4for8pow](https://twitter.com/4for8pow) )
-+ 資料 : <script async class="speakerdeck-embed" data-id="ef7d4c1eeed64b89a743540a43855a0c" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
++ 資料 : 
+
+<script async class="speakerdeck-embed" data-id="ef7d4c1eeed64b89a743540a43855a0c" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 
 資料見たら解かるのですが…「ドン引き」か「突き刺さる」か、
 みたいなヤーツなのですがけど…
@@ -190,7 +196,9 @@ __[このファイル](http://www.nsc.gr.jp/kistudy2/162-basic.pcap)を元に「
 ## 4コマ目「VMware的インフラ仮想化の世界」
 
 + 登壇者 : 萩原 隆博 さん ( [@shadowhat](https://twitter.com/shadowhat) )
-+ 資料 : 捜索中  
++ 資料 : 
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/nK7jA74p0pZ3Mh" width="340" height="290" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/takahirohagiwara2/vmware-56147256" title="VMware的インフラ仮想化の世界" target="_blank">VMware的インフラ仮想化の世界</a> </strong> de <strong><a target="_blank" href="//www.slideshare.net/takahirohagiwara2">takahiro hagiwara</a></strong> </div>
 
 語り口が素晴らしい、萩原さんのセッションです。
 
@@ -316,7 +324,9 @@ __「(VDI前提となるが)仮想化するとFW(セキュリティ対策)すら
 ## 5コマ目「マニアックツール紹介、マネジメントのKnife-Zero(Chef)とテストスイートInSpec」
 
 + 登壇者 : Yukihiko Sawanobor さん ( [@sawanoboly](https://twitter.com/sawanoboly) )
-+ 資料 :  <iframe src="//www.slideshare.net/slideshow/embed_code/key/ioBNX4BwvAXb0M" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/YukihikoSawanobori/knifezerochefinspec" title="マニアックツール紹介、マネジメントのKnife-Zero(Chef)とテストスイートInSpec" target="_blank">マニアックツール紹介、マネジメントのKnife-Zero(Chef)とテストスイートInSpec</a> </strong> from <strong><a href="//www.slideshare.net/YukihikoSawanobori" target="_blank">Yukihiko SAWANOBORI</a></strong> </div>
++ 資料 :  
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/ioBNX4BwvAXb0M" width="340" height="290"  frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/YukihikoSawanobori/knifezerochefinspec" title="マニアックツール紹介、マネジメントのKnife-Zero(Chef)とテストスイートInSpec" target="_blank">マニアックツール紹介、マネジメントのKnife-Zero(Chef)とテストスイートInSpec</a> </strong> from <strong><a href="//www.slideshare.net/YukihikoSawanobori" target="_blank">Yukihiko SAWANOBORI</a></strong> </div>
 
 自身にとっての「インフラエンジニアの理想像」、[@sawanoboly](https://twitter.com/sawanoboly)さんのセッションです。
 
@@ -363,7 +373,9 @@ Knife-Zeroは「世界のプロダクト」ながら [@sawanoboly](https://twitt
 ## 6コマ目「Cent7@zabbix2.4を試す」
 
 + 登壇者 : 白石 雅義 さん ( [@m_46 ](https://twitter.com/m_46 ) )
-+ 資料 : <iframe src="//www.slideshare.net/slideshow/embed_code/key/sKhZT30bKivoTh" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/masayoshishiraishi/cent7zabbix24" title="Cent7@zabbix2.4を試す" target="_blank">Cent7@zabbix2.4を試す</a> </strong> from <strong><a href="//www.slideshare.net/masayoshishiraishi" target="_blank">Masayoshi Shiraishi</a></strong> </div>
++ 資料 : 
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/sKhZT30bKivoTh" width="340" height="290"  frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/masayoshishiraishi/cent7zabbix24" title="Cent7@zabbix2.4を試す" target="_blank">Cent7@zabbix2.4を試す</a> </strong> from <strong><a href="//www.slideshare.net/masayoshishiraishi" target="_blank">Masayoshi Shiraishi</a></strong> </div>
 
 「インストールと基本的な構成」についてのセッションです。
 
@@ -399,7 +411,7 @@ Knife-Zeroは「世界のプロダクト」ながら [@sawanoboly](https://twitt
 
 会場をそのままに、ケータリングを駆使してのビアバッシュっぽい懇親会が行われ、参加してきました。
 
-終わり際に「 [@Anubis_369] (https://twitter.com/Anubis_369) 氏が 即席LTしてた」ので、
+終わり際に「 [@Anubis_369](https://twitter.com/Anubis_369) 氏が 即席LTしてた」ので、
 それについて [@sawanoboly](https://twitter.com/sawanoboly) さんにたしなめられながら、
 ヤカラな質問かましてたのですが…。
 
