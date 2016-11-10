@@ -3,7 +3,7 @@ kazuhito-m.github.io
 
 ## Blog Web Site
 
-[NBM - https://kazuhito-m.github.io/](https://kazuhito-m.github.io/)
+[NBM2 - https://kazuhito-m.github.io/](https://kazuhito-m.github.io/)
 
 ## What's this ?
 
@@ -16,7 +16,7 @@ kazuhito-m.github.io
 + Jekyll-bootstrap
   + 若干のmodify
 
-## author
+## Author
 
 Kazuhito Miura ( [@kazuhito_m](https://twitter.com/kazuhito_m) on Twitter )
 
