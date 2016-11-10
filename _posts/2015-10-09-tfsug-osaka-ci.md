@@ -1,8 +1,15 @@
 ---
 layout: post
-title: 勉強会行ってみた「第28回 TFSUG大阪 継続的デリバリーを実現するTeam Foundation Server / Visual Studio Online 特集」#TFSUG
+title: >-
+  勉強会行ってみた「第28回 TFSUG大阪 継続的デリバリーを実現するTeam Foundation Server / Visual Studio
+  Online 特集」#TFSUG
 category: study-meeting-repo
-tags: [microsoft,vso,tfs,ci]
+tags:
+  - microsoft
+  - vso
+  - tfs
+  - ci
+published: true
 ---
 
 CI/CDと名がつく勉強会って「みんな大好物」ですよねっ！ (そうじゃないわけがない、きっとそうに違いない)
@@ -28,6 +35,7 @@ CI/CDと名がつく勉強会って「みんな大好物」ですよねっ！ (�
 
 + 登壇者 : 亀川 和史 さん( [kkamegawa](https://twitter.com/kkamegawa) )
 + 資料:
+
 <div style="width: 608px; max-width: 100%; margin-bottom:5px;"><a href="https://docs.com/kkamegawa/3092/visual-studio-onlinedevops" title="Visual Studio Onlineで学ぶDevOps" target="_blank" style="font-family: 'Segoe UI'">Visual Studio Onlineで学ぶDevOps</a><span style="font-family: 'Segoe UI Light'">—</span><a href="https://docs.com/kkamegawa" target="_blank" style="font-family: 'Segoe UI'">kkamegawa</a></div><iframe src="https://docs.com/d/embed/D25195808-1389-4335-3350-000100863436%7eMb9b006b3-e243-28ff-a71f-76fe40f71380" frameborder="0" scrolling="no" width="608px" height="378px" style="max-width:100%"></iframe>
 
 ※いつもなら「見なおしてから感想書きます」なのですが…
@@ -58,7 +66,7 @@ CI/CDと名がつく勉強会って「みんな大好物」ですよねっ！ (�
 
 曲解はあるかもしれませんが、言われてたことをメモから書くと…
 
-###「CI as a Service」の良いところ
+### 「CI as a Service」の良いところ
 
 + 環境のCleanさと鮮度
 + リポジトリ指定のみ(環境側でなくソース側に持つ)の依存性
@@ -124,7 +132,6 @@ _「CIは、リモートサービス系:近所のマシン系 に 6:4 くらい�
 そこで言われていた、
 
 + ビルドエージェントという仕組み
-
 	+ ビルドマシンを概念として切り出し
 	+ デフォルトが「Windows」というAgent
 
