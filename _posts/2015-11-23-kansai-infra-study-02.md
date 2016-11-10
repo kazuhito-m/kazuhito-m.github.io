@@ -1,8 +1,10 @@
 ---
 layout: post
-title: 勉強会行ってみた「第02回 関西ITインフラ勉強会」#kistudy
+title: '勉強会行ってみた「第02回 関西ITインフラ勉強会」#kistudy'
 category: study-meeting-repo
-tags: [infrastracture]
+tags:
+  - infrastracture
+published: true
 ---
 
 ![会場の様子](/images/2015-11-23-art.jpg)
@@ -91,7 +93,9 @@ __[このファイル](http://www.nsc.gr.jp/kistudy2/162-basic.pcap)を元に「
 ## ２コマ目「Network Namespace について」
 
 + 登壇者 : 加藤泰文さん( [@ten_forward](https://twitter.com/ten_forward) )
-+ 資料 : <script async class="speakerdeck-embed" data-id="5946c8cfc0244079ba82d58f4ad6aec8" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
++ 資料 : 
+
+<script async class="speakerdeck-embed" data-id="5946c8cfc0244079ba82d58f4ad6aec8" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 
 「豆知識のようなセッションなんですけど…」とかいう導入ですが…そんなことはないセッションです。
 
