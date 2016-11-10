@@ -1,8 +1,11 @@
 ---
 layout: post
-title: 勉強会行ってみた＆登壇してみた「第01回 関西golang勉強会」#KUG2
+title: '勉強会行ってみた＆登壇してみた「第01回 関西golang勉強会」#KUG2'
 category: study-meeting-repo
-tags: [golang,programing]
+tags:
+  - golang
+  - programing
+published: true
 ---
 
 ![画面はコラです](/images/2015-10-12-karaagematsuri.jpg)
@@ -80,7 +83,8 @@ golang-nuts、是非活用したいなぁ。 (英語が９点とか取る勢の�
 
 + 登壇者 : うつみ けいすけ さん( [voidofglans](https://twitter.com/voidofglans) )
 + 資料 :
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/lbvjhv73gS2E3P" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/voidofglans/phpergolang-golang" title="PHPerがgolangでもがいてる話@第１回 関西Golang勉強会" target="_blank">PHPerがgolangでもがいてる話@第１回 関西Golang勉強会</a> </strong> from <strong><a href="//www.slideshare.net/voidofglans" target="_blank">Keisuke Utsumi</a></strong> </div>
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/lbvjhv73gS2E3P" width="340" height="290"  frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/voidofglans/phpergolang-golang" title="PHPerがgolangでもがいてる話@第１回 関西Golang勉強会" target="_blank">PHPerがgolangでもがいてる話@第１回 関西Golang勉強会</a> </strong> from <strong><a href="//www.slideshare.net/voidofglans" target="_blank">Keisuke Utsumi</a></strong> </div>
 
 
 ゲーム制作に際してツールをgolangでバリバリ実装している、うつみさんからの「どのように選定されたか」「適用したか」のお話しです。
@@ -157,7 +161,8 @@ __goに入らばgoに従え__
 
 + 登壇者 : まつもと まさひろ さん( [massan_77](https://twitter.com/massan_77) )
 + 資料 : 
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/4YKDSQmF3e71Uv" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/masahiromatsumoto589/google-app-enginego" title="Google App Engine/Goを触ってみた" target="_blank">Google App Engine/Goを触ってみた</a> </strong> from <strong><a href="//www.slideshare.net/masahiromatsumoto589" target="_blank">Masahiro Matsumoto</a></strong> </div>
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/4YKDSQmF3e71Uv" width="340" height="290"  frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/masahiromatsumoto589/google-app-enginego" title="Google App Engine/Goを触ってみた" target="_blank">Google App Engine/Goを触ってみた</a> </strong> from <strong><a href="//www.slideshare.net/masahiromatsumoto589" target="_blank">Masahiro Matsumoto</a></strong> </div>
 
 golangの入門で「Google App Engine」で自分の書いたもの動かす…をやられた経緯と利点と知見を共有する、そんなLTでした。
 
@@ -275,7 +280,7 @@ nobonoboさんは、「とにかくなんでも出来る」The エンジニア�
 
 自分は「コード書いている時に思ってる事」が、
 
-0. 常時は「コードのカタチはどうでもいい」から「意思の通り」を保って"よしなに"やってくれ
+1. 常時は「コードのカタチはどうでもいい」から「意思の通り」を保って"よしなに"やってくれ
 0. 改行,配置,カンマなど「コードのカタチに意味を持つ」から崩さんとってくれ
 
 という２つの思いがあって、それが「デキすぎてわちゃわちゃなる」「デキなすぎてなんも表されへん」ってのに揺らされてきたのだなぁと。
@@ -305,4 +310,3 @@ nobonoboさんは、「とにかくなんでも出来る」The エンジニア�
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 これ、「前回で流れ決まった」感あるけど…定例になるんやろか？ｗ
-
