@@ -1,8 +1,12 @@
 ---
 layout: post
-title: 勉強会行ってみた「現場のアーキテクチャの話をしてみませんか？」#Devkan
+title: '勉強会行ってみた「現場のアーキテクチャの話をしてみませんか？」#Devkan'
 category: study-meeting-repo
-tags: [architecture,architect,kozake]
+tags:
+  - architecture
+  - architect
+  - kozake
+published: true
 ---
 
 ![会場の様子](/images/2015-09-15-kozakesan.jpg)
@@ -31,7 +35,9 @@ tags: [architecture,architect,kozake]
 ### 1コマ目「レイヤードアーキテクチャを意識したPHPアプリケーションの構築 Updateバージョン」
 
 + 登壇者: 新原 雅司さん ( [@shin1x1](https://github.com/shin1x1) )
-+ 資料: <iframe src="//www.slideshare.net/slideshow/embed_code/key/srbgfWufMabUu1" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/shin1x1/php-ver2-52828655" title="レイヤードアーキテクチャを意識した PHPアプリケーションの構築 ver2" target="_blank">レイヤードアーキテクチャを意識した PHPアプリケーションの構築 ver2</a> </strong> from <strong><a href="//www.slideshare.net/shin1x1" target="_blank">Masashi Shinbara</a></strong> </div>
++ 資料: 
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/srbgfWufMabUu1" width="340" height="290" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/shin1x1/php-ver2-52828655" title="レイヤードアーキテクチャを意識した PHPアプリケーションの構築 ver2" target="_blank">レイヤードアーキテクチャを意識した PHPアプリケーションの構築 ver2</a> </strong> from <strong><a href="//www.slideshare.net/shin1x1" target="_blank">Masashi Shinbara</a></strong> </div>
 
 残念かつ失礼ながら…遅れてきて終盤あたりしか聞けてませんので、資料が出たらじっくり読みたいです。
 
@@ -45,7 +51,9 @@ tags: [architecture,architect,kozake]
 ### ２コマ目「とある現場のシステムアーキテクチャー」
 
 + 登壇者 : 小酒 信一さん( [s_kozake](https://twitter.com/s_kozake) )
-+ 資料 : <iframe src="//www.slideshare.net/slideshow/embed_code/key/DiBeTquq6FN5rp" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/s_kozake/ss-52758068" title="とある現場のシステムアーキテクチャ" target="_blank">とある現場のシステムアーキテクチャ</a> </strong> from <strong><a href="//www.slideshare.net/s_kozake" target="_blank">Shinichi Kozake</a></strong> </div>
++ 資料 : 
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/DiBeTquq6FN5rp" width="340" height="290" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/s_kozake/ss-52758068" title="とある現場のシステムアーキテクチャ" target="_blank">とある現場のシステムアーキテクチャ</a> </strong> from <strong><a href="//www.slideshare.net/s_kozake" target="_blank">Shinichi Kozake</a></strong> </div>
 
 割と詰め込まれていて「多くの重要なことを言っていた」のですが…駆け抜けたので資料を見なおして拾っています。
 
