@@ -1,8 +1,16 @@
-permalink: /:categories/:year/:month/:day/:title 
+permalink: /:categories/:year/:month/:day/:title
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-highlighter: pygments
-markdown: redcarpet
+
+# markdown は「正体がつかめるまで、Jekyll3のデフォルト」で。
+# jekyll3の雛形にあったやつ / markdown: kramdown
+# 以前のサイトに指定してあったやつ / markdown: redcarpet
+
+markdown: kramdown
+
+kramdown:
+ input: GFM
+ hard_wrap: false
 
 title : NBM2
 tagline: natural born minority
@@ -15,11 +23,19 @@ author :
 
 production_url : http://kazuhito-m.github.io
 
+gems:
+  - jemoji
+  - jekyll-mentions
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-feed
+
 JB :
-  extensions: [tables,autolink,strikethrough,highlight]
+  version : 0.3.0
+
+  extensions: [tables,autolink,strikethrough]
 
   BASE_PATH : false
-
   ASSET_PATH : false
 
   archive_path: /archive.html
@@ -41,13 +57,13 @@ JB :
       num_posts: 5
       width: 580
       colorscheme: light
-   
+
   analytics :
-    provider : google 
-    google : 
+    provider : google
+    google :
         tracking_id : 'UA-63094663-1'
     getclicky :
-      site_id : 
+      site_id :
     mixpanel :
         token : '_MIXPANEL_TOKEN_'
     piwik :
@@ -56,3 +72,9 @@ JB :
 
   sharing :
     provider : custom
+
+# from Jekyll default settings.
+
+encoding: utf-8
+timezone: Asia/Tokyo
+future: true

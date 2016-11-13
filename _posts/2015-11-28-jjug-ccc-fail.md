@@ -34,7 +34,9 @@ tags: [java,jjug]
 ## 1コマ目「基調講演1 : Javaは守りに入らない、これが今のJavaだ」
 
 + 登壇者 : 谷本 心 ( [@cero_t](https://twitter.com/cero_t) ) さん
-+ 資料: <iframe src="//www.slideshare.net/slideshow/embed_code/key/B782CQuiAV59q1" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/shintanimoto/jjug-ccc-2015-fall-keynote" title="JJUG CCC 2015 Fall keynote" target="_blank">JJUG CCC 2015 Fall keynote</a> </strong> from <strong><a href="//www.slideshare.net/shintanimoto" target="_blank">心 谷本</a></strong> </div>
++ 資料: 
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/B782CQuiAV59q1" width="340" height="290" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/shintanimoto/jjug-ccc-2015-fall-keynote" title="JJUG CCC 2015 Fall keynote" target="_blank">JJUG CCC 2015 Fall keynote</a> </strong> from <strong><a target="_blank" href="//www.slideshare.net/shintanimoto">心 谷本</a></strong> </div>
 
 残念ながら間に合わず、前半聞きそびれました…。(なので前半話したらしい「トレンド」の感想無し)
 
@@ -109,7 +111,9 @@ __「再編されてからは、JavaEEはトレンドや議論を呼んだプロ
 ## 4コマ目「EF-2 How to speed up your application using JCache」
 
 + 登壇者 : Greg Luck さん ( [@gregrluck](https://twitter.com/gregrluck) )
-+ 資料 : <iframe src="//www.slideshare.net/slideshow/embed_code/key/HyTmK5TALTomT1" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/jjug/jcache-using-jcache" title="JCache Using JCache" target="_blank">JCache Using JCache</a> </strong> from <strong><a href="//www.slideshare.net/jjug" target="_blank">日本Javaユーザーグループ</a></strong> </div>
++ 資料 : 
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/HyTmK5TALTomT1" width="340" height="290" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/jjug/jcache-using-jcache" title="JCache Using JCache" target="_blank">JCache Using JCache</a> </strong> from <strong><a href="//www.slideshare.net/jjug" target="_blank">日本Javaユーザーグループ</a></strong> </div>
 
 Hazelcast CTO、Gregさんによる、キャッシュライブラリ「JCache」の解説セッション…のはずだったのですが。
 
@@ -148,7 +152,9 @@ Hazelcast CTO、Gregさんによる、キャッシュライブラリ「JCache」
 ## 5コマ目「CD-3 よくある業務開発の自動化事情」
 
 + 登壇者 : [@irof](https://twitter.com/irof) さん
-+ 資料 : <iframe src="//www.slideshare.net/slideshow/embed_code/key/mkCRE8ss0dCb0y" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/irof/jjugccc-ccccd3" title="よくある業務開発の自動化事情 #jjug_ccc #ccc_cd3" target="_blank">よくある業務開発の自動化事情 #jjug_ccc #ccc_cd3</a> </strong> from <strong><a href="//www.slideshare.net/irof" target="_blank">irof N</a></strong> </div>
++ 資料 : 
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/mkCRE8ss0dCb0y" width="340" height="290" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/irof/jjugccc-ccccd3" title="よくある業務開発の自動化事情 #jjug_ccc #ccc_cd3" target="_blank">よくある業務開発の自動化事情 #jjug_ccc #ccc_cd3</a> </strong> from <strong><a href="//www.slideshare.net/irof" target="_blank">irof N</a></strong> </div>
 
 もうプログラム分野では多彩すぎて「関西住みのJavaのすごい人」としか言いようがない、[@irof](https://twitter.com/irof) さんのセッションです。
 
@@ -177,7 +183,9 @@ Hazelcast CTO、Gregさんによる、キャッシュライブラリ「JCache」
 ## 6コマ目「EF-4 ソラコムでのJava/AWS活用 – SIM管理やAWS Lambda Javaなど」
 
 + 登壇者 : 片山 暁雄 さん ( [@c9katayama](https://twitter.com/c9katayama) )
-+ 資料 : <iframe src="//www.slideshare.net/slideshow/embed_code/key/Myt7G3fP1JL81I" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/SORACOM/java-jjug-ccc-2015-fall-by" title="日本 Java ユーザーグループ　JJUG CCC 2015 Fall by ソラコム 片山 " target="_blank">日本 Java ユーザーグループ　JJUG CCC 2015 Fall by ソラコム 片山 </a> </strong> from <strong><a href="//www.slideshare.net/SORACOM" target="_blank">SORACOM,INC</a></strong> </div>
++ 資料 : 
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/Myt7G3fP1JL81I" width="340" height="290" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/SORACOM/java-jjug-ccc-2015-fall-by" title="日本 Java ユーザーグループ　JJUG CCC 2015 Fall by ソラコム 片山 " target="_blank">日本 Java ユーザーグループ　JJUG CCC 2015 Fall by ソラコム 片山 </a> </strong> from <strong><a href="//www.slideshare.net/SORACOM" target="_blank">SORACOM,INC</a></strong> </div>
 
 本読んでるのに忘れてた「AWS-CloudDesignPattern」の著者のお一人、片山さんのセッションです。
 
@@ -209,7 +217,9 @@ Hazelcast CTO、Gregさんによる、キャッシュライブラリ「JCache」
 ## 7コマ目「EF-5 これからのコンピューティングの変化とJava」
 
 + 登壇者 : きしだなおき さん ( [@kis](https://twitter.com/kis) )
-+ 資料 : <iframe src="//www.slideshare.net/slideshow/embed_code/key/A9IgZIp9cRBwnB" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/nowokay/javahacker-tackle" title="これからのコンピューティングとJava(Hacker Tackle)" target="_blank">これからのコンピューティングとJava(Hacker Tackle)</a> </strong> from <strong><a href="//www.slideshare.net/nowokay" target="_blank">なおき きしだ</a></strong> </div>
++ 資料 : 
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/A9IgZIp9cRBwnB" width="340" height="290" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/nowokay/javahacker-tackle" title="これからのコンピューティングとJava(Hacker Tackle)" target="_blank">これからのコンピューティングとJava(Hacker Tackle)</a> </strong> from <strong><a href="//www.slideshare.net/nowokay" target="_blank">なおき きしだ</a></strong> </div>
 
 アニメの話、昨今のコンピュータの話から、それを使った「機会学習」など問題解決のトレンド、そしてそれに関連して検討されているJavaの仕様の話を凝縮した、手書きの図がかわいげなセッションでした。
 
@@ -222,7 +232,9 @@ Hazelcast CTO、Gregさんによる、キャッシュライブラリ「JCache」
 ## 8コマ目「GH-6 Java8 Stream APIとApache SparkとAsakusa Frameworkの類似点・相違点」
 
 + 登壇者 : ひしだま さん ( [@hishidama](https://twitter.com/hishidama) )
-+ 資料 : <iframe src="//www.slideshare.net/slideshow/embed_code/key/23yOyPJaKS8ZIr" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/hishidama/java8-stream-apiapache-sparkasakusa-framework" title="Java8 Stream APIとApache SparkとAsakusa Frameworkの類似点・相違点" target="_blank">Java8 Stream APIとApache SparkとAsakusa Frameworkの類似点・相違点</a> </strong> from <strong><a href="//www.slideshare.net/hishidama" target="_blank">hishidama</a></strong> </div>
++ 資料 : 
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/23yOyPJaKS8ZIr" width="340" height="290" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/hishidama/java8-stream-apiapache-sparkasakusa-framework" title="Java8 Stream APIとApache SparkとAsakusa Frameworkの類似点・相違点" target="_blank">Java8 Stream APIとApache SparkとAsakusa Frameworkの類似点・相違点</a> </strong> from <strong><a href="//www.slideshare.net/hishidama" target="_blank">hishidama</a></strong> </div>
 
 「日本全国のJavaプログラマの"入門"や"ググれ"を一手に支えてる」のではないか？
 といっても過言ではないと思われる、ひしだまさんによる「分散データ処理機構の比較」のセッションです。

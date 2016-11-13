@@ -1,8 +1,11 @@
 ---
 layout: post
-title: 勉強会行ってみた「秋の関ジャバ祭り」#kanjava
+title: '勉強会行ってみた「秋の関ジャバ祭り」#kanjava'
 category: study-meeting-repo
-tags: [java,lang]
+tags:
+  - java
+  - lang
+published: true
 ---
 
 Javaは「落ちこぼれの俺」の新人時代に「寄してもらえな」かった
@@ -28,7 +31,7 @@ Javaは「落ちこぼれの俺」の新人時代に「寄してもらえな」�
 + 登壇者 : 阪田 浩一 さん( [jyukutyo](https://twitter.com/jyukutyo) )
 + 資料: ※これじゃないかも
 
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/MfZjSJ69snKO1b" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/jyukutyo/jjug-ccc-2015ab4" title="クリスマスを支える俺たちとJava(JJUG CCC 2015 Spring AB4)" target="_blank">クリスマスを支える俺たちとJava(JJUG CCC 2015 Spring AB4)</a> </strong> from <strong><a href="//www.slideshare.net/jyukutyo" target="_blank">jyukutyo</a></strong> </div>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/MfZjSJ69snKO1b" width="340" height="290" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/jyukutyo/jjug-ccc-2015ab4" title="クリスマスを支える俺たちとJava(JJUG CCC 2015 Spring AB4)" target="_blank">クリスマスを支える俺たちとJava(JJUG CCC 2015 Spring AB4)</a> </strong> from <strong><a href="//www.slideshare.net/jyukutyo" target="_blank">jyukutyo</a></strong> </div>
 
 ※見れてないので、あとで資料を拾った結果から書きます。
 
@@ -66,7 +69,7 @@ DBチューニングの件は、
 
 + 登壇者 : 小酒 信一さん( [s_kozake](https://twitter.com/s_kozake) )
 + 資料: ※これではないかもしれません。
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/MGhGOBdfOJ6vwo" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/s_kozake/android-53545715" title="あなたとAndroid!?今すぐダウンロード" target="_blank">あなたとAndroid!?今すぐダウンロード</a> </strong> from <strong><a href="//www.slideshare.net/s_kozake" target="_blank">Shinichi Kozake</a></strong> </div>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/MGhGOBdfOJ6vwo" width="340" height="290" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/s_kozake/android-53545715" title="あなたとAndroid!?今すぐダウンロード" target="_blank">あなたとAndroid!?今すぐダウンロード</a> </strong> from <strong><a href="//www.slideshare.net/s_kozake" target="_blank">Shinichi Kozake</a></strong> </div>
 
 「会場は硬いと思うのですが…僕が一番やらかいと思うのでｗ」
 
@@ -160,7 +163,9 @@ AndroidでORMってのは「あるだろうけれど重そう」って思って�
 ## 3コマ目「これからのJavaの取っ掛かりを掴む」
 
 + 登壇者 : irof さん( [irof](https://twitter.com/irof) )
-+ 資料 : ※捜索中
++ 資料 : 
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/e7tkAc5WHVZQXF" width="340" height="290" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/irof/java-56322966" title="これからのJavaのとっかかりを掴む #jdt51 #kanjava" target="_blank">これからのJavaのとっかかりを掴む #jdt51 #kanjava</a> </strong> from <strong><a target="_blank" href="//www.slideshare.net/irof">irof N</a></strong> </div>
 
 irof さんの
 
