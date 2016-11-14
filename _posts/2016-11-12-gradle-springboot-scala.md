@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Gradle + ScpringBoot + Scalaで開発始める始める方法
+title: Gradle + SpringBoot + Scalaで開発始める始める方法
 category: tech
 tags: [gradle,springboot,scala]
 ---
