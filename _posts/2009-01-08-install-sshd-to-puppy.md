@@ -13,9 +13,9 @@ tags: [linux,puppy,sshd,install]
 
 [http://www.murga-linux.com/puppy/viewtopic.php?p=89755#89755](http://www.murga-linux.com/puppy/viewtopic.php?p=89755#89755)
 
-ここから、Sshd-sftp.pup をダウンロードし、それをファイルブラウザからクリック起動...
+ここから、 `sshd-sftp.pup` をダウンロードし、それをファイルブラウザからクリック起動...
 
-しようとすると、dotpuphandlar入れろ！とか言われるので、
+しようとすると、 `dotpuphandlar` 入れろ！とか言われるので、
 puppyパッケージマネージャを使って、インストール。
 
 (俺の環境じゃ、このアプリがクソ重いw)
@@ -49,7 +49,7 @@ vi /etc/rc.d/rc.local
 
 して、末尾に
 
-/usr/sbin/sshd
+`/usr/sbin/sshd`
 
 を追加。
 
