@@ -13,27 +13,26 @@ Linuxでjkd5をインストール後、Judeでブラウジングをします。
 
 ## 対策
 
-
 どこかに、以下のことがのっていました。(どこやねんｗ)
 
 j2sdk1.5.0のリリースノートと睨めっこしていると
 
-```jre/lib/fonts/fallback/```
+`jre/lib/fonts/fallback/``
 
 下に日本語TrueTypeフォントをインストールしろ。
 
 と言うような事が書いてあったので何気なしに
 
 
-```jre/lib/fonts/```
+`jre/lib/fonts/`
 
-下にディレクトリ ```fallback/``` を作り
+下にディレクトリ `fallback/` を作り
 
-```/usr/X11R6/lib/X11/fonts/TrueType/```
+`/usr/X11R6/lib/X11/fonts/TrueType/`
 
 下の
 
-```kochi-gothic.ttf,kochi-mincho.ttf```
+`kochi-gothic.ttf,kochi-mincho.ttf`
 
 をコピーして入れてみたところ、フォント設定無しでの通常の日本語表示が可能になりました。
 
