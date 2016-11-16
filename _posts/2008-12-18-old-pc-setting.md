@@ -1,5 +1,4 @@
 ---
-published: false
 layout: post
 title: いとこのために旧機を設定する必要アリ
 category: tech

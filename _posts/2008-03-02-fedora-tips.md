@@ -1,5 +1,4 @@
 ---
-published: false
 layout: post
 title: Fedora8(にかかわらず？)Tips
 category: tech

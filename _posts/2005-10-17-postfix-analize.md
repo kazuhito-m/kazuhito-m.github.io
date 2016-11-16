@@ -1,5 +1,4 @@
 ---
-published: false
 layout: post
 title: Postfixのメールログを解析する仕事が舞い込んだ
 category: tech

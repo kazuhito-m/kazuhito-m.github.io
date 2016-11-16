@@ -1,5 +1,4 @@
 ---
-published: false
 layout: post
 title: jdk5のフォント設定
 category: tech
@@ -50,4 +49,3 @@ ln -s /usr/share/fonts/japanese/TrueType/ fallback
 
 読んでないが、[ここ](https://docs.oracle.com/javase/jp/6/technotes/guides/intl/fontconfig.html)
 に詳しくのってる？
-

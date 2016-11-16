@@ -1,5 +1,4 @@
 ---
-published: false
 layout: post
 title: 新システム準備作業(つづき1)
 category: tech

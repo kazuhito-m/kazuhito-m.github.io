@@ -1,5 +1,4 @@
 ---
-published: false
 layout: post
 title: Puppy Linuxへのsshd導入
 category: tech
@@ -57,4 +56,3 @@ vi /etc/rc.d/rc.local
 initとかxinitとか触ってきた俺にとっては「いいのかなあ？」みたいな仕込みかただなあ。
 
 取り合えず、再起動して確認っと。
-

@@ -1,5 +1,4 @@
 ---
-published: false
 layout: post
 title: LPIの出題範囲から学ぶ「俺の弱いカテゴリ」
 category: tech

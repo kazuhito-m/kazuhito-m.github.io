@@ -1,5 +1,4 @@
 ---
-published: false
 layout: post
 title: Puppy Linux にvncserverをインストールする
 category: tech
@@ -34,4 +33,3 @@ http://www.murga-linux.com/puppy/viewtopic.php?t=27424
 もっと、茨の道を想像していただけに、簡単過ぎて拍子抜けという、うれしい誤算でした。
 
 最初にも書きましたが、Lan内で使うにも危なっかしいほどのセキュリティなので、もう少ししたらsshポートフォワードを検討しようと思います。
-
