@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LinuxでCDR焼く
+title: Linuxでのデータ復旧
 category: tech
 tags: [linux,backup,recovery]
 ---

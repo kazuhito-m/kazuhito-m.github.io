@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fedora8(にかかわらず？)Tips
+title: Fedora8(にかかわらず？)アーカイバのこもごも
 category: tech
 tags: [linux,cdr]
 ---
