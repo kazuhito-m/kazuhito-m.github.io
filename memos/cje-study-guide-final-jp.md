@@ -24,7 +24,7 @@ tags: [jenkins,exam]
 ## イントロダクション
 
 この学習ガイドは、認定Jenkinsエンジニア(CJE)試験のためのものです。
-認定CloudBeesJenkinsエンジニア(CCJPE)については[こちら](https://www.cloudbees.com/jenkins/jenkins-certification)を参照ください。
+認定CloudBeesJenkinsエンジニア(CCJPE)試験については[こちら](https://www.cloudbees.com/jenkins/jenkins-certification)を参照ください。
 
 このガイドであなたは、試験の出題トピック、外部参照のリンク、そして例題を得ることができます。
 
@@ -72,7 +72,7 @@ __NOTE:__ 試験では、ランダムな順序で出題され、セクション�
 - [SMS Notification Plugin](https://wiki.jenkins-ci.org/display/JENKINS/SMS+Notification)
 - [Script Security Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Script+Security+Plugin)
 - [Skype Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Skype+Plugin)
-￥
+
 ## 用語
 
 次の点にも注意してください:
