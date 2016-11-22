@@ -1,11 +1,20 @@
-認定Jenkinsエンジニア(CJE) - 認定試験学習ガイド
-========================================
+---
+title: 「Certified Jenkins Engineer (CJE) Study Guide」の訳
+layout: post
+category: tech
+tags: [jenkins,exam]
+---
+
+「Jenkinsの資格がある！」って聞いたのですが、[日本語情報っぽいのがここしかない](http://www.slideshare.net/hirokotamagawa/9jenkins-pipeline#6)ので、本家のガイドを探しだして「超絶テキトウ翻訳」してみました。
 
 - 原文: [https://www.cloudbees.com/sites/default/files/cje-study-guide.pdf](https://www.cloudbees.com/sites/default/files/cje-study-guide.pdf)
 - 訳: [@kazuhito_m](https://twitter.com/kazuhito_m)
-
+- 注: 実際の試験は「すべて英語」なので「翻訳してちゃいけない(用語としての)英語」も適当にやらかしている場合があるのでご注意を
 
 ---
+
+認定Jenkinsエンジニア(CJE) - 認定試験学習ガイド
+========================================
 
 ## CloudBees社はJenkinsエンジニアに2つの認定を提供します
 
