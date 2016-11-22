@@ -1,11 +1,4 @@
----
-title: 「Certified Jenkins Engineer (CJE) Study Guide」の訳
-layout: post
-category: tech
-tags: [architecture,study_meeting_repo]
----
-
-認定Jenkinsエンジニア(CJE) - [認定試験学習ガイド
+認定Jenkinsエンジニア(CJE) - 認定試験学習ガイド
 ========================================
 
 - 原文: [https://www.cloudbees.com/sites/default/files/cje-study-guide.pdf](https://www.cloudbees.com/sites/default/files/cje-study-guide.pdf)
@@ -16,8 +9,8 @@ tags: [architecture,study_meeting_repo]
 
 ## CloudBees社はJenkinsエンジニアに2つの認定を提供します
 
-- [認定Jenkinsエンジニア(CJE)試験は、(オープンソースの)Jenkins知識に関する60の複数選択問題で出題します
-- [認定CloudBeesJenkinsエンジニア(CCJPE)試験は、90の問題: 60の(オープンソースの)Jenkins知識に関する問題と、30のCloudBeesのJenkinsプラットフォームに関する問題 を出題します
+- 認定Jenkinsエンジニア(CJE)試験は、(オープンソースの)Jenkins知識に関する60の複数選択問題で出題します
+- 認定CloudBeesJenkinsエンジニア(CCJPE)試験は、90の問題: 60の(オープンソースの)Jenkins知識に関する問題と、30のCloudBeesのJenkinsプラットフォームに関する問題 を出題します
 
 ## イントロダクション
 
@@ -70,7 +63,7 @@ __NOTE:__ 試験では、ランダムな順序で出題され、セクション�
 - [SMS Notification Plugin](https://wiki.jenkins-ci.org/display/JENKINS/SMS+Notification)
 - [Script Security Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Script+Security+Plugin)
 - [Skype Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Skype+Plugin)
-
+￥
 ## 用語
 
 次の点にも注意してください:
