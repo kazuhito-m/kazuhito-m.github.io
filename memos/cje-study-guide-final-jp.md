@@ -1,5 +1,18 @@
+---
+title: 「Certified Jenkins Engineer (CJE) Study Guide」の訳
+layout: post
+category: tech
+tags: [architecture,study_meeting_repo]
+---
+
 認定Jenkinsエンジニア(CJE) - [認定試験学習ガイド
 ========================================
+
+- 原文: [https://www.cloudbees.com/sites/default/files/cje-study-guide.pdf](https://www.cloudbees.com/sites/default/files/cje-study-guide.pdf)
+- 訳: [@kazuhito_m](https://twitter.com/kazuhito_m)
+
+
+---
 
 ## CloudBees社はJenkinsエンジニアに2つの認定を提供します
 
@@ -58,7 +71,7 @@ __NOTE:__ 試験では、ランダムな順序で出題され、セクション�
 - [Script Security Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Script+Security+Plugin)
 - [Skype Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Skype+Plugin)
 
-## 擁護
+## 用語
 
 次の点にも注意してください:
 
