@@ -57,3 +57,18 @@ __NOTE:__ 試験では、ランダムな順序で出題され、セクション�
 - [SMS Notification Plugin](https://wiki.jenkins-ci.org/display/JENKINS/SMS+Notification)
 - [Script Security Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Script+Security+Plugin)
 - [Skype Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Skype+Plugin)
+
+## 擁護
+
+次の点にも注意してください:
+
+- `SCM` は、特に指定しない限り “source code management” を指します
+- `Pipeline` は、一般名詞として使用されている場合を除いて（「CD pipelines」など）、Pipelineプラグイン（以前は「Workflow plugin」と呼ばれていました）によって作成されたジョブタイプを指します
+- JenkinsのさまざまなUI要素は、次の用語を使用して参照されます
+
+※4〜5ページの画像は割愛。 TODO 貼る
+
+## 1. CI/CD/Jenkinsのコンセプト
+
+このトピックは、試験の約27％を構成します。
+質問には次のトピックが含まれます：
