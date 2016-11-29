@@ -10,9 +10,7 @@ LinuxでMame入れて使ってみました。
 
 ## やったこと
 
-まず、[ここ](https://web.archive.org/web/20100718023433/http://dribble.org.uk/listrpms7.html)から
-
-Fedora8用のX86_64バイナリの
+まず、[ここ](https://web.archive.org/web/20100718023433/http://dribble.org.uk/listrpms7.html)から、Fedora8用のX86_64バイナリの
 
 - qmc2-0.2-0.1.b1.fc8.drb.x86_64.rpm
 - sdlmame-0124-1.fc8.drb.x86_64.rpm
