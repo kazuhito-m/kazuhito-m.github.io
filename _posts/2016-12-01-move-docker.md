@@ -1,5 +1,4 @@
 ---
-published: false
 layout: post
 title: Dockerで使う「ディスク上の場所」をお引越し
 category: tech
