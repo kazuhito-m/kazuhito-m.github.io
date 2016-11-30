@@ -9,15 +9,20 @@ tags: [linux,ubuntu,fstab,mount]
 
 (絶対忘れるので、虎の巻書きます。解説は少なめ)
 
-## 前提
+# これを読んで得られるもの
+
+- Linuxで「HDDのUUIDを調べる」方法
+- LinuxにてUUIDでマウントする方法
+
+# 前提
 
 - Ubuntu 16.04 LTS
 - HDDはフォーマット/fs構築済でマザボにつないである
 - HDDは `/strage/01` にマウントしたい
 
-## やったこと
+# やったこと
 
-### UUID確認
+## UUID確認
 
 ```bash
 ls -l /dev/disk/by-uuid
@@ -30,7 +35,7 @@ lrwxrwxrwx 1 root root 10 11月 30 11:25 b1da9824-49c6-4671-8ad8-d4498386e6df ->
 
 なるほど、俺が繋ぎたいHDDは `sdb` ですね。(パーティション切らんとfs構築したんだねｗ)
 
-### fstab編集
+## fstab編集
 
 ```bash
 sudo vi /etc/fstab
