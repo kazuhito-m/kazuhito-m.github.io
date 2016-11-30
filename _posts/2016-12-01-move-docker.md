@@ -9,7 +9,7 @@ tags: [docker,tomcat]
 
 # これを読んで得られるもの
 
-- 本家のインストール法でUbuntuに入れたDockerのデフォルトデータ構成
+- 本家のインストール法でUbuntuに入れたDockerのデフォルトのデータ保存場所がわかる
 - 本家のインストール法でUbuntuに入れたDockerデータの引っ越し方法
 - Docker + Systemdの組み合わせ時の設定変更法
 
