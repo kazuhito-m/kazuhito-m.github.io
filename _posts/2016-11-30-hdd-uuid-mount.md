@@ -2,7 +2,7 @@
 layout: post
 title: LinuxでハードディスクをUUIDでmount設定(fstab)を書く
 category: tech
-tags: [docker,tomcat]
+tags: [linux,ubuntu,fstab,mount]
 ---
 
 自分用のコマンドの備忘録です。
