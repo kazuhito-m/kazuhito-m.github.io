@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 雲勉【勉強会:新技術好き!】AWS re:Invent 2016 速報共有会
+title:  勉強会行ってみた「雲勉【勉強会:新技術好き!】AWS re:Invent 2016 速報共有会」#kumoben
 category: study-meeting-repo
 tags: [aws,cloudpack,reinvent,cloud]
 ---
@@ -10,7 +10,7 @@ tags: [aws,cloudpack,reinvent,cloud]
 # 情報
 
 + 日付 : 2016/11/28(月)
-+ [申し込みサイト](https://iotlt.connpass.com/event/42653/)
++ [申し込みサイト](https://kumoben.doorkeeper.jp/events/53338)
 + ハッシュタグ : [#kumoben](https://twitter.com/search?q=%23kumoben)
 + 何するのか : 11/28からラスベガスで行われていた `AWS re:Invent 2016` の内容を、`CloudPack`のiret大阪オフィスの識者の皆様によるテーマ別＆日本語解説付きで知ることが出来る勉強会
 
