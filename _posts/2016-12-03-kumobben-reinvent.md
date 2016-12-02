@@ -9,7 +9,7 @@ tags: [aws,cloudpack,reinvent,cloud]
 
 # 情報
 
-+ 日付 : 2016/11/28(月)
++ 日付 : 2016/12/02(金)
 + [申し込みサイト](https://kumoben.doorkeeper.jp/events/53338)
 + ハッシュタグ : [#kumoben](https://twitter.com/search?q=%23kumoben)
 + 何するのか : 11/28からラスベガスで行われていた `AWS re:Invent 2016` の内容を、`CloudPack`のiret大阪オフィスの識者の皆様によるテーマ別＆日本語解説付きで知ることが出来る勉強会
