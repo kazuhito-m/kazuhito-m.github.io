@@ -179,7 +179,7 @@ AMIよりもっと「ユースケースを(金額のプランなどまで)一式
 
 「必要用途のサーバを爆速で立ちあげれる」は、コンテナの用途と同じく開発者には嬉しい…かも？
 
-## AWS Shield
+## [AWS Shield](https://aws.amazon.com/jp/blogs/news/aws-shield-protect-your-applications-from-ddos-attacks/)
 
 - マネージドDDoSプロテクションサービス
   - 無償版の `AWS Shield for Everyone`
