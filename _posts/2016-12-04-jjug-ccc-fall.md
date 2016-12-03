@@ -31,7 +31,7 @@ Javaって、多様化しすぎて「どれ押さえておいたら良いかわ�
 ## 1コマ目「基調講演1 : Be a great engineer!〜 フォローすべきトレンド、スルーすべきトレンドをどう見抜くのか」 [#ccc_a1](https://twitter.com/search?q=%23ccc_a1)
 
 + 登壇者 : 谷本 心 ( [@cero_t](https://twitter.com/cero_t) ) さん
-+ 資料:
++ 資料 : [https://speakerdeck.com/shintanimoto/ccc2016fall-be-a-great-engineer-number-jjug-ccc-number-ccc-a1](https://speakerdeck.com/shintanimoto/ccc2016fall-be-a-great-engineer-number-jjug-ccc-number-ccc-a1)
 
 「技術者たちは技術選択いかにするか」→「意味と必要性から"自分で"考えるんだ！」というお話でした。
 
