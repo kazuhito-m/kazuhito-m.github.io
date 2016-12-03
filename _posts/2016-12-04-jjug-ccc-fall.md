@@ -116,7 +116,11 @@ Demoについては(枝葉末節ですが)「データのマイグレーショ�
 + 登壇者 : 牛尾 剛 さん ( [@sandayuu](https://twitter.com/sandayuu) )
 + 資料 :
 
-TOOD 感想
+---
+
+最近は「俺の中の心の師匠」みたいになってる、牛尾さんのセッション。
+
+
 
 
 ## 4コマ目「Spring CloudでDDD的なマイクロサービスを作ってみる」 [#ccc_a4](https://twitter.com/search?q=%23ccc_a4)
