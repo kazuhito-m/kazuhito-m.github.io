@@ -1,5 +1,4 @@
 ---
-published: false
 layout: post
 title: 勉強会行ってみた「JJUG CCC 2016 Fall」#jjug_ccc
 category: study-meeting-repo
