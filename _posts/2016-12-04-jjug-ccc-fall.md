@@ -5,8 +5,6 @@ category: study-meeting-repo
 tags: [java,jjug,confarence]
 ---
 
-![会場の様子](/images/2016-12-03-xxx.jpg)
-
 今年もやってきました！
 
 # 情報
@@ -27,7 +25,7 @@ Javaって、多様化しすぎて「どれ押さえておいたら良いかわ�
 
 # 内容
 
-自身が見たやつのみ、感想書いていきます。
+自身が見たやつのみ、一行まとめのあと感想書いていきます。
 
 
 ## 1コマ目「基調講演1 : Be a great engineer!〜 フォローすべきトレンド、スルーすべきトレンドをどう見抜くのか」 [#ccc_a1](https://twitter.com/search?q=%23ccc_a1)
@@ -60,6 +58,7 @@ Javaって、多様化しすぎて「どれ押さえておいたら良いかわ�
 
 + 資料:
 
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/NofOCDIiBjXHQW" width="340" height="290" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/syobochim/sier-devops-jjugccc-69780604" title="SIerもはじめる わたしたちのDevOps #jjug_ccc" target="_blank">SIerもはじめる わたしたちのDevOps #jjug_ccc</a> </strong> from <strong><a target="_blank" href="//www.slideshare.net/syobochim">Mizuki Wada</a></strong> </div>
 
 「SIerがDevOpsすることの意義」を軸に、それを「実践した」知見、実現技術、プロセス、やった結果などを凝縮した発表でした。
 
@@ -115,12 +114,29 @@ Demoについては(枝葉末節ですが)「データのマイグレーショ�
 + 登壇者 : 牛尾 剛 さん ( [@sandayuu](https://twitter.com/sandayuu) )
 + 資料 :
 
+新しいアプリの潮流である「MicroService」も、その前提にDevOpsがある。
+
+DevOpsはバズワードで定義はないが「人、プロセス、プロダクトの集合体」と考える。
+
+導入がむづかしい国と言われる日本、そこに対する5つの「日本向け DevOps 導入ステップ」を、「インターナショナルチームの生産製の秘密」や「Be Lazy」、「Just do it !」など、牛尾さん本人が見出した「概念」とともに紹介するセッション…で良いのでしょうか。
+
 ---
 
 最近は「俺の心の先生」みたいになってる、牛尾さんのセッション。
 
-「すでにあるところ」「政治的に強固なところ」で足掻いて足掻いて…というのが今までだったのですが、
+「重要なのはValue(価値)でしょ？」をプロダクトに関わるすべての人(ステークホルダ含む)に納得させれば良いんですよ、というシンプルなお話は、大変勇気をいただきました。
 
+自分の場合は「すでにあるところ」「政治的に強固なところ」で足掻いて足掻いて…という典型例な消耗をやってきたので、「権限の移譲ができる人を連れてきて、”要らないですね”と言わせる」というのは、ほんとそうだよなーと思いました。
+
+反面「お客様自身も望んでいるという状態下で(自分で無くてもいいが)エバンジェリスト(という権威)が必要」という「条件の整え」が必要、というのも同時に感じました。
+
+「相手が変わりたい」「自分もこんな状態がやだ」と思ってるなら、「自分のできる範囲」になんかこだわってる暇なんかなくて、さっさと「権威」でもなんでも利用して「Yes」を取りに行こう、そういうようななりふり構わない感…実践したいなと。
+
+---
+
+インターナショナルチームと仕事をしたご自身の経験画から「生産性の差は何か?」からの「物量が違う」「彼らは捨てることを考えている」という話も、自分たちにも可能性を感じる反面「自身も他者に”意味のない無駄な何か”を強いていないか」を考えさせられる話でした。
+
+牛尾さんの話は「前に進むことに勇気」をもらえる反面、「自身にも問いかけなければならない」という両方の真摯な感覚をもらいますね。
 
 ## 4コマ目「Spring CloudでDDD的なマイクロサービスを作ってみる」 [#ccc_a4](https://twitter.com/search?q=%23ccc_a4)
 
@@ -183,8 +199,8 @@ Demoについては(枝葉末節ですが)「データのマイグレーショ�
 
 ## 6コマ目「JPA と DDD の関係で僕が思っていること」 [#ccc_a6](https://twitter.com/search?q=%23ccc_a5)
 
-+ 登壇者 : opengl-8080さん ( [@opengl_8080](https://twitter.com/opengl_8080) )
-+ 資料 :
++ 登壇者 : opengl-8080さん (opengl [@opengl_8080](https://twitter.com/opengl_8080) )
++ 資料 : [http://qiita.com/opengl-8080/items/944a6383f81dd3406486](http://qiita.com/opengl-8080/items/944a6383f81dd3406486)
 
 DBアクセスにJavaで触れるに、最初「薄いJDBCラッパー(自前)」で学び、その後「JPAを学んで、面倒くさいなぁと思」い、DDDを学んだあと「JPA、(DDD/オブジェクト指向的に)やるじゃん」と見なおした話…で良いでしょうか？
 
@@ -193,17 +209,16 @@ DBアクセスにJavaで触れるに、最初「薄いJDBCラッパー(自前)�
 最近の案件で、JPA(の１実装)を使っていて、「なんやこいつ…やりにくいなぁ」と思って、「関係性アノテーションは切って」「更新タイミングは自分で制御して」「最低限の機能だけ」というふうに使っていたのですが、それは「DDDっぽくやるつもりで、できてなかったんだなー」と逆説的な気づきをもらいました。
 
 
-自分がいろいろと「機能を殺した」のは、自分のイメージが「DBアクセスライブラリ」を求め、使いたかっただけ(つまり自身の脳が旧世代的考えかた)であるということだったのですね。
+自分がいろいろと「機能を殺した」のは、自分のイメージが「DBアクセスライブラリ」を求め、使いたかっただけ(つまり自身の脳が旧態然としてついてってない)であるということだったのですね。
 
 「実際にやってみました」「実装はこうなります」という丁寧な資料・セッションの作り方がすごいなぁと思いました。
-
-
 
 ## 7コマ目「俺のコードがどこで使われているのかわからない問題 - あるいはマイナーOSSの生存戦略」 [#ccc_l9](https://twitter.com/search?q=%23ccc_l9)
 
 + 登壇者 : 渡辺 祐 さん ( [@nabedge](https://twitter.com/nabedge) )
 + 資料 :
 
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/6vHv451vTL5noD" width="340" height="290" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/nabedge/oss-69784858" title="俺のコードがどこでつかわれているのかわからない問題 あるいはマイナーOSSの生存戦略" target="_blank">俺のコードがどこでつかわれているのかわからない問題 あるいはマイナーOSSの生存戦略</a> </strong> from <strong><a target="_blank" href="//www.slideshare.net/nabedge">nabedge Watanabe</a></strong> </div>
 
 自身のOSSがどのように使われるかを「アクセス数のデータのみ」からプロファイリングをやきもきする話と、SpringMVCとHTMLについて「デザイナとデベロッパで責務分割をきっちりするFW設計」の話…だと思うのですけどね(後半がまとめられないw)。
 
@@ -228,13 +243,16 @@ Pi4jは弄ったことが合った(GPIOを使うのにgolangかjavaかで検証�
 というの、自分も良くにた経緯を辿って「ハードが少しでもらえたら」にたどり着いてるので、すごくシンパシーを感じました。
 
 懇親会でひっ捕まえてもっと話せればよかった、と少し後悔です。
- 
+
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">Iot の「仮想トイレ」がこちらになります。<a href="https://twitter.com/hashtag/%E3%82%A8%E3%83%93%E3%83%87%E3%83%B3%E3%82%B9?src=hash">#エビデンス</a> <a href="https://twitter.com/hashtag/ccc_l9?src=hash">#ccc_l9</a> <a href="https://twitter.com/hashtag/jjug_ccc?src=hash">#jjug_ccc</a> <a href="https://t.co/12dtQbrhsN">pic.twitter.com/12dtQbrhsN</a></p>&mdash; 三浦一仁(本読めるようになりたい) (@kazuhito_m) <a href="https://twitter.com/kazuhito_m/status/804995258333302784">2016年12月3日</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ## 懇親会 [#ccc_kon](https://twitter.com/search?q=%23ccc_kon)
-   
+
 本日は日帰り強行軍だったので、LT片目に早々ときりあげさせていただきました。
-    
+
 が、食べるもん食べたし、@@nabedgeさんやうらがみさんなど登壇者の方と話せたし、スタッフの方にお礼伝えたし満足でした。
-     
+
 # 小並感
 
 「また来たいぜ！」で感想を締めくくった去年…。
@@ -259,8 +277,18 @@ Pi4jは弄ったことが合った(GPIOを使うのにgolangかjavaかで検証�
 
 # 感謝
 
-今年も、多くの方に(いい意味で)弄っていただきまして…
+今年も、多くの方に(いい意味で)弄っていただきまして…参加の皆様、そしてスタッフの皆様、本当にありがとうございました。
 
-+ まさかの受付にて「なんできたん？」対応してくれた [@ihcomega](https://twitter.com/ihcomega) さん
+# おまけ
 
-皆様、本当にありがとうございました。
+自分は日帰り組で、同じく大阪に帰る [@irof](https://twitter.com/irof) さんと @bufferings](https://twitter.com/bufferings) と一緒に帰ったのです。
+
+新幹線乗り場前で所々の理由で「じゃーねー」したのですが…。
+
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr"><a href="https://twitter.com/kazuhito_m">@kazuhito_m</a> <a href="https://twitter.com/irof">@irof</a> まじか！ <a href="https://t.co/B5xIHGc4mc">pic.twitter.com/B5xIHGc4mc</a></p>&mdash; mitz (@bufferings) <a href="https://twitter.com/bufferings/status/805027967478808576">2016年12月3日</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr"><a href="https://twitter.com/irof">@irof</a> <a href="https://twitter.com/bufferings">@bufferings</a> う、うーん…w <a href="https://t.co/jQSOIoNd0v">pic.twitter.com/jQSOIoNd0v</a></p>&mdash; 三浦一仁(本読めるようになりたい) (@kazuhito_m) <a href="https://twitter.com/kazuhito_m/status/805028497852747776">2016年12月3日</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+なんでやねん！ (わりかしの確率を"縁"でかいくぐった二人でしたｗ)
