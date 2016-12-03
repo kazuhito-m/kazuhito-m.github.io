@@ -13,7 +13,7 @@ tags: [java,jjug,confarence]
 + [申し込みサイト](https://jjug.doorkeeper.jp/events/53100)
 + [特設サイト(タイムテーブル含む)](http://www.java-users.jp/ccc2016fall/)
 + [スライド・資料]() ※無断転載御免！
-+ [当日まとめ(Togetter)](http://togetter.com/li/)
++ 当日まとめ(Togetter)(まだ)
 + ハッシュタグ : [#jjug_ccc](https://twitter.com/search?q=%23jjug_ccc)
 + 何するのか : 日本最大のJavaユーザグループ「JJUG」の大規模勉強会？ですかね
 
