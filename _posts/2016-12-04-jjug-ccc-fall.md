@@ -12,7 +12,7 @@ tags: [java,jjug,confarence]
 + 開催日: 2016/12/03(土)
 + [申し込みサイト](https://jjug.doorkeeper.jp/events/53100)
 + [特設サイト(タイムテーブル含む)](http://www.java-users.jp/ccc2016fall/)
-+ [スライド・資料]() ※無断転載御免！
++ [スライド・資料](https://github.com/jjug-ccc/slides-articles-2016fall)
 + 当日まとめ(Togetter)(まだ)
 + ハッシュタグ : [#jjug_ccc](https://twitter.com/search?q=%23jjug_ccc)
 + 何するのか : 日本最大のJavaユーザグループ「JJUG」の大規模勉強会？ですかね
