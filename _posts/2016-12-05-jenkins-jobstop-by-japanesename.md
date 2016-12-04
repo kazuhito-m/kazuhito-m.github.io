@@ -106,7 +106,7 @@ Slaveのマシンに同一VerのJenkinsを入れ、「同じ構文のPipelineス
 
 すんなり通った！
 
-これについて「日本語LanguaePack入れるてないとか"ロケール変更を怠った"から」かなーと思ったのですが、
+これについて「日本語LanguaePack入れてないとか"ロケール変更を怠った"から」かなーと思ったのですが、
 
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">Language Pack 入れたとしても UTF-8/ANSI (Windows-31J) 変換地獄見るので日本語やめたほうがいいっす（笑）<a href="https://twitter.com/kazuhito_m">@kazuhito_m</a> <a href="https://twitter.com/kyon_mm">@kyon_mm</a></p>&mdash; kes/0.9 (H. Ushito) (@iso2022jp) <a href="https://twitter.com/iso2022jp/status/804238178873843712">2016年12月1日</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
