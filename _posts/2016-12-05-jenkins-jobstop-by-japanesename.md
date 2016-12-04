@@ -1,5 +1,4 @@
 ---
-published: false
 layout: post
 title: Jenkinsで「パイプラインスクリプトでWindowsのコマンド叩く」時ジョブが延々と止まる感じになる場合
 category: tech
