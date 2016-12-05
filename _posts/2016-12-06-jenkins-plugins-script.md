@@ -41,7 +41,9 @@ Jenkinsを運用していると、 `AsCode` したくなってくるのですが
 
 記事を読むと 「Dockerイメージ内の `/usr/local/bin/plugins.sh` に"プラグインID列挙したテキストファイル名"を引数として渡したらプラグインをインストール出来る」ようなので、そのスクリプトの `github上の元ソース` を見てみることにしました。
 
-<script src="http://gist-it.appspot.com/https://github.com/jenkinsci/docker/blob/master/plugins.sh"></script>
+<div>
+  <script src="http://gist-it.appspot.com/https://github.com/jenkinsci/docker/blob/master/plugins.sh"></script>
+</div>
 
 ## やってることのサマリ
 
