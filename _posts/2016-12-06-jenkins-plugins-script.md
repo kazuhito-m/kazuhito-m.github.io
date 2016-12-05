@@ -1,6 +1,6 @@
 ---
 layout: post
-title: jenkinsの公式Dockerイメージの「プラグインをCLIから入れる」スクリプトについて
+title: Jenkinsの公式Dockerイメージの「プラグインをCLIから入れる」スクリプトについて
 category: tech
 tags: [jenkins,plugin,cli,docker]
 ---
@@ -48,9 +48,12 @@ Jenkinsを運用していると、 `AsCode` したくなってくるのですが
 1. 引数や`$JENKINS_HOME`の確認を行った後、「既にインストールされているプラグイン群」を確認
     + `/var/jenkins_home/plugins` を確認
     + `/var/jenkins_home` は「Docker起動時の$JENKINS_HOME」、
-    + Dockerのパラメタで「外からマウント」していてもこのパスは変わらない
-    + `/var/jenkins_home/plugins`が無かった場合 `jenkins.war` そのもの
-0. 引数の「インストールしたいプラグイン群」から「既にインストールされているもの」を除いたものを `https://updates.jenkins.io` からjpiファイルを `/usr/share/jenkins/ref/plugins` へダウンロード
+        + Dockerのパラメタで「外からマウント」していてもこのパスは変わらない
+    + `/var/jenkins_home/plugins`が無かった場合 `jenkins.war` そのものから「デフォルトで入るPlugin」を調べる
+0. 引数の「インストールしたいプラグイン群」から「既にインストールされているもの」を除いたものを公式からダウンロード
+    + ダウンロード元は `https://updates.jenkins.io` 
+    + ダウンロード先は `/usr/share/jenkins/ref/plugins`
+    + jpiファイルをダウンロードしている
     + `curl` を使っている
 0. jpiファイルを解凍
 
