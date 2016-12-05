@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Jenkinsの「プラグインをCLIから入れる」スクリプトが公式Dockerイメージに在る
+title: jenkinsの公式Dockerイメージの「プラグインをCLIから入れる」スクリプトについて
 category: tech
-tags: [jenkins,plugin,cli]
+tags: [jenkins,plugin,cli,docker]
 ---
 
-ただ「良いの知った！」って言う備忘録なだけなのですが。
+「自分の備忘録」かつ「良いノウハウではない」です。あしからず。
 
 # これを読んで得られるもの
 
-- Jenkinsに「CLIでプラグイン入れられる」な信頼おけるスクリプトの取得場所
+- Jenkinsの公式Dockerイメージで「AsCode(Dockerfile)でプラグイン入れられる」方法
+  - そのメカニズム
 
 # ネタ元
 
@@ -40,9 +41,32 @@ Jenkinsを運用していると、 `AsCode` したくなってくるのですが
 
 記事を読むと 「Dockerイメージ内の `/usr/local/bin/plugins.sh` に"プラグインID列挙したテキストファイル名"を引数として渡したらプラグインをインストール出来る」ようなので、そのスクリプトの `github上の元ソース` を見てみることにしました。
 
+<script src="http://gist-it.appspot.com/https://github.com/jenkinsci/docker/blob/master/plugins.sh"></script>
 
+## やってることのサマリ
 
+1. 引数や`$JENKINS_HOME`の確認を行った後、「既にインストールされているプラグイン群」を確認
+  - `/var/jenkins_home/plugins` を確認
+  - `/var/jenkins_home` は「Docker起動時の$JENKINS_HOME」、
+  - Dockerのパラメタで「外からマウント」していてもこのパスは変わらない
+  - `/var/jenkins_home/plugins`が無かった場合 `jenkins.war` そのもの
+0. 引数の「インストールしたいプラグイン群」から「既にインストールされているもの」を除いたものを `https://updates.jenkins.io` からjpiファイルを `/usr/share/jenkins/ref/plugins` へダウンロード
+  - `curl` を使っている
+0. jpiファイルを解凍
+
+なるほど、
+
+- Dockerイメージのディレクトリ構成に依存
+- 実行タイミングがDocker起動時に限定
+
+なので、「汎用的に使えるスクリプト」ではなさそうですね。
 
 ---
 
 # 小並感
+
+本当は「使えるスクリプト見つけたぜ！」という記事にしたかったのですが、「Dockerでしか使えなそう」ということがわかって少しがっかりしてます。
+
+しかし、「公式も `curl` とかでネットから取ってきて内部ディレクトリ弄う感じの管理している」ということがわかったので、それをヒントに`AsCode`のアイディア元にできそうです。
+
+…いや、「DockerイメージでJenkins動かせ」「そのDockerfileをメンテせえよ」てことですねｗ
