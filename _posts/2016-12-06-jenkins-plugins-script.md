@@ -41,19 +41,17 @@ Jenkinsを運用していると、 `AsCode` したくなってくるのですが
 
 記事を読むと 「Dockerイメージ内の `/usr/local/bin/plugins.sh` に"プラグインID列挙したテキストファイル名"を引数として渡したらプラグインをインストール出来る」ようなので、そのスクリプトの `github上の元ソース` を見てみることにしました。
 
-<div>
-  <script src="http://gist-it.appspot.com/https://github.com/jenkinsci/docker/blob/master/plugins.sh"></script>
-</div>
+[https://github.com/jenkinsci/docker/blob/master/plugins.sh](https://github.com/jenkinsci/docker/blob/master/plugins.sh)
 
 ## やってることのサマリ
 
 1. 引数や`$JENKINS_HOME`の確認を行った後、「既にインストールされているプラグイン群」を確認
-  - `/var/jenkins_home/plugins` を確認
-  - `/var/jenkins_home` は「Docker起動時の$JENKINS_HOME」、
-  - Dockerのパラメタで「外からマウント」していてもこのパスは変わらない
-  - `/var/jenkins_home/plugins`が無かった場合 `jenkins.war` そのもの
+    + `/var/jenkins_home/plugins` を確認
+    + `/var/jenkins_home` は「Docker起動時の$JENKINS_HOME」、
+    + Dockerのパラメタで「外からマウント」していてもこのパスは変わらない
+    + `/var/jenkins_home/plugins`が無かった場合 `jenkins.war` そのもの
 0. 引数の「インストールしたいプラグイン群」から「既にインストールされているもの」を除いたものを `https://updates.jenkins.io` からjpiファイルを `/usr/share/jenkins/ref/plugins` へダウンロード
-  - `curl` を使っている
+    + `curl` を使っている
 0. jpiファイルを解凍
 
 なるほど、
@@ -67,7 +65,7 @@ Jenkinsを運用していると、 `AsCode` したくなってくるのですが
 
 # 小並感
 
-本当は「使えるスクリプト見つけたぜ！」という記事にしたかったのですが、「Dockerでしか使えなそう」ということがわかって少しがっかりしてます。
+本当は「使えるスクリプト見つけたぜ！」という記事にしたかったのですが、「Dockerでしか使えなそう」でしたので、「bashの解説」だけの記事になりました。
 
 しかし、「公式も `curl` とかでネットから取ってきて内部ディレクトリ弄う感じの管理している」ということがわかったので、それをヒントに`AsCode`のアイディア元にできそうです。
 
