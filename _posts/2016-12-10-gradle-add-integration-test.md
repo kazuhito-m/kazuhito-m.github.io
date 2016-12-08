@@ -12,6 +12,16 @@ xxx
 
 - xxx
 
+# 経緯
+
+TODO 清書
+
+https://www.bucyou.net/blog/1015
+ここと
+https://github.com/biasedbit/gradle-plugins
+ここ読んで手習い。
+
+
 # 前提
 
 
