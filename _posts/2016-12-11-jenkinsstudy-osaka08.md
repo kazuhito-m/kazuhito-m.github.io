@@ -28,7 +28,7 @@ tags: [java,jjug,confarence]
 + 登壇者 : [@srz_zumix](https://twitter.com/cero_t) さん
 + 資料 : [http://srz-zumix.github.io/slide/jenkinsstudy-o8/#/](http://srz-zumix.github.io/slide/jenkinsstudy-o8/#/)
 
-QAエンジニアの方による、Hudoson時代から「会社で使ってきた」Jenkins、その後「個人的にも使うようになった」Jenkins。
+QAエンジニアとして、Hudson時代から「会社で使ってきた」Jenkins、その後「個人的にも使うようになった」Jenkins。
 
 CIしてきて、Jenkinsの使用方法の移り変わり、CIサービスへの移行、組織での使いかた取り組み方などなど「現在までの知見」を凝縮したセッションでした。
 
