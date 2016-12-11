@@ -1,5 +1,4 @@
 ---
-published: false
 layout: post
 title: 勉強会行ってみた「第8回大阪Jenkins勉強会」#jenkinsstudy
 category: study-meeting-repo
