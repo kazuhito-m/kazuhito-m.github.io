@@ -16,6 +16,11 @@ xxx
 
 TODO 清書
 
+http://lab.astamuse.co.jp/entry/geb_test_01
+
+http://jugemix.hatenablog.com/entry/2016/06/14/221131
+↑をそのままやって、解決。
+
 
 # 前提
 
