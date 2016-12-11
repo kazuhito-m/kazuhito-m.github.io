@@ -13,7 +13,6 @@ tags: [java,jjug,confarence]
 + [申し込みサイト](https://jjug.doorkeeper.jp/events/53100)
 + [特設サイト(タイムテーブル含む)](http://www.java-users.jp/ccc2016fall/)
 + [スライド・資料](https://github.com/jjug-ccc/slides-articles-2016fall)
-+ 当日まとめ(Togetter)(まだ)
 + ハッシュタグ : [#jjug_ccc](https://twitter.com/search?q=%23jjug_ccc)
 + 何するのか : 日本最大のJavaユーザグループ「JJUG」の大規模勉強会？ですかね
 
@@ -53,6 +52,7 @@ Javaって、多様化しすぎて「どれ押さえておいたら良いかわ�
 ## 2コマ目「SIerもはじめる、わたしたちのDevOps」 [#ccc_g2](https://twitter.com/search?q=%23ccc_g2)
 
 + 登壇者 : しょぼちむ さん  ( [@syobochim](https://twitter.com/syobochim) ) & 阿佐 志保 さん ( [@_Dr_ASA](https://twitter.com/_Dr_ASA) )
++ 雰囲気 : [Togetter](http://togetter.com/li/1056868)
 
 ### しょぼちむさんパート
 
@@ -180,6 +180,7 @@ DevOpsはバズワードで定義はないが「人、プロセス、プロダ�
 + 登壇者 : 角谷 文康 さん ( [@fscoward](https://twitter.com/fscoward) )
 + 資料 :
 
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/amJ2f3BfXyVPit" width="340" height="290" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/fumiyasusumiya/jjug-ccc-2016-fall-scala" title="【JJUG CCC 2016 Fall 公開版】ドメイン駆動設計とscala 〜既存プロジェクトへの適用〜" target="_blank">【JJUG CCC 2016 Fall 公開版】ドメイン駆動設計とscala 〜既存プロジェクトへの適用〜</a> </strong> from <strong><a target="_blank" href="//www.slideshare.net/fumiyasusumiya">Fumiyasu Sumiya</a></strong> </div>
 
 わりかし「DDDの原則(エリックエバンス本)」に寄った、DDDに関する講座っぽいもの…かつScalaでの料理の仕方や、クリーンアーキテクチャを交えたお話されてた(気がする)セッションです。
 
