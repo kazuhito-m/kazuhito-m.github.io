@@ -135,7 +135,7 @@ JenkinsのAsCodeは「サーバのセットアップ・インストール」以�
 + 登壇者 : 前川 博志 ( [@Posaune](https://twitter.com/Posaune) ) さん
 + 資料 :
 
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/mrzN3FmHkIaFnx" width="340" height="290" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/Posaune/8jenkinslt-ios-vs-ci" title="第8回大阪Jenkins勉強会LT： iOS vs CI">第8回大阪Jenkins勉強会LT： iOS vs CI</a> </strong> from <strong><a href="//www.slideshare.net/Posaune">Hiroshi Maekawa</a></strong> </div>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/mrzN3FmHkIaFnx" width="340" height="290" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/Posaune/8jenkinslt-ios-vs-ci" title="第8回大阪Jenkins勉強会LT： iOS vs CI" target="_blank">第8回大阪Jenkins勉強会LT： iOS vs CI</a> </strong> from <strong><a target="_blank" href="//www.slideshare.net/Posaune">Hiroshi Maekawa</a></strong> </div>
 
 iOSのビルドと長くつきあってきて「いろいろ手段は得た」「が、”金で殴る”のが一番早いわ」にたどり着いた話…というのは少し語弊がありますが。
 
