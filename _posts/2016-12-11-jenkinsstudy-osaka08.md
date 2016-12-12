@@ -45,7 +45,7 @@ CIしてきて、Jenkinsの使用方法の移り変わり、CIサービスへの
 + 登壇者 : 三浦 一仁 ( [@kazuhito_m](https://twitter.com/kazuhito_m) )
 + 資料 :
 
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/oxTCsShB3Y2unv" width="340" height="290" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/miurakazuhito/jenkinsdocker" title="JenkinsとDockerって何が良いの？ 〜言うてるオレもわからんわ〜 #jenkinsstudy">JenkinsとDockerって何が良いの？ 〜言うてるオレもわからんわ〜 #jenkinsstudy</a> </strong> from <strong><a href="//www.slideshare.net/miurakazuhito">Miura Kazuhito</a></strong> </div>
+<iframe src="http://www.slideshare.net/slideshow/embed_code/key/oxTCsShB3Y2unv" width="340" height="290" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="http://www.slideshare.net/miurakazuhito/jenkinsdocker" title="JenkinsとDockerって何が良いの？ 〜言うてるオレもわからんわ〜 #jenkinsstudy">JenkinsとDockerって何が良いの？ 〜言うてるオレもわからんわ〜 #jenkinsstudy</a> </strong> from <strong><a href="http://www.slideshare.net/miurakazuhito">Miura Kazuhito</a></strong> </div>
 
 （自分でまとめるのも変なはなしですが）「JenkinsとDocker」という組み合わせについてググった＆それっぽいの作ってみた結果発表。
 
@@ -130,10 +130,12 @@ JenkinsのAsCodeは「サーバのセットアップ・インストール」以�
 
 オレも「[ビルド中ではなくビルド後（つまり結果）をXFDと音楽と音声合成で](http://www.slideshare.net/miurakazuhito/yukamu02-jenkins)」とかやってたのですが、なんとなく「楽しい」上「(リモートでなくば)必須だなあ」と思うので、この流れもっと流行れ！
 
-### iOS（iPhoneアプリ）ビルドと戦った話(こちらも題名失念しましたすません)
+### iOS vs CI 激闘の歴史
 
 + 登壇者 : 前川 博志 ( [@Posaune](https://twitter.com/Posaune) ) さん
 + 資料 :
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/key/mrzN3FmHkIaFnx" width="340" height="290" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="http://www.slideshare.net/Posaune/8jenkinslt-ios-vs-ci" title="第8回大阪Jenkins勉強会LT： iOS vs CI" >第8回大阪Jenkins勉強会LT： iOS vs CI</a> </strong> from <strong><a href="http://www.slideshare.net/Posaune">Hiroshi Maekawa</a></strong> </div>
 
 iOSのビルドと長くつきあってきて「いろいろ手段は得た」「が、”金で殴る”のが一番早いわ」にたどり着いた話…というのは少し語弊がありますが。
 
