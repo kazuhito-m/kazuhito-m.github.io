@@ -25,7 +25,7 @@ tags: [java,jjug,confarence]
 
 ## 1コマ目「なが～いお付き合いJenkinsおじさん - 僕と会社と Jenkins」
 
-+ 登壇者 : [@srz_zumix](https://twitter.com/cero_t) さん
++ 登壇者 : [@srz_zumix](https://twitter.com/srz_zumix) さん
 + 資料 : [http://srz-zumix.github.io/slide/jenkinsstudy-o8/#/](http://srz-zumix.github.io/slide/jenkinsstudy-o8/#/)
 
 QAエンジニアとして、Hudson時代から「会社で使ってきた」Jenkins、その後「個人的にも使うようになった」Jenkins。
@@ -102,7 +102,7 @@ CIしてきて、Jenkinsの使用方法の移り変わり、CIサービスへの
 
 ### 現場でJenkinsサーバのプロビジョニングをAnasibleでAsCodeした話（題名は失念しましたすみません）
 
-+ 登壇者 : おぎあり ( [@kunst1080](https://twitter.com/kunst1080) ) さん
++ 登壇者 : おぎあり ( [@ogiarisan](https://twitter.com/ogiarisan) ) さん
 + 資料 :
 
 （若干他人事でもないのですが）Jenkinsのプロビジョンを「ソレすら自動化するよね」という話です。
