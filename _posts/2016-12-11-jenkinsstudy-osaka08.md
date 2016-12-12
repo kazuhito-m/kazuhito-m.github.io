@@ -115,7 +115,7 @@ JenkinsのAsCodeは「サーバのセットアップ・インストール」以�
 - (場合によっては)アカウント設定
 - ジョブ設定（2.0になっても「ジョブ自体を作るトコ」は残る)
 
-が「敵」「自動化しにくいところ」なのですが「[プラグインインストールをシェルスクリプトにした](https://github.com/exemplary-buildpipeline-projects/studyosaka8-jenkins-docker-env/blob/master/src/server/jenkins-aws/scripts/setup_jenkins.sh)」り、「XML自体をバックアップして流し込んだ」り、「$JENKINS_HOME丸コピした」り、いろいろするのですが、柔軟性や「〜ごと設定をどうするか(個別な依存性)」など悩ましいですね。
+が「敵」「自動化しにくいところ」で、「[プラグインインストールをシェルスクリプトにした](https://github.com/exemplary-buildpipeline-projects/studyosaka8-jenkins-docker-env/blob/master/src/server/jenkins-aws/scripts/setup_jenkins.sh)」り、「XML自体をバックアップして流し込んだ」り、「$JENKINS_HOME丸コピした」り、いろいろするのですが、柔軟性や「〜ごと設定をどうするか(個別な依存性)」など悩ましいですね。
 
 今まだ「これが定番や！」に達してないのですが、誰かおしえてください。
 
