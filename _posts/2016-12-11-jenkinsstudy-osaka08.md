@@ -45,7 +45,7 @@ CIしてきて、Jenkinsの使用方法の移り変わり、CIサービスへの
 + 登壇者 : 三浦 一仁 ( [@kazuhito_m](https://twitter.com/kazuhito_m) )
 + 資料 :
 
-<iframe src="http://www.slideshare.net/slideshow/embed_code/key/oxTCsShB3Y2unv" width="340" height="290" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="http://www.slideshare.net/miurakazuhito/jenkinsdocker" title="JenkinsとDockerって何が良いの？ 〜言うてるオレもわからんわ〜 #jenkinsstudy">JenkinsとDockerって何が良いの？ 〜言うてるオレもわからんわ〜 #jenkinsstudy</a> </strong> from <strong><a href="http://www.slideshare.net/miurakazuhito">Miura Kazuhito</a></strong> </div>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/oxTCsShB3Y2unv" width="340" height="290" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/miurakazuhito/jenkinsdocker" title="JenkinsとDockerって何が良いの？ 〜言うてるオレもわからんわ〜 #jenkinsstudy" target="_blank">JenkinsとDockerって何が良いの？ 〜言うてるオレもわからんわ〜 #jenkinsstudy</a> </strong> from <strong><a target="_blank" href="//www.slideshare.net/miurakazuhito">Miura Kazuhito</a></strong> </div>
 
 （自分でまとめるのも変なはなしですが）「JenkinsとDocker」という組み合わせについてググった＆それっぽいの作ってみた結果発表。
 
@@ -91,7 +91,7 @@ CIしてきて、Jenkinsの使用方法の移り変わり、CIサービスへの
 + 登壇者 : くんすと ( [@kunst1080](https://twitter.com/kunst1080) ) さん
 + 資料 :
 
-<iframe src="http://www.slideshare.net/slideshow/embed_code/key/nX6BdRQLh87ME9" width="340" height="290" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="http://www.slideshare.net/kunst1080/8jenkinslt-jenkins" title="第8回大阪jenkins勉強会LT Jenkinsでやってみてよかったこと・やめておいたほうが良かったこと">第8回大阪jenkins勉強会LT Jenkinsでやってみてよかったこと・やめておいたほうが良かったこと</a> </strong> from <strong><a  href="http://www.slideshare.net/kunst1080">kunst1080</a></strong> </div>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/nX6BdRQLh87ME9" width="340" height="290" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/kunst1080/8jenkinslt-jenkins" title="第8回大阪jenkins勉強会LT Jenkinsでやってみてよかったこと・やめておいたほうが良かったこと" target="_blank">第8回大阪jenkins勉強会LT Jenkinsでやってみてよかったこと・やめておいたほうが良かったこと</a> </strong> from <strong><a target="_blank" href="//www.slideshare.net/kunst1080">kunst1080</a></strong> </div>
 
 「スキーマ比較」以外はやったことあったので「みんなやるねんなぁ」という感じがしました。
 
