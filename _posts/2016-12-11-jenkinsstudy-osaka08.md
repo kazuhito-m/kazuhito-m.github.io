@@ -103,7 +103,6 @@ CIしてきて、Jenkinsの使用方法の移り変わり、CIサービスへの
 ### 現場でJenkinsサーバのプロビジョニングをAnasibleでAsCodeした話（題名は失念しましたすみません）
 
 + 登壇者 : おぎあり ( [@ogiarisan](https://twitter.com/ogiarisan) ) さん
-+ 資料 :
 
 （若干他人事でもないのですが）Jenkinsのプロビジョンを「ソレすら自動化するよね」という話です。
 
