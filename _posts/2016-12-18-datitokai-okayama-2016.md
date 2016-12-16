@@ -32,7 +32,7 @@ tags: [daitokai]
 
 ## 1コマ目「Try Azure Machine Learning」
 
-+ 登壇者 : 貞松 政史 ( [@sady_nitro](https://twitter.com/sady_nitro) さん
++ 登壇者 : 貞松 政史 ( [@sady_nitro](https://twitter.com/sady_nitro) ) さん
 + 資料 :
 
 
