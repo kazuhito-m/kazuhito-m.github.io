@@ -6,7 +6,7 @@ category: study-meeting-repo
 tags: [daitokai]
 ---
 
-参加だけでなく、登壇もしてきましたよ。
+昼だけじゃなく、宴会もね♪
 
 # 情報
 
@@ -35,11 +35,36 @@ tags: [daitokai]
 + 登壇者 : 貞松 政史 ( [@sady_nitro](https://twitter.com/sady_nitro) ) さん
 + 資料 :
 
+「機械学習」という概念自体の説明と、`Azure ML(マシーンラーニング)`の使いどころと「こういうことに使う」という例のデモを披露していただきました。
+
+---
+
+恥ずかしい話、機械学習については完全に乗り遅れてる俺…
+
+なので、概念の構造として、
+
+```
+機械学習 > Neural NEtwork > Deep Learning > 様々な手法(アルゴリズム)
+```
+
+という具象の階層であるのも知りませんでしたし、初学者には「頃合いに集約された」大変良いセッションでした。
+
+`Azure ML` のデモも「こういうときに使う」「GUIの操作」「学習済みモデルを作ったあとどうするか」などが具体的に示されていて、「今からやりたい」場合にすごくとっかかりに良いなあと。やってかななー！
+
 
 ## 2コマ目「プログラマが知っておくといいかもしれないCSSのハナシ」
 
 + 登壇者 : 吉田 貴文 ( [@zephiransas](https://twitter.com/zephiransas) ) 岡山Javaユーザ会
 + 資料 :
+
+<script async class="speakerdeck-embed" data-id="912ffee5684f4f768cb9e8ab9a763db3" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>  
+
+プログラマがHTML/CSSなどデザインを弄う際の`Bootstrap`,`flexbox`の「勘所」「取捨選択すべき点」「カスタマイズ点」などを、わかりやすく解説…で良いのかな。
+
+---
+
+
+
 
 
 ## 3コマ目「ゼロからのプロダクトローンチで学んだこと」
