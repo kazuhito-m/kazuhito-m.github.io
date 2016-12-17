@@ -76,47 +76,62 @@ tags: [daitokai]
 + 登壇者 : 阿部 信介 ( [@mao_instantlife](https://twitter.com/mao_instantlife) )
 + 資料 :
 
-「プロダクトオーナー」として、`MallNavi` というサービスの企画、実現にかかわってきた中で、遷移してきた「フェイズ」「使った道具」「考えかた」などの知見を「4つのフェーズ(発表中では"期間"と表してた)」「時系に沿って」解説…だと思ったのですが。
+「プロダクトオーナー」として、`MallNavi` というサービスの企画、実現にかかわってきた中で、遷移してきた「フェイズ」「使った道具」「考えかた」などの知見を「4つのフェーズ(発表中では"期間"と表してた)」「時系に沿って」披露…だと思ったのですが。
 
 ---
 
+最近、自身の経験から「正しい(あるいはあるべき/標準系の)プロダクトオーナー像」がわからなくなっており、かつ「趣味でWebサービスっぽいものを考え始めた」ので「自身がPOになったら」という妄想をする機会が増えました。
+
+そんななか、ちゃんと「哲学」と「方法論」と「経験則」をもって、話されているのは大変勉強になるとともに尊敬でした。
+
+- 正しいとはなにか -> わからない
+- 手探りでなんとかなる
+- 時間はいつも足りないもの
+  - 着実に”１”を積み上げよう
+  - このセッションですら時間が足りないように
+
+など、至言が多かったです。
 
 
+## 4コマ目「小さなモノづくり(秋の話の続き)」
 
+※すみませんタイトル失念しました
 
-## 4コマ目「?」
-
-+ 登壇者 : [@imaicom](https://twitter.com/imaicom) )
++ 登壇者 : 今井 真人 ( [@imaicom](https://twitter.com/imaicom) ) さん
 + 資料 :
+
+
+
 
 ## 5コマ目「Google Cloud Platform 2016」
 
-+ 登壇者 : 岩田 隆治 ( [@qt_luigi](https://twitter.com/qt_luigi) ) GCPUG岡山
++ 登壇者 : 岩田 隆治 ( [@qt_luigi](https://twitter.com/qt_luigi) ) さん GCPUG岡山
 + 資料 :
 
 ## 6コマ目「DjangoとRailsのちがい」
 
-+ 登壇者 : 竹原 正起 ( [@kitaindia](https://twitter.com/kitaindia) )
++ 登壇者 : 竹原 正起 ( [@kitaindia](https://twitter.com/kitaindia) ) さん
 + 資料 :
 
-## 7コマ目「ASP.NET Core on Mac」
+## 7コマ目「Scalaのテスティングフレームワークを作ろう」
 
-+ 登壇者 : きよくら ならみ ( [@kiyokura](https://twitter.com/kiyokura) ) Okayama IT Engineers Community
++ 登壇者 : なかやん ( [@pocketberserker](https://twitter.com/pocketberserker) ) さん
 + 資料 :
 
-## 8コマ目「shapeless, Funtional Java, highj, derive4j」
+「sbtのテスト実行の仕組み」を軸に、 TODO
 
-+ 登壇者 : なかやん ( [@pocketberserker](https://twitter.com/pocketberserker) )
+## 8コマ目「ゲーム会社経営ゲーム」
+
+  + 登壇者 : みやたけ ゆき ( [@SamuneP](https://twitter.com/SamuneP) ) さん
 + 資料 :
 
-## 9コマ目「ゲーム会社経営ゲーム」
+もーー…まとめられねぇ！感想いえねぇ！間違いなく「台風の目」だった。素晴らしい発表だった！
 
-+ 登壇者 : みやたけ ゆき ( [@SamuneP](https://twitter.com/SamuneP) )
-+ 資料 :
+…動画とか、残ってへんかなｗ
 
-## 10コマ目「Engineer is Hero !!マイクロサービスと顔や感情を解析しより良い社会を作ろう」
+## 9コマ目「Engineer is Hero !!マイクロサービスと顔や感情を解析しより良い社会を作ろう」
 
-+ 登壇者 : 寺田 佳央 ( [@yoshioterada](https://twitter.com/yoshioterada) ) 日本マイクロソフト株式会社
++ 登壇者 : 寺田 佳央 ( [@yoshioterada](https://twitter.com/yoshioterada) )　さん 日本マイクロソフト株式会社
 + 資料 :
 
 
