@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 勉強会行ってみた「合同勉強会in大都会岡山-2016 Winter-」#jenkinsstudy
+title: 勉強会行ってみた「合同勉強会in大都会岡山-2016 Winter-」#gbdaitokai
 category: study-meeting-repo
-tags: [daitokai]
+tags: [daitokai,okayama]
 ---
 
 満喫した！継続参加決定！
@@ -12,6 +12,7 @@ tags: [daitokai]
 + 開催日: 2016/12/17(土)
 + [申し込みサイト](https://gbdaitokai.connpass.com/event/37730/)
 + ハッシュタグ : [#gbdaitokai](https://twitter.com/search?q=%23gbdaitokai)
++ 当日の様子 : [合同勉強会 in 大都会岡山 -2016 Fall- Togetterまとめ](http://togetter.com/li/1019776)
 + 何するのか : 日本全国(主役は岡山ですが)の勉強会クラスタの人らが年末にやるお祭り…ちゃうかな
 
 # なんで来たん？
