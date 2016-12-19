@@ -1,5 +1,4 @@
 ---
-published: false
 layout: post
 title: 勉強会行ってみた「合同勉強会in大都会岡山-2016 Winter-」#jenkinsstudy
 category: study-meeting-repo
