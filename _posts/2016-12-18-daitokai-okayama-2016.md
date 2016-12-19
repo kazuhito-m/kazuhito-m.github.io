@@ -107,10 +107,37 @@ tags: [daitokai]
 
 自身は「ビジネスアプリ出身」で「[なんとかノンハンダで物体動かせないか](http://kazuhito-m.github.io/presentations/2016-04-17-golang-study-03/#/)」とかやってきましたが、どーしても「PICとハンダ仕事、5Vとモータとセンサ」に行き着くので、（とはいえレベルが違うのですが）こういうのを生業としている方にはホント畏敬の念ですね。
 
-## 5コマ目「Google Cloud Platform 2016」
+## 5コマ目
 
 + 登壇者 : 岩田 隆治 ( [@qt_luigi](https://twitter.com/qt_luigi) ) さん GCPUG岡山
-+ 資料 :
+
+登壇者の枠の問題だったのでしょうか、二本立てでした。
+
+### 「Google Cloud Platform 2016」
+
++ 資料 : [Google Cloud Platform 2016](https://speakerdeck.com/qt_luigi/google-cloud-platform-2016)
+
+2016年のGCPプロダクトの総ざらえ紹介でした。
+
+---
+
+最近「[Re:Inventの報告会](https://kumoben.doorkeeper.jp/events/53338)」や「[DevFest（大阪の）](https://devfestkansai.connpass.com/)」など行って来たのですが、AWSや(この後出てくる)MSも合わせ「クラウドプラットフォーマーのラインナップは、網羅的に出してきている（かつちょっとずつ違うが似た領域）」という印象を持ちました。
+
+そして、「もう全部触るのはムリ」なので、「名前と出来ることと特性の理解」に力をそそがないなぁと。
+
+### 「GO 2016」
+
++ 資料 : [GO 2016](https://speakerdeck.com/qt_luigi/go-2016)
+
+2016年の「GO界隈の出来事」の総ざらえ紹介でした。
+
+---
+
+末席ですが一応[KUG2](https://kug2.connpass.com/)の人なので…「大体知ってた！」とか言いたいのですが、全然でしたねｗ
+
+サイト・記事・書籍、これから読んできたいと思います。
+
+しかし、弱点だったIDEが`Gogland`によって強化されましたね！ Androidの時も思いましたが「言語のIDEが弱いと気づく->JetBrainsが作る」というのがトレンドなのでしょうか？
 
 ## 6コマ目「DjangoとRailsのちがい」
 
@@ -126,10 +153,12 @@ tags: [daitokai]
 
 ## 8コマ目「ゲーム会社経営ゲーム」
 
-  + 登壇者 : みやたけ ゆき ( [@SamuneP](https://twitter.com/SamuneP) ) さん
++ 登壇者 : みやたけ ゆき ( [@SamuneP](https://twitter.com/SamuneP) ) さん
 + 資料 :
 
-もーー…まとめられねぇ！感想いえねぇ！間違いなく「台風の目」だった。素晴らしい発表だった！
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/CAHVAgC1bIpOak" width="340" height="290" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/chihayatakatuki/ss-70251902" title="ゲーム開発経営ゲーム" target='_blank'>ゲーム開発経営ゲーム</a> </strong> from <strong><a target="_blank" href="//www.slideshare.net/chihayatakatuki">Yuki Miyatake</a></strong> </div>
+
+もーー…まとめられねぇ！感想を言語化できねぇ！間違いなく「台風の目」だった。素晴らしい発表だった！
 
 …動画とか、残ってへんかなｗ
 
