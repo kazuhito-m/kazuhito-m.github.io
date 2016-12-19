@@ -32,7 +32,7 @@ tags: [daitokai]
 ## 1コマ目「Try Azure Machine Learning」
 
 + 登壇者 : 貞松 政史 ( [@sady_nitro](https://twitter.com/sady_nitro) ) さん
-+ 資料 :
++ 資料 : [Try Azure Machine Learning](https://docs.com/sadamatsu-masashi/7615/tryazuremachinelearning)
 
 「機械学習」という概念自体の説明と、`Azure ML(マシーンラーニング)`の使いどころと「こういうことに使う」という例のデモを披露していただきました。
 
@@ -54,11 +54,9 @@ tags: [daitokai]
 ## 2コマ目「プログラマが知っておくといいかもしれないCSSのハナシ」
 
 + 登壇者 : 吉田 貴文 ( [@zephiransas](https://twitter.com/zephiransas) ) 岡山Javaユーザ会
-+ 資料 :
++ 資料 : [プログラマが知っておくといいかもしれないCSSのハナシ](https://speakerdeck.com/zephiransas/puroguramagazhi-tuteokutoiikamosirenaicssfalsehanasi)
 
-<script async class="speakerdeck-embed" data-id="912ffee5684f4f768cb9e8ab9a763db3" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>  
-
-プログラマがHTML/CSSなどデザインを弄う際の`Bootstrap`,`flexbox`の「勘所」「取捨選択すべき点」「カスタマイズ点」などを、わかりやすく解説…で良いのかな。
+]プログラマがHTML/CSSなどデザインを弄う際の`Bootstrap`,`flexbox`の「勘所」「取捨選択すべき点」「カスタマイズ点」などを、わかりやすく解説…で良いのかな。
 
 ---
 
@@ -73,7 +71,7 @@ tags: [daitokai]
 ## 3コマ目「ゼロからのプロダクトローンチで学んだこと」
 
 + 登壇者 : 阿部 信介 ( [@mao_instantlife](https://twitter.com/mao_instantlife) )
-+ 資料 :
++ 資料 : [ゼロからのプロダクトローンチで学んだこと](https://speakerdeck.com/maoinstantlife/zerokarafalsepurodakutorontidexue-ndakoto)
 
 「プロダクトオーナー」として、`MallNavi` というサービスの企画、実現にかかわってきた中で、遷移してきた「フェイズ」「使った道具」「考えかた」などの知見を「4つのフェーズ(発表中では"期間"と表してた)」「時系に沿って」披露…だと思ったのですが。
 
