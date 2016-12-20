@@ -103,6 +103,9 @@ CIしてきて、Jenkinsの使用方法の移り変わり、CIサービスへの
 ### 現場でJenkinsサーバのプロビジョニングをAnasibleでAsCodeした話（題名は失念しましたすみません）
 
 + 登壇者 : おぎあり ( [@ogiarisan](https://twitter.com/ogiarisan) ) さん
++ 資料 : 
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/irOYT8X4Yn1Af1" width="340" height="290" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/ArisaOgi/jenkinsu3092u81eau52d5u3067u69cbu7bc9u3057u3066u307fu308bu8a71" title="Jenkinsを自動で構築してみる話" target="_blank">Jenkinsを自動で構築してみる話</a> </strong> from <strong><a target="_blank" href="//www.slideshare.net/ArisaOgi">Arisa Ogi</a></strong> </div>
 
 （若干他人事でもないのですが）Jenkinsのプロビジョンを「ソレすら自動化するよね」という話です。
 
