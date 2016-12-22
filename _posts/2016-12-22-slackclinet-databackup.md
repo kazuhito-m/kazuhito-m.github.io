@@ -1,6 +1,6 @@
 ---
 layout: post
-title: UbuntuのSlack公式クライアントのデータバックアップ/移行
+title: Ubuntu用Slack公式クライアントのデータバックアップ/移行
 category: tech
 tags: [ubuntu,slack,databackup]
 ---
