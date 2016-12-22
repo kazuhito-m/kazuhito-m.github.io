@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dockerのイメージ/コンテナを他マシンに移設しようとして最終的に"うりゃ！"っとしたはなし
+title: Dockerのイメージ/コンテナを他マシンへ移設するに最終的に"うりゃ！"っとしたはなし
 category: tech
 tags: [docker,backup]
 ---
