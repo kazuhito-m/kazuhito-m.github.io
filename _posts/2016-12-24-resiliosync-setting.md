@@ -1,4 +1,5 @@
 ---
+published: false
 layout: post
 title: Resilio Syncをインストール＆他マシンからGUI見れる設定変更
 category: tech
