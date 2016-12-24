@@ -130,3 +130,20 @@ TODO ボタン名とか確認
 - []()
 - []()
 - []()
+
+
+---
+
+# 実験用コピペ
+
+TODO これ自体を消す。
+
+docker run -i -p 8888:8888 -t ubuntu:yakkety /bin/bash
+
+apt-get update && apt-get -y upgrade && apt-get -y install wget systemd vim
+wget -qO - https://linux-packages.resilio.com/resilio-sync/key.asc |  apt-key add -
+echo 'deb http://linux-packages.resilio.com/resilio-sync/deb resilio-sync non-free' > /etc/apt/sources.list.d/resilio-sync.list
+apt-get -y update && apt-get install -y resilio-sync
+
+service resilio-sync start
+vi /etc/resilio-sync/config.json
