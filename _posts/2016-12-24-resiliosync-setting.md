@@ -22,9 +22,38 @@ Resilio Sync(旧BitTorrent Sync)について、いろいろと試行錯誤しつ
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr"><a href="https://twitter.com/iso2022jp">@iso2022jp</a> ですよねｗ そうかウチん家の内情を知っての発言でしたか…深けぇ。現在、Samba(Lan内）、SSL-WebDav、NFS(v4 &amp; Kerbelos &amp; LDAP)、etc... の&quot;全方位ファイルサーバ&quot;を企画中。…完成何時になるやらｗ</p>&mdash; 三浦一仁(本読めるようになりたい) (@kazuhito_m) <a href="https://twitter.com/kazuhito_m/status/65901469601239040">2011年5月4日</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-みたいなことを考えたり、ちょっとやってみたり、挫折してきたり…してきたのですが。
+みたいなことを考えたり、ちょっとやってみたり、挫折してきたり…してきたのです。
 
+結局、要件としては
 
+- 自宅Lan内なら「NFS/Sambaサーバ」なりで「(高速に)ファイルを参照」できる
+- 外からは「認証付きSSL-Webdav」なりで「同じ原資(ファイル)だが、全部orチョイスして取得」できる
+
+みたいなことが望みだったりします。
+
+上記とは関係なく、「Dropboxが上限を迎えた」ので、
+
+__ファイルサーバにプラスして"上限のないDropboxっぽいこと"ができないか__
+
+を考え始めました。
+
+---
+
+「実現する道具」として検討したのは
+
+1. ownCloud : 老舗のDropboxクローン
+0. Resilio Sync : P2P型のフォルダ同期ツール
+
+です。
+
+やりたいことをそのものでいけば`ownCloud`なのですが、「ファイルシステムを原資としてNAS的に直参照もしたい」と考えると、
+
+- `ownCloud`のデータ保持はファイルシステムだが「ファイルのメタ情報」はDB
+  - ファイルシステム側にファイル足すだけでは`ownCloud`でのファイル公開にならない
+- 上記の事情で「ファイルサーバ側で両方満たす」とすると「内部で`ownCloud`と共有したディレクトリ」など作る必要がありそう
+  - 素直にやると「ファイル容量が２倍」必要
+
+となりそうなので、`Resilio Sync`を試すことにしました。
 
 
 
