@@ -55,21 +55,47 @@ __ファイルサーバにプラスして"上限のないDropboxっぽいこと"
 
 となりそうなので、`Resilio Sync`を試すことにしました。
 
-
-
 # 前提
 
 - Ubuntu 16.10 (登場する2台ともに)
 - PCの構成
-  - 一台目 : インターネットに接続したルータ経由でLAN内のPC
+  - 一台目 : ルータ経由でインターネットに接続したLAN内のPC
   - 二台目 : ４GテザリングしたPC
 
 # やったこと
 
+「ファイルサーバ運用」の話は後に考えるとして、とりあえず「どんなものか」を評価するため、インストールしてみて、他端末と共有するとこまでやってみます。
+
 ## Resilio Syncのインストール
+
+上記「一台目」に、[本家のブログに書いてあったやり方](https://www.resilio.com/blog/official-linux-packages-for-sync-now-available)でインストールしてみます。
+
+```bash
+wget -qO - https://linux-packages.resilio.com/resilio-sync/key.asc | sudo apt-key add -
+sudo sh -c  "echo 'deb http://linux-packages.resilio.com/resilio-sync/deb resilio-sync non-free' > /etc/apt/sources.list.d/resilio-sync.list"
+sudo apt-get -y update
+sudo apt-get install -y resilio-sync
+sudo systemctl enable resilio-sync
+# メインユーザを'rslsync'グループに入れる
+sudo gpasswd -a ＄{USER} rslsync
+```
+
+最後の `gpasswd` は
+
+- resilio-syncはデーモンとして、ユーザ：`rslsync`で動いている
+- resilio-syncがSyncして作られたファイルは、パーミション `664` で作られる
+
+ため、「メインとなるユーザでも更新できるように」グループを追加しています。
+
+### GUIから初期設定を行う
 
 
 ## GUI(HTML画面)を他のマシンから参照できるようにする
+
+インストール後、 [http://127.0.0.1:8888/](http://127.0.0.1:8888/) を表示すると「初期ユーザ登録画面」になります。
+
+「このマシンのresilio-syncだけで使うユーザ」なので、覚えやすい名前を適当につけます。
+
 
 
 ---
