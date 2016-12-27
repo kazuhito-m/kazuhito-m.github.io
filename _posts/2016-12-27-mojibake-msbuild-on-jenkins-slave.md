@@ -147,8 +147,10 @@ __Jenkinsfileに `bat "chcp 20127 && MSBuild.exe ..."` 記述で実行__
 
 - [http://samooooon.hatenablog.com/entry/2016/07/07/151754](http://samooooon.hatenablog.com/entry/2016/07/07/151754)
 - [http://gozuk16.hatenablog.com/entry/2016/03/29/195705](http://gozuk16.hatenablog.com/entry/2016/03/29/195705)
+- [http://umezawa.dyndns.info/wordpress/?p=5801](http://umezawa.dyndns.info/wordpress/?p=5801)
 - [MS本家のコードページ一覧](https://msdn.microsoft.com/en-us/library/windows/desktop/dd317756(v=vs.85).aspx)
 
+    
 # 感謝
 
 Windowsまわりで、いろいろ詳しい助言をくださった [@iso2022jp](https://twitter.com/iso2022jp) さん、ありがとうございました。
