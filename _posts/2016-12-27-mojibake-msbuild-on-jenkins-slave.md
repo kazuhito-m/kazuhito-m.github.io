@@ -23,7 +23,6 @@ Jenkinsのnodeをmaster/slaveで組んでいました。
 - Jenkins(slave)
   - Windows Server Stndard 2007 SP2(日本語版)
     - VMWare vSphare上実行
-    - git bahs
   - jnlpでコネクション張る(java -jar slave.jar起動)
 
 
