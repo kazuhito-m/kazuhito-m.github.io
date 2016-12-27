@@ -37,7 +37,7 @@ bat "MSBuild.exe XXX.sln"
 
 などすると、Jenkinsのログコンソール文字化けします。
 
-![結果](images/2016-12-23-mojibake.png)
+![結果](/images/2016-12-27-mojibake.png)
 
 これは、
 
