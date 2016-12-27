@@ -9,7 +9,7 @@ tags: [msbuild,jenkins,slave,chcp]
 
 # これを読んで得られるもの
 
-- Jenkins + Slave側がWindows + パイプラインスクリプト にて「文字化けする」場合のハマリの回避
+- Jenkins + Slave側Windows + パイプラインスクリプト にて「文字化け」場合のハマリの回避
 - `chcp 61005` で「ジョブが止まる(ステイしてエラーも終了もしない)」「期待していた挙動にならない」場合の対処
 
 # 前提
@@ -37,7 +37,7 @@ bat "MSBuild.exe XXX.sln"
 
 などすると、Jenkinsのログコンソール文字化けします。
 
-![結果](images/2016-12-23-mojibake)
+![結果](images/2016-12-23-mojibake.png)
 
 これは、
 
@@ -84,7 +84,7 @@ bat 'chcp 65001'
 
 `chcp`で使用出来る「コードページの数値」の一覧は[こちら](https://msdn.microsoft.com/en-us/library/windows/desktop/dd317756.aspx)。
 
-## Master:JenkinsのからJenkinsfileの指定のジョブをSlave：Jenkins(windows)にて実行
+## 「MasterのJenkins」から`Jenkinsfile`の指定のジョブを「SlaveのJenkins(windows)」にて実行
 
 問題を切り離すため、Slave:Jenkins側の`slave.jar`は、
 
@@ -115,7 +115,7 @@ java -Dhttp.proxyHost=%PROXY_HOST% -Dhttp.proxyPort=%PROXY_PORT% -Dfile.encoding
 
 …これ以上はがんばれなかった…。(環境固有かもしれないし)
 
-## 解決（未解決だがとりあえずこれで行くことにした方策）
+## 解決（…はしてないが、とりあえずこれで行くことにした方策）
 
 とりあえず、
 
@@ -148,7 +148,7 @@ __Jenkinsfileに `bat "chcp 20127 && MSBuild.exe ..."` 記述で実行__
 
 - [http://samooooon.hatenablog.com/entry/2016/07/07/151754](http://samooooon.hatenablog.com/entry/2016/07/07/151754)
 - [http://gozuk16.hatenablog.com/entry/2016/03/29/195705](http://gozuk16.hatenablog.com/entry/2016/03/29/195705)
-- [本家コードページ一覧](https://msdn.microsoft.com/en-us/library/windows/desktop/dd317756(v=vs.85).aspx)
+- [MS本家のコードページ一覧](https://msdn.microsoft.com/en-us/library/windows/desktop/dd317756(v=vs.85).aspx)
 
 # 感謝
 
