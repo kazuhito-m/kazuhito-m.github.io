@@ -79,10 +79,21 @@ __今年11月から!__
 
 ## 構造の設計
 
+…は、今書きます。
+
+
 ---
 
 ## 使ってる道具
 
+- 言語
+  - Scala,es2016(babel,Brouserify)
+- 永続化/外部
+  - Redis
+  - Twitter
+- FWなど
+  - SpringBoot
+    - Spring Data Redis
 
 ----
 
