@@ -41,9 +41,11 @@ KVMを使い始めようと思ったのですが…「思ったより仮想イ�
 
 両方「以前からインストールしてた」ので、基本ここの解説はありません。
 
-が、`VirtualBox`、`KVM`ともに[こちら](https://github.com/kazuhito-m/dockers/blob/master/scripts/fabric_ubuntu_standard/fabfile.py)にAsCodeしてあるので、いつでも再現できます。 ( 'insatll_virtualbox()' 、 'install_kvm()' という関数がそれです)
+が、`VirtualBox`、`KVM`ともに[こちら](https://github.com/kazuhito-m/dockers/blob/master/scripts/fabric_ubuntu_standard/fabfile.py)にAsCodeしてあるので、いつでも再現できます。 ( `insatll_virtualbox()` 、 `install_kvm()` という関数がそれです)
 
-ただKVMについては、基本「インストール後は仮想マシンは外に公開できない(Host⇔Guestだけで外からGuestを見れない）ので、ブリッジ接続用意しなければ使い物になりませんので、
+ただKVMについては、基本「インストール後は仮想マシンは外に公開できない(Host⇔Guestだけで外からGuestを見れない）ので、ブリッジ接続用意しなければ使い物になりません。
+
+なので、
 
 1. NetworkManager排除する
 0. ブリッジ接続作る
@@ -102,7 +104,7 @@ sudo apt-get install ubuntu-fan
 VirtualBoxとKVMの(デフォルトで作った)イメージの違いは、
 
 - `VirtualBox`イメージのファイル
-  - `~/VirtualBox VMs/[環境名]` に保存される
+  - `~/VirtualBox VMs/[環境名]` に保存される(フォルダ名に半スペやめてｗ)
   - `[環境名].vbox`,`[環境名].vbox-prev`な設定ファイル と `[環境名].vdi` なHDDイメージファイルで構成される
     - HDDイメージは`vdix`,`hdd`など「作成時に選んだ形式」で保存される
 - `kvm`イメージのファイル
