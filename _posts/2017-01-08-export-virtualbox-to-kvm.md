@@ -17,7 +17,6 @@ tags: [ubuntu,virtualbox,kvm,qemu]
 - Ubuntu 16.04
   - linu 4.4.0-57-generic(kvmはカーネルに含まれている)
 - VirtualBox 5.0.24_Ubuntu r108355
-
 # 経緯
 
 基本的に「世界にはLinuxしか存在しない」はずなので、「環境が用意したい」となれば、Dockerを用意すれば良いし、困ってないのです。
@@ -41,7 +40,7 @@ KVMを使い始めようと思ったのですが…「思ったより仮想イ�
 
 両方「以前からインストールしてた」ので、基本ここの解説はありません。
 
-が、`VirtualBox`、`KVM`ともに[こちら](https://github.com/kazuhito-m/dockers/blob/master/scripts/fabric_ubuntu_standard/fabfile.py)にAsCodeしてあるので、いつでも再現できます。('insatll_virtualbox','install_kvm')
+が、`VirtualBox`、`KVM`ともに[こちら](https://github.com/kazuhito-m/dockers/blob/master/scripts/fabric_ubuntu_standard/fabfile.py)にAsCodeしてあるので、いつでも再現できます。 ( 'insatll_virtualbox()' 、 'install_kvm()' という関数がそれです)
 
 ただKVMについては、基本「インストール後は仮想マシンは外に公開できない(Host⇔Guestだけで外からGuestを見れない）ので、ブリッジ接続用意しなければ使い物になりませんので、
 
@@ -57,7 +56,6 @@ sudo apt-get remove -y network-manager
 ```bash
 sudo vi /etc/network/interfaces
 
----
 # 以下を追加
 auto ${マシン固有IF名}
 iface ${マシン固有IF名} inet manual
@@ -73,7 +71,7 @@ bridge_stp off
 bridge_ports ${マシン固有IF名}
 ```
 
-最近は「ifカードの命名則が変わっている」ので、`eth0`とか例に書けないですねｗ
+最近は「ネットワークカードのデバイス命名則が変わっている」ので、`eth0`とか例に書けないですねｗ
 
 ### よくわからないバグっぽいの
 
@@ -96,8 +94,7 @@ run-parts: /etc/network/if-up.d/ubuntu-fan exited with return code 1
 sudo apt-get install ubuntu-fan
 ```
 
-必須なら依存性で解決しておいて欲しいですね…。
-
+必須なら依存性で解決しておいて欲しいですけど…バグってのはいちゃもんかな？
 
 ## VirtualBox製のイメージをKVM用のに変換
 
@@ -125,7 +122,7 @@ done
 
 `qemu-img convert` サブコマンドに「出力形式に`qcow2`」を指定して出力しています。
 
-`-f [format]` オプションで、入力ファイルの形式を指定できますが、指定しなくば「自動判別」なので、上記ではそうしました。
+`-f [format]` オプションで、入力ファイルの形式を指定できますが、指定しなくば「自動判別」なので、上記ではそうしました。(実際には`*.hdd`なファイルも混ざっていたりしましたが、未指定で変換できました)
 
 ## GUIにて設定＆起動実験
 
@@ -151,8 +148,10 @@ HDDイメージファイルは変換できましたが、VMの設定(`*.vbox`の
 
 この手順を元のイメージ一つに対しこの作業が必要なので、ここは面倒くさいのですが、「マシンの設定を見なおそう」と思ってたので、あえてやりました。
 
-CLIで作成もできるようなので、本気をだせば`*vbox`ファイル（XMLですしね）を解析して、変換・登録もできそうですE
+CLIで作成もできるようなので、本気をだせば`*vbox`ファイル（XMLですしね）を解析して、変換・登録もできそうです。
 
 # 小並感
 
-qemuの解説などを眺めることも多かったので「出来るっぽい」くらいのことはうっすらわかっていても「やらないとわからない」ので、今回は備忘録ですが、これにより「わりとカジュアルに仮想化プラットフォームを行き来できる」とわかったので、いろいろ試すハードルが下がったかなと。
+qemuの解説などを眺めることも多かったので「出来るっぽい」くらいのことはうっすらわかっていても「やらないとわからない」もので。
+
+今回は備忘録ですが、これにより「わりとカジュアルに仮想化プラットフォームを行き来できる」とわかったので、いろいろ試すハードルが下がったかなと。
