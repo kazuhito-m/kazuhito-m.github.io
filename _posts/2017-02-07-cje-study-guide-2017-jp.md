@@ -31,7 +31,7 @@ tags: [jenkins,exam]
 
 ## 新着情報
 
-__Note:2016年から2017年へのすべての変更は、このドキュメント中の [new] 記号で表示しています。__
+__NOTE: 2016年から2017年へのすべての変更は、このドキュメント中の [new] 記号で表示しています。__
 
 認定試験で2016年から2017年での主な変更は:
 
@@ -83,7 +83,7 @@ __NOTE:__ 試験では、ランダムな順序で出題され、セクション�
 次の点にも注意してください:
 
 - `SCM` は、特に指定しない限り “source code management” を指します
-- `Pipeline` は、一般名詞として使用されている場合を除いて（「CD pipelines」など）、Pipelineプラグイン（以前は「Workflow plugin」と呼ばれていました）によって作成されたジョブタイプを指します
+- `Pipeline` は、一般名詞として使用されている場合やパイプライン名（「CD pipelines」など）を除いて、Pipelineプラグイン（以前は「Workflow plugin」と呼ばれていました）によって作成されたジョブタイプを指します
 - JenkinsのさまざまなUI要素は、次の用語を使用して参照されます
 
 ※訳者注. 4〜5ページの画像は割愛。 ([本家ドキュメント参照](https://www.cloudbees.com/sites/default/files/cje-study-guide-2017.pdf))
@@ -129,4 +129,75 @@ __NOTE:__ 試験では、ランダムな順序で出題され、セクション�
 - セキュリティ
   - 承認(authentication) 対 認証(authorization)
   - マトリクスセキュリティ(Matrix security/行列で扱える機能認可)
-  -
+  - 監査の定義、資格情報、およびその他の重要なセキュリティの概念
+- 指紋(Fingerprints)
+  - 指紋とは？
+  - 指紋はどのように機能する？
+- 成果物(Artifacts)
+  - Jenkinsにおける成果物はどのように機能する？
+  - 容量の大きい成果物(訳者注：Strong Artifactsなのだけれど、こういう意味か？)
+- サードパーティ製ツールの使用
+  - どのようにサードパーティ製ツールを使うか
+- インストール・ウィザード [new]
+  - Jenkinsインストールウィザードとは何か？
+  - ウィザードはどのように使う？
+  - どの構成がインストールウィザードの対象？
+
+下記のオンラインリソースは、上記のトピックを理解するためのエントリーポイントを提供します:
+
+- [http://www.martinfowler.com](http://www.martinfowler.com)
+  - [Continuous Integration](https://www.martinfowler.com/articles/continuousIntegration.html)
+  - [Continuous Delivery](https://martinfowler.com/bliki/ContinuousDelivery.html)
+  - [Deployment Pipeline](https://martinfowler.com/bliki/DeploymentPipeline.html)
+- [http://www.informit.com](http://www.informit.com)
+  - [CD Pipeline Anatomy](http://www.informit.com/articles/article.aspx?p=1621865&seqNum=2)
+- [http://devops.com](http://devops.com)
+  - [What is a CD pipeline](http://devops.com/2014/07/29/continuous-delivery-pipeline/)
+- [https://jaxenter.com](https://jaxenter.com)
+  - [Implementing Continuous Delivery](https://jaxenter.com/implementing-continuous-delivery-117916.html)
+- [http://www.infoq.com](http://www.infoq.com)
+  - [Orchestrating Pipelines Jenkins](https://www.infoq.com/articles/orch-pipelines-jenkins)
+- [http://technologyconversations.com](http://technologyconversations.com)
+  - [Continuous Delivery Introduction to Concepts and Tools](https://technologyconversations.com/2014/04/29/continuous-delivery-introduction-to-concepts-and-tools/s)
+- [https://en.wikipedia.org](https://en.wikipedia.org)
+  - [Continuous delivery](https://en.wikipedia.org/wiki/Continuous_delivery)
+  - [Artifact software development](https://en.wikipedia.org/wiki/Continuous_delivery)
+  - [Build automation](https://en.wikipedia.org/wiki/Build_automation)
+  - [Distributed version control](https://en.wikipedia.org/wiki/Distributed_version_control)
+  - [List of version control software](https://en.wikipedia.org/wiki/List_of_version_control_software)
+  - [Smoke testing (software)](https://en.wikipedia.org/wiki/Smoke_testing_(software))
+- [https://jenkins.io](https://jenkins.io) [new]
+  - [Jenkins Installation and Setup](https://jenkins.io/download/) [new]
+  - [Jenkins Documentation](https://jenkins.io/download/) [new]
+  - [Jenkins Pipeline](https://jenkins.io/doc/book/pipeline/) [new]
+  - [Jenkins HandBook](https://jenkins.io/doc/book/) [new]
+  - [https://plugins.jenkins.io](https://plugins.jenkins.io) [new]
+- [https://www.safaribooksonline.com](https://www.safaribooksonline.com)
+  - [Jenkins the Definitive Guide](https://www.safaribooksonline.com/library/view/jenkins-the-definitive/9781449311155/ch05.html)
+- [https://wiki.jenkins-ci.org](https://wiki.jenkins-ci.org)
+  - [Administering Jenkins](https://wiki.jenkins-ci.org/display/JENKINS/Administering+Jenkins)
+  - [Terminology](https://jenkins.io/doc/book/glossary/)
+  - [Extreme feedback lamp switch gear style](https://jenkins.io/blog/2013/09/05/extreme-feedback-lamp-switch-gear-style/)
+  - [Distributed builds: Offline status and retention strategy](https://wiki.jenkins-ci.org/display/JENKINS/Distributed+builds#Distributedbuilds-Offlinestatusandretentionstrategy)
+  - [Remoting issue](https://wiki.jenkins-ci.org/display/JENKINS/Remoting+issue)
+  - [Remote access API](https://wiki.jenkins-ci.org/display/JENKINS/Remote+access+API)
+  - [Matrix based security](https://wiki.jenkins-ci.org/display/JENKINS/Matrix-based+security)
+  - [Securing Jenkins](https://wiki.jenkins-ci.org/display/JENKINS/Securing+Jenkins)
+  - [Quick and Simple Security](https://www.cloudbees.com/sites/default/files/cje-study-guide-2017.pdf)
+- [http://docs.openstack.org](http://docs.openstack.org)
+  - [Jenkins job builder](http://docs.openstack.org/infra/jenkins-job-builder/triggers.html)
+- [https://www.simple-talk.com](https://www.simple-talk.com)
+  - [Branching and merging](https://www.simple-talk.com/opinion/opinion-pieces/branching-and-merging-ten-pretty-good-practices/)
+- [http://stackoverflow.com](http://stackoverflow.com)
+  - [What is unit test, integration test, smoke test, regression test?](http://stackoverflow.com/questions/520064/what-is-unit-test-integration-test-smoke-test-regression-test)
+- [https://www.cloudbees.com/](https://www.cloudbees.com/)
+  - Notifications (ページがなくなってる模様)
+- [http://searchsecurity.techtarget.com/](http://searchsecurity.techtarget.com/)
+  - [Authentication authorization and accounting](http://searchsecurity.techtarget.com/definition/authentication-authorization-and-accounting)
+
+## 2. Jenkinsの使い方（機能と特長）
+
+- ジョブ
+  - Jenkinsでのジョブの整理
+  - パラメータ化ジョブ
+  - フリースタイル/パイプライン/マトリックスジョブの使用方法
