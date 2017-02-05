@@ -7,13 +7,13 @@ tags: [jenkins,exam]
 
 「Jenkinsの資格がある！」って聞いたのですが、[日本語情報っぽいのがここしかない](http://www.slideshare.net/hirokotamagawa/9jenkins-pipeline#6)ので、本家のガイドを探しだして「超絶テキトウ翻訳」してみました。
 
-- 原文: [https://www.cloudbees.com/sites/default/files/cje-study-guide.pdf](https://www.cloudbees.com/sites/default/files/cje-study-guide.pdf)
+- 原文: [https://www.cloudbees.com/sites/default/files/cje-study-guide-2017.pdf](https://www.cloudbees.com/sites/default/files/cje-study-guide-2017.pdf)
 - 訳: [@kazuhito_m](https://twitter.com/kazuhito_m)
 - 注: 実際の試験は「すべて英語」なので「翻訳してちゃいけない(用語としての)英語」も適当にやらかしている場合があるのでご注意を
 
 ---
 
-認定Jenkinsエンジニア(CJE) - 認定試験学習ガイド
+認定Jenkinsエンジニア(CJE) - 2017 認定試験学習ガイド
 ========================================
 
 ## CloudBees社はJenkinsエンジニアに2つの認定を提供します
@@ -28,6 +28,19 @@ tags: [jenkins,exam]
 
 このガイドであなたは、試験の出題トピック、外部参照のリンク、そして例題を得ることができます。
 
+## 新着情報
+
+__Note:2016年から2017年へのすべての変更は、このドキュメント中の [new] 記号で表示しています。__
+
+認定試験で2016年から2017年での主な変更は:
+
+- open-source Jenkinsに関する問題は Jenkins 2.19.4 に基づく
+- パイプラインに関する問題は、 [Pipeline plugin version2.4](https://plugins.jenkins.io/workflow-aggregator#PipelinePlugin-2.4%28Sep21%2C2016%29) の [最新の構文](https://jenkins.io/blog/2016/10/16/stage-lock-milestone/) に更新
+- 試験対象にされているプラグインは、「suggested(推奨)」セットのプラグインのみ(詳細は下記参照)
+- CJPに関する問題は、現在CJP 2.7.20.2に基づく
+- CJPの問題にCloudBees保証プログラムに関するセクションを追加
+- Docker及び構成管理に関する問題を削除
+
 ## 構成
 
 試験は、4つの章に集約されます:
@@ -37,41 +50,32 @@ tags: [jenkins,exam]
 0. 継続的デリバリー(CD)パイプラインの構築
 0. CD-as-codeのベストプラクティス
 
-すべての出題は、Jenkins coreのバージョン `1.625.2` を元にします。
-特に指定しない限り、標準的なインストールを行った直後のJenkinsで、プラグインの追加が無い状態を元にします(以下、"base"Jenkins と呼称)。
+すべての出題は、Jenkins coreのバージョン [`2.19.4`](https://jenkins.io/changelog-stable/#v2.19.4) [new] を元にします。
+
+すべての問題は、既定の推奨プラグインセットがインストールされたJenkins（以下 "base" Jenkinsと呼称）の標準インストール（以下"Suggested plugins"と呼称）に基づいています。
+詳細は、「プラグイン」を参照してください。
 
 __NOTE:__ 試験では、ランダムな順序で出題され、セクションはありません。
 
 ## プラグイン群
 
-試験は主に,インストールされた"base"Jenkinsについて出題されますが、次のプラグインの知識も必要です。受験者には、これらのプラグインの機能/用途を知ることが期待されますが、詳細な使用法についてはテストされません。
+セクション1〜4の質問は、主にJenkinsの「base」インストールに関する質問をカバーしていますが、
+「suggested(提案)」プラグインの知識もカバーされます。
 
+受験者には、これらのプラグインの機能/用途を知ることが期待されますが、詳細な使用法についてはテストされません。
 
-- [Amazon EC2 Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Amazon+EC2+Plugin)
-- [Build Pipeline Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Build+Pipeline+Plugin)
-- [CloudBees Docker Build and Publish Plugin](https://wiki.jenkins-ci.org/display/JENKINS/CloudBees+Docker+Build+and+Publish+plugin)
-- [CloudBees Folders Plugin](https://wiki.jenkins-ci.org/display/JENKINS/CloudBees+Folders+Plugin)
-- [Copy Artifact Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Copy+Artifact+Plugin)
-- [Credentials Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Credentials+Plugin)
-- [Delivery Pipeline Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Delivery+Pipeline+Plugin)
-- [Disk Usage Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Disk+Usage+Plugin)
-- [Docker Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Docker+Plugin)
-- [Email-ext Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Email-ext+Plugin)
--[Fingerprint Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Fingerprint+Plugin)
-- [Git Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Git+Plugin)
-- [Mailer Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Mailer)
-- [IRC Plugin](https://wiki.jenkins-ci.org/display/JENKINS/IRC+Plugin)
-- [JUnit Plugin](https://wiki.jenkins-ci.org/display/JENKINS/JUnit+Plugin)
-- [Jabber Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Matrix+Project+Plugin)
-- [Matrix Project Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Matrix+Project+Plugin)
-- [NodeLabel Parameter Plugin](https://wiki.jenkins-ci.org/display/JENKINS/NodeLabel+Parameter+Plugin)
-- [Parameterized Trigger Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Parameterized+Trigger+Plugin)
-- [Pipeline Plugin (formerly known as Workflow)](https://wiki.jenkins-ci.org/display/JENKINS/Workflow+Plugin)
-- [Promoted Builds Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Promoted+Builds+Plugin)
-- [Radiator View Plugin](https://wiki.jenkins-ci.org/display/JENKINS/SMS+Notification)
-- [SMS Notification Plugin](https://wiki.jenkins-ci.org/display/JENKINS/SMS+Notification)
-- [Script Security Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Script+Security+Plugin)
-- [Skype Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Skype+Plugin)
+[new] 「suggested(推奨)」プラグインは、新しいJenkinsインストールで「セットアップウィザード」によってインストールされるデフォルトのプラグインです。
+
+このリンクをたどり、Jenkinsの固定バージョンに紐付いた完全なリストを見つけることができます： [Jenkins 2.19.4 suggested plugin list](https://github.com/jenkinsci/jenkins/blob/jenkins-2.19.4/core/src/main/resources/jenkins/install/platform-plugins.json)
+
+[new] 「[Pipeline Plugin](https://plugins.jenkins.io/workflow-aggregator)」は、それ自体、パイプラインと関連機能を実装するプラグインの集合体です。
+
+以下の機能が含まれています:
+
+- [Pipeline Multibranch](https://wiki.jenkins-ci.org/display/JENKINS/Pipeline+Multibranch+Plugin)
+- [Pipeline Shared Groovy Libraries](https://wiki.jenkins-ci.org/display/JENKINS/Pipeline+Shared+Groovy+Libraries+Plugin)
+- [Pipeline Stage View](https://wiki.jenkins-ci.org/display/JENKINS/Pipeline+Stage+View+Plugin)
+
 
 ## 用語
 
@@ -81,9 +85,47 @@ __NOTE:__ 試験では、ランダムな順序で出題され、セクション�
 - `Pipeline` は、一般名詞として使用されている場合を除いて（「CD pipelines」など）、Pipelineプラグイン（以前は「Workflow plugin」と呼ばれていました）によって作成されたジョブタイプを指します
 - JenkinsのさまざまなUI要素は、次の用語を使用して参照されます
 
-※4〜5ページの画像は割愛。 TODO 貼る
+※訳者注. 4〜5ページの画像は割愛。 ([本家ドキュメント参照](https://www.cloudbees.com/sites/default/files/cje-study-guide-2017.pdf))
 
 ## 1. CI/CD/Jenkinsのコンセプト
 
 このトピックは、試験の約27％を構成します。
 質問には次のトピックが含まれます：
+
+- 継続的デリバリー(CD)/継続的インテグレーション(CI) コンセプト
+  - 継続的インテグレーション、継続的デリバリー、継続的デプロイの定義
+  - CI、CDという段階
+  - 継続的デリバリー 対 継続的デプロイ
+- ジョブ
+  - Jenkinsにおけるジョブとは？
+  - ジョブのタイプ
+  - ジョブの範囲(Scope)
+- ビルド
+  - Jenkinsにおけるビルドとは?
+  - ビルドステップ、トリガー、成果物(artifacts)、リポジトリとは？
+  - ビルドツールの設定
+- ソースコード管理
+  - ソースコード管理システムとはどういうもので、どういう用途に買われているか？
+  - クラウドベースSCM(Cloud-based SCMs)
+  - Jenkins変更ログ(changelogs)
+  - インフラストラクチャ アズ コード(Infrastracture-as-Code)
+  - ブランチとマージ戦略
+- テスト(Testing)
+  - Jenkinsを使ってテストを行うことの利点
+  - ユニットテスト、スモークテスト、受け入れ(Acceptance)テスト、自動的検証(automated verification)、機能テスト
+- 通知(Notifications)
+  - Jenkinsにおける通知の種類
+  - 通知の重要性
+- 分散ビルド(Distributed Builds)
+  - 分散ビルドとは？
+  - マスターとエージェントの機能
+- プラグイン(Plugins)
+  - プラグインとは？
+  - プラグインマネージャー(plugin manager)とは？
+- Jenkins Rest API
+  - 接続・応答の方法
+  - なぜこれを使うのか？
+- セキュリティ
+  - 承認(authentication) 対 認証(authorization)
+  - マトリクスセキュリティ(Matrix security/行列で扱える機能認可)
+  -
