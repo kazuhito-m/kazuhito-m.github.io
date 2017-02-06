@@ -201,3 +201,58 @@ __NOTE:__ 試験では、ランダムな順序で出題され、セクション�
   - Jenkinsでのジョブの整理
   - パラメータ化ジョブ
   - フリースタイル/パイプライン/マトリックスジョブの使用方法
+- ビルド
+  - ビルドステップとトリガーの設定
+  - ビルドツールの設定
+  - ビルドステップの一部としてのスクリプト実行
+- ソースコード管理
+  - ポーリングによるソースコード管理
+  - フックの作成
+  - バージョン管理タグとバージョン情報のインクルード
+- テスト(Testing)
+  - コードカバレッジのためのテスト
+  - Jenkinsにおけるテストレポート
+  - テスト結果の表示
+  - テスt自動化ツールとの統合
+  - ビルドの中断
+- 通知(Notifications)
+  - セットアップと使用法
+  - 電子メール通知、インスタントメッセージ
+  - 通知時のアラーム
+- 分散ビルド(Distributed Builds)
+  - 並行実行のセットアップと実行法
+  - SSHエージェント、JNLPエージェント、Cloudエージェントのセットアップと使い方
+  - ノードの監視
+- プラグイン(Plugins)
+  - プラグインマネージャーのセットアップと使い方
+  - 必要なプラグインの検索と設定
+- CI/CD
+  - Pipeline(以前は"Workflow"と呼ばれていたもの)の使い方
+  - 自動デプロイの統合
+  - リリース管理プロセス
+  - パイプラインの"Stage"の振る舞い
+- Jenkins Rest API
+  - REST APIを使用した遠隔ジョブトリガー、ジョブ状態の確認、ジョブの作成/削除
+- セキュリティ
+  - セキュリティレルム(realms,訳註:認証ポリシーの適用範囲)の設定と使い方
+  - ユーザデータベース、プロジェクトセキュリティ、マトリックスセキュリティ
+  - 監査(auditing)のセットアップと使い方
+  - 資格情報(Credentials)のセットアップと使い方
+- 指紋(Fingerprints)
+  - 指紋(Fingerprints)ジョブの共有またはジョブ間でのコピー
+- 成果物(Artifacts)
+  - 成果物のコピー
+  - Jenkinsにおける成果物の使い方
+  - 成果物の保持ポリシー
+- アラート
+  - ジョブとビルドスクリプトの基本的な更新方法
+  - ビルドとテストの失敗アラートからの問題のトラブルシューティング
+
+以下のオンラインリソースは、上記のトピックを理解するためのエントリーポイントを提供します:
+
+- [https://wiki.jenkins-ci.org](https://wiki.jenkins-ci.org)
+  - [Distributed builds](https://wiki.jenkins-ci.org/display/JENKINS/Distributed+builds)
+  - [Post-initialization script](https://wiki.jenkins-ci.org/display/JENKINS/Post-initialization+script)
+  - [Features controlled by system properties](https://wiki.jenkins-ci.org/display/JENKINS/Features+controlled+by+system+properties)
+- [http://blog.cloudbees.com](http://blog.cloudbees.com)
+  - [Parallelism and Distributed Builds with Jenkins](https://www.cloudbees.com/blog/parallelism-and-distributed-builds-jenkins)
