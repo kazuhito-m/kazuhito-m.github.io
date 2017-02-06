@@ -1,5 +1,4 @@
 ---
-published: false
 title: 「Certified Jenkins Engineer (CJE) Study Guide」の訳
 layout: post
 category: tech
