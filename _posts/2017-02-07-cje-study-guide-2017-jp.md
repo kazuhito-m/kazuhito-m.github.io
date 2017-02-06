@@ -256,3 +256,100 @@ __NOTE:__ 試験では、ランダムな順序で出題され、セクション�
   - [Features controlled by system properties](https://wiki.jenkins-ci.org/display/JENKINS/Features+controlled+by+system+properties)
 - [http://blog.cloudbees.com](http://blog.cloudbees.com)
   - [Parallelism and Distributed Builds with Jenkins](https://www.cloudbees.com/blog/parallelism-and-distributed-builds-jenkins)
+
+## 継続的デリバリー(CD)パイプラインの構築
+
+このトピックは、試験の約16％を構成します。 質問には以下の内容が含まれます:
+
+- パイプラインの概念(コンセプト)
+  - CDパイプラインのバリューストリームマッピング
+  - なぜパイプラインを作成するのか？
+  - CDパイプライン内のゲート(Gates)
+  - 複数のグループが同じツールを使用する場合の、集中パイプラインの保護(protect)方法
+  - バイナリ再利用、自動デプロイメント、複数環境の定義
+  - 理想的なCI/CDパイプライン・ツールの要素
+  - スクリプト構築における重要な概念（セキュリティ/パスワード、環境情報などを含む）
+- アップストリーム(上流)とダウンストリーム(下流)
+  - 他のジョブからのジョブトリガー
+  - Parameterized Trigger pluginのセットアップ
+  - アップストリーム(上流)とダウンストリーム(下流)ジョブ
+- トリガ(Triggering)
+  - コード変更によるJenkinsトリガー
+  - プッシュとプルの違い
+  - 使うタイミング プッシュ vs プル
+- Pipeline(以前は"Workflow"と呼ばれていたもの)
+  - パイプライン vs リンクされたジョブ の利点
+  - パイプラインで提供される機能
+  - パイプラインの使い方
+  - Pipeline stage view [new]
+- フォルダ(Folders)
+  - Jenkinsのフォルダにあるアイテムへのアクセス制御する方法
+  - フォルダ内のジョブの参照
+- パラメータ(Parameters)
+  - アップロードされた実行ファイルに対してJenkinsのテスト自動化の設定
+  - ジョブ間でのパラメータ渡し
+  - パラメータの特定と使用方法：ファイルパラメータ、文字列パラメータ
+  - JenkinsCLIパラメータ
+- プロモーション(Promotions/促進)
+  - 仕事の促進
+  - なぜジョブを促進するのか？
+  - Promoted Builds Pluginの使用方法
+- 通知(Notifications)
+  - CDパイプラインの情報をチームに発信する方法
+- パイプライン・マルチブランチとリポジトリスキャン
+  - マルチブランチジョブの使用方法
+  - Github/BitBucketのOrganizationスキャン
+  - 基本的なSCMリポジトリのスキャン
+- パイプライン・グローバル・ライブラリ
+  - パイプライン間でコードを共有する方法
+  - 共有ライブラリの使用
+  - フォルダとの相互作用とリポジトリスキャン
+  - セキュリティとGroovyサンドボックス
+
+以下のオンラインリソースは、上記のトピックを理解するためのエントリーポイントを提供します:
+
+- [https://jenkins.io/](https://jenkins.io/) [new]
+  - [Handbook](https://jenkins.io/doc/book/) [new]
+  - [Pipeline](https://jenkins.io/doc/book/pipeline/) [new]
+  - [Pipeline Global Shared Libraries](https://jenkins.io/doc/book/pipeline/shared-libraries/) [new]
+  - [Pipeline Multibranch](https://jenkins.io/doc/book/pipeline/multibranch/) [new]
+  - [Controlling the Flow with Stage, Lock, and Milestone](https://jenkins.io/blog/2016/10/16/stage-lock-milestone/) [new]
+- [https://plugin.jenkins.io/](https://plugin.jenkins.io/) [new]
+  - [Pipeline Plugin 2.4](https://plugins.jenkins.io/workflow-aggregator#PipelinePlugin-2.4%28Sep21%2C2016%29) [new]
+- [CloudBees Knowledgebase](https://support.cloudbees.com/hc/en-us)
+  - [Injecting Secrets into Jenkins Build Jobs](https://support.cloudbees.com/hc/en-us/articles/203802500-Injecting-Secrets-into-Jenkins-Build-Jobs)
+- [https://www.cloudbees.com](https://www.cloudbees.com)
+  - [Credentials API Jenkins](https://www.cloudbees.com/blog/credentials-api-jenkins)
+- [CloudBees Documentation](https://go.cloudbees.com/doc/index.html)
+  - [List views](https://go.cloudbees.com/docs/cloudbees-documentation/cje-user-guide/index.html#_list_views?query=view)
+- [https://github.com](https://github.com])
+  - [confab](https://github.com/jenkinsci/jenkins/blob/3537831a42cd5b3b27a41fcde9b1f201962f38a1/core/src/main/grammar/crontab.g#L68-L71)
+  - [help-spec](https://github.com/jenkinsci/jenkins/blob/3537831a42cd5b3b27a41fcde9b1f201962f38a1/core/src/main/resources/hudson/triggers/TimerTrigger/help-spec.html#L45-L46)
+  - [pause and resume execution](https://github.com/jenkinsci/pipeline-plugin/blob/feb5bf44573dfc9379d9551f12b0372907e787be/README.md#pause-and-resume-execution)
+  - [Executor Step Test](https://github.com/jenkinsci/pipeline-plugin/blob/feb5bf44573dfc9379d9551f12b0372907e787be/aggregator/src/test/java/org/jenkinsci/plugins/workflow/steps/ExecutorStepTest.java#L165-L214)
+  - [Write File Step](https://github.com/jenkinsci/pipeline-plugin/blob/e0263fc7275e804785e4e93054ef0f2f2945a2dc/basic-steps/src/main/resources/org/jenkinsci/plugins/workflow/steps/WriteFileStep/help.html#L1)
+- [http://wiki.jenkins-ci.org](http://wiki.jenkins-ci.org)
+  - [Jenkins CLI](https://wiki.jenkins-ci.org/display/JENKINS/Jenkins+CLI)
+
+## 4. CD-as-Codeのベストプラクティス
+
+このトピックは、試験の約16％を構成します。 質問には以下の内容が含まれます:
+
+- 分散ビルドアーキテクチャ
+- 置換(交換)可能なエージェント
+- マスターエージェントのコネクタとプロトコル
+- エージェント上のツールのインストール
+- クラウドエージェント
+- トレーサビリティ
+- 高可用性
+
+以下のオンラインリソースは、上記のトピックを理解するためのエントリーポイントを提供します:
+
+- [http://go.cloudbees.com](http://go.cloudbees.com)
+  - [Cookbook](https://go.cloudbees.com/docs/cloudbees-documentation/cookbook/book.html)
+  - [Distributed Builds Architecture](https://go.cloudbees.com/docs/cloudbees-documentation/cookbook/book.html#_distributed_builds_architecture)
+  - [Choosing the Right Hardware](https://go.cloudbees.com/docs/cloudbees-documentation/cookbook/book.html#_choosing_the_right_hardware_for_masters)
+  - [Architecting for Scale](https://go.cloudbees.com/docs/cloudbees-documentation/cookbook/book.html#_architecting_for_scale)
+  - [Pipeline as Code](https://go.cloudbees.com/docs/cloudbees-documentation/cookbook/book.html#pipeline-as-code) (formerly “Workflow as Code”)
+- [http://wiki.jenkins-ci.org](http://wiki.jenkins-ci.org)
+  - [Remoting](https://wiki.jenkins-ci.org/display/JENKINS/Remoting+issue)
