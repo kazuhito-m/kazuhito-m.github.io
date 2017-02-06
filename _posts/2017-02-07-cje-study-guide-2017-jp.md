@@ -353,3 +353,47 @@ __NOTE:__ 試験では、ランダムな順序で出題され、セクション�
   - [Pipeline as Code](https://go.cloudbees.com/docs/cloudbees-documentation/cookbook/book.html#pipeline-as-code) (formerly “Workflow as Code”)
 - [http://wiki.jenkins-ci.org](http://wiki.jenkins-ci.org)
   - [Remoting](https://wiki.jenkins-ci.org/display/JENKINS/Remoting+issue)
+
+## サンプル問題
+
+
+1.定義上、継続的デリバリーパイプラインは何から成り立っていますか？
+
+__訳註:構成要素を聞いていると思われる__
+
+- A. バックログ項目(Backlog items)
+- B. 成果物(Artifacts)
+- C. ステージ(Stages)
+- D. チケット(Tickets)
+- E. コミット(Commitments)
+
+2.Linuxエージェントを起動する直前に、シェルスクリプト（ `/usr/bin/prepare-env` ）を実行する必要があります。どうやったらできますか？
+
+- A. エージェント構成で「Suffix Start Agent Command」構成オプションを使用します。
+- B. エージェント設定で「Prefix Start Agent Command」設定オプションを使用します。
+- C. OSユーザーのホームディレクトリにある `/usr/bin/prepare-env` への呼び出しを含む、エージェントプロセスを実行する `.profile` ファイルを構成します。
+- D. シェルスクリプトを実行するには、このエージェントに関連付けられている各ジョブにシェルステップを追加します。
+
+3.Jenkins Remote APIを使用して、スクリプトまたはHTTPクライアントからフォルダ（myFolder）のconfig.xmlを取得するように求められたとします。フォルダ(上記でのmyFolderだと思われる)は、Jenkinsマスターのルートに存在します。この設定ファイルを取得するために正しいURLパターンはどれですか？
+
+- A. root/job/myFolder/config.xml
+- B. root/folder/myFolder/config.xml
+- C. root/myFolder/config.xml
+- D. root/myFolder?param=config.xml
+- E. root/api/getConfig?source=myFolder
+
+4.スケーラブルなJenkins環境のためにJenkins Cookbookが推奨するアーキテクチャーは？
+
+- A. 分散ビルドアーキテクチャ
+- B. 中央マスタアーキテクチャ
+- C. 自動ビルドアーキテクチャ
+- D. 手動ポーリングアーキテクチャ
+- E. ワンショットビルド(One-Shot Build)のアーキテクチャ
+
+5.クラスタ運用のジョブにおいて、以下のステップのうち、クライアントマスタ(Client Master)に可能な操作を、３つ選びなさい
+
+- A. Jenkinsインストール
+- B. Jenkinsアップグレード
+- C. 全プラグインアップグレード
+- D. プラグインインストール
+- E. Jenkinsアンインストール
