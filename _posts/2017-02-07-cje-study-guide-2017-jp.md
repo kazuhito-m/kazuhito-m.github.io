@@ -256,7 +256,7 @@ __NOTE:__ 試験では、ランダムな順序で出題され、セクション�
 - [http://blog.cloudbees.com](http://blog.cloudbees.com)
   - [Parallelism and Distributed Builds with Jenkins](https://www.cloudbees.com/blog/parallelism-and-distributed-builds-jenkins)
 
-## 継続的デリバリー(CD)パイプラインの構築
+## 3. 継続的デリバリー(CD)パイプラインの構築
 
 このトピックは、試験の約16％を構成します。 質問には以下の内容が含まれます:
 
