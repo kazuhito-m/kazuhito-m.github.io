@@ -24,7 +24,7 @@ tags: [jenkins,exam]
 ## イントロダクション
 
 この学習ガイドは、認定Jenkinsエンジニア(CJE)試験のためのものです。
-認定CloudBeesJenkinsエンジニア(CCJPE)試験については[こちら](https://www.cloudbees.com/jenkins/jenkins-certification)を参照ください。
+認定CloudBeesJenkinsプラットフォームエンジニア(CCJPE)試験については[こちら](https://www.cloudbees.com/jenkins/jenkins-certification)を参照ください。
 
 このガイドであなたは、試験の出題トピック、外部参照のリンク、そして例題を得ることができます。
 
