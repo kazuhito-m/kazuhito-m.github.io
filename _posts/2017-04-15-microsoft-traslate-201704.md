@@ -14,7 +14,9 @@ tags: [groovy, ms-traslator-text-api, azure, cognitive-services]
 
 # 経緯
 
-無料の翻訳APIを探して、 `Microsoft Translator API` にたどり着いたのですが、サンプルの通り書いても「翻訳できたり[エラー起こしたり](https://www.drupal.org/node/1705828)」となって…「これ、ホンマに信頼あるAPIなん？」と思ったんです。
+無料の翻訳APIを探して、 `Microsoft Translator API` にたどり着いたのですが…
+
+サンプルの通り書いても「翻訳できたり[エラー起こしたり](https://www.drupal.org/node/1705828)」となって…「これ、ホンマに信頼あるAPIなん？」と思ったんです。
 
 ま、それは「やり方おかしい」のだろうとおもうのですが、どうやら…
 
@@ -27,6 +29,7 @@ tags: [groovy, ms-traslator-text-api, azure, cognitive-services]
 
 という話なようです。
 
+なので、新しい方のを試してみました。
 
 # 前提
 
@@ -83,6 +86,13 @@ println "翻訳結果 : ${result}"
 
 上記ソースの`from`,`to`は「翻訳言語の指定」です。
 
+手続き的には
+
+1. APIアクセスのための揮発性トークン文字列取得
+2. APIにトークンと翻訳条件投げる
+
+な感じです。
+
 実行すると、
 
 ![こんな感じ](/images/2017-04-15-exec-traslate.png)
@@ -97,7 +107,7 @@ println "翻訳結果 : ${result}"
 
 …と、言っても[リンクに丸投げ](https://docs.microsoft.com/en-us/azure/cognitive-services/cognitive-services-apis-create-account)なのですがｗ
 
-少し前のAzureですので、若干UIが異る＆英語表示ですが、適宜なんとかしてください。
+※リンクの記事で示されてるのが、少し前のAzureですので、若干UIが異る＆英語表示ですが、適宜なんとかしてください。
 
 登録後、そのサブスクリプションを選び、 `keys` をクリック、 `key1`,`key2` のどちらかの値をスクリプトに仕込んでください。
 
@@ -117,6 +127,6 @@ println "翻訳結果 : ${result}"
 
 - [参考にさせていただいたソース(Java製)](http://stackoverflow.com/questions/42891510/microsoft-translator-api-java-how-to-get-client-new-id-with-azure)
 - [Text Translation API一覧](http://docs.microsofttranslator.com/text-translate.html)
-- [公式の](https://www.microsoft.com/ja-jp/translator/getstarted.aspx)
+- [公式の手順簡易説明](https://www.microsoft.com/ja-jp/translator/getstarted.aspx)
 - [AzirePortalでCognitiveServiceAPIのアカウントを作る方法](https://docs.microsoft.com/en-us/azure/cognitive-services/cognitive-services-apis-create-account)
 - [新の例（JS）](http://qiita.com/helicalgear/items/d34fac20d68f17e75406)
