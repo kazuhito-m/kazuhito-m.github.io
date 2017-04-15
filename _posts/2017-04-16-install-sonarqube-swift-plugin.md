@@ -50,7 +50,7 @@ Sonarqubeのプラグインの実体は `jar` で配布されており、前述�
 
 要約すると…
 
-1. データディレクトリの一角(extensions/plugins/)にjarを配置
+1. データディレクトリの一角( `extensions/plugins/` )にjarを配置
 0. Sonarqube自体を再起動
 
 と、これで本体が認識し、インストールが完了するようです。
@@ -65,7 +65,7 @@ sudo service sonar restart
 
 といった感じです。
 
-[インストール後のSonarqube画面](/images/2017-04-16-installed.png)
+![インストール後のSonarqube画面](/images/2017-04-16-installed.png)
 
 指定している `0.3.2` は現在の最新なので入れる際は[公式を確認](https://github.com/Backelite/sonar-swift/releases/)してください。
 
