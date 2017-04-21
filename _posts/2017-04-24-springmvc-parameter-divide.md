@@ -24,9 +24,12 @@ SpringMVCについては詳しくないので…「自分はこれが必要で�
 
 http://[サーバ]/rest/api
 
-でPOSTで受けることとし、
-"behavior" パラメータによって振る舞いと受け取る値を決定するとする。
-例: "getUser"でユーザ情報取得、 "getVersion"でシステムのバージョンを取得。
+とし、リクエストはPOSTで受け、
+"behavior" パラメータによって、「振る舞い」と「受け取る値」を決定することとする。
+
+例:
+"behavior=getUser"でユーザ情報取得、
+"behavior=getVersion"でシステムのバージョンを取得。
 ```
 
 …
