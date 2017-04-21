@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SpringMVCのRESTコントローラでRequestMappingを「パラメータの値によって」分岐する方法
+title: SpringMVCのRESTコントローラでリクエストを「パラメータの値によって」分岐する方法
 category: tech
 tags: [spring,spring-mvc,rest]
 ---
