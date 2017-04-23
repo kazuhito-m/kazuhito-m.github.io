@@ -22,6 +22,8 @@
 - 例外を「一律に処理する」コントローラの定義方法
   - http://int128.hatenablog.com/entry/2016/11/27/230529
   - これを使えば「一律の処理」ができそう
+- MVCの「一般的操作のチートシート」
+  - http://qiita.com/tag1216/items/3680b92cf96eb5a170f0#restcontroller
 
 ### ちょっとした話
 
