@@ -38,7 +38,7 @@ masterにJNLPを選びノードを登録した場合、推奨として？ master
   - Amazon Linu
     - AWSでくれる状態ほぼデフォルト
   - jnlpでコネクション張る(java -jar slave.jar起動)
-    -`slave.jar` ver. 3.7
+    - `slave.jar` ver. 3.7
 
 # やりかた
 
@@ -107,7 +107,7 @@ java -jar slave.jar [options...]
                                    unsafe protocol like telnet
 ```
 
-「Jenkins内蔵の認証」「PEMファイル」「Proxyの認証」など、わりかし「いろんな説奥手段」が出来ることが分かります。
+「Jenkins内蔵の認証」「PEMファイル」「Proxyの認証」など、わりかし「いろんな接続手段」が出来ることが分かります。
 
 ---
 
