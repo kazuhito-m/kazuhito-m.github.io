@@ -1,6 +1,6 @@
 ---
 layout: post
-title: JenkinsのJNLPによるSlave接続でBasic認証でmasterのJenkinsと接続する方法
+title: Jenkinsのmastar/slave接続をJNLPでやる場合にBasic認証を超える方法
 category: tech
 tags: [jenkins,jenkins-slave]
 ---
