@@ -48,7 +48,7 @@ docker run -v ${PWD}:/etc/nginx/conf.d -p 80:80 nginx
 
 ![パスを変えたJenkins](/images/2017-04-25-jenkins-path-shift-top.png)
 
-あれ？表示出来てる…「新しいジョブ」をクリックシてみましょう。
+あれ？表示出来てる…「新しいジョブ」をクリックしてみましょう。
 
 ![新規ジョブを作成をクリック](/images/2017-04-25-jenkins-path-shift-link.png)
 
@@ -88,8 +88,6 @@ java -jar jenkins.war --prefix=/jenkins
 JENKINS_ARGS="--prefix=/jenkins"
 ```
 
-先ほどの「nginxの設定」を設定するとすると
-
 ## nginxの例
 
 先ほどの `test.conf` ファイルを「パスを下げた状態」で設定するには、
@@ -98,7 +96,7 @@ JENKINS_ARGS="--prefix=/jenkins"
 server {
     listen 80;
     location /jenkins {
-        proxy_pass http://172.17.0.1:8080/jenkins;
+        proxy_pass http://172.17.0.1:8080/jenkins; # １段さげて"jenkins"に
     }
 }
 ```
