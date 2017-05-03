@@ -2,7 +2,7 @@
 layout: post
 title: Pasori＆Ferica2Moneyを使ってのフェリカ履歴データのGnuCash取込
 category: tech
-tags: [gnucash,ferica,rfid,pasori]
+tags: [gnucash,ferica,rfid,pasori,windows,felica2money]
 ---
 
 ![全景](/images/2011-04-18-import-gnucash-from-ferica.jpg)
@@ -15,7 +15,7 @@ __「RFIDリーダを使ったＩＣＯＣＡ履歴をGnuCashへ読み込む方�
 
 GnuCash情報の老舗、このサイトの方曰く「出来る」と言ってる（ぽい？）ので、RFIDリーダ「Pasori」を買ってみました。
 
-[GnuCash、ちゃんと使ってます](/tech/2011/04/17/review-gnucash)
+[過去記事:GnuCashレビュー](/tech/2011/04/17/review-gnucash)
 
 それでは、説明を…
 
@@ -125,4 +125,5 @@ NEWFILEUID:NONE
 
 
 しかし…履歴は20件なんですね。
+
 一週間に一回、読み込ませないといけないな…ルール化するか。
