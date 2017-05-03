@@ -36,7 +36,7 @@ tags: [windows, salvage]
 
 …ただ「セットアップ失敗するユティリティの中から残骸取り出している」だけですけどねｗ
 
-少し足りない作業があるかも？「"SnyUtils.dll"が無い」的なメッセージで、インストーラが進まない人は、ココから `SUDLLME.EXE` をダウンロードしてインストールしてみてください。
+少し足りない作業があるかも？「"SnyUtils.dll"が無い」的なメッセージで、インストーラが進まない人は、 [ココ](http://esupport.sony.com/US/perl/swu-download.pl?mdl=PCGC1XS&upd_id=374&os_id=4&ULA=YES)から `SUDLLME.EXE` をダウンロードしてインストールしてみてください。
 
 
 ---
