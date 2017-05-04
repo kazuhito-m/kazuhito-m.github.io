@@ -136,7 +136,7 @@ viでなくともエディタは何でも良いのですが、 `app.yaml` 編集
 
 以下のように記述しましょう。
 
-```
+```yaml
 application: [あなたのアプリケーション名(URLの前半部分)]
 version: 1
 runtime: python
@@ -263,7 +263,7 @@ GAEの設定ファイル app.yaml を変更することで、3種類の閲覧制
 
 2. or 3. に変更するには、 `app.yaml` に以下の変更を行ってください。
 
-```
+```yaml
 application: [あなたのアプリケーション名(URLの前半部分)]
 version: 1
 runtime: python
