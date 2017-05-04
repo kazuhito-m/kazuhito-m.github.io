@@ -269,7 +269,6 @@ version: 1
 runtime: python
 api_version: 1
 handlers:
-
 - url: /
  static_files: html/index.html
  upload: /
