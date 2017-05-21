@@ -119,13 +119,13 @@ java -jar plantuml.1.2017.13.jar test.pu
 
 すると、対になる `test.png` という画像ファイルが生成されます。
 
-![画像を出してみた結果](/imags/2017-05-21-test.png)
+![画像を出してみた結果](/images/2017-05-21-test.png)
 
 馬鹿でかいのでわかりにくいかもしれませんが、「JavaのAPI」や「フレームワークのクラス」まで依存が描かれてるのは邪魔ですね。
 
 テキスト加工して`java.`や`org.`削除してみましょう。
 
-![ちょっとアレンジ](/2017-05-21-test-arrange.png)
+![ちょっとアレンジ](/images/2017-05-21-test-arrange.png)
 
 おお、これならいい感じかも。
 
@@ -146,7 +146,7 @@ java -jar plantuml.1.2017.13.jar test.pu
 
 プロジェクト直下に `.purc` なディレクトリをつくり、そこにスクリプトなりを[一式置いて](https://github.com/kazuhito-m/java-odf-edit-sample/tree/master/.purc)みました。
 
-![.purcとは](/images/2917-05-21-purc.png)
+![.purcとは](/images/2017-05-21-purc.png)
 
 `plantuml-reverce-class-diaglam.sh` がメインのスクリプトで、
 
