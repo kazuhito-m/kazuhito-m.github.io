@@ -37,12 +37,18 @@ tags: [circleci,plantuml,ci,reverce-engineering]
 
 です。(だってそうでないと俺自身が出来ないんだものｗ)
 
+もちろん目指すのは、タイトルどおり、
+
+- CIするたびにリバース・エンジニアリングして依存性を示したClass図が常時吐き出される
+
+です。
+
 ## 前提
 
 こんなJavaプロジェクトがあるとします。
 
 - [典型的なSpringBootで作ったWebアプリ](https://github.com/kazuhito-m/java-odf-edit-sample)
-  - [この発表])(https://www.slideshare.net/miurakazuhito/opendocument-13libreoffice-libokansai) の時に作ったやつです
+  - [この発表](https://www.slideshare.net/miurakazuhito/opendocument-13libreoffice-libokansai) の時に作ったやつです
 - [CircleCI](https://circleci.com)でテスト回してる
   - ただ「[テスト回す](https://circleci.com/gh/kazuhito-m/java-odf-edit-sample)」くらいのシンプル構成
 
@@ -273,11 +279,13 @@ PlantUMLの実行には、本体Jar以外に `graphviz` が必要なので、直
 
 ![本来のカタチ](/images/2017-05-21-sample-classes.png)
 
-と言うような表現が出来るのですが…これは `plantuml-dependency-cli` のリバース能力の限界だと思います。
+と言うような表現が出来るのですが…こうなってはくれません。
+
+これは `plantuml-dependency-cli` のリバース能力の限界だと思います。
 
 (多分、javaファイルのimport部からしかテキスト的に拾ってきてるだけなのでしょう。 `*` 指定とかすると拾えなくなりますし。)
 
-ここはもう [こういうの](https://github.com/javaparser/) で自力でツール作ったらエエかな、と考え始めてます。
+ここはもう [こういうの](https://github.com/javaparser/) を使って自力でツール作ったらエエかな、と考え始めてます。
 
 ## 小並感
 
