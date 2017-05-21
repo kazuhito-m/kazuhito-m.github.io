@@ -275,7 +275,7 @@ PlantUMLの実行には、本体Jar以外に `graphviz` が必要なので、直
 
 ![今回の例](/images/2017-05-21-src-tree.png)
 
-という構成で、 `PlantUML` 的に頑張れは、
+という構成で、 `PlantUML` 的に頑張れば、
 
 ![本来のカタチ](/images/2017-05-21-sample-classes.png)
 
@@ -286,6 +286,17 @@ PlantUMLの実行には、本体Jar以外に `graphviz` が必要なので、直
 (多分、javaファイルのimport部からしかテキスト的に拾ってきてるだけなのでしょう。 `*` 指定とかすると拾えなくなりますし。)
 
 ここはもう [こういうの](https://github.com/javaparser/) を使って自力でツール作ったらエエかな、と考え始めてます。
+
+## インストール？
+
+使いたい方が居ましたら、 [ここ](https://github.com/kazuhito-m/java-odf-edit-sample) から
+
+```
+.purc/
+circle.yml
+```
+
+だけコピーし、 `.purc/` の中の設定ファイルを変更してください。
 
 ## 小並感
 
