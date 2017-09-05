@@ -11,6 +11,8 @@
 
 ## チェック項目
 
-- [ ] Collectionを外に出すときには必ず `unmodifiable` に
+- [ ] 自身オブジェクトのフィールドCollectionを外に出すときには必ず `unmodifiable` に
   - `ArrayList$SubList()` は注意
 - [ ] 再代入はしない
+- [ ] TODOつけるのは修正対象のほうに付ける
+- [ ] コレクションを生成するものでも「新しく産んで自身の状態を変えるものではない」ならunmodifiableしない
