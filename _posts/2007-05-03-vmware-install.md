@@ -1,5 +1,4 @@
 ---
-published: false
 layout: post
 title: VmWareの実験
 category: tech

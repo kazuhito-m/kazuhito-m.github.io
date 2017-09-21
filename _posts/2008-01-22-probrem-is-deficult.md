@@ -1,5 +1,4 @@
 ---
-published: false
 layout: post
 title: ややこしいことになった
 category: tech
@@ -20,10 +19,10 @@ LVNも絡んでるんだよな…
 
 以下、スクラップ
 
-[http://bbs.fedora.jp/read.php?FID=9&TID=4279](http://bbs.fedora.jp/read.php?FID=9&TID=4279)
-[http://nstage.ddo.jp/pukiwiki/index.php?KNOPPIX%A4%C7%A5%EC%A5%B9%A5%AD%A5%E5%A1%BC#content_1_0](http://nstage.ddo.jp/pukiwiki/index.php?KNOPPIX%A4%C7%A5%EC%A5%B9%A5%AD%A5%E5%A1%BC#content_1_0)
-[http://memo.blogdns.net/lvm.html](http://memo.blogdns.net/lvm.html)
-[http://pantora.net/pages/linux/lvm/3/](http://pantora.net/pages/linux/lvm/3/)
+- [http://bbs.fedora.jp/read.php?FID=9&TID=4279](http://bbs.fedora.jp/read.php?FID=9&TID=4279)
+- [http://nstage.ddo.jp/pukiwiki/index.php?KNOPPIX%A4%C7%A5%EC%A5%B9%A5%AD%A5%E5%A1%BC#content_1_0](http://nstage.ddo.jp/pukiwiki/index.php?KNOPPIX%A4%C7%A5%EC%A5%B9%A5%AD%A5%E5%A1%BC#content_1_0)
+- [http://memo.blogdns.net/lvm.html](http://memo.blogdns.net/lvm.html)
+- [http://pantora.net/pages/linux/lvm/3/](http://pantora.net/pages/linux/lvm/3/)
 
 すこし救いがあったのは、1年まえにHDDを移行する際に元のHDDを消さずの越していたこと。
 
@@ -35,27 +34,31 @@ LVNも絡んでるんだよな…
 ```bash
 fsck.ext -f /dev/VolGroup00/LogVol00
 resize2fs -p /dev/VolGroup00/LogVol00 14336M (場合によってはすごい時間がかかる)
-# lvreduce -L -50G /dev/VolGroup00/LogVol00
+
+lvreduce -L -50G /dev/VolGroup00/LogVol00
+
 WARNING: Reducing active logical volume to 21.94 GB
 THIS MAY DESTROY YOUR DATA (filesystem etc.)
 Do you really want to reduce LogVol00? [y/n]: y
 Reducing logical volume LogVol00 to 18.94 GB
 Logical volume LogVol00 successfully resized
-# lvscan
+
+lvscan
+
 ACTIVE '/dev/VolGroup00/LogVol00' [18.94 GB] inherit
 ACTIVE '/dev/VolGroup00/LogVol01' [1.94 GB] inherit
 ```
 
 ## HDDそのまま交換系
 
-[http://d.hatena.ne.jp/shpolsky/20070306])http://d.hatena.ne.jp/shpolsky/20070306)
-[(http://wiki.mmj.jp/index.php?Fedora5%2F%CF%C0%CD%FD%A5%DC%A5%EA%A5%E5%A1%BC%A5%E0](http://wiki.mmj.jp/index.php?Fedora5%2F%CF%C0%CD%FD%A5%DC%A5%EA%A5%E5%A1%BC%A5%E0)
-[http://wiki.mmj.jp/index.php?EtCetera%2FHDD%B4%B9%C1%F5](http://wiki.mmj.jp/index.php?EtCetera%2FHDD%B4%B9%C1%F5)
+- [http://d.hatena.ne.jp/shpolsky/20070306](http://d.hatena.ne.jp/shpolsky/20070306)
+- [http://wiki.mmj.jp/index.php?Fedora5%2F%CF%C0%CD%FD%A5%DC%A5%EA%A5%E5%A1%BC%A5%E0](http://wiki.mmj.jp/index.php?Fedora5%2F%CF%C0%CD%FD%A5%DC%A5%EA%A5%E5%A1%BC%A5%E0)
+- [http://wiki.mmj.jp/index.php?EtCetera%2FHDD%B4%B9%C1%F5](http://wiki.mmj.jp/index.php?EtCetera%2FHDD%B4%B9%C1%F5)
 
-こぴー元の構成を真似てパーティションをわる
+コピー元の構成を真似てパーティションを割ります。
 
 ```bash
-# fdisk /dev/hdd
+fdisk /dev/hdd
 
 このディスクのシリンダ数は 39560 に設定されています。
 間違いではないのですが、1024 を超えているため、以下の場合
@@ -108,27 +111,32 @@ Units = シリンダ数 of 1008 * 512 = 516096 bytes
 ## PV作成
 
 ```bash
-# pvcreate /dev/hdd2
+pvcreate /dev/hdd2
 Physical volume "/dev/hdd2" successfully created
-# vgcreate -s 32m NewVG /dev/hdd2
+
+vgcreate -s 32m NewVG /dev/hdd2
 Volume group "NewVG" successfully created
 
 解説に、「以前のエクステント数をlvdisplayで参照して、-lを指定します」とあるが、
 -Lで容量指定ができるともあるので、それでやってみる。
 
-# lvcreate -L 1.94G -n LogVol01 NewVG
+lvcreate -L 1.94G -n LogVol01 NewVG
 Rounding up size to full physical extent 1.97 GB
 Logical volume "LogVol01" created
-# lvcreate -L 17.03G -n LogVol00 NewVG
+
+lvcreate -L 17.03G -n LogVol00 NewVG
 Rounding up size to full physical extent 17.03 GB
 Insufficient free extents (542) in volume group NewVG: 545 required
-# lvcreate -l 542 -n LogVol00 NewVG
+
+lvcreate -l 542 -n LogVol00 NewVG
 Logical volume "LogVol00" created
 ```
 
 ## ファイルシステム作成
 
-root@Knoppix:~# mkfs -t ext3 /dev/hdd1
+```bash
+mkfs -t ext3 /dev/hdd1
+
 mke2fs 1.40-WIP (14-Nov-2006)
 Filesystem label=
 OS type: Linux
@@ -150,7 +158,9 @@ Writing superblocks and filesystem accounting information: done
 
 This filesystem will be automatically checked every 37 mounts or
 180 days, whichever comes first. Use tune2fs -c or -i to override.
-root@Knoppix:~# mkfs -t ext3 /dev/NewVG/LogVol00
+
+mkfs -t ext3 /dev/NewVG/LogVol00
+
 mke2fs 1.40-WIP (14-Nov-2006)
 Filesystem label=
 OS type: Linux
@@ -173,7 +183,9 @@ Writing superblocks and filesystem accounting information: done
 
 This filesystem will be automatically checked every 32 mounts or
 180 days, whichever comes first. Use tune2fs -c or -i to override.
-root@Knoppix:~# mkswap /dev/NewVG/LogVol01
+
+mkswap /dev/NewVG/LogVol01
+
 Setting up swapspace version 1, size = 2113925 kB
 no label, UUID=37ea65ae-1996-41c0-b061-fc409f9e9527
 ```

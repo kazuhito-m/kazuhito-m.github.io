@@ -1,5 +1,4 @@
 ---
-published: false
 layout: post
 title: ファイル整理時のコマンド
 category: tech

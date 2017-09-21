@@ -1,5 +1,4 @@
 ---
-published: false
 layout: post
 title: landiskが起動しなくなった
 category: tech
@@ -16,7 +15,7 @@ tags: [linux,nas,rescure]
 
 ## 普及作業
 
-その時とってたバックアップがあったので、それ使う。
+その時とってたバックアップがあったので、それ使います。
 
 以前の取り方は
 

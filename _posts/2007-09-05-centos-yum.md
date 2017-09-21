@@ -1,5 +1,4 @@
 ---
-published: false
 layout: post
 title: CentOSのyum設定整え
 category: tech

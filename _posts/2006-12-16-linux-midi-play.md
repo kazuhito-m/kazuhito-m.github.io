@@ -1,5 +1,4 @@
 ---
-published: false
 layout: post
 title: LinuxでMIDIを再生したい
 category: tech
@@ -7,6 +6,8 @@ tags: [linux,midi]
 ---
 
 ながく、書くトピックがなかったが、今回MIDIの再生がしてみたくて、挑戦してみます。
+
+※以下、断りなくばrootコンソールでの作業と思ってください。
 
 ## まずはレシピ
 
@@ -16,9 +17,8 @@ http://bbs.fedora.jp/read.php?FID=9&TID=3073
 
 ## インストール
 
-```
+```bash
 sudo yum install timidity++.i386
-
 ```
 
 インストールは難なく成功。

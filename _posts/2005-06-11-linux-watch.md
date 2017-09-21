@@ -1,5 +1,4 @@
 ---
-published: false
 layout: post
 title: ぃぬx観察日記はじめますた
 category: tech
