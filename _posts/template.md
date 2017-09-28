@@ -6,7 +6,26 @@ category: tech
 tags: []
 ---
 
+TODO ひとこと
 
-# TODO maincategory
+# これを読んで得られるもの
 
-## TODO sabcategory
+- A
+- B
+
+# 経緯
+
+
+## 詳細
+
+## で、今回の問題
+
+# やったこと
+
+## 原因
+
+## 修正
+
+---
+
+# 所感
