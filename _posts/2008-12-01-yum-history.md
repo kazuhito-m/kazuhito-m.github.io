@@ -18,7 +18,7 @@ cat /var/log/yum.log
 ログローテートしてたなら、
 
 ```bash
-cat yum.log* | grep Install | more<br />
+cat yum.log* | grep Install | more
 ```
 
 とすれば良いです。
