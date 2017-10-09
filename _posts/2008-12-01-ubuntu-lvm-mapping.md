@@ -56,6 +56,8 @@ inactive          '/dev/vg0/lv0' [230.72 GB] inherit
 inactive          '/dev/vg0/lv1' [1.94 GB] inherit
 ```
 
+## `device-mapper` module有効化&マウント
+
 device-mapper が使えない、と怒られてる様子。moduleを有効にしてあげます。
 
 ```bash
