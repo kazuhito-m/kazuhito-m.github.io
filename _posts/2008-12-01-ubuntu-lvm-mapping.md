@@ -14,9 +14,9 @@ Fedora8からUbuntu8.10に乗り換えてみることにしました。
 
 ## 環境
 
-ハード: Dos機
-元 : Fedora8
-新 : Ubuntu8.10(Ubuntu Desktop 日本語remix)
+- ハード: Dos機
+- 元 : Fedora8
+- 新 : Ubuntu8.10(Ubuntu Desktop 日本語remix)
 
 ## 旧HDDを接続＆LVMインストール
 
@@ -27,7 +27,7 @@ Fedora8からUbuntu8.10に乗り換えてみることにしました。
 まず、認識出来る状態にしなくちゃいけないので、lvm2をインストール。
 
 ```bash
-suod apt-get install lvm2
+sudo apt-get install lvm2
 ```
 
 HDDの状態を、内部からコマンド確認。
@@ -73,7 +73,7 @@ inactive          '/dev/vg0/lv1' [1.94 GB] inherit
 ```bash
 sudo vgchange -ay vg0
 
-2 logical volume(s) in volume group &quot;vg0&quot; now active
+2 logical volume(s) in volume group 'vg0' now active
 
 sudo mount -t ext3 /dev/vg0/lv0 ./oldhdd/
 ```
