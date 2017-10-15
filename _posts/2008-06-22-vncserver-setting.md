@@ -1,6 +1,6 @@
 ---
 layout: post
-title: vncseverの設定
+title: vncserverの設定
 category: tech
 tags: [vncserver,linux,fedora]
 ---
