@@ -1,6 +1,6 @@
 ---
 layout: post
-title: midi編集環境の作成
+title: MIDI編集環境の作成
 category: tech
 tags: [dtm,linux,midi]
 ---
