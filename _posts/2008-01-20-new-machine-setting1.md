@@ -1,5 +1,4 @@
 ---
-published: false
 layout: post
 title: 新システム準備作業(つづき1)
 category: tech
@@ -8,51 +7,58 @@ tags: [linux,dd,partision,bootloader,setup]
 
 新マシンのLinuxセットアップの様子を割とリアル目にお届け。
 
-## データのコピー
+※何もしていなければ、すべてrootのコンソールだと思ってください。
+
+#データのコピー
 
 hdd1とhdb1はマウントポイントが最初からあるので、それを使って、マウント&コピー。
 
 ```bash
-# cd /media
-# mount hdb1
-# mount hdd1
-# cp -a ./hdb1/* ./hdd1
+cd /media
+mount hdb1
+mount hdd1
+cp -a ./hdb1/* ./hdd1
 ```
 
 本体データコピー前に元VGをアクティブに
 
 ```bash
-# vgchange -ay VolGroup002 logical volume(s) in volume group "VolGroup00" now active
-# lvscan
+vgchange -ay VolGroup002 logical volume(s) in volume group "VolGroup00" now active
+lvscan
 ACTIVE '/dev/NewVG/LogVol01' [1.97 GB] inherit
 ACTIVE '/dev/NewVG/LogVol00' [16.94 GB] inherit
 ACTIVE '/dev/VolGroup00/LogVol00' [18.94 GB] inherit
 ACTIVE '/dev/VolGroup00/LogVol01' [1.94 GB] inherit
 
-# mkdir NewVg_LogVol00
-# mkdir Group00_LogVol00
-# mount -t ext3 /dev/NewVG/LogVol00 NewVg_LogVol00/
-# mount -t ext3 /dev/VolGroup00//LogVol00 ./Group00_LogVol00/
-# cp -a Group00_LogVol00/* NewVg_LogVol00/
+mkdir NewVg_LogVol00
+mkdir Group00_LogVol00
+mount -t ext3 /dev/NewVG/LogVol00 NewVg_LogVol00/
+mount -t ext3 /dev/VolGroup00//LogVol00 ./Group00_LogVol00/
+cp -a Group00_LogVol00/* NewVg_LogVol00/
 ```
 
 (ひたすら待つ)
 
-## grub作る
+#grub作る
 
 ```bash
-# grub-install --recheck /dev/hdd1
+grub-install --recheck /dev/hdd1
+
 Probing devices to guess BIOS drives. This may take a long time.
 Could not find device for /boot: Not found or not a block device.
-root@Knoppix:~# e2label /dev/hdd1 "/boot"
-root@Knoppix:~# grub-install --recheck /dev/hdd1
+
+e2label /dev/hdd1 "/boot"
+grub-install --recheck /dev/hdd1
 Probing devices to guess BIOS drives. This may take a long time.
 Could not find device for /boot: Not found or not a block device.
-root@Knoppix:~# lvm vgchange -a n NewVG
+
+lvm vgchange -a n NewVG
 0 logical volume(s) in volume group "NewVG" now active
-root@Knoppix:~# lvm vgrename NewVG VolGroup00
+
+lvm vgrename NewVG VolGroup00
 Volume group "NewVG" successfully renamed to "VolGroup00"
-root@Knoppix:~# lvm vgchange -a y VolGroup00
+
+lvm vgchange -a y VolGroup00
 2 logical volume(s) in volume group "VolGroup00" now active
 ```
 
@@ -65,7 +71,7 @@ root@Knoppix:~# lvm vgchange -a y VolGroup00
 わかってないものの「こうちゃう？」のノリで、knoppix上で/bootにhdd1をmount。
 
 ```bash
-# grub-install --recheck /dev/hdd1
+grub-install --recheck /dev/hdd1
 ```
 
 再度行うと成功。
@@ -74,12 +80,12 @@ HDDを移行先一機だけにして、起動。やった！念願のFedora6起�
 
 ところが、Login後にGUIが立ち上がらない。
 
-/dev/VolGroup00/LogVol00 は、全てこぴーしたのだが、たしか参考にしたサイトに「seLinuxコピーすんな！」とあったと思うので、ここを疑ましょうか。
+/dev/VolGroup00/LogVol00 は、全てコピーしましたが、たしか参考にしたサイトに「seLinuxコピーすんな！」とあったと思うので、ここを疑ましょうか。
 
 シングルユーザモードで入り、seLinuxを無効に。
 
 ```bash
-# vi /etc/sysconfig/selinux
+vi /etc/sysconfig/selinux
 
 6 SELINUX=disabled
 ```

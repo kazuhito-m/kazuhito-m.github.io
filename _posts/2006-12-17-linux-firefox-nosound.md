@@ -1,5 +1,4 @@
 ---
-published: false
 layout: post
 title: Linuxのfirefox上のflashで音が出ない問題
 category: tech

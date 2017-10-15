@@ -1,5 +1,4 @@
 ---
-published: false
 layout: post
 title: landiskが起動しなくなった
 category: tech
