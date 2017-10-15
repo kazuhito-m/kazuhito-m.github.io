@@ -1,5 +1,4 @@
 ---
-published: false
 layout: post
 title: 起動時の問題(未解決)
 category: tech

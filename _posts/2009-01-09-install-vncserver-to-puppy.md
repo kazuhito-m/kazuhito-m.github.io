@@ -1,5 +1,4 @@
 ---
-published: false
 layout: post
 title: Puppy Linux にvncserverをインストールする
 category: tech
@@ -18,13 +17,13 @@ tags: [linux,puppy,vncserver,installt]
 
 ここを参考に、petをダウンロード。
 
-http://www.murga-linux.com/puppy/viewtopic.php?t=27424
+[http://www.murga-linux.com/puppy/viewtopic.php?t=27424](http://www.murga-linux.com/puppy/viewtopic.php?t=27424)
 
 1. UI使ってインストール
 0. 再起動
 0. メニュー→ネットワーク→x11vnc-server が現れるので、起動。
 0. "Ontime","Everytime"の選択肢が現れる。
-  + 単発の人は前者、俺みたいに常時起動したければ後者を選ぶ。
+  - 単発の人は前者、俺みたいに常時起動したければ後者を選ぶ。
 0. ログイン用のパスワードを入力。
 
 これだけでおしまい。あとは、好きなクライアントでアクセスすれば良いです。
@@ -34,4 +33,3 @@ http://www.murga-linux.com/puppy/viewtopic.php?t=27424
 もっと、茨の道を想像していただけに、簡単過ぎて拍子抜けという、うれしい誤算でした。
 
 最初にも書きましたが、Lan内で使うにも危なっかしいほどのセキュリティなので、もう少ししたらsshポートフォワードを検討しようと思います。
-

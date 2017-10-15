@@ -1,5 +1,4 @@
 ---
-published: false
 layout: post
 title: Wineの小さな設定
 category: tech
