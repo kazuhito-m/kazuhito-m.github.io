@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AndriodのUIテストが実行できるDockerイメージを作る
+title: AndroidのUIテストが実行できるDockerイメージを作る
 category: tech
 published: true
 tags: [android,build,ci,docker]
