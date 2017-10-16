@@ -14,7 +14,7 @@ tags: [android,build,ci,docker]
 
 # 経緯
 
-自分は「ポータビリティを持った”Android画面テスト環境”を作りたい」ということから、[AndroidSDKをセットアップするDockerfile](https://github.com/kazuhito-m/dockers/tree/master/android-emulator-headress) を作成しています。
+自分は「ポータビリティを持った”Android画面テスト環境”を作りたい」ということから、[AndroidSDKをセットアップするDockerfile](/tech/2017/10/17/make-android-ui-testing-dockerimage) を作成しています。
 
 その `docker build` が「2017年10月12日から失敗するように」なりました。
 
