@@ -3,7 +3,7 @@ layout: post
 title: 2017年10月中旬くらいからAndorid SDKのコンソールからのダウンロードが出来なくなる問題
 category: tech
 published: true
-tags: [android,build]
+tags: [android,build,ci,docker]
 ---
 
 時勢のものなんで、たぶん今月くらいしか役に立たない記事ですが、ハマったんで書いときます。
