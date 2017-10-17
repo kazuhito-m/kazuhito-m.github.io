@@ -2,7 +2,7 @@
 layout: post
 title: JenkinsとDockerで「SpringBootアプリがbranchにpushされるたびデプロイ」する
 category: tech
-published: true
+published: false
 tags: [jenkins]
 ---
 
