@@ -281,14 +281,14 @@ Googleかつ普及したプラットフォームであるので「定番なや�
 
 `Android SDK` の利用について、指摘を頂きました。
 
-<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">Android SDKの再配布にあたるのでライセンス云々という話は大丈夫になったのでしたっけ？</p>&mdash; Koji Hasegawa (@nowsprinting) <a href="https://twitter.com/nowsprinting/status/920059764259807232?ref_src=twsrc%5Etfw">2017年10月16日</a></blockquote>
+<blockquote class="twitter-tweet" data-conversation="none" data-lang="ja"><p lang="ja" dir="ltr">Android SDKの再配布にあたるのでライセンス云々という話は大丈夫になったのでしたっけ？</p>&mdash; Koji Hasegawa (@nowsprinting) <a href="https://twitter.com/nowsprinting/status/920059764259807232?ref_src=twsrc%5Etfw">2017年10月16日</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 もうひとつ解ってなかったのですが…「DockerHubにSDK入りのイメージ上げる」はダメなのですね。
 
 <http://gfx.hatenablog.com/entry/2016/06/21/112404>
 
-幸い、この `Dockerfile` は、「ローカルでビルドして使う」前提でしたし、DockerHubにビルド済みイメージはあげてないので問題は無いと思われます。
+幸いこの `Dockerfile` は、「ローカルでビルドして使う」前提でしたし、DockerHubにビルド済みイメージはあげてないので問題は無いと思われます。
 
 利用の際は「ローカル環境でのbuild & run」でいきましょう。
 
