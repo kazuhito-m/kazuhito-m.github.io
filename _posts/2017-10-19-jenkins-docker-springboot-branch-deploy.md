@@ -49,6 +49,7 @@ tags: [jenkins,cd,ci]
 1. Jenkins
 0. Docker
 0. Nginx
+0. git,java8
 
 のインストールを行います。
 
@@ -56,7 +57,7 @@ tags: [jenkins,cd,ci]
 
 ```bash
 # 必要なサービスと道具を一発インストール
-sudo yum install docker nginx java-1.8.0-openjdk-headless
+sudo yum install docker nginx java-1.8.0-openjdk-headless git
 # Jenkinsはリポジトリを足した後、インストール。
 sudo sh -c "curl http://pkg.jenkins-ci.org/redhat/jenkins.repo > /etc/yum.repos.d/jenkins.repo"
 sudo rpm --import http://pkg.jenkins-ci.org/redhat/jenkins-ci.org.key
