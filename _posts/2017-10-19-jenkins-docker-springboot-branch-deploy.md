@@ -25,7 +25,7 @@ tags: [jenkins,cd,ci]
 - サーバ一台に `Jenkins` と `Nginx` と `Docker` をサーバにインストールし、使う
 - `git` に `SpringBoot` 製のアプリがpushされるごとに、`Docker` 内にbranch別アプリが立ち上がる
 - branchが存在している限り、CIサーバにHTTP(80)でbranch別アプリにアクセス出来る
-  - `http://[CIサーバ]/[アプリのコンテキスト]/[branch名]`
+  - `http://[CIサーバIPorホスト名]/[アプリのコンテキスト]/[branch名]`
 
 雑い像はこんな感じです。
 
@@ -36,7 +36,7 @@ tags: [jenkins,cd,ci]
 - CIサーバの筐体(あるいは仮想環境)は「比較的新し目のLinux」であれば問わない
   - サンプルでは `Amazon Linux` で動かします
   - サーバへは80,8080ポートがアクセス可能であること
-- SpringBootアプリは「コントローラ一丁」程度のもの
+- SpringBootアプリは「コントローラひとつ」程度のもの
   - DB等「外部になにも依存しない」サンプルです
   - [SpringBoot:1.5.8](https://projects.spring.io/spring-boot/) を利用
 
@@ -114,8 +114,97 @@ sudo chmod +s /usr/sbin/nginx
 
 当該のgitリポジトリ直下に `Jenkinsfile` を作成します。
 
+実際には、[このリポジトリのJenkinsfile]()を持ってきて、一番上の `APP_NAME` を好きな名前に変えればOKです。
 
+中身を解説していきます。
 
+## Jenkinsfile による「ビルドとアプリ起動」
+
+```groovy
+stage('Jar Build') {
+ sh './gradlew build'
+}
+stage('Start Application in Docker container.') {
+ def branchName = getBranchName()
+ contextPath = '/' + APP_NAME + '/' + branchName
+ def localJarDir = '/var/tmp' + contextPath
+ containerName = APP_NAME + '_' + branchName
+ // 既存のコンテナがあれば削除
+ sh "docker rm -f ${containerName} || echo 'Container already exists. Delete container.'"
+ // あろうがなかろうが「Jarを置くディレクトリ」を再作成
+ sh "rm -rf ${localJarDir} && mkdir -p ${localJarDir}"
+ // 予め作っておいたJarを移動
+ sh "mv ./build/libs/*.jar ${localJarDir}/app.jar"
+
+ // dockerコンテナを生成して、SpringBootアプリを起動。
+ // その際、コンテキストパスを /[任意の名前]/[branch名] に変更
+ def cmd = "docker run -d --rm --name ${containerName} -v ${localJarDir}:/usr/src/myapp -w /usr/src/myapp ${JDK_DOCKER_IMAGE_NAME} java -jar ./app.jar --server.contextPath=${contextPath}"
+ sh cmd
+}
+```
+
+ほぼコメントが語っていますが…
+
+1. SpringBootのアプリを `executable jar` としてビルド
+0. そのjarを `/var/tmp/[アプリの名前]/[branch名]` なディレクトリに移動
+0. 上記のディレクトリをマウントした `docker container` を起動し、`java` コマンドでjarを起動
+
+しています。
+
+この時点では、CIサーバ内で
+
+__http://172.17.0.x:8080/[アプリの名前]/[branch名]/__
+
+で内部でしかアクセス出来ないカタチ(172.17.0.x は「DockerコンテナのIP体系」)で立ち上がっています。
+
+## Jenkinsfile による「アプリの外部公開」
+
+```groovy
+stage('Publish Application per branch by WebServer.') {
+  // Dockerのコンテナ名から「内部のIPアドレス」を割り出し。
+  def containerIp = getIpAddressByContainerName(containerName)
+  // Nginxの設定ファイルとして「内部のコンテナを末尾ポートを削除した状態」で外へ公開する。
+  sh "echo 'location ${contextPath} { proxy_pass http://${containerIp}:8080${contextPath}; }' > /etc/nginx/default.d/${containerName}.conf"
+  // Nginxの管理コマンドを叩いて「設定ファイルの読みなおし」をさせる。
+  sh 'nginx -s reload'
+}
+```
+
+これまたコメントがほぼ解説ですが、
+
+1. コンテナ名(起動時に割り振ってる)から内部のIP(172.17.0.x)割り出し
+0. Nginxの設定ファイルを動的に書き出し
+0. Nginxの「設定ファイル反映」をコマンド実行
+
+しています。
+
+「Nginxの設定ファイル」を、echoにより一行で吐いてるため、わかりにくいですが…
+
+`/etc/nginx/default.d/[アプリ名]_[branch名].conf` というファイルを
+
+```bash
+location /[アプリ名]/[branch名] {
+  proxy_pass http://172.17.0.x:8080/[アプリの名前]/[branch名]/;
+}
+```
+
+という内容で吐いています。
+
+コレにより、
+
+```
+http://172.17.0.x:8080/[アプリの名前]/[branch名]/ (内部のみ参照出来るアドレス)
+↓
+http://[CIサーバIPorホスト名]/[アプリの名前]/[branch名] (CIサーバ自体のアドレス)
+```
+
+という外部公開をしています。
+
+## Jenkinsに「Multi branch pipelineジョブの登録」をする
+
+## 別branchを作って「デプロイされるか」を確認する
+
+## 無くなったbranchへの追随(デプロイしたアプリの終了)
 
 # 制約・課題
 
@@ -128,9 +217,12 @@ sudo chmod +s /usr/sbin/nginx
 ## 課題
 
 - 「Dockerでアプリが正しく起動できたか」は見ていない、非同期で完了してしまう
-- 
-
-
+- デプロイ後、ユーザに「このアドレスですよ」を知らせていない
+  - ここはSlackに出力すればすぐ出来る
+- logなどの考慮がない
+  - せめて「Hostの/var/logにブランチ名で出す」などしたい
+  - CIサーバにFuluentdなど入れて収集できればgood
+  - 外側から観られるようになればなおgood
 
 ---
 
