@@ -17,19 +17,19 @@ tags: [jenkins,cd,ci]
   - もちろんEC2等でも出来る
   - 一人で出来る
 
-# かんたんなコンセプト/設計
+# かんたんなコンセプト構想&設計
 
 以下の感じでやりたいと思います。
 
 - SpringBootアプリ(のgitリポジトリ):CIサーバ を 1:1 と考える
-- サーバ一台に `Jenkins` と `Nginx` と `Docker` をサーバにインストールし、使う
+- サーバ一台に `Jenkins` と `Nginx` と `Docker` をインストールし、使う
 - `git` に `SpringBoot` 製のアプリがpushされるごとに、`Docker` 内にbranch別アプリが立ち上がる
 - branchが存在している限り、CIサーバにHTTP(80)でbranch別アプリにアクセス出来る
   - `http://[CIサーバIPorホスト名]/[アプリのコンテキスト]/[branch名]`
 
 雑い像はこんな感じです。
 
-![全体象](/images/2017-10-18-overview.png)
+![全体象](/images/2017-10-19-overview.png)
 
 ## 他の前提
 
@@ -49,7 +49,7 @@ tags: [jenkins,cd,ci]
 1. Jenkins
 0. Docker
 0. Nginx
-0. git,java8
+0. その他ツール(git,java8)
 
 のインストールを行います。
 
@@ -110,6 +110,10 @@ sudo chmod +s /usr/sbin/nginx
 
 今回の記事中では[こちら](https://github.com/kazuhito-m/continuous-deploy-par-branch-the-springboot-app)のリポジトリを対象にします。
 
+ローカルで `./gradlew bootRun` すると、こんな画面が出るアプリです。
+
+![サンプルアプリの画面](/images/2017-10-19-sampleapp.png)
+
 ## gitリポジトリに"Jenkinsfile"を作成
 
 当該のgitリポジトリ直下に `Jenkinsfile` を作成します。
@@ -151,11 +155,14 @@ stage('Start Application in Docker container.') {
 
 しています。
 
+起動時に引数で「内部のコンテキストパスを変更している」のは、[以前の記事](/tech/2017/04/25/jenkins-url-path-shifted)でも触れたように「CSSなどファイル参照やリンクがおかしくなる」防止です。
+
 この時点では、CIサーバ内で
 
 __http://172.17.0.x:8080/[アプリの名前]/[branch名]/__
 
 で内部でしかアクセス出来ないカタチ(172.17.0.x は「DockerコンテナのIP体系」)で立ち上がっています。
+
 
 ## Jenkinsfile による「アプリの外部公開」
 
@@ -200,11 +207,77 @@ http://[CIサーバIPorホスト名]/[アプリの名前]/[branch名] (CIサー�
 
 という外部公開をしています。
 
-## Jenkinsに「Multi branch pipelineジョブの登録」をする
+---
+
+という `Jenkinsfile` をリポジトリ直下に配置したら、commit&push をしておきます。
+
+## Jenkinsに「Multibranch Pipelineジョブの登録」をする
+
+CIサーバに戻り、JenkinsにSpringBootアプリのgitリポジトリがpushされるごとに動く「Multibranch Pipeline」のジョブを作成します。
+
+![作成画面](/images/2017-10-19-create-job.png)
+
+1. Jenkinsの「新規ジョブ作成」をクリック、ジョブ名を入力し「Multibranch Pipeline」を選択し「OK」クリック
+0. できたジョブに「Branch Sources」から「Add source -> Git」を選び、gitリポジトリのURL入力
+  ![git指定](/images/2017-10-19-git-settings.png) ※privateなリポジトリなら、「認証情報」をセットしてください
+0. 「Build Configuration」は「Mode:by Jenkinsfile」「Script Path:Jenkinsfile」のまま
+0. 「Scan Multibranch Pipeline Triggers」から「他のビルドが起動してなければ定期的に起動」をチェック
+0. 「間隔」に「gitをポーリングしたい時間」を指定(自分は何も考えないで1 minuteとしてるが…)
+0. 「保存」ボタンをクリック
+
+保存した直後に `scan` が始まり、 `master` branchの `Jenkinsfile` を検出、その定義通りのパイプラインが実行されます。
+
+![Multibranch pipeline全景](/images/2017-10-19-master-branch-search.png)
+![Stage View 全景](/images/2017-10-19-pipeline-overview.png)
+
+パイプライン(`Jenkinsfile` の内容)が、全て成功していれば、
+
+__http://[CIサーバIPorホスト名]/[アプリの名前]/[branch名]__
+
+で「 `master` branchをjarビルド/デプロイしたアプリ画面」が閲覧できるはずです。
+
+![デプロイされたアプリの画面(master branch)](/images/2017-10-19-success-deploy-master.png)
+
 
 ## 別branchを作って「デプロイされるか」を確認する
 
+別branchを作り、少し変更しcommit&pushしてみます。
+
+![差分とbranch名](/images/2017-10-19-push-anther-branch.png)
+
+すると、先ほど作成したジョブに検知されて、ビルド/デプロイが走ります。
+
+![違うbranchに呼応して実行された](/images/2017-10-19-build-another-branch.png)
+
+今回、branch名を `another-branch-for-cd-test` としてpush、HTMLの一部を変更しているので、branch名をコンテキストパスに含むURLでアクセスすると…
+
+![違うbranchのビルド/デプロイされたアプリ](/images/2017-10-19-another-branch-app.png)
+
+期待通り「別branchのアプリがデプロイされた」のが見れますね。
+
 ## 無くなったbranchへの追随(デプロイしたアプリの終了)
+
+これでbranchごとにpushタイミングでデプロイされるようになりましたが、branchが削除されてもDockerコンテナは削除されません。
+
+このままではDockerコンテナが無尽蔵に生成され、CIサーバがパンクするでしょう。
+
+そこで「削除されたbranchと対応するコンテナ(と設定ファイル)は削除する」ようにします。
+
+「現在、アクティブなリモートbranch」を割り出し、それと __対を成さない__
+
+- Dockerコンテナ
+- ワークディレクトリ(jarを置いてあるところ)
+- Nginxの設定ファイル
+
+を、削除するような `Jenkinsfile` を作成し、任意のタイミングで実行させます。
+
+ここでは [Jenkinsfile_maintenance](https://github.com/kazuhito-m/continuous-deploy-par-branch-the-springboot-app/blob/master/Jenkinsfile_maintenance) と名付け、リポジトリの直下に置きました。
+
+これを `パイプライン` のジョブに登録し、一日一回くらい回しておけば、パンクすることは無いでしょう。
+
+![タイミングの指定](/images/2017-10-19-delete-container-scheule.png)
+![リポジトリとJenkinsfileの指定](/images/2017-10-19-delete-container-set-jenkinsfile.png)
+
 
 # 制約・課題
 
@@ -212,22 +285,23 @@ http://[CIサーバIPorホスト名]/[アプリの名前]/[branch名] (CIサー�
 
 ## 制約
 
-- gitのbranch名は「URLに使えるもの」のみ(`/`はOK)で運用する必要あり
+- gitのbranch名は「URLのPathに使えるもの」のみで運用する必要あり
+  - `/` はダメ、英数と `_` `-` はOK
 
 ## 課題
 
+- gitの変更検知はポーリングを選んだが、Webhookに変更するのが望ましい
 - 「Dockerでアプリが正しく起動できたか」は見ていない、非同期で完了してしまう
 - デプロイ後、ユーザに「このアドレスですよ」を知らせていない
-  - ここはSlackに出力すればすぐ出来る
+  - ここをSlack通知するのは比較的簡単
 - logなどの考慮がない
-  - せめて「Hostの/var/logにブランチ名で出す」などしたい
+  - せめて「Hostの/var/logにbranch名を含むファイル名で出す」などしたい
   - CIサーバにFuluentdなど入れて収集できればgood
   - 外側から観られるようになればなおgood
 
 ---
 
-
-# 運用時
+# 運用をしていく上で
 
 「アプリが単一でメチャクチャ軽い」「CIサーバの資源がある程度ある」というように、いろいろと極端な例のサンプルになっていますが、実際運用するときには、
 
@@ -249,3 +323,9 @@ __「自身プロジェクト用の"CD専用のサーバ"とする(CI等とは�
 という位置づけで”別立て"しといたら良いかな？と考えます。
 
 # 所感
+
+恐らく(詳しくは調べていなけれど)「金の実弾をマシンガンすれば出来る」系のはなしだとは思います。
+
+でも、仕事であれば「稟議が…」等で「継続的デプロイが遠いもの」になってしまうことがしばしばかと。
+
+そうなるくらいなら「近所に落ちてるPCで」「なんなら自分のマシンで」気軽に出来たら…と思い書いてみました。
