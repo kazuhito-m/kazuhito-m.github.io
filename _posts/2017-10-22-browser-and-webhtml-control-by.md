@@ -1,4 +1,10 @@
-# ブラウザ操作(スクレイピング)ライブラリを組み合わせて操作を実現する
+---
+layout: post
+title: ブラウザ操作(スクレイピング)ライブラリを組み合わせて操作を実現する
+category: tech
+published: false
+tags: [web,scraping,jsorp,selenium,sikuri]
+---
 
 ハラたったんで、感情に任せて作ってみました。
 
