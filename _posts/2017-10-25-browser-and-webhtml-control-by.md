@@ -3,12 +3,19 @@ layout: post
 title: ブラウザ操作(スクレイピング)ライブラリを組み合わせて操作を実現する
 category: tech
 published: false
-tags: [web,scraping,jsorp,selenium,sikuri]
+tags: [web,scraping,jsoup,selenium,sikuri]
 ---
 
 ハラたったんで、感情に任せて作ってみました。
 
 __※ちょっとした悪用できそうなので、そんなんしないでくださいね__
+
+# これを読んで得られるもの
+
+- Javaでのスクレイピングやブラウザ操作のサンプル
+- Googleへのサイト登録方法
+  - やり方だけ、自動化は不完全
+- `jsoup` , `selenium` , `sikuri` の使いドコロとサワリ程度
 
 # 経緯
 
@@ -34,22 +41,28 @@ __※ちょっとした悪用できそうなので、そんなんしないでく
 
 をしたい(する必要がある)のですが、それを
 
-1. jsorp:スクレイピングライブラリ
-0. Selenium:ブラウザコントロールライブラリ
-0. Sikuri:画像認識＆画面操作ライブラリ
+1. jsoup:スクレイピングライブラリ
+0. selenium:ブラウザコントロールライブラリ
+0. sikuli:画像認識＆画面操作ライブラリ
 
 と、リレーして実現します。
 
+実現のために `SpringBoot` の `Batch` を使ってますが、やってみたかっただけなので主題と関係ありません。
 
 
-
-
-
-
-
+## 致命的な問題(できませんでした報告)
 
 # 参考
 
 以下のURLを参考にさせていただきました。感謝。
 
 - <http://kagamihoge.hatenablog.com/entry/2015/02/14/144238>
+- <https://stackoverflow.com/questions/45643956/illegalaccesserror-thrown-by-new-chromedriver-on-osx-java>
+  - ChromeDriverの動かす方法(Exception回避)
+- <http://doc.sikuli.org/faq/030-java-dev.html>
+- <https://github.com/sikuli/sikuli-api/blob/master/examples/src/main/java/org/sikuli/api/examples/basic/FindExample.java>
+
+## 今回の本質的じゃない話題
+
+- Jar内のファイル取出:<https://qiita.com/kikuchy/items/e63c670bc37705b6dd5d>
+- Javaから権限変更:<http://pilvoj.hatenablog.com/entry/2013/04/09/222849>
