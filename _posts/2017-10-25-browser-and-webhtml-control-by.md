@@ -72,10 +72,39 @@ __※ちょっとした悪用できそうなので、そんなんしないでく
 
 これにより「俺のマシンでしか動かないプログラム」になっちゃいました。
 
+## seleniumとUbuntuの組み合わせで標準(firefox)が動かない
+
+`build.gradle` で
+
+```
+compile('org.seleniumhq.selenium:selenium-java:3.6.0')
+```
+
+とだけ設定しただけでは、標準であるFirefoxは動きませんでした。
+(Ubuntu 16.10 と Firefox 54.0(64 ビット) にて)
+
+「Firefox自体は立ち上がるが、動作しない」というような状態。(以前ためした大分前(FirefoxのVersionが)からこの状態だった気がします)
+
+なので、 `Chrome` 指定で動かしていますが、`ChromeDriver` は「ドライバを別途用意」「OSごとに用意」なので、全部入れて「環境ごとに変える」ソースを書くはめに…。
+
 ## sikuliの build.gradle に「特殊な依存の指定」が必要に
 
+`build.gradle` で
+
 ```build.gradle
+compile('org.sikuli:sikuli-api:1.2.0')
+compile 'org.bytedeco.javacpp-presets:opencv:2.4.9-0.9:linux-x86_64'
 ```
+
+となっているところは「動かなかったので指定したもの」です。
+
+まず、 `sikuli-api` は、`opencv` が必要なのですが、依存解決はしてくれません。
+
+そして、 `sikuli-api` が「2014年からメンテされてない」ので、それに合わせて `opencv` もその時点最新に合わせました。
+
+その上、「アーキテクチャ毎のバージョン」を指定する必要があり…またも「俺のマシンでしか動かないプログラム」になってしまいました。
+
+
 
 # 所感
 
