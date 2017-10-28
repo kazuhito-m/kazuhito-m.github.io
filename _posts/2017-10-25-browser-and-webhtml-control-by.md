@@ -61,18 +61,6 @@ __※ちょっとした悪用できそうなので、そんなんしないでく
 
 # その他のハマり点
 
-## sikuliで謎の「x軸3600ズレ」
-
-コード上、Sikuli部分である [AvoidRoughlyClicker.java](https://github.com/kazuhito-m/scraping-samples/blob/master/google-page-register/src/main/java/com/github/kazuhito_m/googlepageregister/webbrothercontrol/imagerecognition/AvoidRoughlyClicker.java#L29) の
-
-```
-location.setX(location.getX() + 3600);  // 謎の補正。3600ズレル。
-```
-
-と成ってる部分は「自身のデスクトップ環境ではそれだけずれる」という指定でして。
-
-これにより「俺のマシンでしか動かないプログラム」になっちゃいました。
-
 ## seleniumとUbuntuの組み合わせで標準(firefox)が動かない
 
 `build.gradle` で
@@ -87,6 +75,18 @@ compile('org.seleniumhq.selenium:selenium-java:3.6.0')
 「Firefox自体は立ち上がるが、動作しない」というような状態。(以前ためした大分前(FirefoxのVersionが)からこの状態だった気がします)
 
 なので、 `Chrome` 指定で動かしていますが、`ChromeDriver` は「ドライバを別途用意」「OSごとに用意」なので、全部入れて「環境ごとに変える」ソースを書くはめに…。
+
+## sikuliで謎の「x軸3600ズレ」
+
+コード上、Sikuli部分である [AvoidRoughlyClicker.java](https://github.com/kazuhito-m/scraping-samples/blob/master/google-page-register/src/main/java/com/github/kazuhito_m/googlepageregister/webbrothercontrol/imagerecognition/AvoidRoughlyClicker.java#L29) の
+
+```
+location.setX(location.getX() + 3600);  // 謎の補正。3600ズレル。
+```
+
+と成ってる部分は「自身のデスクトップ環境ではそれだけずれる」という指定でして。
+
+これにより「俺のマシンでしか動かないプログラム」になっちゃいました。
 
 ## sikuliの build.gradle に「特殊な依存の指定」が必要に
 
