@@ -63,9 +63,10 @@ __※ちょっとした悪用できそうなので、そんなんしないでく
 
 ## sikuliで謎の「x軸3600ズレ」
 
-コード上
+コード上、Sikuli部分である [AvoidRoughlyClicker.java](https://github.com/kazuhito-m/scraping-samples/blob/master/google-page-register/src/main/java/com/github/kazuhito_m/googlepageregister/webbrothercontrol/imagerecognition/AvoidRoughlyClicker.java#L29) の
 
 ```
+location.setX(location.getX() + 3600);  // 謎の補正。3600ズレル。
 ```
 
 と成ってる部分は「自身のデスクトップ環境ではそれだけずれる」という指定でして。
