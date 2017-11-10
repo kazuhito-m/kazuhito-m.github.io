@@ -30,6 +30,8 @@
   - プレースホルダの話
 - <https://github.com/muumin/spring-boot-batch-sample>
   - サンプル、`-job` の指定や、 `-restert` 、普通のパラメータの指定等
+- <https://qiita.com/kazuki43zoo/items/0ce92fce6d6f3b7bf8eb>
+  - 引数から「使うapplication.propertiesを指定する」という箇所にも使える話
 
 ## StepScopeの話
 
@@ -62,9 +64,28 @@
 
 - <https://docs.spring.io/spring-boot/docs/current/reference/html/build-tool-plugins-gradle-plugin.html>
 
+## スケジュール実行の話
+
+- <http://blog.enjoyxstudy.com/entry/2017/02/19/000000>
+- <http://office-yone.com/blog/spring-boot-5-batch/>
+  - ただこれはCommandLineRunnerの話
+
 ## テスト周りの話
 
 - <https://stackoverflow.com/questions/24074749/spring-boot-cannot-determine-embedded-database-driver-class-for-database-type>
+- <https://qiita.com/tfunato/items/346e3e898a85d834ee99>
+
+## 管理テーブルを無効化する
+
+- <https://qiita.com/sengoku/items/801c7b44cb38a635060e>
+- <https://qiita.com/blackawa/items/e9eaa254cbe27e257e10>
+- <https://blog.ik.am/entries/409>
+
+## Flayway導入
+
+基本「導入すると勝手に動く」ので、dependency仕込むだけで良さそう。
+
+- <https://qiita.com/peg_73_/items/347a446ad183dda36da3>
 
 ---
 
@@ -81,3 +102,7 @@
 ## ライブラリの更新の自動通知
 
 - <http://y-yagi.tumblr.com/post/146826188425/android使用しているライブラリの更新の通知を自動で行う>
+
+## GradleでMavenのBOM(部品表)みたいなものを使う方法
+
+- <http://create-something.hatenadiary.jp/entry/2015/05/08/063000>
