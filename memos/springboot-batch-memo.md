@@ -89,11 +89,12 @@
 
 ---
 
-# 別の話
 
 ## Springの `@Scoope` の話
 
 - <http://javatechnology.net/spring/spring-singleton-scope/>
+
+# 別の話
 
 ## 固定長ファイル処理 `uniVocity-parsers` の紹介
 
@@ -106,3 +107,8 @@
 ## GradleでMavenのBOM(部品表)みたいなものを使う方法
 
 - <http://create-something.hatenadiary.jp/entry/2015/05/08/063000>
+
+
+## nio の「一般的な操作」まとめ
+
+- <https://qiita.com/toastkidjp/items/5500521ff5dc0346c2b1>
