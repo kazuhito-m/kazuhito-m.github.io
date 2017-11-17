@@ -81,11 +81,35 @@
 - <https://qiita.com/blackawa/items/e9eaa254cbe27e257e10>
 - <https://blog.ik.am/entries/409>
 
+### 管理テーブルの「スキーマを変える」にはどうすれば良いか
+
+結論的には「変えることはできない」「接続先の指定で変えるくらい」ということが解った。
+
+### 試したこと
+
+- application.properties の spring.datasource.url の末尾に ?currentSchema=[スキーマ] 付ける
+  - 唯一変更できるが、「マイグレーション前にCREATEする」ので、間に合わない
+    - これは「テスト起動時」において
+  - 「環境側に予め作る」などすればできるが、それではマイグレーションに一本化出来ない
+    - 本運用でやるときにはマイグレーションを先にやるだろうから良いのだが
+- application.properties の spring.datasource.schema を指定
+  - 変わらず、publicに作ってしまう
+- BatchConfiguration弄る
+  - まだやってないが、 今の WithoutBatchManagementTableConfigurer.java より複雑性を持ち込みそう
+
 ## Flayway導入
 
 基本「導入すると勝手に動く」ので、dependency仕込むだけで良さそう。
 
 - <https://qiita.com/peg_73_/items/347a446ad183dda36da3>
+
+## Batchの application.properties のパラメータ全量
+
+- <https://github.com/pkainulainen/spring-batch-examples/blob/master/spring-boot/src/main/resources/application.properties>
+- <https://github.com/spring-projects/spring-batch/tree/master/spring-batch-core/src/main/resources/org/springframework/batch/core/configuration/xml>
+
+## SpringとMyBatisで「複数接続」
+
 
 ---
 
