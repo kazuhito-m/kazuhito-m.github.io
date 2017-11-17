@@ -97,6 +97,13 @@
 - BatchConfiguration弄る
   - まだやってないが、 今の WithoutBatchManagementTableConfigurer.java より複雑性を持ち込みそう
 
+---
+
+- <https://stackoverflow.com/questions/30994838/spring-batch-metadata-tables-in-different-schema>
+  - これが一番わかり易かった…けど「これしかないんだな」と
+- <https://stackoverflow.com/questions/35082968/spring-boot-spring-datasource-schema-vs-spring-jpa-properties-hibernate-default>
+  - `spring.datasource.schema` は、管理テーブルにのスキーマには影響を及ぼさないようです
+
 ## Flayway導入
 
 基本「導入すると勝手に動く」ので、dependency仕込むだけで良さそう。
