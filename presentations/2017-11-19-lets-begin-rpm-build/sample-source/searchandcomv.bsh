@@ -1,0 +1,13 @@
+#!/bin/bash
+
+src=${1}
+dest=${2}
+place=${3}
+
+regex="s/${src}/${dest}/g"
+
+for i in $(grep -lR "${src}" ${place});
+do
+ 	sed -e "${regex}" $i > $i.tmp
+	mv $i.tmp $i
+done
