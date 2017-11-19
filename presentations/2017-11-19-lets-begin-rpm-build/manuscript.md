@@ -22,8 +22,8 @@ Linux Kernelじゃなかった。
 ## RPMとは何か
 
 - `パッケージ管理システム` ならびに `ファイル形式`
+  - コマンド名 `rpm` でもある
   - 拡張子でもある
-
 - `RPM Package Manager` と再帰的な名前になってる。
   - もともとは `Red Hat Package Manager`
 
@@ -79,7 +79,7 @@ Linux Kernelじゃなかった。
 ご家庭にございますお手元のDockerから
 
 ```bash
-docker run -i -t centos -v '[ホストの放り込みたいとこ]:/tmp/work'  /bin/bash
+docker run -i -v ${PWD}/[お好みで]:/var/tmp/work -t centos /bin/bash
 ```
 
 立ち上がったら
@@ -90,6 +90,49 @@ rpmdev-setuptree
 ```
 
 ※お好みでsudoなど
-----
+---
 
-# 参考
+## 必要なフォルダ作成
+
+```bash
+mkdir -p build/{SOURCES,SPECS}
+```
+
+`build/SOURCES` に
+
+- インストールしたいものを tar で固めたもの
+- `*.spec` ファイル
+
+を配置します。
+
+---
+
+## SPECファイル(.spec)について
+
+もう[ここ](https://vinelinux.org/docs/vine6/making-rpm/make-spec.html)に頼りきり…。
+
+---
+
+## ビルド
+
+```bash
+rpmbuild -bb SPECS/searchandconv.spec
+```
+
+---
+
+## インストール
+
+```bash
+rpm -ivh RPMS/noarch/searchandconv-1.0-1.noarch.rpm
+```
+
+---
+
+# …がっ！
+
+ビルドエラーで時間切れ！
+
+教訓: コピペもいいけど…意味はわかろうね！
+
+…今日中になんとかしよう…。
