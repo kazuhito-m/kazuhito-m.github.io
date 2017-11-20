@@ -6,7 +6,7 @@ category: tech
 tags: [postgres,postgis,docker]
 ---
 
-PostgreSQLのDBは豊富な [`EXTENSION` があって良い](https://www.postgresql.jp/document/9.6//html/sql-createextension.html)…のですが、これを「フリーズドライ」するのをいつも悩むのです。
+PostgreSQLのDBは[豊富な `EXTENSION` があって良い](https://www.postgresql.jp/document/9.6//html/sql-createextension.html)…のですが、これを「フリーズドライ」するのをいつも悩むのです。
 
 # これを読んで得られるもの
 
