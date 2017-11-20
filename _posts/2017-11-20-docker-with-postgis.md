@@ -35,7 +35,7 @@ PostgreSQLのDBは豊富な `EXTENSION` があって良い…のですが、こ�
 
 ## PostGISをインストールした状態を再現したDockerfile作成
 
-「そのものズバリなイメージ」が無く、本家ではない野良の「PostGISをインストールしたImage」は見つかったので、FROMにそれを使い、以下のカタチにアレンジしました。
+「そのものズバリなイメージ」が無く、本家ではない「PostGISをインストールしたImage」は見つかったので、FROMにそれを使い、以下のカタチにアレンジしました。
 
 ```Dockerfile
 FROM mdillon/postgis:9.6
