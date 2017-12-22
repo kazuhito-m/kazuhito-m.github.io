@@ -52,6 +52,9 @@ tomcat.getServer().await();
 tomcat.getHost().setAppBase("./");
 ```
 
+参考 : <http://tomcat.10.x6.nabble.com/Embedded-Tomcat-does-not-automatically-create-quot-webapps-quot-folder-td5051412.html>
+
+
 ## Tomcat8からデフォルトエンコーディングが 'UTF-8' になる
 
 逆に、Tomcat７以下であれば「UTF-8にならない」ので、多くの場合7以下でこの指定をすることとなる。
