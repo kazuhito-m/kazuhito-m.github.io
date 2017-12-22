@@ -33,6 +33,32 @@ SpringBootの起動可能jar - SpringBootの起動機能の無いwar = 起動機
 - TomcatEmbeded実行実装例
   - <https://gist.github.com/AlBaker/2772611>
 
+## Tomcat8(7後半)になると同じことをしても動かない件
+
+Tomcat7.0.47以降からは、以下のような「単純な実装」なら、ディレクトリが作れなかったり、Warが展開できなかったりして、正常な起動をしない。
+
+
+```Java
+Tomcat tomcat = new Tomcat();
+tomcat.addWebapp(parameters.contextRoot(), thisWarPath.toString());
+tomcat.setPort(parameters.port());
+tomcat.start();
+tomcat.getServer().await();
+```
+
+上記のバージョンから「appBaseが必須となる(実サーバであればserver.xmlで)」のためで、start()前に以下の対策が要る。
+
+```Java
+tomcat.getHost().setAppBase("./");
+```
+
+## Tomcat8からデフォルトエンコーディングが 'UTF-8' になる
+
+逆に、Tomcat７以下であれば「UTF-8にならない」ので、多くの場合7以下でこの指定をすることとなる。
+
+```Java
+tomcat.getConnector().setURIEncoding("UTF-8");  // Tomcat8のデフォルトと合わせる
+```
 
 ## 関係ないが細かい技術
 
