@@ -11,6 +11,8 @@
 
 ## チェック項目
 
+- [ ] 使ってないクラス/メソッドが無い
+  - ただし `hashcode()` は除く
 - [ ] 自身オブジェクトのフィールドCollectionを外に出すときには必ず `unmodifiable` に
   - `ArrayList$SubList()` は注意
 - [ ] 再代入はしない

@@ -38,4 +38,3 @@ BotKit弄うなら、node.js なので…。
 
 - node-plantuml
   - https://www.npmjs.com/package/node-plantuml
--
