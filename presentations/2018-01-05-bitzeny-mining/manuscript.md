@@ -4,13 +4,19 @@
 
 ## 今回は…
 
-----
+---
 
 こんな感じ
 
-![OrangePIタワー](https://pbs.twimg.com/media/DSRznOkUQAAxX7j.jpg)
+![OrangePIタワー](image/tower.jpg)
 
-に「廉価PCでのクラスタ」を組んで成果報告するつもりでしたが…。
+に「廉価PCクラスタ」を組むつもりでしたが…。
+
+---
+
+## さーっぱりできなかった
+
+ので、別のテーマとします。
 
 
 ----
