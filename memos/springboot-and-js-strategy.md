@@ -4,7 +4,8 @@
 
 - Spring MVC(+Spring Boot)上での静的リソースへのアクセスを理解する
   - <https://qiita.com/kazuki43zoo/items/e12a72d4ac4de418ee37>
-
+- Spring BootでCSSやJSなどの静的コンテンツを配置する方法
+  - <http://www.saka-en.com/java/spring-boot-static-contents/>
 
 ## GradleでJSまでビルドしてしまう仕組みづくり
 
