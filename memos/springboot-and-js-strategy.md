@@ -27,3 +27,8 @@
   - <https://qiita.com/euledge/items/7ae16dbe3cf823328de0>
 - spring-vue-sample
   - <https://github.com/tokuhirom/spring-vue-sample>
+
+## 番外 : webpack-mix(Larabel付属)について
+
+- Laravel Mixでwebpackをもっと簡単に使う方法
+  - <https://www.webprofessional.jp/use-laravel-mix-non-laravel-projects/>
