@@ -25,3 +25,34 @@ DBは「レプリカ一台」APPのインスタンスは2台、ALBでロード�
 
 - コツ
   - <https://moomindani.wordpress.com/2014/12/15/monitoring-rds-postgresql/>
+
+# セキュリティ
+
+## WAF
+
+- WAF自体の入門
+  - <https://dev.classmethod.jp/security/getting-started-waf/>
+- AWS WAFを使ってみよう
+  - <https://qiita.com/yamakozawa-mediba/items/047065c8adca4674e625>
+  - CloudFrontかALBにつけられるらしい
+- 気付かぬうちに成長してるかわいい子？ AWS WAFの知られざる実力
+  - <http://ascii.jp/elem/000/001/567/1567420/>
+- AWS Black Belt Online Seminar 2017 AWS WAF
+  - <https://www.slideshare.net/AmazonWebServicesJapan/20171122-aws-blackbeltawswafowasptop10>
+
+## IAM
+
+ほんとうは、AIMはセキュリティの範疇では無いかも知れないけれど
+
+- IAMによるAWS権限管理運用ベストプラクティス
+  - <https://dev.classmethod.jp/cloud/aws/iam-bestpractice-1/>
+
+
+
+# Applicationとデプロイ
+
+## SpringBootとEC2
+
+- EC2上にSpringBootアプリをデプロイ
+  - <https://www.magata.net/memo/index.php?AWS%20EC2%BE%E5%A4%C7%20Spring%20Boot%A5%A2%A5%D7%A5%EA%B5%AF%C6%B0>
+  - 環境変数で制御するみたい
