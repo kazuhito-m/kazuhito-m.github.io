@@ -47,6 +47,10 @@ DBは「レプリカ一台」APPのインスタンスは2台、ALBでロード�
 - IAMによるAWS権限管理運用ベストプラクティス
   - <https://dev.classmethod.jp/cloud/aws/iam-bestpractice-1/>
 
+## IDS
+
+- Amazon EC2でIDS(侵入検知システム)を導入する – AIDE –
+  - <https://dev.classmethod.jp/cloud/amazon-ec2-ids-aide/>
 
 
 # Applicationとデプロイ
@@ -56,3 +60,12 @@ DBは「レプリカ一台」APPのインスタンスは2台、ALBでロード�
 - EC2上にSpringBootアプリをデプロイ
   - <https://www.magata.net/memo/index.php?AWS%20EC2%BE%E5%A4%C7%20Spring%20Boot%A5%A2%A5%D7%A5%EA%B5%AF%C6%B0>
   - 環境変数で制御するみたい
+
+# 機能別
+
+## スケジュール実行
+
+- AWS Lambda の Scheduled Event を試してみた #reinvent
+  - <https://dev.classmethod.jp/cloud/aws/lambda-scheduled-event/>
+- スケジュールされたイベントでの AWS Lambda の使用
+  - <https://docs.aws.amazon.com/ja_jp/lambda/latest/dg/with-scheduled-events.html>
