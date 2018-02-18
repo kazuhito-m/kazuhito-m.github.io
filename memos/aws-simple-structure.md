@@ -69,3 +69,8 @@ DBは「レプリカ一台」APPのインスタンスは2台、ALBでロード�
   - <https://dev.classmethod.jp/cloud/aws/lambda-scheduled-event/>
 - スケジュールされたイベントでの AWS Lambda の使用
   - <https://docs.aws.amazon.com/ja_jp/lambda/latest/dg/with-scheduled-events.html>
+
+# 構築例
+
+- 見積もりとほぼ同構成
+  - <https://qiita.com/kite_999/items/6607d684412b14690901>
