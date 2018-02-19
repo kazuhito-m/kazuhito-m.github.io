@@ -61,6 +61,27 @@ DBは「レプリカ一台」APPのインスタンスは2台、ALBでロード�
   - <https://www.magata.net/memo/index.php?AWS%20EC2%BE%E5%A4%C7%20Spring%20Boot%A5%A2%A5%D7%A5%EA%B5%AF%C6%B0>
   - 環境変数で制御するみたい
 
+# 個々のプロダクトの知見
+
+## ALB
+
+- 豆知識
+  - <http://blog.serverworks.co.jp/tech/2017/02/08/alb-tagert-health-status/>
+- 入門
+  - <https://jyo-to.okinawa/20170611/1275/>
+
+## s3
+
+- VPCひも付け
+  - <https://jyo-to.okinawa/20170611/1264/>
+
+## 番外:ACM(証明書発行)
+
+基本、今回の状況では使えない
+
+- 簡単だよ、という話
+  - <https://www.slideshare.net/IkunaWada/acmssl>
+
 # 機能別
 
 ## スケジュール実行
@@ -74,3 +95,9 @@ DBは「レプリカ一台」APPのインスタンスは2台、ALBでロード�
 
 - 見積もりとほぼ同構成
   - <https://qiita.com/kite_999/items/6607d684412b14690901>
+- 構築はしてないが、概念の説明
+  - <http://stefafafan.hatenablog.com/entry/aws>
+- さらにミニマムな構成例
+  - <https://tech.recruit-mp.co.jp/infrastructure/retry-aws-minimum-vpc-server-environment/>
+- 初心者向けSpringBootデプロイまで
+  - <https://qiita.com/KevinFQ/items/119521ebd12bb7890761>
