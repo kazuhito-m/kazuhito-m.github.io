@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title: debian:stretchのイメージを使ったDockerfileでタイムゾーンとロケールを日本に変更する
 category: tech
