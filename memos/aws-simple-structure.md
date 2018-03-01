@@ -7,6 +7,11 @@ DBは「レプリカ一台」APPのインスタンスは2台、ALBでロード�
 - Route53とS3で「メンテナンス中のソーリー画面」を出す
   - <http://d.hatena.ne.jp/minamijoyo/20150213/p2>
 
+# Route53
+
+- セキュリティ周りについて
+  - <https://blog.manabusakai.com/2015/09/route53-domain-security/>
+
 # デプロイのアイディア
 
 ## `CodeDeploy` を使う
@@ -90,6 +95,18 @@ DBは「レプリカ一台」APPのインスタンスは2台、ALBでロード�
   - <https://dev.classmethod.jp/cloud/aws/lambda-scheduled-event/>
 - スケジュールされたイベントでの AWS Lambda の使用
   - <https://docs.aws.amazon.com/ja_jp/lambda/latest/dg/with-scheduled-events.html>
+
+## ClamAVと定義実行について
+
+- Amazon LinuxにClamAVを導入する
+  - <https://dev.classmethod.jp/cloud/aws/install-clamav-to-amazon-linux/>
+- ClamAVのオンアクセススキャンついて
+  - <http://tbpgr.hatenablog.com/entry/2017/04/20/080000>
+
+## SpringBOot+SecureCookieについて
+
+- 基本
+  - <https://qiita.com/syukai/items/92d7dfc22b6ac34f9b87>
 
 # 構築例
 
