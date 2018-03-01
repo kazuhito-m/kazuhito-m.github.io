@@ -105,3 +105,4 @@ public class Application {
 - <https://qiita.com/eiryu/items/4b071bf0a194ea7abbf3>
 - <https://stackoverflow.com/questions/34309576/how-to-manage-the-session-in-tomcat-load-balancing?rq=1>
 - <https://shlomoswidler.com/2010/04/elastic-load-balancing-with-sticky-sessions.html>
+- <https://teratail.com/questions/63627>
