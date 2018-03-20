@@ -49,3 +49,5 @@ Cookieにセキュアオプションつける。
 
 - 概念と仕込み方
   - <https://qiita.com/dmnlk/items/b7d189d4dc09df1ee6b6#>
+- httpsしかないサイトには設定してもあんま意味ないかもよ？の話
+  - <http://d.hatena.ne.jp/masakiti2005/20060131/1138670266>
