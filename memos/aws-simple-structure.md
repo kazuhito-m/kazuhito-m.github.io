@@ -108,6 +108,33 @@ DBは「レプリカ一台」APPのインスタンスは2台、ALBでロード�
 - 基本
   - <https://qiita.com/syukai/items/92d7dfc22b6ac34f9b87>
 
+## S3 Buget + ELB(ALB) + CloudFront + Route53で「トップページだけはS3、ソレ以外はALB」という挙動を作る
+
+- 基本的に「やること」（兄貴連携情報)
+  - <https://tomokazu-kozuma.com/aws-cloudfront%E3%81%A8s3%E3%80%81albelb%E3%81%A7spa%E3%82%92%E6%A7%8B%E7%AF%89%E3%81%99%E3%82%8B/>
+- [AWS]ELBがURLパスで振り分けできない問題はCloudFrontでなんとかする
+  - <http://mil-o.jp/yb/elb-l7/>
+- / 指定で index.html を表示
+  - <https://qiita.com/onooooo/items/6839b5871b35451a0235>
+  - 結局、CloudFrontの `Default Root Object` を使った
+- S3の特定バケットへのアクセスを特定のCloudFrontからのみ許可する
+  - <https://qiita.com/kooohei/items/2779f2755fb75ec3cc93>
+- Route53とCloudFrontとS3で静的コンテンツをホスティングするメモ
+  - <https://qiita.com/buta/items/06a7e147d865fb862783>
+- S3+ACM+CloudFront+Route53で独自ドメインでhttpsホスティングする
+  - <https://qiita.com/haracane/items/287f2a35c03e33683875>
+- CloudFrontとS3のWebサイトをCloudFormationでさくっと作る
+  - <http://www.h4a.jp/detail/31654>
+- CloudFrontのキャッシュ削除
+  - <https://dev.classmethod.jp/server-side/aws-amazon-cloudfront-deleting-cache-by-invalidation/>
+- S3のバケットポリシーへの Principal 設定に CluodFront からの許可を追加する
+  - <http://aimstogeek.hatenablog.com/entry/2017/09/29/191101>
+- CloudFrontの「Restrict Bucket Access」と「Restrict Viewer Access」の違いがよくわからなかったので検証してみた
+  - <https://doruby.jp/users/nakamatsu/entries/CloudFront%E3%81%AE%E3%80%8CRestrict-Bucket-Access%E3%80%8D%E3%81%A8%E3%80%8CRestrict-Viewer-Access%E3%80%8D%E3%81%AE%E9%81%95%E3%81%84%E3%81%8C%E3%82%88%E3%81%8F%E3%82%8F%E3%81%8B%E3%82%89%E3%81%AA%E3%81%8B%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%A7%E6%A4%9C%E8%A8%BC%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F>
+-
+【AWS S3】S3 bucket policy を使ったアクセス制限方法 ~Effectの評価優先度を考える~
+  - <http://aimstogeek.hatenablog.com/entry/2017/2/07/083643>
+
 # 構築例
 
 - 見積もりとほぼ同構成
