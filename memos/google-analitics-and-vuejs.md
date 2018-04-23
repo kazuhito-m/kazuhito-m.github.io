@@ -2,9 +2,7 @@
 
 ## 基本的な「導入」
 
-- 参考
-  - [Googleアナリティクス導入時の設定・設置方法【初心者向け】](https://wacul-ai.com/blog/access-analysis/google-analytics-setting/ga-beginner/)
-  -
+- [Googleアナリティクス導入時の設定・設置方法【初心者向け】](https://wacul-ai.com/blog/access-analysis/google-analytics-setting/ga-beginner/)
 
 ## 複数人での管理
 
