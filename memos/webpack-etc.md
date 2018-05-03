@@ -20,3 +20,9 @@
 - babelとloder設定周り
   - <https://qiita.com/tatsuyankmura/items/539c56837fc3a5f258b5>
   - <https://qiita.com/uryyyyyyy/items/63969d6ed9341affdffb#source>
+- しょっぱなにいんぽーとしておかなければならな @types 周り
+  - <https://ics.media/entry/4682>
+
+### webpack.config.js で `target: 'node` を忘れたらコマンドライン引数取れない話
+
+- <https://stackoverflow.com/questions/39939228/node-cli-argv-arguments-array-is-empty>
