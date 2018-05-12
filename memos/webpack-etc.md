@@ -26,3 +26,7 @@
 ### webpack.config.js で `target: 'node` を忘れたらコマンドライン引数取れない話
 
 - <https://stackoverflow.com/questions/39939228/node-cli-argv-arguments-array-is-empty>
+
+### tsconfig.json で「import」が失敗する理由
+
+- `"module": "commonjs"` になっていないと、node_modules以下のインポートができない
