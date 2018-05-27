@@ -30,3 +30,8 @@
 ### tsconfig.json で「import」が失敗する理由
 
 - `"module": "commonjs"` になっていないと、node_modules以下のインポートができない
+
+### typescript + jest でテストを書く。
+
+- ここの通りにすれば、ほぼいける
+  - http://progret.hatenadiary.com/entry/2017/03/10/064558
