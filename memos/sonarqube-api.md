@@ -39,4 +39,13 @@ curl -u f347c9ef07291e391f4a7a313e2550e8244b670c: http://host:9000/api/favoritie
 
 curl -u admin:admin https://host/api/projects/search
 
-curl -u admin:admin https://host/api/projects/search?ps=500
+curl -u admin:admin https://host:9000/api/projects/search?ps=500
+
+curl https://host/api/projects/bulk_delete -u admin:admin -X POST -d "projects="
+
+curl -u admin:admin https://host:9000/api/projects/delete?project=product:master -X POST
+
+curl -u admin:admin https://host:9000/api/projects/bulk_delete -X POST -d "projects=product:master"
+
+
+curl https://host:9000/api/projects/delete -u admin:admin -X POST -d "project=product:なし" --verbose
