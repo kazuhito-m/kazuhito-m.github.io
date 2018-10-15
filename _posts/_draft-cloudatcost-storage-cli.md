@@ -7,8 +7,52 @@
   - ファイルの中身のテキストも「そのまま」なので材料に成る
 
 
+## Export/Importで復帰させた話(2018/10)
 
+まず、docker-composeで、growiを起動させる。
 
+```bash
+git clone https://github.com/weseek/growi-docker-compose.git growi
+cd growi
+docker-compose up
+```
+
+DBのIPを特定する。
+
+```bash
+docker inspect growi_mongo_1 | grep 'IPAddress'
+...
+"IPAddress": "172.20.0.2",
+```
+
+172系アドレスが、それに当たる。ここに対して、DB操作を行う。
+
+試してみると、以下の方法だけでdump/restore出来た。
+
+```bash
+mongodump --db growi --host=172.20.0.2
+mongorestore --host=172.20.0.2
+```
+
+MongoDBは、
+
+```
+host
+  - dbs : DBのようなもの
+    - collection : テーブルのようなもの
+```
+
+という概念でできており、GrowiのMongoDBホストは、 admin,growi,localというDBSを持ち、そのうちgrowiがGrowiのデータを保持するDBSです。
+
+dumpすると、直下に `./dump/growi` というフォルダが出来て、そこにデータがBSON形式で出力されています。
+
+復元するときは、DBを指定せずとも「./dump以下の構造」によって、growiのDBSを上書きします。
+
+ただ、このデータはヒューマンリーダブルではないので、確認用にはexportコマンドでjson出すのが良さそうです。
+
+```bash
+mongoexport --db growi --host=172.20.0.2 --collection users --out ./users.json
+```
 
 ## 参考
 
@@ -37,3 +81,5 @@
 - ファイルシステムでrmしてしまったもののサルベージ
   - <https://unskilled.site/linux%E3%81%AE%E6%81%90%E6%80%96%E4%BD%93%E9%A8%93%E3%80%8Crm%E3%81%A7%E9%96%93%E9%81%95%E3%81%A3%E3%81%A6%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E6%B6%88%E3%81%97%E3%81%A6%E3%81%97%E3%81%BE%E3%81%A3/>
   - <http://d.hatena.ne.jp/y-kawaz/20110123/1295779916>
+- Docker volumeの削除
+  - <https://qiita.com/Ikumi/items/b319a12d7e2c9f7b904d>
