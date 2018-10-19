@@ -26,4 +26,11 @@
 
 - 入門資料(概念だけ)
   - <https://speakerdeck.com/tinjyuu/gkedexue-bukubernetesru-men>
-  
+
+## GKE周り(k8sまわり)
+
+
+### コマンド色々
+
+- リバース
+  - kubectl get -o yaml --export service/mongo
