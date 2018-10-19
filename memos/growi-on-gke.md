@@ -108,6 +108,8 @@ gcloud container clusters create --num-nodes=1 --disk-size=32G kansai-free-allia
   - <https://qiita.com/mumoshu/items/19392308cdadf8667fdd>
 - kubernetes : kubectlコマンド一覧
   - <https://qiita.com/suzukihi724/items/241f7241d297a2d4a55c>
+- kubernetes: コンテナイメージにログインする
+  - <https://qiita.com/suzukihi724/items/515654f54538a2103ee0>
 
 ## ネットワーク周り
 
