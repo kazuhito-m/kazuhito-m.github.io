@@ -1,7 +1,7 @@
 ---
 published: false
 layout: post
-title: 特殊な設定をした「作業用端末」をDockerで再現する
+title: SSHトンネリングしたFirefoxを使ってブラウジングする「作業用端末」をDockerで再現する
 category: tech
 tags: [docker,firefox,infrastructur,iac]
 ---
@@ -31,4 +31,5 @@ tags: [docker,firefox,infrastructur,iac]
 
 以下を参考にさせていただきました。
 
-- <>
+- どこへ行っても安心！SSHサーバーを踏み台にしてWebアクセスする方法
+  - <https://linuxfan.info/ssh-dyamic-forward>
