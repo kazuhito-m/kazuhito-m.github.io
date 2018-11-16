@@ -42,6 +42,20 @@ ENV LC_ALL ja_JP.UTF-8
 
 よく「生Debianを設定する」時に使用される、 `timedatectl` , `task-japanese` などは「インストールできても設定に使え無かった」ので、上記のカタチにしました。
 
+---
+
+```
+locale-gen ja_JP.UTF-8
+```
+
+は、
+
+```
+localedef -i ja_JP -c -f UTF-8 -A /usr/share/locale/locale.alias ja_JP.UTF-8
+```
+
+と同じ結果となるようです。
+
 # 所感
 
 もう少し簡易な方法があるかもしれませんが「とりあえず動く設定を手っ取り早く手に入れる」のであればこれでいいかなぁと。
