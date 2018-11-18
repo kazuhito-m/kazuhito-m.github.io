@@ -33,3 +33,9 @@ tags: [docker,firefox,infrastructur,iac]
 
 - どこへ行っても安心！SSHサーバーを踏み台にしてWebアクセスする方法
   - <https://linuxfan.info/ssh-dyamic-forward>
+- OpenBox man page
+  - <https://www.mankier.com/1/openbox>
+- DockerImage : docker-headless-vnc-container
+  - <https://github.com/ConSol/docker-headless-vnc-container>
+- Supervisorで簡単にデーモン化
+  - <https://qiita.com/yushin/items/15f4f90c5663710dbd56>
