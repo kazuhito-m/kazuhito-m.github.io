@@ -1,10 +1,12 @@
 ---
 published: true
 layout: post
-title: SSHトンネリングしたFirefoxを使ってブラウジングする「作業用端末」をDockerで作ってみる
+title: SSHトンネリングしたFirefoxを使ってブラウジングする「作業用端末」をDockerで作ってみる #インフラ勉強会
 category: tech
 tags: [docker,firefox,infrastructur,iac]
 ---
+
+![コンテナ内とPC自体の「リモートホストIP」の比較](/images/2018-12-03-ipconfig-diff.png)
 
 これは [#インフラ勉強会](https://wp.infra-workshop.tech) の [アドベントカレンダー](https://adventar.org/calendars/3022) の三日目です。
 
@@ -14,7 +16,7 @@ tags: [docker,firefox,infrastructur,iac]
 
 自身はプログラマなので、インフラについては「運用に居たことがある」「クラウドの設計することがある」という立場からの参加ですが、今回は「運用やってると各現場に一つはありそう」な、
 
-「特殊用途の固定作業用端末」
+「__特殊用途の固定作業用端末__」
 
 のお話です。
 
@@ -63,7 +65,7 @@ SSH(鍵認証)で入ることが出来るサーバを用意し固定IPを付け�
 
 ![コンテナを含めた構造](/images/2018-12-03-container-structure.png)
 
-1. ローカルPCのブラウザで `http://localhost:6080` を表示すると、コンテナ内の `NoVNC(httpで動くVNCビューア)` により「VNCのデスクトップ」が表示される
+1. ローカルPCのブラウザで <http://localhost:6080> を表示すると、コンテナ内の `NoVNC(httpで動くVNCビューア)` により「VNCのデスクトップ」が表示される
 0. VNC内では自動起動で `firefox` ブラウザが表示されてるが、設定で「localhost:11080をproxyとするように」なっている
 0. localhost:11080 は「sshコマンドにより、 `固定IPを持った公開サーバ` にhttp/httpsをトンネリング」している
 0. 前述の `firefox` に指定したURLは `固定IPを持った公開サーバ` 上からhttp/httpsリクエストが投げられ、結果が帰ってくる
@@ -104,40 +106,40 @@ export BROWSER_DEFAULT_URL=[firefoxにデフォルトで表示したいURL]
 
 ### 「固定IPを持った公開サーバ」用の鍵を配置する
 
-`./resources/ssh_tonnering_key.pem` に「固定IPを持った公開サーバの公開鍵ファイル」を指定して下さい。
+`./resources/ssh_tonnering_key.pem` に「固定IPを持った公開サーバの秘密鍵ファイル」を指定して下さい。
 
-( `ssh -i [鍵ファイル]` のように指定するファイルです。)
+( `ssh -i [秘密鍵ファイル]` のように指定するファイルです。)
 
 ### Dockerのbuild & run
 
 以下を実行します。
 
-```
+```bash
 docker-compose up
 ```
 
-しばらくして、ブラウザから `http://localhost:6080` を指定し表示すると「設定ファイルの `BROWSER_DEFAULT_URL` に指定したページが表示された `firefox` の画面」が表示されてくるはずです。
+しばらくして、ブラウザから <http://localhost:6080> を指定し表示すると「設定ファイルの `BROWSER_DEFAULT_URL` に指定したページが表示された `firefox` の画面」が表示されてくるはずです。
 
 ---
 
 試しに、以下の設定( `./resources/config.sh` )で起動するとします。
 
-```
+```bash
 export SSH_HOST=[AWSインスタンスのIP(AmazonLinux)]
 export SSH_USER=ec2-user
 export SSH_PORT=22
 export BROWSER_DEFAULT_URL=https://ipconfig.io
 ```
 
-デフォルトページの `https://ipconfig.io` は「リモートホストを表示する」サイトです。
+デフォルトページの <https://ipconfig.io> は「リモートホストを表示する」サイトです。
 
-上記設定で `docker-compose up` し、 `http://localhost:6080` を表示してみます。
+上記設定で `docker-compose up` し、 <http://localhost:6080> を表示してみます。
 
-(`./resources/ssh_tonnering_key.pem` には「AWSインスタンスの公開鍵」を配置しているものとします。 )
+(`./resources/ssh_tonnering_key.pem` には「AWSインスタンスの秘密鍵」を配置しているものとします。 )
 
 ![コンテナ内とPC自体の「リモートホストIP」の比較](/images/2018-12-03-ipconfig-diff.png)
 
-奥のブラウザが「コンテナの内容を表示しているブラウザ画面」ですが、手前のものは「ローカルPC自体のブラウザで `https://ipconfig.io` を表示したもの」です。
+奥のブラウザが「コンテナの内容を表示しているブラウザ画面」ですが、手前のものは「ローカルPC自体のブラウザで <https://ipconfig.io> を表示したもの」です。
 
 ページ左上の赤い部分は「リモートホストIP」で、異なっていることがわかります。
 
