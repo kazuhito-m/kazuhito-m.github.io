@@ -4,6 +4,7 @@ layout: post
 title: SSHトンネリングしたFirefoxを使ってブラウジングする「作業用端末」をDockerで作ってみる #インフラ勉強会
 category: tech
 tags: [docker,firefox,infrastructur,iac]
+cover_image: /images/2018-12-03-ipconfig-diff.png
 ---
 
 ![コンテナ内とPC自体の「リモートホストIP」の比較](/images/2018-12-03-ipconfig-diff.png)
