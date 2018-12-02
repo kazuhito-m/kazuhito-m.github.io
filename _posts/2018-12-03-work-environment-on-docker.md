@@ -8,7 +8,7 @@ tags: [docker,firefox,infrastructur,iac]
 
 これは [#インフラ勉強会](https://wp.infra-workshop.tech) の [アドベントカレンダー](https://adventar.org/calendars/3022) の三日目です。
 
-前日、二日目は「 [まみー](https://twitter.com/mamy1326) さんの []() 」でした。
+前日、二日目は「 [まみー](https://twitter.com/mamy1326) さんの [インフラ勉強会は時間と場所を飛び越える](https://mamy1326.hatenablog.com/entry/2018/12/02/230030) 」でした。
 
 ---
 
@@ -59,6 +59,89 @@ SSH(鍵認証)で入ることが出来るサーバを用意し固定IPを付け�
 
 <https://github.com/kazuhito-m/dockers/tree/master/portforwarding-webbrowsing>
 
+この `Dockerfile` / `docker-compose.yml` を、ローカルPCで build&run すると、以下のようなことが出来るようになっています。
+
+![コンテナを含めた構造](/images/2018-12-03-container-structure.png)
+
+1. ローカルPCのブラウザで `http://localhost:6080` を表示すると、コンテナ内の `NoVNC(httpで動くVNCビューア)` により「VNCのデスクトップ」が表示される
+0. VNC内では自動起動で `firefox` ブラウザが表示されてるが、設定で「localhost:11080をproxyとするように」なっている
+0. localhost:11080 は「sshコマンドにより、 `固定IPを持った公開サーバ` にhttp/httpsをトンネリング」している
+0. 前述の `firefox` に指定したURLは `固定IPを持った公開サーバ` 上からhttp/httpsリクエストが投げられ、結果が帰ってくる
+
+## 起動方法
+
+以下を満たしていることを前提とします。
+
+- ローカルマシンに `docker` と `docker-compose` がインストールされている
+
+### 設定ファイルを書く
+
+[前述のソース一式](https://github.com/kazuhito-m/dockers/tree/master/portforwarding-webbrowsing) をダウンロードすると、以下のファイル構造になっていると思います。
+
+```
+.
+├ Dockerfile
+├ docker-compose.yml
+├ resources
+│ ├ config.sh
+│ └ ssh_tonnering_key.pem
+└ scripts
+  ├ boot.sh
+  └ init_firefox.sh
+```
+
+`./resources/config.sh` を以下の通り設定して下さい。
+
+```bash
+#!/bin/bash
+export SSH_KEY_FILE=/ssh_tonnering_key.pem
+export SSH_PROXY_PORT=11080
+export SSH_HOST=[固定IPを持った公開サーバ]
+export SSH_USER=[固定IPを持った公開サーバのログインユーザ]
+export SSH_PORT=[固定IPを持った公開サーバのSSHポート]
+export BROWSER_DEFAULT_URL=[firefoxにデフォルトで表示したいURL]
+```
+
+### 「固定IPを持った公開サーバ」用の鍵を配置する
+
+`./resources/ssh_tonnering_key.pem` に「固定IPを持った公開サーバの公開鍵ファイル」を指定して下さい。
+
+( `ssh -i [鍵ファイル]` のように指定するファイルです。)
+
+### Dockerのbuild & run
+
+以下を実行します。
+
+```
+docker-compose up
+```
+
+しばらくして、ブラウザから `http://localhost:6080` を指定し表示すると「設定ファイルの `BROWSER_DEFAULT_URL` に指定したページが表示された `firefox` の画面」が表示されてくるはずです。
+
+---
+
+試しに、以下の設定( `./resources/config.sh` )で起動するとします。
+
+```
+export SSH_HOST=[AWSインスタンスのIP(AmazonLinux)]
+export SSH_USER=ec2-user
+export SSH_PORT=22
+export BROWSER_DEFAULT_URL=https://ipconfig.io
+```
+
+デフォルトページの `https://ipconfig.io` は「リモートホストを表示する」サイトです。
+
+上記設定で `docker-compose up` し、 `http://localhost:6080` を表示してみます。
+
+(`./resources/ssh_tonnering_key.pem` には「AWSインスタンスの公開鍵」を配置しているものとします。 )
+
+![コンテナ内とPC自体の「リモートホストIP」の比較](/images/2018-12-03-ipconfig-diff.png)
+
+奥のブラウザが「コンテナの内容を表示しているブラウザ画面」ですが、手前のものは「ローカルPC自体のブラウザで `https://ipconfig.io` を表示したもの」です。
+
+ページ左上の赤い部分は「リモートホストIP」で、異なっていることがわかります。
+
+これは「コンテナの中のブラウザの結果は別のリモートホスト(AWSインスタンスのIP(AmazonLinux))でリクエストし返してきた結果である」ためです。
 
 # 所感
 
