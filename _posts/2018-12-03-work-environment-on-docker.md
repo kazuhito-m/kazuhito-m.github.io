@@ -4,7 +4,6 @@ layout: post
 title: SSHトンネリングしたFirefoxを使ってブラウジングする「作業用端末」をDockerで作ってみる#インフラ勉強会
 category: tech
 tags: [docker,firefox,infrastructur,iac]
-cover: "/images/2018-12-03-ipconfig-diff.png"
 ---
 
 ![コンテナ内とPC自体の「リモートホストIP」の比較](/images/2018-12-03-ipconfig-diff.png)
@@ -173,3 +172,5 @@ export BROWSER_DEFAULT_URL=https://ipconfig.io
   - <https://github.com/ConSol/docker-headless-vnc-container>
 - Supervisorで簡単にデーモン化
   - <https://qiita.com/yushin/items/15f4f90c5663710dbd56>
+- sshで初回ログイン時に"The authenticity of host 'host' can't be established..."を聞かれないようにする設定
+  - <https://oinume.hatenablog.com/entry/wp/391>
