@@ -164,12 +164,14 @@ export BROWSER_DEFAULT_URL=https://ipconfig.io
 
 以下を参考にさせていただきました。
 
+- dockerで手軽にLinuxデスクトップ環境を試せる！
+  - <https://kokensha.xyz/docker/access-headless-docker-linux-desktop-container-via-vnc/>
 - どこへ行っても安心！SSHサーバーを踏み台にしてWebアクセスする方法
   - <https://linuxfan.info/ssh-dyamic-forward>
+- DockerImage : dorowu/ubuntu-desktop-lxde-vnc
+  - <https://hub.docker.com/r/dorowu/ubuntu-desktop-lxde-vnc/>
 - OpenBox man page
   - <https://www.mankier.com/1/openbox>
-- DockerImage : docker-headless-vnc-container
-  - <https://github.com/ConSol/docker-headless-vnc-container>
 - Supervisorで簡単にデーモン化
   - <https://qiita.com/yushin/items/15f4f90c5663710dbd56>
 - sshで初回ログイン時に"The authenticity of host 'host' can't be established..."を聞かれないようにする設定
