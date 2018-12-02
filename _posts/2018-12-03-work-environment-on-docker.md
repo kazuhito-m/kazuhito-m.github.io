@@ -1,7 +1,7 @@
 ---
-published: false
+published: true
 layout: post
-title: SSHトンネリングしたFirefoxを使ってブラウジングする「作業用端末」をDockerで再現する
+title: SSHトンネリングしたFirefoxを使ってブラウジングする「作業用端末」をDockerで作ってみる
 category: tech
 tags: [docker,firefox,infrastructur,iac]
 ---
