@@ -10,7 +10,7 @@ title: ポートフォリオ
 <iframe
   src="https://docs.google.com/spreadsheets/d/10rroSv-xLTuIpSHqPyzrn7qEaMmV6T5ucq53iMEqQW8/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"
   width="770"
-  height="700"
+  height="780"
 >
 </iframe>
 
