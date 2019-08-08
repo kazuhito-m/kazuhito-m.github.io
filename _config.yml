@@ -21,7 +21,7 @@ author :
   twitter : kazuhito_m
   feedburner : feedname
 
-production_url : http://kazuhito-m.github.io
+production_url : https://kazuhito-m.github.io
 
 gems:
   - jemoji
