@@ -13,6 +13,28 @@ GKEにGrowiを立てるまで
   - ElasticSearch, HackMD, PlantUML, MathJax, etc...
 - カウント登録に「Googleアカウント」が使えるように
 
+----------
+
+## 準備
+
+
+### 直後の初期作業
+
+- Mail settings でSMTPサーバを登録
+
+
+### GoogleAccountを使えるようにする
+
+__これはTBDとして出来ないようでした。__
+
+設定画面に書いてあることを、そのまま翻訳したものは以下です。
+
+1. Google Cloud Platform API Managerにアクセスする
+0. 資格情報の作成→OAuthクライアントID→「Webアプリケーション」を選択
+0. OAuthアプリをhttps://wiki.dev.hotstaff-dev.com/passport/google/callbackとして承認済みリダイレクトURIのいずれかで登録します
+0. 上記のClientIDとClient Secretをコピーして貼り付けます
+
+
 
 -----------
 
