@@ -70,6 +70,8 @@ https://yushakobo.jp/shop/iris-fr4-plates-set/
 - QMK Firmwareのすすめ
   - https://scrapbox.io/list-memo/QMK_Firmware%E3%81%AE%E3%81%99%E3%81%99%E3%82%81
   - 章立てが不思議…なんかの日本語翻訳なのかな？
+- https://www.youtube.com/watch?v=-imgglzDMdY
+  - 書き込むまでの懇切丁寧な動画
 
 
 ## キーボードを迷う部分
@@ -148,3 +150,28 @@ Validating...
 ```
 
 おそらく、書き込めたのではないか？と思います。
+
+### qmkで「自分のキーマップを作る」
+
+以下のサイトで「自分のキーマップのデザイン」を行う。
+
+https://config.qmk.fm/#/keebio/iris/rev4/LAYOUT
+
+
+設定ができたら、右上の「COMPILE」ボタンを押し、ビルドが終われば右下の「FIRMWARE」ボタンでhexファイルをDLします。
+
+また、バックアップのためjsonのダウンロードも行っておきます。
+
+
+### qmkで「自分のプロファイル」をキーボードに書き込む
+
+上記で取得したHexファイルを、キーボードに書き込む。
+
+前述でCloneしたリポジトリには、一度ビルドを行っていることから、 `./build` ディレクトリができているはずです。
+
+ここに先程DL済みのHexファイルをコピーした後、キーボードの接続を確認したら、以下のコマンドで書き込みます。
+
+```bash
+make keebio/iris/rev4:kazuhito_m:flash
+```
+
