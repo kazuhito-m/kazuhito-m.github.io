@@ -1,13 +1,18 @@
-Herokuの”mLab MongoDB add-on"が廃止される…のを知らなかったので慌てたハナシ
-===
+---
+published: true
+layout: post
+title: Herokuの”mLab MongoDB add-on"が廃止される…のを知らなかったので慌てたハナシ
+category: tech
+tags: [heroku,mongodb,howto]
+---
 
-## これを読んで得られるもの
+# これを読んで得られるもの
 
 - HerokuでMongoDBを扱うアプリケーションをデプロイしていて、かつ2020/11/11頃に「接続不能」になった時の解決策がわかる
 
-## 事象
+# 事象
 
-### 事の発端
+## 事の発端
 
 - 2020/10/11頃から、Herokuで`GROWI` という「MongoDBをバックエンドにするアプリ」を運用し始めた
 - 2020/11/11の朝に以下のような画面が出て、アプリが動かなくなった
@@ -18,7 +23,7 @@ Herokuの”mLab MongoDB add-on"が廃止される…のを知らなかったの
   - 2020/07月からアナウンスされていたらしいが、2020/10から運用し始めた自分は知ったこっちゃない
 - Herokuコンソールからも「mLab MongoDB add-on」のアドオン設定が消えてて「データロストか…」と青ざめる
 
-### そも「Heroku内の”mLab MongoDB add-on」とは、どんなものだったのか？
+## そも「Heroku内の”mLab MongoDB add-on」とは、どんなものだったのか？
 
 基本「GrowiのHerokuログインサポートに任せて構成を作った」ので、”mLab MongoDB add-on"というものが何か解ってなかったのですが…。
 
@@ -30,11 +35,11 @@ Herokuの”mLab MongoDB add-on"が廃止される…のを知らなかったの
 
 …ま、上記も「もう消え去ったサービスを調べた結果」だったりするので、見ることすらできないのですが。
 
-## データ復旧・アプリ復旧手順
+# データ復旧・アプリ復旧手順
 
 結論的には __公式が案内している別サービス(MongoDB Atlas)に移行__ です。
 
-### mLabからの「Add-on削除したよ」メールを探す
+## mLabからの「Add-on削除したよ」メールを探す
 
 Herokuに登録しているメールアドレスに
 
@@ -44,7 +49,9 @@ Herokuに登録しているメールアドレスに
 
 ---
 
-だけだとわからないので、日本語に機械翻訳したものがこちら。
+だけだと「なんのこと？」だと思います。
+
+日本語に機械翻訳したものが以下です。
 
 ```
 mLab からこんにちは、
@@ -86,13 +93,13 @@ mLabさんは「Herokuからはデタッチしたけど(いつまでと名言し
 
 このメールで「add-onが裏で自動的に作っていた、mLabアカウントにログインする方法」が解決します。
 
-### mLabにログインし「MonboDBのデータベースがある事」を確認する
+## mLabにログインし「MonboDBのデータベースがある事」を確認する
 
 先ほどのメールに従い、 https://mlab.com/login/ の ”reset your password” からパスワードリセットし、一度ログインします。
 
 ログインすると、 ”MongoDB Deployments” にて「デプロイされていたDB」が一覧されているので、メールに在った情報と一致しているか確認してください。
 
-### mLab側のMongoDBインスタンスをAtlasへ移行する
+## mLab側のMongoDBインスタンスをAtlasへ移行する
 
 以下のサイトを参考に、mLabからAtlasに「データの移行」を行います。
 
@@ -101,7 +108,7 @@ mLabさんは「Herokuからはデタッチしたけど(いつまでと名言し
 - [Step-by-Step Guide to Migrating a Sandbox Heroku Add-on to Atlas](https://docs.mlab.com/how-to-migrate-sandbox-heroku-addons-to-atlas/)
   - 先のメールで案内されていたガイドです
 
-#### 中身の確認とバックアップ
+### 中身の確認とバックアップ
 
 (必須な作業ではないので、必要ないと判断すれば飛ばしてください)
 
@@ -123,7 +130,7 @@ mongo "mongodb+srv://<クラスタ名>.jrix1.mongodb.net/<ユーザ名>" --usern
 mongodump --uri "mongodb+srv://<ユーザ名>:<パスワード>@/<クラスタ名>.jrix1.mongodb.net/<ユーザ名>" -o <出力デイレクトリ>
 ```
 
-### 新しいMongoDBの接続情報を、Herokuのアプリに設定する
+## 新しいMongoDBの接続情報を、Herokuのアプリに設定する
 
 Herokuのダッシュボードを表示し、 `Settings -> Config Vars` へ遷移し、`Reveal Config Vars` をクリックし、以下の変数を設定する。
 
@@ -133,7 +140,7 @@ Herokuのダッシュボードを表示し、 `Settings -> Config Vars` へ遷�
 
 今回、対象アプリが `GROWI` であったためこれだけで復旧しましたが、対象のアプリで上手く接続できない場合は「アプリの設定ファイル等を直接書き換えてみる」などして見てください。
 
-## 所感
+# 所感
 
 「まーちょちょいで直るでしょ」→「おいおいこれはまずいぞ…(絶望と焦り」→「やっぱ公式に備えがあった(気を抜けないが微妙な安堵」
 
@@ -143,7 +150,7 @@ Herokuのダッシュボードを表示し、 `Settings -> Config Vars` へ遷�
 
 (HerokuのDBと、GROWIのアプリ内エクスポートは、バックアップ自動化しにくいと個人的には思うのです…。)
 
-## 参考サイト
+# 参考サイト
 
 - https://docs.mlab.com/how-to-migrate-sandbox-heroku-addons-to-atlas/
 - https://docs.mlab.com/mlab-to-atlas/#migrating-multiple-free-sandbox-databases
