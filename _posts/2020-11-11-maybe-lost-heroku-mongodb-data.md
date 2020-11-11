@@ -19,7 +19,7 @@ tags: [heroku,mongodb,howto]
   - ![MongoDB接続不能](/images/2020-11-11-heroku-mongo-notconnect.png)
 - ログを見ると「MongoDBがデタッチされた」と出ている
   - ![DetachMongoDB](/images/2020-11-11-detach-mongodb.png)
-- ググると「今日(米時間での期日である10日)が”mLab MongoDB add-on”の __サービスの終了日__ 」と知る
+- ググると[「今日(米時間での期日である10日)が”mLab MongoDB add-on”のサービスの終了日」](https://mikan.github.io/2020/07/11/migrate-heroku-mlab-to-mongodb-atlas/)と知る
   - 2020/07からアナウンスされていたらしいが、2020/10から運用し始めた自分は情報収集してなかった
 - Herokuコンソールからも「mLab MongoDB add-on」のアドオン設定が消えてて「データロストか…」と青ざめる
 
@@ -150,6 +150,7 @@ Herokuのダッシュボードを表示し、 `Settings -> Config Vars` へ遷�
 
 # 参考サイト
 
+- <https://mikan.github.io/2020/07/11/migrate-heroku-mlab-to-mongodb-atlas/>
 - <https://docs.mlab.com/how-to-migrate-sandbox-heroku-addons-to-atlas>
 - <https://docs.mlab.com/mlab-to-atlas/#migrating-multiple-free-sandbox-databases>
 - <https://qiita.com/nobu17/items/ca9ae3d60dc837ca0de0>
