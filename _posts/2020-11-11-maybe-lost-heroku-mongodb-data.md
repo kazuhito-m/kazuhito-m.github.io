@@ -142,3 +142,15 @@ Herokuのダッシュボードを表示し、 `Settings -> Config Vars` へ遷�
 …その前に「バックアップをこまめに取っていれば問題なかった」ハナシなのですが…。
 
 (HerokuのDBと、GROWIのアプリ内エクスポートは、バックアップ自動化しにくいと個人的には思うのです…。)
+
+## 参考サイト
+
+- https://docs.mlab.com/how-to-migrate-sandbox-heroku-addons-to-atlas/
+- https://docs.mlab.com/mlab-to-atlas/#migrating-multiple-free-sandbox-databases
+- https://qiita.com/nobu17/items/ca9ae3d60dc837ca0de0
+- https://qiita.com/geeknees/items/b7464db94f63ae7a6949
+- https://qiita.com/svjunic/items/285e9cf20169d70aa1fa
+- https://qiita.com/toshi1127/items/04ea864bf0cd7125a47d
+- https://qiita.com/k-staging/items/a386d272abb2c9b92f1a
+- https://qiita.com/leon-joel/items/2f13172c904b8a14b109
+- https://garafu.blogspot.com/2017/01/mongodb-backup-restore.html
