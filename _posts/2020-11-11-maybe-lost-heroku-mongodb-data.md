@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-title: Herokuの”mLab MongoDB add-on"が廃止される…のを知らなかったので慌てたハナシ
+title: Herokuの”mLab MongoDB add-on"が廃止された…のを知らずに慌てたハナシ
 category: tech
 tags: [heroku,mongodb,howto]
 ---
