@@ -19,8 +19,8 @@ tags: [heroku,mongodb,howto]
   - ![MongoDB接続不能](/images/2020-11-11-heroku-mongo-notconnect.png)
 - ログを見ると「MongoDBがデタッチされた」と出ている
   - ![DetachMongoDB](/images/2020-11-11-detach-mongodb.png)
-- ググると「今日(米時間での期日である10日)が”mLab MongoDB add-on”のサービスの終了日」と知る
-  - 2020/07からアナウンスされていたらしいが、2020/10から運用し始めた自分は知ったこっちゃない
+- ググると「今日(米時間での期日である10日)が”mLab MongoDB add-on”の __サービスの終了日__ 」と知る
+  - 2020/07からアナウンスされていたらしいが、2020/10から運用し始めた自分は情報収集してなかった
 - Herokuコンソールからも「mLab MongoDB add-on」のアドオン設定が消えてて「データロストか…」と青ざめる
 
 ## 廃止された「Heroku内の”mLab MongoDB add-on」とは、どんなものだったのか？
