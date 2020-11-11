@@ -16,16 +16,16 @@ tags: [heroku,mongodb,howto]
 
 - 2020/10/11頃から、Herokuで`GROWI` という「MongoDBをバックエンドにするアプリ」を運用し始めた
 - 2020/11/11の朝に以下のような画面が出て、アプリが動かなくなった
-  - [MongoDB接続不能](/images/2020-11-11-heroku-mongo-notconnect.png)
+  - ![MongoDB接続不能](/images/2020-11-11-heroku-mongo-notconnect.png)
 - ログを見ると「MongoDBがデタッチされた」と出ている
-  - [DetachMongoDB](/images/2020-11-11-detach-mongodb.png)
+  - ![DetachMongoDB](/images/2020-11-11-detach-mongodb.png)
 - ググると「今日(米時間での期日である10日)が”mLab MongoDB add-on”のサービスの終了日」と知る
   - 2020/07月からアナウンスされていたらしいが、2020/10から運用し始めた自分は知ったこっちゃない
 - Herokuコンソールからも「mLab MongoDB add-on」のアドオン設定が消えてて「データロストか…」と青ざめる
 
-## そも「Heroku内の”mLab MongoDB add-on」とは、どんなものだったのか？
+## 廃止された「Heroku内の”mLab MongoDB add-on」とは、どんなものだったのか？
 
-基本「GrowiのHerokuログインサポートに任せて構成を作った」ので、”mLab MongoDB add-on"というものが何か解ってなかったのですが…。
+基本「GROWIの"Deploy to Heroku”任せで構成を作った」ので、”mLab MongoDB add-on"というものが何か解ってなかったのですが…。
 
 ”mLab MongoDB add-on"は「HerokuでMongoDBを扱う場合の定番」だったようで、多くのアプリケーションで使われてると思われるadd-onです。
 
@@ -121,7 +121,7 @@ mLabさんは「Herokuからはデタッチしたけど(いつまでと名言し
 
 などしました。
 
-```
+```bash
 docker run -it --rm -v "$PWD":/workspace -t mongo:4.4.1-bionic /bin/bash
 # ---- ここからDocker内 ----
 cd /workspace
@@ -152,12 +152,12 @@ Herokuのダッシュボードを表示し、 `Settings -> Config Vars` へ遷�
 
 # 参考サイト
 
-- https://docs.mlab.com/how-to-migrate-sandbox-heroku-addons-to-atlas/
-- https://docs.mlab.com/mlab-to-atlas/#migrating-multiple-free-sandbox-databases
-- https://qiita.com/nobu17/items/ca9ae3d60dc837ca0de0
-- https://qiita.com/geeknees/items/b7464db94f63ae7a6949
-- https://qiita.com/svjunic/items/285e9cf20169d70aa1fa
-- https://qiita.com/toshi1127/items/04ea864bf0cd7125a47d
-- https://qiita.com/k-staging/items/a386d272abb2c9b92f1a
-- https://qiita.com/leon-joel/items/2f13172c904b8a14b109
-- https://garafu.blogspot.com/2017/01/mongodb-backup-restore.html
+- <https://docs.mlab.com/how-to-migrate-sandbox-heroku-addons-to-atlas>
+- <https://docs.mlab.com/mlab-to-atlas/#migrating-multiple-free-sandbox-databases>
+- <https://qiita.com/nobu17/items/ca9ae3d60dc837ca0de0>
+- <https://qiita.com/geeknees/items/b7464db94f63ae7a6949>
+- <https://qiita.com/svjunic/items/285e9cf20169d70aa1fa>
+- <https://qiita.com/toshi1127/items/04ea864bf0cd7125a47d>
+- <https://qiita.com/k-staging/items/a386d272abb2c9b92f1a>
+- <https://qiita.com/leon-joel/items/2f13172c904b8a14b109>
+- <https://garafu.blogspot.com/2017/01/mongodb-backup-restore.html>
