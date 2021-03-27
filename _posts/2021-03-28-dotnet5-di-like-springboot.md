@@ -1,23 +1,31 @@
 ---
 published: true
 layout: post
-title: .Net5(.NetCore)でSpringBoot(SpringDI)風のAutoScanを実装する
+title: .NET5(.NET Core)でSpringBoot(SpringDI)風のAutoScanを実装する
 category: tech
 tags: [Dotnet5, DotnetCore, c#, DI, GenericHost]
 ---
 
 # これを読んで得られるもの
 
-- .Net5(.NetCore)でUIアプリケーション作成時、SpringBoot感覚のDI出来る仕組みが手に入る
+- .NET5(.NET Core)でUIアプリケーション作成時、SpringBoot感覚のDI出来る仕組みが手に入る
   - GenricHost&DIで「注釈ベースのAutoScan(自動検索・登録)」なDIが出来るようになる
 
 # 経緯
 
 15年ぶりくらいに「WindowsのGUIアプリ(Windowsのクライアント)」を作成することになったのですが、Javaでサーバアプリを組むことが多かったので、「はあ、レイヤードアーキテクチャとDIで組みたいなぁ」と思ったのです。
 
-.Net系は長く「スタンダードなDIがない(あるが割拠している)」と思っていたのですが、 昨今は「常駐系のアプリは全部コレ使え」な `Generic Host` への統一が促進される中で、MS謹製の `Microsoft.Extensions.DependencyInjection` というDIが付いてきたので飛びつきました。
+.NET系は長く「スタンダードなDIがない(あるが割拠している)」と思っていました。
 
-ただこのDI「自力で登録する」式のやつで…JavaかつSpringBootでの「ここ以下と指定してアノテーション付けときゃ勝手にDI管理してくれる」の書き心地を知ってると、少々面倒…。
+が、昨今は「常駐系のアプリは全部コレ使え」な `Generic Host` への統一が促進される中で、MS謹製の `Microsoft.Extensions.DependencyInjection` というDIが付いてきたので飛びつきました。
+
+ただ、このDI「自力で登録する」式のやつでして…。
+
+Java & SpringBootでの
+
+「”ここ以下全部”と指定してアノテーション付けときゃ勝手にDI管理してくれる」
+
+の書き心地を知ってると、少々面倒…。
 
 ということで「SpringBoot風の注釈で勝手にDI登録できる仕組み」を作ってみます。
 
@@ -35,6 +43,7 @@ tags: [Dotnet5, DotnetCore, c#, DI, GenericHost]
 
 - SpringBootのDIの自動スキャン(Component Scan)を真似たものにする
   - C#ではアノテーションではなく `属性(attribute)` なので「classに特定の属性がついていたら」を条件とする
+    - 本家Springでは「Class以外に付けることでもできる」が、簡易にしたいので実装しない
 - SpringBootでのアノテーションと同等の属性を用意する
   - `Component`, `Repository`, `Service` あたりがあれば
   - `Controller` は、少し違うのでForm等のために `View` という属性にしてみる
@@ -49,21 +58,25 @@ tags: [Dotnet5, DotnetCore, c#, DI, GenericHost]
 
 対象となるアプリと「DIが出来る状態」までを事前に作ります。
 
-1. VisualStudio2019にて新しいプロジェクトの作成から「Windowsフォームアプリ」を選びソリューションを作成
-   - ターゲットフレームワークは `.NET 5.0` を選択する
-2. プロジェクトへライブラリを導入する
-   - 以下のコマンドにより `Generic Host` と `WindowsFormsLifetime` を加える
+### 1. VisualStudio2019にて新しいプロジェクトの作成から「Windowsフォームアプリ」を選びソリューションを作成
+ 
+- ターゲットフレームワークは `.NET 5.0` を選択する
 
-```DOS
+### 2. プロジェクトへライブラリを導入する
+
+- 以下のコマンドにより `Generic Host` と `WindowsFormsLifetime` を加える
+
+```dos
 cd [プロジェクトのフォルダ]
 dotnet add package OswaldTechnologies.Extensions.Hosting.WindowsFormsLifetime
 dotnet add pacakge Microsoft.Extensions.Hosting
 ```
 
-3. `Program.cs` の `Main` メソッドを書き換える
-   - `Generic Host` 式の起動方法に書き換える
-     - 説明は割愛するが「GUIかつDI使える状態」が一番手っ取り早く使える方法
-   - 「デバッグ開始」でForm1が表示され、「×」クリックで
+### 3. `Program.cs` の `Main` メソッドを書き換える
+
+- `Generic Host` 式の起動方法に書き換える
+  - 説明は割愛するが「GUIかつDI使える状態」が一番手っ取り早く使える方法
+- 「デバッグ開始」でForm1が表示され、「×」クリックでアプリケーションが終了するように
 
 ```c#
 static class Program
@@ -83,7 +96,7 @@ static class Program
 
 「参考のための実装」なので、簡単な解説だけにします。
 
-- `MiuraService.Get()` -> `IMiuraRepositry.Get()` から実装である `MiuraDataSource.Get()` が呼び出され `TheMiura` オブジェクトが取り出される
+- `MiuraService.Get()` -> `IMiuraRepositry.Get()` から、実装である `MiuraDataSource.Get()` が呼び出され `TheMiura` オブジェクトが取り出される
 - `MiuraService` に `MiuraDatasource` がコンストラクタによりフィールドにオブジェクトがセットされる予定
 - `Form1` には `MiuraService` がコンストラクタでフィールドにセットされる予定
 - `Form1` は `Load` イベントで「 `TheMiura` オブジェクトからの文字列がタイトル部分に表示される」実装になっているが、現在は `NullReferenceException` で落ちる
@@ -236,7 +249,7 @@ public partial class Form1 : Form
 
 # 所感
 
-自分も、自身が所属しているチームも、普段は「Javaでサーバサイドを作ってるチーム」であり、「C#でクライアントを実装する」というのは寝耳に水でした。
+自分も、自身が所属しているチームも、普段は「Javaでサーバサイドを作ってるチーム」であり、「C#でクライアントを実装する」というの突然のイレギュラーでした。
 
 せめて「書き心地を似せられないか？」と思ってDI部分をSpringBootに寄せてみました。
 
