@@ -17,7 +17,7 @@ tags: [Dotnet5, DotnetCore, c#, DI, GenericHost]
 
 .Net系は長く「スタンダードなDIがない(あるが割拠している)」と思っていたのですが、 昨今は「常駐系のアプリは全部コレ使え」な `Generic Host` への統一が促進される中で、MS謹製の `Microsoft.Extensions.DependencyInjection` というDIが付いてきたので飛びつきました。
 
-ただ、このDI「自力で登録する」式のやつで…JavaかつSpringBootでの「ここ以下と指定してアノテーション付けときゃ勝手にDI管理してくれる」の書き心地を知ってると、少々面倒…。
+ただこのDI「自力で登録する」式のやつで…JavaかつSpringBootでの「ここ以下と指定してアノテーション付けときゃ勝手にDI管理してくれる」の書き心地を知ってると、少々面倒…。
 
 ということで「SpringBoot風の注釈で勝手にDI登録できる仕組み」を作ってみます。
 
