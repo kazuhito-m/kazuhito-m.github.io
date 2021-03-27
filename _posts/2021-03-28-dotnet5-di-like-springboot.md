@@ -36,8 +36,9 @@ Java & SpringBootでの
 - VisualStudio2019がインストールされている
 - `.NET5` がインストールされており、 `dotnet` コマンドが使える
 - 作る対象のアプリはWindowsのGUIアプリケーションである
+  - 対象は `.NET5` 、 言語は `C#`
 
-また、実装されたものが [こちらのリポジトリ](https://github.com/kazuhito-m/Dotnet5GUIWithSpringBootLikeDI) にあります。
+なお、実装されたものが [こちらのリポジトリ](https://github.com/kazuhito-m/Dotnet5GUIWithSpringBootLikeDI) にあります。
 
 # 設計
 
@@ -66,7 +67,7 @@ Java & SpringBootでの
 
 - 以下のコマンドにより `Generic Host` と `WindowsFormsLifetime` を加える
 
-```dos
+```powershell
 cd [プロジェクトのフォルダ]
 dotnet add package OswaldTechnologies.Extensions.Hosting.WindowsFormsLifetime
 dotnet add pacakge Microsoft.Extensions.Hosting
@@ -125,6 +126,15 @@ public class ViewAttribute : ComponentAttribute { }
 ```
 
 本家を踏襲し、`Component` を基本に、それ以外は継承した形としています。
+
+「.NET(C#)の属性クラス」は、クラス名末尾に `Attribute` を付けるルールであり、実際に属性として使用する場合には「クラス名の `Attribute` より前の名前で指定する」感じになります。
+
+例:
+
+```c#
+[Component]
+public class ClassOfDITarget
+```
 
 ## 属性を解釈しDIに自動登録するクラスの作成
 
