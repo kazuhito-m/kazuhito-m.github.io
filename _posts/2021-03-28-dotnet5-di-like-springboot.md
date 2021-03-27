@@ -9,7 +9,7 @@ tags: [Dotnet5, DotnetCore, c#, DI, GenericHost]
 # これを読んで得られるもの
 
 - .NET5(.NET Core)でUIアプリケーション作成時、SpringBoot感覚のDI出来る仕組みが手に入る
-  - GenricHost&DIで「注釈ベースのAutoScan(自動検索・登録)」なDIが出来るようになる
+  - `GenricHost` & `Microsoft.Extensions.DependencyInjection` で「注釈ベースのAutoScan(自動検索・登録)」なDIが出来るようになる
 
 # 経緯
 
