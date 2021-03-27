@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-title: .NET5(.NET Core)でSpringBoot(SpringDI)風のAutoScanを実装する
+title: .NET5(.NET Core)でSpringBoot風のDI自動登録を実装する
 category: tech
 tags: [Dotnet5, DotnetCore, c#, DI, GenericHost]
 ---
@@ -33,7 +33,7 @@ Java & SpringBootでの
 
 この記事は以下の前提で書かれています。
 
-- VisualStudio2019がインストールされている
+- `VisualStudio2019` がインストールされている
 - `.NET5` がインストールされており、 `dotnet` コマンドが使える
 - 作る対象のアプリはWindowsのGUIアプリケーションである
   - 対象は `.NET5` 、 言語は `C#`
@@ -227,7 +227,7 @@ public partial class Form1 : Form
 
 実際にDI登録・オブジェクトの取り出しとコンストラクタインジェクションが行われているかを動かして確認します。
 
-VS2019で作ったままの `Form1` というFormがあるので、そのウィンドウタイトルに「Serviceから取得した値」を表示してみます。
+`VisualStudio2019` で作ったままの `Form1` というFormがあるので、そのウィンドウタイトルに「Serviceから取得した値」を表示してみます。
 
 `Form1` に以下の実装を行います。
 
