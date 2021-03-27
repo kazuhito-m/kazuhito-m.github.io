@@ -15,7 +15,7 @@ tags: [Dotnet5, DotnetCore, c#, DI, GenericHost]
 
 15年ぶりくらいに「WindowsのGUIアプリ(Windowsのクライアント)」を作成することになったのですが、Javaでサーバアプリを組むことが多かったので、「はあ、レイヤードアーキテクチャとDIで組みたいなぁ」と思ったのです。
 
-.NET系は長く「スタンダードなDIがない(あるが割拠している)」と思っていました。
+.NET系は長く「スタンダードなDIがない(あるにはあるが群雄割拠である)」と思っていました。
 
 が、昨今は「常駐系のアプリは全部コレ使え」な `Generic Host` への統一が促進される中で、MS謹製の `Microsoft.Extensions.DependencyInjection` というDIが付いてきたので飛びつきました。
 
