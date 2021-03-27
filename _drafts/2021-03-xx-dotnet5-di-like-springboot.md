@@ -77,7 +77,7 @@ static class Program
 }
 ```
 
-## 対象となるアプリ内の実装
+## 対象となるアプリの実装
 
 実際の実装は [こちらのリポジトリ]() になります。
 
@@ -87,6 +87,9 @@ static class Program
 - `MiuraService` に `MiuraDatasource` がコンストラクタによりフィールドにオブジェクトがセットされる予定
 - `Form1` には `MiuraService` がコンストラクタでフィールドにセットされる予定
 - `Form1` は `Load` イベントで「 `TheMiura` オブジェクトからの文字列がタイトル部分に表示される」実装になっているが、現在は `NullReferenceException` で落ちる
+
+![対象となるアプリの実装その1](/images/2021-03-28-implement-01.png)
+![対象となるアプリの実装その2](/images/2021-03-28-implement-02.png)
 
 # 「SpringBoot(SpringDI)風のAutoScan」の実装
 
@@ -139,9 +142,9 @@ public static class AttributedClassScannerExtension
 
 少々分かり辛いかもですが、以下を行っています。
 
-- 指定されたアセンブリ中から「クラス」かつ「属性でないもの」をフィルタ
-- `ComponentAttribute` あるいはそのサブクラスの属性が付いたものをフィルタ
-- 上記のフィルタを抜けたものそ `IServiceCollection` にシングルトンでDI登録
+1. 指定されたアセンブリ中から「クラス」かつ「属性でないもの」をフィルタ
+0. `ComponentAttribute` あるいはそのサブクラスの属性が付いたものをフィルタ
+0. 上記のフィルタを抜けたものを `IServiceCollection` へシングルトンでDI登録
   - インターフェイスを実装していなければクラス自身を、実装していればインターフェイスの1つ目を型として登録
 
 ## `Generic Host` から「DIに自動登録するメソッド」を呼ばせる
@@ -149,7 +152,7 @@ public static class AttributedClassScannerExtension
 準備作業で書き換えた`Program.cs` をさらに書き換えます。
 
 ```c#
-using [先程追加したAttributedClassScannerExtensionのnamespace];
+using [先程追加した AttributedClassScannerExtension のnamespace];
 
 (省略)
 
@@ -229,6 +232,8 @@ public partial class Form1 : Form
 
 つまりは「DIが属性ベースで自動登録されている」ということです。
 
+![成功した場合のWindow表示](/images/2021-03-28-i-di-success-view.png)
+
 # 所感
 
 自分も、自身が所属しているチームも、普段は「Javaでサーバサイドを作ってるチーム」であり、「C#でクライアントを実装する」というのは寝耳に水でした。
@@ -237,7 +242,7 @@ public partial class Form1 : Form
 
 普段も「シングルトン期待で複雑な機能は使ってない」ので、それさえサポートすれば十分使えると思ってたので、狙い通りのものは出来た感じです。
 
-…仲間が無茶を言うてこなければ、ですが。
+…チームの仲間が無茶を言うてこなければ、ですが。
 
 # 参考資料
 
