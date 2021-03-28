@@ -40,19 +40,6 @@ Java & SpringBootでの
 
 なお、実装されたものが [こちらのリポジトリ](https://github.com/kazuhito-m/Dotnet5GUIWithSpringBootLikeDI) にあります。
 
-# 設計
-
-- SpringBootのDIの自動スキャン(Component Scan)を真似たものにする
-  - C#ではアノテーションではなく `属性(attribute)` なので「classに特定の属性がついていたら」を条件とする
-    - 本家Springでは「Class以外に付けることでもできる」が、簡易にしたいので実装しない
-- SpringBootでのアノテーションと同等の属性を用意する
-  - `Component`, `Repository`, `Service` あたりがあれば
-  - `Controller` は、少し違うのでForm等のために `View` という属性にしてみる
-- コンストラクタインジェクションのみを対象とし、それだけで良しとする
-- オブジェクトのスコープは `Singleton` のみ
-  - `Scoped`, `Transient` があるが今回は対応しない
-
-
 # 準備作業
 
 ## 対象となるソリューション/プロジェクトの準備
@@ -106,6 +93,18 @@ static class Program
 ![対象となるアプリの実装その2](/images/2021-03-28-implement-02.png)
 
 # 「SpringBoot(SpringDI)風のAutoScan」の実装
+
+## …の前に設計
+
+- SpringBootのDIの自動スキャン(Component Scan)を真似たものにする
+  - C#ではアノテーションではなく `属性(attribute)` なので「classに特定の属性がついていたら」を条件とする
+    - 本家Springでは「Class以外に付けることでもできる」が、簡易にしたいので実装しない
+- SpringBootでのアノテーションと同等の属性を用意する
+  - `Component`, `Repository`, `Service` あたりがあれば
+  - `Controller` は、少し違うのでForm等のために `View` という属性にしてみる
+- コンストラクタインジェクションのみを対象とし、それだけで良しとする
+- オブジェクトのスコープは `Singleton` のみ
+  - `Scoped`, `Transient` があるが今回は対応しない
 
 ## 属性(attribute)の作成
 
