@@ -62,7 +62,7 @@ chmod u+x ./upload_test.sh
 
 と出力され「 `multipartFile#getInputStream` が複数回呼び出されて、かつファイルの内容で読み出せてる」ことがわかります。
 
-# 所感
+## 所感
 
 最初に `以前に「無理やり複数回呼べるように対応した」`　と書きましたが、そのソース内でチームメンバーが「 `multipartFile#getInputStream` を二回呼んでいる」というコードを書いたので、それをレビューしたのですが…
 
@@ -85,7 +85,7 @@ chmod u+x ./upload_test.sh
 
 かもしれませんね…。
 
-# 参考資料
+## 参考資料
 
 - <https://the-codeslinger.com/2020/09/06/spring-multipart-file-can-i-read-inputstream-multiple-times/>
   - この記事自体がこのサイトの翻訳のようなものです、感謝
