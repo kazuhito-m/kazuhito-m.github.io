@@ -8,7 +8,7 @@ tags: [java, spring, multipartfile, mvc]
 
 # これを読んで得られるもの
 
-- 「 ` org.springframework.web.multipart.MultipartFile` の `getInputStream()` メソッドは何回呼んでも中身が取り出せる」ということの実証
+- 「org.springframework.web.multipart.MultipartFile の getInputStream() メソッドは何回呼んでも中身が取り出せる」ということの実証
 
 # なぜ「読めない」と思い込んでいたのだろうか
 
