@@ -41,10 +41,53 @@ tags: [java, spring, multipartfile, mvc]
 
 `uplaod_test.sh` はテスト用のスクリプトなので、プロジェクトの直下など好きなとこに置いてください。
 
+### 実行
+
+`bash` を実行できるコンソールを開き、展開したZipフォルダまで移動、`gradle` にてSpringBootのWebアプリケーションを起動してください。
+
+```bash
+./gradlew bootRun
+```
+
+また別の `bash` を実行できるコンソールを開き、前述の `upload_test.sh` を実行してください。
+
+```bash
+chmod u+x ./upload_test.sh
+./upload_test.sh
+```
+
+すると、SpringBootを起動した側のコンソールに、
+
+![実行した際のSpringBoot側のコンソール](/images/2021-08-02-execute-springboot-console.png)
+
+と出力され「 `multipartFile#getInputStream` が複数回呼び出されて、かつファイルの内容で読み出せてる」ことがわかります。
+
 # 所感
 
+最初に `以前に「無理やり複数回呼べるように対応した」`　と書きましたが、そのソース内でチームメンバーが「 `multipartFile#getInputStream` を二回呼んでいる」というコードを書いたので、それをレビューしたのですが…
+
+「当人は動くと言っている…がそれが”以前の無理やり対応”によるものか、元々の仕様としてそう振る舞うのか」
+
+が解らず、指摘すべきかを迷ったのです。
+
+指摘するにも「実際に検証しないと指摘にもならない」ので、調べ始めた…のがこの記事の発端です。
+
+「思い込みによるイチャモン」にならず、実際動かすことにより確証が得られたので良かったです。
+
+---
+
+ただ、これは「Streamとは別にメモリ中(あるいは一時ファイル)にデータを持っている」ということを意味するのかも？
+
+ということは
+
+- ちょっとずつ読み出しても意味ない(メモリの節約にならない)
+- `readAllBytes()` とかしちゃうと、最低でも「実ファイル * 2の容量」のメモリを食う
+
+かもしれませんね…。
 
 # 参考資料
 
 - <https://the-codeslinger.com/2020/09/06/spring-multipart-file-can-i-read-inputstream-multiple-times/>
   - この記事自体がこのサイトの翻訳のようなものです、感謝
+- <https://stackoverflow.com/questions/4449096/how-to-read-request-getinputstream-multiple-times>
+  - こちらは `ServletRequest#getInputStream` の振る舞いについて、二回以上呼ぶためには…の議論
