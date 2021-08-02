@@ -18,7 +18,7 @@ tags: [java, spring, multipartfile, mvc]
 
 と、言うのも
 
-__ 「Javaの `ServletRequest#getInputStream` メソッドは、複数回読むことができない(実行すると二回目が `IllegalStateException` を吐く)」 __
+__「Javaの `ServletRequest#getInputStream` メソッドは、複数回読むことができない(実行すると二回目が `IllegalStateException` を吐く)」__
 
 というよく知られた挙動があり、以前に「無理やり複数回呼べるように対応した」経緯から、 「 `MultipartFile#getInputStream` もどーせ複数回読めないんでしょ？」と思い込んでいたのです。
 
