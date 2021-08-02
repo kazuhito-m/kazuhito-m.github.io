@@ -6,11 +6,11 @@ category: tech
 tags: [java, spring, multipartfile, mvc]
 ---
 
-# これを読んで得られるもの
+## これを読んで得られるもの
 
 - 「org.springframework.web.multipart.MultipartFile の getInputStream() メソッドは何回呼んでも中身が取り出せる」ということの実証
 
-# なぜ「読めない」と思い込んでいたのだろうか
+## なぜ「読めない」と思い込んでいたのだろうか
 
 本記事は [この記事](https://the-codeslinger.com/2020/09/06/spring-multipart-file-can-i-read-inputstream-multiple-times/) の翻訳&実証みたいなものなのですが…。
 
