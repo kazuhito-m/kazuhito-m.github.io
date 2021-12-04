@@ -3,7 +3,7 @@ published: true
 layout: post
 title: シェルスクリプト備忘録:再帰的にディレクトリ・ファイルの名前からスペースを置換する
 category: tech
-tags: [linux, bash, find]
+tags: [linux, bash, find, tips]
 ---
 
 ## これを読んで得られるもの
