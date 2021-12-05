@@ -105,6 +105,28 @@ done
 
 もっと「こんな簡単にできるよ」や「定石としてはすでにこんなんがあるよ」など、ご存知の方がいらしたら、ぜひお教えいただけるとうれしいです。
 
+## 2021-12-05 追記
+
+記事公開後、Twitterからご助言をいただきました。
+
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">記事を拝見しましたが、やりたいことはスペースが含まれたファイル名を扱うことですよね？それだけならさほど難しくはないと思います。おそらく変数名をダブルクォートで括ってないのが足りてないピースです<br><br>ファイル名に改行が含まれている場合に対応するとなるともうひと工夫必要ですが…</p>&mdash; Koichi Nakashima (@ko1nksm) <a href="https://twitter.com/ko1nksm/status/1467337687833407488?ref_src=twsrc%5Etfw">December 5, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">改行文字が含まれたファイル名を考慮しないという前提の場合「for と IFS=$&#39;\n&#39; の組み合わせ」または「while IFS= read -r ...を使った方法」のどちらか使うことになります。どちらでもIFSを使いますが後者であればIFSを保存して戻す作業が不要になります。</p>&mdash; Koichi Nakashima (@ko1nksm) <a href="https://twitter.com/ko1nksm/status/1467347548696616960?ref_src=twsrc%5Etfw">December 5, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+なるほど、 `while IFS='' read -r ...` でやれば良いんですね。実際に動かしてみましょう。
+
+```bash
+#!/usr/bin/env bash
+
+find $(pwd) -type d | sort -r | while IFS='' read -r i; do
+  cd "${i}"
+  rename 's/ /_/g' ./* 
+done
+```
+
+これであれば `IFS` の状態を管理したり気にしなくて良いですし、幾分素直なループ文になりますね。
+
+これからは、こちらを常用していきたいと思います。お教えいただきありがとうございました。
 
 ## 参考資料
 
