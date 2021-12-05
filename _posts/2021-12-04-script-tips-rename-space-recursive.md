@@ -37,7 +37,6 @@ tags: [linux, bash, find, tips]
 
 ```bash
 #!/usr/bin/env bash
-
 pre_ifs=$IFS
 IFS=$'\n'
 for i in $(find $(pwd) -type d | sort -r) ; do
@@ -117,7 +116,6 @@ done
 
 ```bash
 #!/usr/bin/env bash
-
 find $(pwd) -type d | sort -r | while IFS='' read -r i; do
   cd "${i}"
   rename 's/ /_/g' ./* 
