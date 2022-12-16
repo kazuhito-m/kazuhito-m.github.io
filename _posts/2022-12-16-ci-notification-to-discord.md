@@ -8,7 +8,7 @@ tags: [cicd, circleci, githubactions, tips]
 
 ## これを読んで得られるもの
 
-- いくつかのCIサービスでの「Webhookを使ったNotification(通知)のやり方」を知ることができる
+- いくつかのCIサービスでの「Discordに対するWebhookを使ったNotification(通知)のやり方」を知ることができる
   - Github Actions
   - CircleCI
 
