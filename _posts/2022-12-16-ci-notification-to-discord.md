@@ -47,11 +47,11 @@ https://github.com/marketplace から `Discord` を検索すると、50以上の
 - name: Notify Discord
   uses: Ilshidur/action-discord@master
   env:
-    DISCORD_WEBHOOK: $\{\{ secrets.DISCORD_WEBHOOK_URL \}\}
+    DISCORD_WEBHOOK: ${{{{ secrets.DISCORD_WEBHOOK_URL }}}}
   with:
     args: |
-      \{\{ GITHUB_REPOSITORY \}\} のテストが失敗しました。
-      \{\{ GITHUB_SERVER_URL \}\}/\{\{ GITHUB_REPOSITORY \}=}/actions/runs/\{\{ GITHUB_RUN_ID \}\} を確認して下さい。
+      {{{{ GITHUB_REPOSITORY }}}} のテストが失敗しました。
+      {{{{ GITHUB_SERVER_URL }}}}/{{{{ GITHUB_REPOSITORY }}}}/actions/runs/{{{{ GITHUB_RUN_ID }}}} を確認して下さい。
   if: failure()
 ```
 
