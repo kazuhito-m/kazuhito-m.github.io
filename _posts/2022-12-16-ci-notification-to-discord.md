@@ -35,7 +35,7 @@ TODO 方針としては「できるだけ書かない」「公式・準公式で
 
 https://github.com/marketplace から `Discord` を検索すると、50以上の `Actions` が見つかります。
 
-TODO 図
+![Actionsを”Discord”で検索した結果](/images/2022-12-16-actions-list.png)
 
 一番Starが多かった [Actions for Discord(Ilshidur/action-discord)](https://github.com/marketplace/actions/actions-for-discord) を使って実現してみます。
 
@@ -57,9 +57,9 @@ TODO 図
 
 のように書くと
 
-TODO 図
+![GithubActionsの通知をDiscordに出してみる_その1](/images/2022-12-16-actions-discrod-notify-01.png)
 
-のように出力されました。
+のように通知されました。
 
 #### 実装例2
 
@@ -78,7 +78,7 @@ TODO 図
 
 と書くと、
 
-TODO 図
+![GithubActionsの通知をDiscordに出してみる_その2](/images/2022-12-16-actions-discrod-notify-02.png)
 
 おお、ほしかった感じの結果です。満足しました。
 
@@ -127,11 +127,17 @@ jobs:
           webhook: "${DISCORD_WEBHOOK}"
 ```
 
+のように書くと
+
+![CircleCIの通知をDiscordに出してみる](/images/2022-12-16-circleci-discord-notify.png)
+
+のように通知されました。
+
 #### CircleCIの環境変数
 
 ドキュメントの例は `DISCORD_WEBHOOK` など「環境変数を使う例」で書かれているため、サンプルどおりそのまま実践するためには、CircleCIの環境変数も仕込む必要があります。
 
-チーム等で「複数のプロダクト」を担当しているのであれば [OrganizationのContext](https://circleci.com/docs/ja/contexts/) を利用すると、「複数プロダクトで環境変数共有できる」ので、Discordの同一チャンネルのWebhookURLを共有できて便利かと思います。(プロダクトごとにチャンネルを分けたほうがわかりやすいかもですが)
+こちらも、チーム等で「複数のプロダクト」を担当しているのであれば [OrganizationのContext](https://circleci.com/docs/ja/contexts/) を利用すると、「複数プロダクトで環境変数共有できる」ので、Discordの同一チャンネルのWebhookURLを共有できて便利かと思います。
 
 #### Orbを有効にするには
 
@@ -165,4 +171,5 @@ CircleCIのGitHub連携でPermission denied (publickey)が起きたときの対�
   - https://docs.github.com/ja/actions/learn-github-actions/environment-variables#default-environment-variables
 - CircleCI周り
   - https://medium.com/tarmac/sending-circleci-job-notifications-to-discord-8bebc935637e
-
+- 今回実際に実装したリポジトリ
+  - https://github.com/kazuhito-m/java-odf-edit-sample
