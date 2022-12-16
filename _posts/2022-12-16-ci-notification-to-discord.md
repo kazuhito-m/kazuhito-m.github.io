@@ -52,8 +52,8 @@ DiscordのWebhookは「互換のあるWebhook」とは聞くものの、多く�
 
 ワークフローファイルのyamlに
 
-```yaml
 {% raw %}
+```yaml
 - name: Notify Discord
   uses: Ilshidur/action-discord@master
   env:
@@ -63,8 +63,8 @@ DiscordのWebhookは「互換のあるWebhook」とは聞くものの、多く�
       {{ GITHUB_REPOSITORY }} のテストが失敗しました。
       {{ GITHUB_SERVER_URL }}/{{ GITHUB_REPOSITORY }}/actions/runs/{{ GITHUB_RUN_ID }} を確認して下さい。
   if: failure()
-{% endraw %}
 ```
+{% endraw %}
 
 のように書くと
 
@@ -78,6 +78,7 @@ DiscordのWebhookは「互換のあるWebhook」とは聞くものの、多く�
 
 そこで「作者にコンタクトを取ること」も考慮して、[日本の方が作られたActions](https://note.sarisia.cc/entry/actions-status-discord/) を使わせて貰おうと思います。
 
+{% raw %}
 ```yaml
 - name: Notify Discord
   uses: sarisia/actions-status-discord@v1
@@ -86,6 +87,7 @@ DiscordのWebhookは「互換のあるWebhook」とは聞くものの、多く�
       ${{ secrets.DISCORD_WEBHOOK_URL }}
   if: failure()
 ```
+{% endraw %}
 
 と書くと、
 
