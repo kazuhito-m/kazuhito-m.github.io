@@ -67,7 +67,7 @@ https://github.com/marketplace から `Discord` を検索すると、50以上の
 
 そこで「作者にコンタクトを取ること」も考慮して、[日本の方が作られたActions](https://note.sarisia.cc/entry/actions-status-discord/) を使わせて貰おうと思います。
 
-```
+```yaml
 - name: Notify Discord
   uses: sarisia/actions-status-discord@v1
   with:
@@ -111,7 +111,7 @@ https://github.com/marketplace から `Discord` を検索すると、50以上の
 
 `.circleci/config.yml` に
 
-```
+```yaml
 version: 2.1
 
 orbs:
