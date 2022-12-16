@@ -10,14 +10,23 @@ tags: [cicd, circleci, githubactions, tips]
 
 - いくつかのCIサービスでの「Webhookを使ったNotification(通知)のやり方」を知ることができる
 
-## 自分用チャットサービスをSlackからDiscordに移動したのですが…
+## 自分用チャットサービスをSlackからDiscordにお引越ししたのですが…
 
-TODO ようやく:世のサービスはSlack専用の連携機能を備えているが…
+SlackからDiscordに移行したんですが…あたりまえながら「CI通知系が全部ご破産」になりまして。
 
-TODO 方針としては「できるだけ書かない」「公式・準公式で用意している仕組みを利用する」
+DiscordのWebhookは「互換のあるWebhook」とは聞くものの、多くの「Slack連携機能」は「Slack専用の機能」で、それ用の入力粋とか用意しているわけでして。
+
+そりゃ「Webhookさえあれば通知なんて実装出来るはず」ったって、その「実装」に時間と手間が掛かるものです。
+
+というわけで「CIの結果通知をDiscordに通知する方法」を、CIサービス別に調べました。
+
+(分かり次第、追記する予定です。)
 
 ## 前提
 
+- 方針
+  - できるだけ書かない
+  - 公式・準公式で用意している仕組みを利用する
 - Discordで通知したいチャンネルへのWebhookを作成済み
   - [こちらの手順](https://support.discord.com/hc/ja/articles/228383668) で、すでにWebhookのURLは取得している
 
@@ -29,7 +38,7 @@ TODO 方針としては「できるだけ書かない」「公式・準公式で
 
 そのため「ワークフローファイル記述し、自力で飛ばす」必要があります。
 
-([Githubへの操作を通知する手段](https://qiita.com/Papillon6814/items/7bfd95cbd1b5a80afb92)は在りますが「CIがコケたら」とかではありません。)
+([Githubに行った操作を、Webhookへ通知する手段](https://qiita.com/Papillon6814/items/7bfd95cbd1b5a80afb92)は在りますが「ActionsのCIがコケたら」とかではありません。)
 
 自力は自力なのですが、共通部品として便利な `Actions` というものを使うことが出来ます。
 
@@ -47,11 +56,11 @@ TODO 方針としては「できるだけ書かない」「公式・準公式で
 - name: Notify Discord
   uses: Ilshidur/action-discord@master
   env:
-    DISCORD_WEBHOOK: ｛｛ secrets.DISCORD_WEBHOOK_URL }}
+    DISCORD_WEBHOOK: {{ secrets.DISCORD_WEBHOOK_URL }}
   with:
     args: |
-      ｛｛ GITHUB_REPOSITORY }} のテストが失敗しました。
-      ｛｛ GITHUB_SERVER_URL }}/｛｛ GITHUB_REPOSITORY }}/actions/runs/｛｛ GITHUB_RUN_ID }} を確認して下さい。
+      {{ GITHUB_REPOSITORY }} のテストが失敗しました。
+      {{ GITHUB_SERVER_URL }}/{{ GITHUB_REPOSITORY }}/actions/runs/{{ GITHUB_RUN_ID }} を確認して下さい。
   if: failure()
 ```
 
@@ -72,7 +81,7 @@ TODO 方針としては「できるだけ書かない」「公式・準公式で
   uses: sarisia/actions-status-discord@v1
   with:
     webhook:
-      $｛｛ secrets.DISCORD_WEBHOOK_URL }}
+      ${{ secrets.DISCORD_WEBHOOK_URL }}
   if: failure()
 ```
 
