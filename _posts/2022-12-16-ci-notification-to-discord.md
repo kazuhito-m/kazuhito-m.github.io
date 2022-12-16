@@ -52,7 +52,8 @@ DiscordのWebhookは「互換のあるWebhook」とは聞くものの、多く�
 
 ワークフローファイルのyamlに
 
-<pre>
+```yaml
+{% raw %}
 - name: Notify Discord
   uses: Ilshidur/action-discord@master
   env:
@@ -62,7 +63,8 @@ DiscordのWebhookは「互換のあるWebhook」とは聞くものの、多く�
       {{ GITHUB_REPOSITORY }} のテストが失敗しました。
       {{ GITHUB_SERVER_URL }}/{{ GITHUB_REPOSITORY }}/actions/runs/{{ GITHUB_RUN_ID }} を確認して下さい。
   if: failure()
-</pre>
+{% endraw %}
+```
 
 のように書くと
 
