@@ -9,6 +9,8 @@ tags: [cicd, circleci, githubactions, tips]
 ## これを読んで得られるもの
 
 - いくつかのCIサービスでの「Webhookを使ったNotification(通知)のやり方」を知ることができる
+  - Github Actions
+  - CircleCI
 
 ## 自分用チャットサービスをSlackからDiscordにお引越ししたのですが…
 
@@ -20,7 +22,7 @@ DiscordのWebhookは「互換のあるWebhook」とは聞くものの、多く�
 
 というわけで「CIの結果通知をDiscordに通知する方法」を、CIサービス別に調べました。
 
-(分かり次第、追記する予定です。)
+(他のサービスも分かり次第、追記する予定です。)
 
 ## 前提
 
