@@ -23,11 +23,26 @@ TODO ようやく:世のサービスはSlack専用の連携機能を備えてい
 
 ### CircleCI
 
-サービス自体に機能は在りません(Slackは埋め込みで在る)し、yamlにも組み込み構文等は無いのですが、Orb(CircleCIのプラグインのようなもの)に有志が作ったDiscord通知用のものが在ります。
+サービス自体に機能は在りません(Slackは埋め込みで在る)し、yamlにも組み込み構文等は無いのですが、Orbs(CircleCIのプラグインのようなもの)に有志が作ったDiscord通知用のものが在ります。
 
-- https://github.com/antonioned/circleci-discord-orb
+- Source: <https://github.com/antonioned/circleci-discord-orb>
+- Document: <https://circleci.com/developer/orbs/orb/antonioned/discord>
 
-上記のREADMEに「書き方のサンプル」を元に、 `./.circleci/config.yml` に `discord/status` 記述を追加して下さい。
+上記のSource `README` にある「書き方のサンプル」を元に、 `./.circleci/config.yml` に `discord/status` 記述を追加して下さい。
+
+### CircleCIの環境変数
+
+サンプルは「環境変数を使う例」で書かれているため、サンプルどおりそのまま実践するためには、CircleCIの環境変数も仕込む必要があります。
+
+チーム等で「複数のプロダクト」を担当しているのであれば [OrganizationのContext](https://circleci.com/docs/ja/contexts/) を利用すると、「複数プロダクトで環境変数共有できる」ので、Discordの同一チャンネルのWebhookURLを共有できて便利かと思います。(プロダクトごとにチャンネルを分けたほうがわかりやすいかもですが)
+
+### Orbを有効にするには
+
+Orbsを使うには、当該組織(Organization)のセキュリティ設定で「Orbsを使う」設定を行う必要があります。
+
+詳しくは[この記事](https://www.kaizenprogrammer.com/entry/2018/12/01/111145)の `Orbsのセキュリティ設定` の手順に従い確認してください。
+
+
 
 ## 所感
 
