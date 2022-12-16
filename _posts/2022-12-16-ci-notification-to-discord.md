@@ -168,8 +168,8 @@ CircleCIのGitHub連携でPermission denied (publickey)が起きたときの対�
 ## 参考資料
 
 - GithubActions周り
-  - https://docs.github.com/ja/actions/learn-github-actions/environment-variables#default-environment-variables
+  - <https://docs.github.com/ja/actions/learn-github-actions/environment-variables#default-environment-variables>
 - CircleCI周り
-  - https://medium.com/tarmac/sending-circleci-job-notifications-to-discord-8bebc935637e
+  - <https://medium.com/tarmac/sending-circleci-job-notifications-to-discord-8bebc935637e>
 - 今回実際に実装したリポジトリ
-  - https://github.com/kazuhito-m/java-odf-edit-sample
+  - <https://github.com/kazuhito-m/java-odf-edit-sample>
