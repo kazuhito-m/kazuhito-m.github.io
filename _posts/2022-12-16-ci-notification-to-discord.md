@@ -33,7 +33,7 @@ TODO 方針としては「できるだけ書かない」「公式・準公式で
 
 自力は自力なのですが、共通部品として便利な `Actions` というものを使うことが出来ます。
 
-https://github.com/marketplace から `Discord` を検索すると、50以上の `Actions` が見つかります。
+<https://github.com/marketplace> から `Discord` を検索すると、50以上の `Actions` が見つかります。
 
 ![Actionsを”Discord”で検索した結果](/images/2022-12-16-actions-list.png)
 
@@ -47,11 +47,11 @@ https://github.com/marketplace から `Discord` を検索すると、50以上の
 - name: Notify Discord
   uses: Ilshidur/action-discord@master
   env:
-    DISCORD_WEBHOOK: ${{{{ secrets.DISCORD_WEBHOOK_URL }}}}
+    DISCORD_WEBHOOK: ｛｛ secrets.DISCORD_WEBHOOK_URL }}
   with:
     args: |
-      {{{{ GITHUB_REPOSITORY }}}} のテストが失敗しました。
-      {{{{ GITHUB_SERVER_URL }}}}/{{{{ GITHUB_REPOSITORY }}}}/actions/runs/{{{{ GITHUB_RUN_ID }}}} を確認して下さい。
+      ｛｛ GITHUB_REPOSITORY }} のテストが失敗しました。
+      ｛｛ GITHUB_SERVER_URL }}/｛｛ GITHUB_REPOSITORY }}/actions/runs/｛｛ GITHUB_RUN_ID }} を確認して下さい。
   if: failure()
 ```
 
@@ -72,7 +72,7 @@ https://github.com/marketplace から `Discord` を検索すると、50以上の
   uses: sarisia/actions-status-discord@v1
   with:
     webhook:
-      ${{ secrets.DISCORD_WEBHOOK_URL }}
+      $｛｛ secrets.DISCORD_WEBHOOK_URL }}
   if: failure()
 ```
 
