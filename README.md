@@ -16,6 +16,16 @@ kazuhito-m.github.io
 + Jekyll-bootstrap
   + 若干のmodify
 
+## Usage
+
+### Preview
+
+ローカルでプレビュー出来るようにするため、`docker-compose` でJekyllを動かせるようにしています。(要インストール:docker & docker-compose)
+
+```bash
+docker compose up
+```
+
 ## Author
 
 Kazuhito Miura ( [@kazuhito_m](https://twitter.com/kazuhito_m) on Twitter )
