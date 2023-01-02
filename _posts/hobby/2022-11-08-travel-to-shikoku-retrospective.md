@@ -2,7 +2,7 @@
 layout: post
 title: 四国バイク旅行-後日振り返り
 category: hobby
-tags: [travel, hokkaido]
+tags: [travel, shikoku]
 ---
 
 __この記事は、当時のメモをもとに、後日加筆・修正し、書いたものです。__
