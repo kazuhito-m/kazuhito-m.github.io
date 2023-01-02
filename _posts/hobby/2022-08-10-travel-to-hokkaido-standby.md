@@ -69,9 +69,19 @@ __この記事は、当時のメモをもとに、後日加筆・修正し、書
 
 - 毎日約5km以上のウォーキング
 
-も、この日からはじめました
+も、この日からはじめました。
 
+なんとなく、ここで「行くぞ！という覚悟完了した」気がします。
 
+### 8月7日
+
+旅行当日までの最後の日曜日、「熱さに耐えられるか」「今の用意で過不足ないか」が不安だったので、
+
+- リハーサルとして、自宅から和歌山を回って帰ってくるツーリング
+
+を行いました。
+
+<blockquote class="twitter-tweet" data-conversation="none"><p lang="ja" dir="ltr">リハーサル終了！<br><br> 旅程中「一番長い走行距離の日」が207kmだったと思うので、今回231km(迷ったりしたのでさらに伸びたと思う)程の距離を走った。9:00〜19:30(うち休憩等2時間)で、8時間半くらいか。まーでけん事はないな、という感じでしたが、途中首痛かったり眠かったり、数日連続はしんどいかも。 <a href="https://t.co/s4MZV87ELQ">pic.twitter.com/s4MZV87ELQ</a></p>&mdash; みうら かずひと(SonarQube好き) (@kazuhito_m) <a href="https://twitter.com/kazuhito_m/status/1556246426887540738?ref_src=twsrc%5Etfw">August 7, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 ## 準備のいろいろ
